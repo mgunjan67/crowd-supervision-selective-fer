@@ -1,0 +1,24 @@
+{
+  "condition": "soft",
+  "seed": 42,
+  "selected_epoch": 10,
+  "checkpoint_sha256": "01d7c974e9935c1b04d4dc1e1487c877d9631ed5909437a61a82e394a1d64e5f",
+  "partitions": {
+    "selection": {
+      "n": 1667,
+      "predictions_sha256": "c9cfde4f2d37f5bd0a0f3d7e0c23a954df406a649061202de9d5bc2f2a3fdb83"
+    },
+    "calibration": {
+      "n": 1642,
+      "predictions_sha256": "32abf259f72fc722cb94bf45a180e4fdf3d1db505cc4d24dda78706d14e810ea"
+    },
+    "test_full": {
+      "n": 3589,
+      "predictions_sha256": "8e55659d5fd586c088024775831dbf5071c58946d733c09040d40667ec9e494e"
+    }
+  },
+  "started_utc": "2026-09-21T20:38:36.882390+00:00",
+  "evaluation_code_sha256": "dbce19cbc35e2f4663d6854cad3423cfeb574ae5b6d219eea1bf3f723e0e8f3f",
+  "selection_recheck_exact": true,
+  "finished_utc": "2026-09-21T20:39:00.579847+00:00"
+}

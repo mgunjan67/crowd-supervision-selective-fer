@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/microsoft/FERPlus",
+  "commit": "ae2128abf776409c93e50cf7c9d87180673314e6",
+  "retrieved_utc": "2026-09-21T02:55:54.194288+00:00",
+  "sha256": {
+    "fer2013new.csv": "9206e20d62f56475939f516847d61753e4860caeac9718b560129541b776fc2c",
+    "LICENSE.md": "e9d873074f826f2b356b4141cf9c8423b36e257336787600fe4bbe5f5cc2e9fa",
+    "README.md": "5d2f556f999d99e2a72d3e239a6e681922450b9db5cab40cd3655e9d615f8c99"
+  },
+  "scope": "Annotations only; underlying FER2013 photograph rights are not resolved by this repository license."
+}

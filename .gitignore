@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+data/raw/
+data/fer2013/
+reviewer_followup/weights/
+reproduced-training/
+replay-report.json
+tmp/
+*.aux
+*.log
+*.out
+*.toc

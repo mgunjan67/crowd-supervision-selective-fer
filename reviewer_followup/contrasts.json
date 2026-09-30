@@ -1,0 +1,154 @@
+[
+  {
+    "state": "selected",
+    "left": "soft",
+    "right": "uniform",
+    "endpoint": "soft minus uniform at 80% coverage",
+    "point_difference_pp": -0.3778625954198459,
+    "seed_differences_pp": [
+      -0.34732824427480546,
+      -0.43129770992366145,
+      -0.3549618320610709
+    ],
+    "lower_pp": -0.6440127885224298,
+    "upper_pp": -0.07260152297970524,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "selected",
+    "left": "soft",
+    "right": "hard",
+    "endpoint": "soft minus hard at 80% coverage",
+    "point_difference_pp": -2.610687022900764,
+    "seed_differences_pp": [
+      -2.1908396946564905,
+      -3.732824427480916,
+      -1.9083969465648858
+    ],
+    "lower_pp": -2.9773811339944087,
+    "upper_pp": -2.1938399409638194,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "selected",
+    "left": "tie_hard",
+    "right": "hard",
+    "endpoint": "tie_hard minus hard at 80% coverage",
+    "point_difference_pp": -0.4707379134860061,
+    "seed_differences_pp": [
+      -0.015267175572519776,
+      -1.0992366412213739,
+      -0.2977099236641245
+    ],
+    "lower_pp": -0.7990063618085673,
+    "upper_pp": -0.11831272865167244,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "selected",
+    "left": "soft",
+    "right": "tie_hard",
+    "endpoint": "soft minus tie_hard at 80% coverage",
+    "point_difference_pp": -2.1399491094147582,
+    "seed_differences_pp": [
+      -2.1755725190839708,
+      -2.633587786259542,
+      -1.6106870229007613
+    ],
+    "lower_pp": -2.4911046495674403,
+    "upper_pp": -1.7596076228440376,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "epoch12",
+    "left": "soft",
+    "right": "uniform",
+    "endpoint": "soft minus uniform at 80% coverage",
+    "point_difference_pp": -0.3167938931297696,
+    "seed_differences_pp": [
+      -0.3282442748091613,
+      -0.3931297709923648,
+      -0.22900763358778276
+    ],
+    "lower_pp": -0.6259938597716153,
+    "upper_pp": -0.04953118285202723,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "epoch12",
+    "left": "soft",
+    "right": "hard",
+    "endpoint": "soft minus hard at 80% coverage",
+    "point_difference_pp": -1.351145038167941,
+    "seed_differences_pp": [
+      -1.1793893129771027,
+      -1.4198473282442725,
+      -1.4541984732824476
+    ],
+    "lower_pp": -1.7213883666605538,
+    "upper_pp": -1.0462632685264437,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "epoch12",
+    "left": "tie_hard",
+    "right": "hard",
+    "endpoint": "tie_hard minus hard at 80% coverage",
+    "point_difference_pp": -0.4071246819338459,
+    "seed_differences_pp": [
+      -0.2824427480916075,
+      -0.5076335877862576,
+      -0.43129770992367256
+    ],
+    "lower_pp": -0.6967383938060129,
+    "upper_pp": -0.16036502190393684,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "epoch12",
+    "left": "soft",
+    "right": "tie_hard",
+    "endpoint": "soft minus tie_hard at 80% coverage",
+    "point_difference_pp": -0.9440203562340951,
+    "seed_differences_pp": [
+      -0.8969465648854952,
+      -0.912213740458015,
+      -1.022900763358775
+    ],
+    "lower_pp": -1.2659153917302313,
+    "upper_pp": -0.6399430053599198,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  }
+]

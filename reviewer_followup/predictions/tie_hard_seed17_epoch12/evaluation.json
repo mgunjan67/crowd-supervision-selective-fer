@@ -1,0 +1,28 @@
+{
+  "condition": "tie_hard",
+  "seed": 17,
+  "state": "epoch12",
+  "source": "reviewer_followup/runs/tie_hard_seed17/last.pt",
+  "source_sha256": "d4aeedd6338e453e589da6beba64ffe20d9ee08889df73d321a0b93b1a954014",
+  "epoch": 12,
+  "weight_sha256": "1c3ab1a42c2d93f0980c846e0a90c01cf33f2e5406b226fba72a7b48b612e94a",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "e3ec48ac9f3dd85a6ee59b2e23f39d5ea0843d5cf5458a6df95afb4e3fff09ef",
+      "prior_reference_bitwise_verified": false
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "04db5bbc657a4ba6fa5cfa761cd9f5ab9ed8ce64e0e5684a41a0d2094648fbb6",
+      "prior_reference_bitwise_verified": false
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "2da9ca24d4a2631e7028c9f290df4af22ba13c0f503e878ac84769817eb562c6",
+      "prior_reference_bitwise_verified": false
+    }
+  },
+  "started_utc": "2026-09-22T06:34:15.162961+00:00",
+  "finished_utc": "2026-09-22T06:34:38.080935+00:00"
+}

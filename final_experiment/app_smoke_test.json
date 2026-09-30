@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checkpoint": "soft_seed17",
+  "checkpoint_sha256": "57d58824e9e9df908063ef95301aaf9c65e4695668aaae3c0ba876e9d05643d1",
+  "device": "cpu",
+  "actual_model_loading": true,
+  "actual_form_logic": true,
+  "webrtc_transport_stubbed": true,
+  "reason_for_stub": "Streamlit AppTest has no WebRTC session manager",
+  "initial_opt_in_unchecked": true,
+  "opt_in_reset_tested": false,
+  "form_reset_boundary": "AppTest does not emulate browser-side clear_on_submit; checked separately in a real browser",
+  "camera_off_suppresses_cue": true,
+  "clear_preview_works": true,
+  "camera_capture_tested": false,
+  "browser_permission_flow_tested": false,
+  "participant_data_used": false
+}

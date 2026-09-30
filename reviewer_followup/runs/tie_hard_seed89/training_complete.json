@@ -1,0 +1,9 @@
+{
+  "condition": "tie_hard",
+  "seed": 89,
+  "selected_epoch": 5,
+  "selection_value": 0.14873537179480706,
+  "checkpoint_sha256": "1157fda96a56c17397c460d67a5c4e0e75889ba4a582064ab29f77d145b10473",
+  "finished_utc": "2026-09-22T06:26:02.194640+00:00",
+  "calibration_or_test_used": false
+}

@@ -1,0 +1,50 @@
+{
+  "source": "https://www.kaggle.com/datasets/deadskull7/fer2013",
+  "source_version": 1,
+  "retrieved": "2026-09-20",
+  "provenance": "Community mirror, not original maintainer. Original Kaggle competition API required authentication (401).",
+  "licensing": "Mirror advertises CC0; this is not independent verification of underlying image rights. Images are excluded from release.",
+  "archive_sha256": "0053fdef247c8db3c1967c7a81898485eaa1d75489f43493fb4d8fa727f14698",
+  "csv_sha256": "3b8d9617d1017f34733c8f2474d7784c563ce86c40a86ac12c2d37cc968f871b",
+  "class_names": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ],
+  "counts": {
+    "Training": {
+      "angry": 3995,
+      "fear": 4097,
+      "sad": 4830,
+      "neutral": 4965,
+      "happy": 7215,
+      "surprise": 3171,
+      "disgust": 436
+    },
+    "PublicTest": {
+      "angry": 467,
+      "disgust": 56,
+      "sad": 653,
+      "neutral": 607,
+      "happy": 895,
+      "fear": 496,
+      "surprise": 415
+    },
+    "PrivateTest": {
+      "angry": 491,
+      "surprise": 416,
+      "neutral": 626,
+      "sad": 594,
+      "fear": 528,
+      "happy": 879,
+      "disgust": 55
+    }
+  },
+  "cross_partition_duplicate_rows": 1323,
+  "cross_partition_duplicate_hashes": 557,
+  "test_rows_matching_training_pixels": 288
+}

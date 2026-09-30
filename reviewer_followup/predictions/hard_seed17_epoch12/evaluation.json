@@ -1,0 +1,28 @@
+{
+  "condition": "hard",
+  "seed": 17,
+  "state": "epoch12",
+  "source": "final_experiment/runs/hard_seed17/last.pt",
+  "source_sha256": "64105e368fb8303de5ab1609ed78ac40e5d251fbfa4c397d872e05c0d6182912",
+  "epoch": 12,
+  "weight_sha256": "d62a043a3e39c9ba8148bf0f3ae2dfd00d8c18cba5e6bf07d7644cab396c10f5",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "cef7192430f156270e066cb8136f058c4dba77633b7aa2133a1bcdbce3e602a6",
+      "prior_reference_bitwise_verified": false
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "403f8c1033788b12affdcc8ae8653aaea5f1dd67f82bf4a74a79716f77951717",
+      "prior_reference_bitwise_verified": false
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "5684d4fb315329eb8c5ebc81a29e6023fac2b66d74a90caebf358b22fbbf7af7",
+      "prior_reference_bitwise_verified": false
+    }
+  },
+  "started_utc": "2026-09-22T06:27:02.978072+00:00",
+  "finished_utc": "2026-09-22T06:27:24.057972+00:00"
+}

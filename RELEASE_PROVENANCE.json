@@ -1,0 +1,11 @@
+{
+  "source_archive": "OnlineResource1.zip",
+  "source_archive_sha256": "3d494aa7e195b5326d93b049f3e2bc97be7776b42ccffaa2b512cafe4639e27a",
+  "original_files_verified": 442,
+  "secret_scan_text_files": 316,
+  "source_face_images_included": false,
+  "model_weights_in_git": false,
+  "repo": "https://github.com/mgunjan67/crowd-supervision-selective-fer",
+  "publication_status": "Prepared for submission; no acceptance claimed",
+  "release_tag": "v1.0.0"
+}

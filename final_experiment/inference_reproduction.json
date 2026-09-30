@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "run": "hard_seed17",
+      "role": "selection",
+      "n": 1667,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed17",
+      "role": "calibration",
+      "n": 1642,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed17",
+      "role": "test_full",
+      "n": 3589,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed17",
+      "role": "selection",
+      "n": 1667,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed17",
+      "role": "calibration",
+      "n": 1642,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed17",
+      "role": "test_full",
+      "n": 3589,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed42",
+      "role": "selection",
+      "n": 1667,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed42",
+      "role": "calibration",
+      "n": 1642,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed42",
+      "role": "test_full",
+      "n": 3589,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed42",
+      "role": "selection",
+      "n": 1667,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed42",
+      "role": "calibration",
+      "n": 1642,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed42",
+      "role": "test_full",
+      "n": 3589,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed89",
+      "role": "selection",
+      "n": 1667,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed89",
+      "role": "calibration",
+      "n": 1642,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "hard_seed89",
+      "role": "test_full",
+      "n": 3589,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed89",
+      "role": "selection",
+      "n": 1667,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed89",
+      "role": "calibration",
+      "n": 1642,
+      "maximum_probability_difference": 0.0
+    },
+    {
+      "run": "soft_seed89",
+      "role": "test_full",
+      "n": 3589,
+      "maximum_probability_difference": 0.0
+    }
+  ],
+  "finished_utc": "2026-09-21T20:42:33.515184+00:00",
+  "verifier_sha256": "c2046cea8c716fd8dc0f41e34d3d79059ec7d8890e261ed03eed29d62bdcc989",
+  "predictions_overwritten": false
+}

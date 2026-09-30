@@ -1,0 +1,11 @@
+\begin{table}[t]
+\caption{Fixed-budget sensitivity and reference-specific metrics. Risk is at 80\% coverage; F1 is at full primary coverage using selected checkpoints. Values are means across three seeds}\label{tab:sensitivity}
+\centering\begin{tabular}{lrrrr}\toprule
+Targets & Selected & Epoch 12 & Original F1 & Majority F1\\\midrule
+Hard & 26.30 & 24.98 & 0.5658 & 0.8965\\
+Tie-hard & 25.82 & 24.58 & 0.5599 & 0.9032\\
+Uniform & 24.06 & 23.95 & 0.5683 & 0.9205\\
+Soft & 23.68 & 23.63 & 0.5722 & 0.9270\\
+\bottomrule\end{tabular}
+\smallskip\par\footnotesize Risk is a percentage. Both F1 columns are weighted F1, but original labels cover 3,275 images whereas strict crowd-majority labels cover 2,484. Original and crowd-majority labels disagree on 28.46\% of that subset. These F1 values are not interchangeable FER scores. All per-seed values, macro F1, distances, and selected epochs are released.
+\end{table}

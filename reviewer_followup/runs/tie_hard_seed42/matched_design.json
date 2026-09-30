@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checked_keys": [
+    "seed",
+    "epochs",
+    "batch_size",
+    "workers",
+    "variant",
+    "optimizer",
+    "learning_rate",
+    "weight_decay",
+    "precision",
+    "scheduler",
+    "selection_metric",
+    "preprocessing",
+    "class_names",
+    "initial_state_sha256",
+    "torch",
+    "torchvision",
+    "gpu",
+    "train_n",
+    "selection_n",
+    "augmentation"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "condition": "hard",
+  "seed": 42,
+  "selected_epoch": 2,
+  "selection_value": 0.14997769204182737,
+  "checkpoint_sha256": "fb7b0ede1873097d53d15328dfcea091a6dd5a02367f4429c8f77e792c31f855",
+  "finished_utc": "2026-09-21T18:58:30.944833+00:00",
+  "calibration_or_test_used": false
+}

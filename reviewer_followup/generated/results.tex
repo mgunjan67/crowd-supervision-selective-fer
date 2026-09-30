@@ -1,0 +1,36 @@
+\subsection{Minority allocation, softening, and tied maxima}
+Table~\ref{tab:primary} compares all four target representations at the same retained count. Figure~\ref{fig:contrasts} shows risk--coverage curves and selected/fixed-epoch contrasts.
+\input{reviewer_followup/generated/primary_table.tex}
+The primary Soft-minus-Uniform difference is -0.38 pp (conditional 95\% interval [-0.64, -0.07]). Paired differences for seeds 17, 42, and 89 are -0.35, -0.43, -0.35 pp. Full soft targets yielded lower selective disagreement than the ambiguity-preserving uniform-minority control under this matched protocol. The retained original Soft-minus-Hard contrast is -2.61 pp (conditional 95\% interval [-2.98, -2.19]). Tie-hard minus Hard is -0.47 pp (conditional 95\% interval [-0.80, -0.12]); Soft minus Tie-hard is -2.14 pp (conditional 95\% interval [-2.49, -1.76]). These latter intervals are descriptive sensitivities, not additional primary hypothesis tests.
+
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{reviewer_followup/figures/Fig2.pdf}
+\caption{(a) Mean selected-checkpoint risk--coverage curves across three seeds; the displayed range begins at 10\%, and every prefix is released. (b) Mean paired contrasts and conditional 95\% pixel-cluster intervals, for selected and epoch-12 weights. Negative differences favor the first-named target. Intervals do not measure seed-population or external-domain uncertainty}\label{fig:contrasts}
+\end{figure}
+\subsection{Selection sensitivity and label references}
+\input{reviewer_followup/generated/sensitivity_table.tex}
+At fixed epoch 12, Soft minus Uniform is -0.32 pp (conditional 95\% interval [-0.63, -0.05]), and Soft minus Hard is -1.35 pp (conditional 95\% interval [-1.72, -1.05]). Table~\ref{tab:sensitivity} keeps both evaluation states visible. This test changes the stopping decision, not the budget or training objective. The majority-only F1 column concerns a restricted reference task, not an interchangeable performance improvement over original-label F1.
+
+\subsection{Supported mass and the meaning of confidence}
+Figure~\ref{fig:mass} separates unsupported mass from ambiguity and excess on each accepted set. Its second panel changes the selection population explicitly rather than silently dropping unsupported votes.
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{reviewer_followup/figures/Fig3.pdf}
+\caption{(a) Three-way mean risk accounting on global 80\% accepted sets. (b) Independent 80\% selection within full- and partial-supported-mass strata; these populations and vertical scales differ from panel (a). Zero-supported-mass images necessarily have complete-vote risk one and are reported separately in Online Resource 1. Neither panel evaluates an expanded-vocabulary model}\label{fig:mass}
+\end{figure}
+The primary population contains 1,732 fully supported, 1,527 partially supported, and 16 zero-supported-mass images. Within the fully supported stratum, 80\% risk is 10.42\% for Soft and 10.94\% for Uniform. Within the partially supported stratum, 80\% risk is 40.00\% for Soft and 40.58\% for Uniform. These descriptive comparisons address whether the primary contrast is confined to images with unsupported votes; they do not establish why a model assigned a particular score.
+
+\subsection{Calibration transfer and finite-sample diagnostics}
+\input{reviewer_followup/generated/policy_table.tex}
+Table~\ref{tab:policies} includes every target and empty-policy outcome. Figure~\ref{fig:transfer} partitions the empirical policy's accepted-population risk change.
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{reviewer_followup/figures/Fig4.pdf}
+\caption{Mean test-minus-calibration differences in unsupported mass, supported ambiguity, and excess error for empirical thresholds. Their sum is the risk gap, not a causal attribution. H: Hard; T: Tie-hard; U: Uniform; S: Soft. The three target panels share a vertical scale. Means use paired nonempty calibration/test selections}\label{fig:transfer}
+\end{figure}
+Across four conditions, 36 of 36 nonempty empirical test operating points exceed their nominal targets. These overlapping outcomes are not independent Bernoulli trials. At the 10\% target, Hard has 38.35\% mean coverage and 11.45\% mean achieved risk. At the 10\% target, Soft has 49.54\% mean coverage and 13.01\% mean achieved risk. Different achieved risks prevent interpreting this as greater coverage at equal risk.
+
+Before confidence selection, the annotation floor is 23.70\% in calibration and 26.67\% in testing: a +2.97 pp difference. Unsupported mass changes from 5.72\% to 7.88\%; the remaining floor difference is supported-category ambiguity. Thus, these populations differ in annotation composition even before a model supplies a ranking.
+
+For Soft at the nominal 20\% target, the accepted test-minus-calibration risk gap is +2.57 pp, comprising +1.98 pp unsupported mass, +0.78 pp supported ambiguity, and -0.19 pp excess. The figure and ledger supply the analogous accounting for every condition and target; this arithmetic does not identify independent causal contributions.
+
+For Hard, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.05 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.33 to +2.59 pp). For Tie-hard, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.18 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.34 to +2.77 pp). For Uniform, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.19 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.02 to +2.62 pp). For Soft, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.17 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.00 to +2.43 pp). The complete target-specific resamples are released. These diagnostics reveal within-calibration variability and accepted-population differences, but cannot uniquely separate distribution shift, finite-sample fluctuation, and threshold-search effects.
+The fixed-grid comparator yields 24 nonempty test operating points, of which 0 exceed their nominal targets. It abstains completely at the 10\% target for every condition and seed. Its observed conservatism therefore has a concrete coverage cost; these outcomes do not verify its population assumptions.

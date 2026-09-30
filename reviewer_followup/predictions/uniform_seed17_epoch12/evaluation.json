@@ -1,0 +1,28 @@
+{
+  "condition": "uniform",
+  "seed": 17,
+  "state": "epoch12",
+  "source": "reviewer_followup/runs/uniform_seed17/last.pt",
+  "source_sha256": "2c4f065dd85c5d8a35a1afd8d3ef3d0dc93d1f35e01638b2399d7537fb0b247d",
+  "epoch": 12,
+  "weight_sha256": "3cb7787daf9a99738730d5ae502ee6ae2a9614bfa551dc8e46d775b70c76c117",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "578f99c3c6ea8beed64da0b5d1c7c8c26d68222adf64bd9cea731a2daf70e099",
+      "prior_reference_bitwise_verified": false
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "31710a8072987cd0c33c7064cbace5167973078c0917c8e33f897df429c72105",
+      "prior_reference_bitwise_verified": false
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "aecba8dfe793f36cb8dd3a4bf0b37f3c1ffb8f7d866e5c921d28471016684d80",
+      "prior_reference_bitwise_verified": false
+    }
+  },
+  "started_utc": "2026-09-22T06:31:47.385804+00:00",
+  "finished_utc": "2026-09-22T06:32:10.644948+00:00"
+}

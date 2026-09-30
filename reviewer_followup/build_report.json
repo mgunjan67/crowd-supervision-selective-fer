@@ -1,0 +1,17 @@
+{
+  "abstract_words": 178,
+  "references": 20,
+  "unused_references": 0,
+  "unsupported_claim_scan": "passed",
+  "pdf": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\pdf\\crowd-supervision-final-revision.pdf",
+  "pdf_sha256": "41656e40c280a2e843cfe8d67681560ab9f20dc39b472da0f4edf87cd5dd22ac",
+  "pages": 18,
+  "rendered_pages": 18,
+  "warnings": 0,
+  "embedded_fonts": 28,
+  "source_sha256": "9557d044380a0366026ea6020d4347c4755197a969692eba8be44e846b457ee9",
+  "visual_review": "required, not implied by rendering",
+  "supplement_pdf_sha256": "4e526e2f71d5b2183affc38d0bd1535525446e35382b83acf61b6aaa2638bbc2",
+  "supplement_pages": 5,
+  "supplement_warnings": 0
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "pdf_sha256": "41656e40c280a2e843cfe8d67681560ab9f20dc39b472da0f4edf87cd5dd22ac",
+  "supplement_pdf_sha256": "4e526e2f71d5b2183affc38d0bd1535525446e35382b83acf61b6aaa2638bbc2",
+  "all_pages_inspected": true,
+  "all_supplement_pages_inspected": true,
+  "main_pages": 18,
+  "supplement_pages": 5,
+  "reviewed_date": "2026-09-22",
+  "method": "Each final rendered page viewed at readable resolution, including all tables, equations, plots, author details, declarations and references",
+  "corrections": ["Kept the full structured abstract on the title page by reducing title-block whitespace", "Moved the Figure 2 legend away from the plotted intervals"],
+  "findings": "No visible clipping, overlapping labels, broken equations, missing references or illegible tables in the reviewed final pages",
+  "scope": "Visual and layout inspection, not ethics clearance or external scientific replication"
+}

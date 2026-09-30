@@ -1,0 +1,11 @@
+\begin{table}[t]
+\caption{Selected-checkpoint risk at 80\% common coverage (2,620 of 3,275 images). Risk is mean $\pm$ sample SD across three seeds; components are means in percentage points}\label{tab:primary}
+\centering\begin{tabular}{lrrrr}\toprule
+Targets & Risk (\%) & Unsupported & Ambiguity & Excess\\\midrule
+Hard & $26.30 \pm 1.04$ & 6.65 & 16.14 & 3.51\\
+Tie-hard & $25.82 \pm 0.58$ & 6.67 & 16.03 & 3.13\\
+Uniform & $24.06 \pm 0.10$ & 6.41 & 15.41 & 2.24\\
+Soft & $23.68 \pm 0.07$ & 6.55 & 15.01 & 2.13\\
+\bottomrule\end{tabular}
+\smallskip\par\footnotesize The three components sum to risk, up to rounding. Accepted identities can differ between models; this is accounting, not causal attribution. Uniform preserves the dominant fraction but spreads remaining supported mass uniformly.
+\end{table}

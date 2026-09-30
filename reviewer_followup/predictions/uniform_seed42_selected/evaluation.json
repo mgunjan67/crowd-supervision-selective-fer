@@ -1,0 +1,28 @@
+{
+  "condition": "uniform",
+  "seed": 42,
+  "state": "selected",
+  "source": "reviewer_followup/runs/uniform_seed42/best.pt",
+  "source_sha256": "593fb1346fdda12a3bb18cbc61e6470ec86676351457224c9bd9121072bea863",
+  "epoch": 6,
+  "weight_sha256": "8950d03f1a749993fc8ee503c5016a5d9e2fa1f7e17237a8dee3f075bbdda183",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "d9cab6f4e752b986c5d861cf83f7d630246fabeb916143c57f7019ca466f04e1",
+      "prior_reference_bitwise_verified": true
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "6a2cc1df94db2feb6ddcfa06f87cfe43e798a3250a5d9e7556223b5e0eeb3cad",
+      "prior_reference_bitwise_verified": false
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "ddc566f37bd0aa5b9ef233a0ee500e6f554c01038b8efd4f0915d626c5d518b5",
+      "prior_reference_bitwise_verified": false
+    }
+  },
+  "started_utc": "2026-09-22T06:32:12.133478+00:00",
+  "finished_utc": "2026-09-22T06:32:35.115365+00:00"
+}

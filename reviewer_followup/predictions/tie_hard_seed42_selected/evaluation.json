@@ -1,0 +1,28 @@
+{
+  "condition": "tie_hard",
+  "seed": 42,
+  "state": "selected",
+  "source": "reviewer_followup/runs/tie_hard_seed42/best.pt",
+  "source_sha256": "37a32929291db0a762c2272d4536876d4dc9ee7dfdd18c0ca020b78426aec4ca",
+  "epoch": 4,
+  "weight_sha256": "690e31a715853c0dd2844901c7ac6d35502259b8725dcca116c4830bea128cc7",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "323ce63b560a16b9096e9fb25d45833165d3c823d7f6a71fa5ff9d56a79141f3",
+      "prior_reference_bitwise_verified": true
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "109291d3ebbd0dc2817ed6137d4639b7d1ec71218553066cd5961bbb08053c6d",
+      "prior_reference_bitwise_verified": false
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "6f7117a6b54e174b5df309e70a0dcb069df323aafd1ac06ef48548dc2e209ae2",
+      "prior_reference_bitwise_verified": false
+    }
+  },
+  "started_utc": "2026-09-22T06:34:40.065891+00:00",
+  "finished_utc": "2026-09-22T06:35:03.937716+00:00"
+}

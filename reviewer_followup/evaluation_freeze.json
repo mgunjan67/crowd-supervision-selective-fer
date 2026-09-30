@@ -1,0 +1,173 @@
+{
+  "frozen_utc": "2026-09-22T06:26:37.426030+00:00",
+  "checkpoints": [
+    {
+      "condition": "hard",
+      "seed": 17,
+      "state": "selected",
+      "source": "final_experiment/runs/hard_seed17/best.pt",
+      "source_sha256": "e0d3964cbe3e4f1bc64075228148d3ad030d3cb6f9bf5516b7e8bca81f4afff0"
+    },
+    {
+      "condition": "hard",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "final_experiment/runs/hard_seed17/last.pt",
+      "source_sha256": "64105e368fb8303de5ab1609ed78ac40e5d251fbfa4c397d872e05c0d6182912"
+    },
+    {
+      "condition": "hard",
+      "seed": 42,
+      "state": "selected",
+      "source": "final_experiment/runs/hard_seed42/best.pt",
+      "source_sha256": "fb7b0ede1873097d53d15328dfcea091a6dd5a02367f4429c8f77e792c31f855"
+    },
+    {
+      "condition": "hard",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "final_experiment/runs/hard_seed42/last.pt",
+      "source_sha256": "344834675e5936e31d75c1c90a27f9725e8a296f3a29c5719b480d0165b3e1d8"
+    },
+    {
+      "condition": "hard",
+      "seed": 89,
+      "state": "selected",
+      "source": "final_experiment/runs/hard_seed89/best.pt",
+      "source_sha256": "2abfb80f7a5d1df04ab5d6c07a80e59a6b40077b3b92b8a65490ac83635f2b86"
+    },
+    {
+      "condition": "hard",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "final_experiment/runs/hard_seed89/last.pt",
+      "source_sha256": "0b7b987cdd59834b7a3304cf07fa988ef2280ef00cb67832ba04beec31182402"
+    },
+    {
+      "condition": "soft",
+      "seed": 17,
+      "state": "selected",
+      "source": "final_experiment/runs/soft_seed17/best.pt",
+      "source_sha256": "57d58824e9e9df908063ef95301aaf9c65e4695668aaae3c0ba876e9d05643d1"
+    },
+    {
+      "condition": "soft",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "final_experiment/runs/soft_seed17/last.pt",
+      "source_sha256": "f4b53a84412d5ecd3f04d7806b2347effe86b69f26b8f3fdaee90202b47aad1d"
+    },
+    {
+      "condition": "soft",
+      "seed": 42,
+      "state": "selected",
+      "source": "final_experiment/runs/soft_seed42/best.pt",
+      "source_sha256": "01d7c974e9935c1b04d4dc1e1487c877d9631ed5909437a61a82e394a1d64e5f"
+    },
+    {
+      "condition": "soft",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "final_experiment/runs/soft_seed42/last.pt",
+      "source_sha256": "3f998257c931551d432d76e605a8579bdde68cf2e4183600d581b1126f988531"
+    },
+    {
+      "condition": "soft",
+      "seed": 89,
+      "state": "selected",
+      "source": "final_experiment/runs/soft_seed89/best.pt",
+      "source_sha256": "4afb399d05abc90e5557e0f80b0aa506999087a4c5c70c2afa705c89d70fa059"
+    },
+    {
+      "condition": "soft",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "final_experiment/runs/soft_seed89/last.pt",
+      "source_sha256": "66ac4851d0f691e74ea3b168748b1b08ac37b5a7f0dc75483cdd0817aad40811"
+    },
+    {
+      "condition": "uniform",
+      "seed": 17,
+      "state": "selected",
+      "source": "reviewer_followup/runs/uniform_seed17/best.pt",
+      "source_sha256": "6a1dc9661e3336c5fac2dbd6e2527a54659f913329423c00fcf0f0739703c021"
+    },
+    {
+      "condition": "uniform",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "reviewer_followup/runs/uniform_seed17/last.pt",
+      "source_sha256": "2c4f065dd85c5d8a35a1afd8d3ef3d0dc93d1f35e01638b2399d7537fb0b247d"
+    },
+    {
+      "condition": "uniform",
+      "seed": 42,
+      "state": "selected",
+      "source": "reviewer_followup/runs/uniform_seed42/best.pt",
+      "source_sha256": "593fb1346fdda12a3bb18cbc61e6470ec86676351457224c9bd9121072bea863"
+    },
+    {
+      "condition": "uniform",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "reviewer_followup/runs/uniform_seed42/last.pt",
+      "source_sha256": "788efd915c700f23e3b4b50e5f54daca7086b809baa3a1dc21d9f26760ee6d6f"
+    },
+    {
+      "condition": "uniform",
+      "seed": 89,
+      "state": "selected",
+      "source": "reviewer_followup/runs/uniform_seed89/best.pt",
+      "source_sha256": "f441020c625131a115d7af8de08139fc66eff826155f4f0eb5ac11d5ee6b8374"
+    },
+    {
+      "condition": "uniform",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "reviewer_followup/runs/uniform_seed89/last.pt",
+      "source_sha256": "920eba38e16119f0fc928f9f7fd3ff8ab0e267d8f702f6fef46d3d97e7fb5c40"
+    },
+    {
+      "condition": "tie_hard",
+      "seed": 17,
+      "state": "selected",
+      "source": "reviewer_followup/runs/tie_hard_seed17/best.pt",
+      "source_sha256": "9fb0a98ba3e450d090de733fa91dc56c4b7ab89b23b4174f5f0c7cc0c56682ff"
+    },
+    {
+      "condition": "tie_hard",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "reviewer_followup/runs/tie_hard_seed17/last.pt",
+      "source_sha256": "d4aeedd6338e453e589da6beba64ffe20d9ee08889df73d321a0b93b1a954014"
+    },
+    {
+      "condition": "tie_hard",
+      "seed": 42,
+      "state": "selected",
+      "source": "reviewer_followup/runs/tie_hard_seed42/best.pt",
+      "source_sha256": "37a32929291db0a762c2272d4536876d4dc9ee7dfdd18c0ca020b78426aec4ca"
+    },
+    {
+      "condition": "tie_hard",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "reviewer_followup/runs/tie_hard_seed42/last.pt",
+      "source_sha256": "e53e1d26188117c30a9935c0cc98873832959813a91c2b05079df0a6e5640da1"
+    },
+    {
+      "condition": "tie_hard",
+      "seed": 89,
+      "state": "selected",
+      "source": "reviewer_followup/runs/tie_hard_seed89/best.pt",
+      "source_sha256": "1157fda96a56c17397c460d67a5c4e0e75889ba4a582064ab29f77d145b10473"
+    },
+    {
+      "condition": "tie_hard",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "reviewer_followup/runs/tie_hard_seed89/last.pt",
+      "source_sha256": "ca2ad0753cbae8015793ba796cd6768682b61341ac193763b8193da68c79f82f"
+    }
+  ]
+}

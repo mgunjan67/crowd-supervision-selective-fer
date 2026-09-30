@@ -1,0 +1,9 @@
+{
+  "condition": "uniform",
+  "seed": 89,
+  "selected_epoch": 10,
+  "selection_value": 0.11359275086185562,
+  "checkpoint_sha256": "f441020c625131a115d7af8de08139fc66eff826155f4f0eb5ac11d5ee6b8374",
+  "finished_utc": "2026-09-22T05:46:35.429587+00:00",
+  "calibration_or_test_used": false
+}

@@ -1,0 +1,343 @@
+{
+  "status": "passed",
+  "checkpoints": [
+    {
+      "file": "hard_seed17_epoch12.pt",
+      "sha256": "d62a043a3e39c9ba8148bf0f3ae2dfd00d8c18cba5e6bf07d7644cab396c10f5",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "hard_seed17_selected.pt",
+      "sha256": "9f7c5d504a890cb65769f63631834b2ff7594a7ed593b9cebe7ba05991625570",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 3
+    },
+    {
+      "file": "hard_seed42_epoch12.pt",
+      "sha256": "805845c67166a89ce28df40eb74326dcdb301ad6f8f1b73e3822460d94e1d063",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "hard_seed42_selected.pt",
+      "sha256": "4de941b1cfffbffb7c864275f57e381cc246f3c3643acb934ef57f8c2b3d13d1",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 2
+    },
+    {
+      "file": "hard_seed89_epoch12.pt",
+      "sha256": "882dcef727d4c13754e70ccda2df2be19fc462a2924b6d47a9f982ae93863aaa",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "hard_seed89_selected.pt",
+      "sha256": "b00b4fa13db073a5a0aae523c1e950b0e095ce74b0fff9b43200a4e64f44c40b",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 5
+    },
+    {
+      "file": "soft_seed17_epoch12.pt",
+      "sha256": "3836378d926cd5b82fa3348a949c107105bc92a39b4e3fa7c42c052fa665fe64",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "soft_seed17_selected.pt",
+      "sha256": "812030d4d5da68edd7443732bfbd777a8a9e11494b4bbf305d5de50b93496282",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 9
+    },
+    {
+      "file": "soft_seed42_epoch12.pt",
+      "sha256": "b90ee480982814aae09b795bfd9fc365553a3db0de5acb2daa6adf517235963d",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "soft_seed42_selected.pt",
+      "sha256": "91e8f4c49ee90f0f6e17094a774824c3f4de7ebf05fd554d7a28210119f0fd77",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 10
+    },
+    {
+      "file": "soft_seed89_epoch12.pt",
+      "sha256": "53abd87d81046030ba222467164e9b49cc15aded57338441a1d7670dea4aef4a",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "soft_seed89_selected.pt",
+      "sha256": "8859b107324609d6c631118c3a5a36b5128fe1b9de45eb95d07bb4b49a968dac",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 10
+    },
+    {
+      "file": "tie_hard_seed17_epoch12.pt",
+      "sha256": "1c3ab1a42c2d93f0980c846e0a90c01cf33f2e5406b226fba72a7b48b612e94a",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "tie_hard_seed17_selected.pt",
+      "sha256": "e89e984a388edce2d294b06ce06268dc5b50f92297391ce4b6d47a378329bee6",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 4
+    },
+    {
+      "file": "tie_hard_seed42_epoch12.pt",
+      "sha256": "0ad66782e540b1177f4b12f05115054bdd4584c8e5a62311453dbcc1dfa1ef1d",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "tie_hard_seed42_selected.pt",
+      "sha256": "690e31a715853c0dd2844901c7ac6d35502259b8725dcca116c4830bea128cc7",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 4
+    },
+    {
+      "file": "tie_hard_seed89_epoch12.pt",
+      "sha256": "63c14a8583be0b8978bd2fdcdd0392315544880463f26c75ba85b77ef21671f7",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "tie_hard_seed89_selected.pt",
+      "sha256": "f1e83069abb12fef1230cc8dd505dd95c258ae53c490ff87422de11898687f7c",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 5
+    },
+    {
+      "file": "uniform_seed17_epoch12.pt",
+      "sha256": "3cb7787daf9a99738730d5ae502ee6ae2a9614bfa551dc8e46d775b70c76c117",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "uniform_seed17_selected.pt",
+      "sha256": "64a1ec2ca2f7ef60d7d121653623ae1f31a33295bf1572b3c51e6210146cbe3b",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 9
+    },
+    {
+      "file": "uniform_seed42_epoch12.pt",
+      "sha256": "c2fc5dfd5d4e1f14004a592ad405fb9aab04c7e766d75e39e247824b100e725b",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "uniform_seed42_selected.pt",
+      "sha256": "8950d03f1a749993fc8ee503c5016a5d9e2fa1f7e17237a8dee3f075bbdda183",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 6
+    },
+    {
+      "file": "uniform_seed89_epoch12.pt",
+      "sha256": "a209048d92c610a5d711f2bac9bf883f9049f31aedbbce6a671ce8a2ae8c3d43",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 12
+    },
+    {
+      "file": "uniform_seed89_selected.pt",
+      "sha256": "15dda6e3005f2349d204ba5a1559aaf2bc791666af25ddcaf4de22cb8cf52593",
+      "class_names": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ],
+      "epoch": 10
+    }
+  ],
+  "app_code_sha256": "e2233474e8c33a43dddae9bf066e9b61e0faeea099c797bbccf4eba97b33ee4c",
+  "scope": "Actual weights match the unchanged app/model class order, preprocessing and single pooled-vector gate"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "rows_checked": 35887,
+  "archive_sha256": "0053fdef247c8db3c1967c7a81898485eaa1d75489f43493fb4d8fa727f14698",
+  "csv_sha256": "3b8d9617d1017f34733c8f2474d7784c563ce86c40a86ac12c2d37cc968f871b",
+  "audit_code_sha256": "5e9afa5dcf788275db2bef5c47906a4b6fea443b0edbe2bfc880f197fe0a4471",
+  "original_numeric_class_order": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "sad",
+    "surprise",
+    "neutral"
+  ],
+  "canonical_class_order": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ],
+  "original_to_canonical_ids": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    4
+  ],
+  "checks": [
+    "raw original emotion IDs",
+    "original pixel bytes",
+    "original row index",
+    "FER+ partition alignment",
+    "all class counts"
+  ],
+  "scope": "Internal consistency with retained community-mirror archive, not independent proof of image authenticity or rights"
+}

@@ -1,0 +1,28 @@
+{
+  "condition": "soft",
+  "seed": 42,
+  "state": "selected",
+  "source": "final_experiment/runs/soft_seed42/best.pt",
+  "source_sha256": "01d7c974e9935c1b04d4dc1e1487c877d9631ed5909437a61a82e394a1d64e5f",
+  "epoch": 10,
+  "weight_sha256": "91e8f4c49ee90f0f6e17094a774824c3f4de7ebf05fd554d7a28210119f0fd77",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "c9cfde4f2d37f5bd0a0f3d7e0c23a954df406a649061202de9d5bc2f2a3fdb83",
+      "prior_reference_bitwise_verified": true
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "32abf259f72fc722cb94bf45a180e4fdf3d1db505cc4d24dda78706d14e810ea",
+      "prior_reference_bitwise_verified": true
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "8e55659d5fd586c088024775831dbf5071c58946d733c09040d40667ec9e494e",
+      "prior_reference_bitwise_verified": true
+    }
+  },
+  "started_utc": "2026-09-22T06:29:44.048895+00:00",
+  "finished_utc": "2026-09-22T06:30:05.676069+00:00"
+}

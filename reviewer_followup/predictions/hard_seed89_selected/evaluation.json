@@ -1,0 +1,28 @@
+{
+  "condition": "hard",
+  "seed": 89,
+  "state": "selected",
+  "source": "final_experiment/runs/hard_seed89/best.pt",
+  "source_sha256": "2abfb80f7a5d1df04ab5d6c07a80e59a6b40077b3b92b8a65490ac83635f2b86",
+  "epoch": 5,
+  "weight_sha256": "b00b4fa13db073a5a0aae523c1e950b0e095ce74b0fff9b43200a4e64f44c40b",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "543d5b01df191f38d5a617f303112edcff3b40df2c00a425ffb1d500c0cf01ff",
+      "prior_reference_bitwise_verified": true
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "e9ead98e205c8e361ec6dc30a6baf921d3c6d3c26348aa95d6109b092b2746e0",
+      "prior_reference_bitwise_verified": true
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "ec75785a249645658f1dd383c04e4388bae176f8f87c8216cc23e3bd09db42c6",
+      "prior_reference_bitwise_verified": true
+    }
+  },
+  "started_utc": "2026-09-22T06:28:11.677074+00:00",
+  "finished_utc": "2026-09-22T06:28:33.079469+00:00"
+}

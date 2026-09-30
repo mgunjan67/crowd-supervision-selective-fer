@@ -1,0 +1,437 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{20}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem[\protect\citeauthoryear{Wang et~al.}{2016}]{wang2016emotionpush}
+\begin{bchapter}
+\bauthor{\bsnm{Wang}, \binits{S.-M.}},
+\bauthor{\bsnm{Lee}, \binits{C.-H.S.}},
+\bauthor{\bsnm{Lo}, \binits{Y.-C.}},
+\bauthor{\bsnm{Huang}, \binits{T.-H.}},
+\bauthor{\bsnm{Ku}, \binits{L.-W.}}:
+\bctitle{Sensing emotions in text messages: An application and deployment study
+  of {EmotionPush}}.
+In: \bbtitle{Proceedings of {COLING} 2016, the 26th International Conference on
+  Computational Linguistics: System Demonstrations},
+pp. \bfpage{141}--\blpage{145}.
+\bpublisher{The COLING 2016 Organizing Committee},
+\blocation{Osaka, Japan}
+(\byear{2016}).
+\burl{https://aclanthology.org/C16-2030/}
+\end{bchapter}
+\endbibitem
+
+%%% 2
+\bibitem[\protect\citeauthoryear{Chong et~al.}{2019}]{chong2019emochat}
+\begin{bchapter}
+\bauthor{\bsnm{Chong}, \binits{L.}},
+\bauthor{\bsnm{Jin}, \binits{M.}},
+\bauthor{\bsnm{He}, \binits{Y.}}:
+\bctitle{{EmoChat}: Bringing multimodal emotion detection to mobile
+  conversation}.
+In: \bbtitle{2019 5th International Conference on Big Data Computing and
+  Communications (BIGCOM)},
+pp. \bfpage{213}--\blpage{221}
+(\byear{2019}).
+\doiurl{10.1109/BIGCOM.2019.00037}
+\end{bchapter}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{Liu et~al.}{2019}]{liu2019selfawareness}
+\begin{bchapter}
+\bauthor{\bsnm{Liu}, \binits{L.}},
+\bauthor{\bsnm{Guta}, \binits{D.}},
+\bauthor{\bsnm{Niu}, \binits{S.}}:
+\bctitle{Integration of user emotion and self-awareness in text messaging}.
+In: \bbtitle{2019 IEEE 5th International Conference on Collaboration and
+  Internet Computing (CIC)},
+pp. \bfpage{178}--\blpage{183}
+(\byear{2019}).
+\doiurl{10.1109/CIC48465.2019.00030}
+\end{bchapter}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Barrett et~al.}{2019}]{barrett2019emotions}
+\begin{barticle}
+\bauthor{\bsnm{Barrett}, \binits{L.F.}},
+\bauthor{\bsnm{Adolphs}, \binits{R.}},
+\bauthor{\bsnm{Marsella}, \binits{S.}},
+\bauthor{\bsnm{Martinez}, \binits{A.M.}},
+\bauthor{\bsnm{Pollak}, \binits{S.D.}}:
+\batitle{Emotional expressions reconsidered: Challenges to inferring emotion
+  from human facial movements}.
+\bjtitle{Psychological Science in the Public Interest}
+\bvolume{20}(\bissue{1}),
+\bfpage{1}--\blpage{68}
+(\byear{2019})
+\doiurl{10.1177/1529100619832930}
+\end{barticle}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{Goodfellow et~al.}{2013}]{goodfellow2013fer}
+\begin{bchapter}
+\bauthor{\bsnm{Goodfellow}, \binits{I.J.}},
+\bauthor{\bsnm{Erhan}, \binits{D.}},
+\bauthor{\bsnm{Carrier}, \binits{P.L.}},
+\bauthor{\bsnm{Courville}, \binits{A.}},
+\bauthor{\bsnm{Mirza}, \binits{M.}},
+\bauthor{\bsnm{Hamner}, \binits{B.}},
+\bauthor{\bsnm{Cukierski}, \binits{W.}},
+\bauthor{\bsnm{Tang}, \binits{Y.}},
+\bauthor{\bsnm{Thaler}, \binits{D.}},
+\bauthor{\bsnm{Lee}, \binits{D.-H.}},
+\bauthor{\bsnm{Zhou}, \binits{Y.}},
+\bauthor{\bsnm{Ramaiah}, \binits{C.}},
+\bauthor{\bsnm{Feng}, \binits{F.}},
+\bauthor{\bsnm{Li}, \binits{R.}},
+\bauthor{\bsnm{Wang}, \binits{X.}},
+\bauthor{\bsnm{Athanasakis}, \binits{D.}},
+\bauthor{\bsnm{Shawe-Taylor}, \binits{J.}},
+\bauthor{\bsnm{Milakov}, \binits{M.}},
+\bauthor{\bsnm{Park}, \binits{J.}},
+\bauthor{\bsnm{Ionescu}, \binits{R.}},
+\bauthor{\bsnm{Popescu}, \binits{M.}},
+\bauthor{\bsnm{Grozea}, \binits{C.}},
+\bauthor{\bsnm{Bergstra}, \binits{J.}},
+\bauthor{\bsnm{Xie}, \binits{J.}},
+\bauthor{\bsnm{Romaszko}, \binits{L.}},
+\bauthor{\bsnm{Xu}, \binits{B.}},
+\bauthor{\bsnm{Chuang}, \binits{Z.}},
+\bauthor{\bsnm{Bengio}, \binits{Y.}}:
+\bctitle{Challenges in representation learning: A report on three machine
+  learning contests}.
+In: \beditor{\bsnm{Lee}, \binits{M.}},
+\beditor{\bsnm{Hirose}, \binits{A.}},
+\beditor{\bsnm{Hou}, \binits{Z.-G.}},
+\beditor{\bsnm{Kil}, \binits{R.M.}} (eds.)
+\bbtitle{Neural Information Processing}.
+\bsertitle{Lecture Notes in Computer Science},
+vol. \bseriesno{8228},
+pp. \bfpage{117}--\blpage{124}.
+\bpublisher{Springer},
+\blocation{Berlin, Heidelberg}
+(\byear{2013}).
+\doiurl{10.1007/978-3-642-42051-1_16}
+\end{bchapter}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{Barsoum et~al.}{2016}]{barsoum2016ferplus}
+\begin{bchapter}
+\bauthor{\bsnm{Barsoum}, \binits{E.}},
+\bauthor{\bsnm{Zhang}, \binits{C.}},
+\bauthor{\bsnm{Canton~Ferrer}, \binits{C.}},
+\bauthor{\bsnm{Zhang}, \binits{Z.}}:
+\bctitle{Training deep networks for facial expression recognition with
+  crowd-sourced label distribution}.
+In: \bbtitle{Proceedings of the 18th ACM International Conference on Multimodal
+  Interaction},
+pp. \bfpage{279}--\blpage{283}.
+\bpublisher{Association for Computing Machinery},
+\blocation{New York, NY, USA}
+(\byear{2016}).
+\doiurl{10.1145/2993148.2993165}
+\end{bchapter}
+\endbibitem
+
+%%% 7
+\bibitem[\protect\citeauthoryear{Wang et~al.}{2020}]{wang2020scn}
+\begin{bchapter}
+\bauthor{\bsnm{Wang}, \binits{K.}},
+\bauthor{\bsnm{Peng}, \binits{X.}},
+\bauthor{\bsnm{Yang}, \binits{J.}},
+\bauthor{\bsnm{Lu}, \binits{S.}},
+\bauthor{\bsnm{Qiao}, \binits{Y.}}:
+\bctitle{Suppressing uncertainties for large-scale facial expression
+  recognition}.
+In: \bbtitle{2020 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition},
+pp. \bfpage{6897}--\blpage{6906}
+(\byear{2020}).
+\doiurl{10.1109/CVPR42600.2020.00693}
+\end{bchapter}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Liu et~al.}{2021}]{liu2021swin}
+\begin{bchapter}
+\bauthor{\bsnm{Liu}, \binits{Z.}},
+\bauthor{\bsnm{Lin}, \binits{Y.}},
+\bauthor{\bsnm{Cao}, \binits{Y.}},
+\bauthor{\bsnm{Hu}, \binits{H.}},
+\bauthor{\bsnm{Wei}, \binits{Y.}},
+\bauthor{\bsnm{Zhang}, \binits{Z.}},
+\bauthor{\bsnm{Lin}, \binits{S.}},
+\bauthor{\bsnm{Guo}, \binits{B.}}:
+\bctitle{Swin transformer: Hierarchical vision transformer using shifted
+  windows}.
+In: \bbtitle{2021 IEEE/CVF International Conference on Computer Vision},
+pp. \bfpage{9992}--\blpage{10002}
+(\byear{2021}).
+\doiurl{10.1109/ICCV48922.2021.00986}
+\end{bchapter}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Hu et~al.}{2018}]{hu2018senet}
+\begin{bchapter}
+\bauthor{\bsnm{Hu}, \binits{J.}},
+\bauthor{\bsnm{Shen}, \binits{L.}},
+\bauthor{\bsnm{Sun}, \binits{G.}}:
+\bctitle{Squeeze-and-excitation networks}.
+In: \bbtitle{2018 IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition},
+pp. \bfpage{7132}--\blpage{7141}
+(\byear{2018}).
+\doiurl{10.1109/CVPR.2018.00745}
+\end{bchapter}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Le et~al.}{2023}]{le2023uncertainty}
+\begin{bchapter}
+\bauthor{\bsnm{Le}, \binits{N.}},
+\bauthor{\bsnm{Nguyen}, \binits{K.}},
+\bauthor{\bsnm{Tran}, \binits{Q.}},
+\bauthor{\bsnm{Tjiputra}, \binits{E.}},
+\bauthor{\bsnm{Le}, \binits{B.}},
+\bauthor{\bsnm{Nguyen}, \binits{A.}}:
+\bctitle{Uncertainty-aware label distribution learning for facial expression
+  recognition}.
+In: \bbtitle{2023 IEEE/CVF Winter Conference on Applications of Computer Vision
+  (WACV)},
+pp. \bfpage{6077}--\blpage{6086}
+(\byear{2023}).
+\doiurl{10.1109/WACV56688.2023.00603}
+\end{bchapter}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Kawamura et~al.}{2024}]{kawamura2024midas}
+\begin{bchapter}
+\bauthor{\bsnm{Kawamura}, \binits{R.}},
+\bauthor{\bsnm{Hayashi}, \binits{H.}},
+\bauthor{\bsnm{Takemura}, \binits{N.}},
+\bauthor{\bsnm{Nagahara}, \binits{H.}}:
+\bctitle{{MIDAS}: Mixing ambiguous data with soft labels for dynamic facial
+  expression recognition}.
+In: \bbtitle{2024 IEEE/CVF Winter Conference on Applications of Computer Vision
+  (WACV)},
+pp. \bfpage{6538}--\blpage{6548}
+(\byear{2024}).
+\doiurl{10.1109/WACV57701.2024.00642}
+\end{bchapter}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{Geifman and
+  El-Yaniv}{2017}]{geifman2017selective}
+\begin{bchapter}
+\bauthor{\bsnm{Geifman}, \binits{Y.}},
+\bauthor{\bsnm{El-Yaniv}, \binits{R.}}:
+\bctitle{Selective classification for deep neural networks}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{30}
+(\byear{2017}).
+\doiurl{10.48550/arXiv.1705.08500}
+\end{bchapter}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Geifman and
+  El-Yaniv}{2019}]{geifman2019selectivenet}
+\begin{bchapter}
+\bauthor{\bsnm{Geifman}, \binits{Y.}},
+\bauthor{\bsnm{El-Yaniv}, \binits{R.}}:
+\bctitle{{SelectiveNet}: A deep neural network with an integrated reject
+  option}.
+In: \bbtitle{Proceedings of the 36th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{97},
+pp. \bfpage{2151}--\blpage{2159}
+(\byear{2019}).
+\burl{https://proceedings.mlr.press/v97/geifman19a.html}
+\end{bchapter}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Guo et~al.}{2017}]{guo2017calibration}
+\begin{bchapter}
+\bauthor{\bsnm{Guo}, \binits{C.}},
+\bauthor{\bsnm{Pleiss}, \binits{G.}},
+\bauthor{\bsnm{Sun}, \binits{Y.}},
+\bauthor{\bsnm{Weinberger}, \binits{K.Q.}}:
+\bctitle{On calibration of modern neural networks}.
+In: \bbtitle{Proceedings of the 34th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{70},
+pp. \bfpage{1321}--\blpage{1330}
+(\byear{2017}).
+\burl{https://proceedings.mlr.press/v70/guo17a.html}
+\end{bchapter}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Deng et~al.}{2009}]{deng2009imagenet}
+\begin{bchapter}
+\bauthor{\bsnm{Deng}, \binits{J.}},
+\bauthor{\bsnm{Dong}, \binits{W.}},
+\bauthor{\bsnm{Socher}, \binits{R.}},
+\bauthor{\bsnm{Li}, \binits{L.-J.}},
+\bauthor{\bsnm{Li}, \binits{K.}},
+\bauthor{\bsnm{Fei-Fei}, \binits{L.}}:
+\bctitle{{ImageNet}: A large-scale hierarchical image database}.
+In: \bbtitle{2009 IEEE Conference on Computer Vision and Pattern Recognition},
+pp. \bfpage{248}--\blpage{255}
+(\byear{2009}).
+\doiurl{10.1109/CVPR.2009.5206848}
+\end{bchapter}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Paszke et~al.}{2019}]{paszke2019pytorch}
+\begin{bchapter}
+\bauthor{\bsnm{Paszke}, \binits{A.}},
+\bauthor{\bsnm{Gross}, \binits{S.}},
+\bauthor{\bsnm{Massa}, \binits{F.}},
+\bauthor{\bsnm{Lerer}, \binits{A.}},
+\bauthor{\bsnm{Bradbury}, \binits{J.}},
+\bauthor{\bsnm{Chanan}, \binits{G.}},
+\bauthor{\bsnm{Killeen}, \binits{T.}},
+\bauthor{\bsnm{Lin}, \binits{Z.}},
+\bauthor{\bsnm{Gimelshein}, \binits{N.}},
+\bauthor{\bsnm{Antiga}, \binits{L.}},
+\bauthor{\bsnm{Desmaison}, \binits{A.}},
+\bauthor{\bsnm{K{\"o}pf}, \binits{A.}},
+\bauthor{\bsnm{Yang}, \binits{E.}},
+\bauthor{\bsnm{DeVito}, \binits{Z.}},
+\bauthor{\bsnm{Raison}, \binits{M.}},
+\bauthor{\bsnm{Tejani}, \binits{A.}},
+\bauthor{\bsnm{Chilamkurthy}, \binits{S.}},
+\bauthor{\bsnm{Steiner}, \binits{B.}},
+\bauthor{\bsnm{Fang}, \binits{L.}},
+\bauthor{\bsnm{Bai}, \binits{J.}},
+\bauthor{\bsnm{Chintala}, \binits{S.}}:
+\bctitle{{PyTorch}: An imperative style, high-performance deep learning
+  library}.
+In: \bbtitle{Advances in Neural Information Processing Systems 32},
+pp. \bfpage{8024}--\blpage{8035}
+(\byear{2019}).
+\doiurl{10.48550/arXiv.1912.01703}
+\end{bchapter}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Loshchilov and
+  Hutter}{2019}]{loshchilov2019adamw}
+\begin{bchapter}
+\bauthor{\bsnm{Loshchilov}, \binits{I.}},
+\bauthor{\bsnm{Hutter}, \binits{F.}}:
+\bctitle{Decoupled weight decay regularization}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2019}).
+\burl{https://openreview.net/forum?id=Bkg6RiCqY7}
+\end{bchapter}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Sokolova and
+  Lapalme}{2009}]{sokolova2009metrics}
+\begin{barticle}
+\bauthor{\bsnm{Sokolova}, \binits{M.}},
+\bauthor{\bsnm{Lapalme}, \binits{G.}}:
+\batitle{A systematic analysis of performance measures for classification
+  tasks}.
+\bjtitle{Information Processing \& Management}
+\bvolume{45}(\bissue{4}),
+\bfpage{427}--\blpage{437}
+(\byear{2009})
+\doiurl{10.1016/j.ipm.2009.03.002}
+\end{barticle}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Hoeffding}{1963}]{hoeffding1963}
+\begin{barticle}
+\bauthor{\bsnm{Hoeffding}, \binits{W.}}:
+\batitle{Probability inequalities for sums of bounded random variables}.
+\bjtitle{Journal of the American Statistical Association}
+\bvolume{58}(\bissue{301}),
+\bfpage{13}--\blpage{30}
+(\byear{1963})
+\doiurl{10.1080/01621459.1963.10500830}
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Lugaresi et~al.}{2019}]{lugaresi2019mediapipe}
+\begin{bchapter}
+\bauthor{\bsnm{Lugaresi}, \binits{C.}},
+\bauthor{\bsnm{Tang}, \binits{J.}},
+\bauthor{\bsnm{Nash}, \binits{H.}},
+\bauthor{\bsnm{McClanahan}, \binits{C.}},
+\bauthor{\bsnm{Uboweja}, \binits{E.}},
+\bauthor{\bsnm{Hays}, \binits{M.}},
+\bauthor{\bsnm{Zhang}, \binits{F.}},
+\bauthor{\bsnm{Chang}, \binits{C.-L.}},
+\bauthor{\bsnm{Yong}, \binits{M.G.}},
+\bauthor{\bsnm{Lee}, \binits{J.}},
+\bauthor{\bsnm{Chang}, \binits{W.-T.}},
+\bauthor{\bsnm{Hua}, \binits{W.}},
+\bauthor{\bsnm{Georg}, \binits{M.}},
+\bauthor{\bsnm{Grundmann}, \binits{M.}}:
+\bctitle{{MediaPipe}: A framework for building perception pipelines}.
+In: \bbtitle{Third Workshop on Computer Vision for AR/VR at IEEE CVPR}
+(\byear{2019}).
+\doiurl{10.48550/arXiv.1906.08172}
+\end{bchapter}
+\endbibitem
+
+\end{thebibliography}

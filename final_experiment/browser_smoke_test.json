@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "observed_utc_date": "2026-09-21",
+  "interface": "actual Streamlit app in Codex in-app browser, loopback port 8517",
+  "checkpoint": "soft_seed17",
+  "checkpoint_sha256": "57d58824e9e9df908063ef95301aaf9c65e4695668aaae3c0ba876e9d05643d1",
+  "app_sha256": "e2233474e8c33a43dddae9bf066e9b61e0faeea099c797bbccf4eba97b33ee4c",
+  "device": "cpu",
+  "webrtc_transport_stubbed": false,
+  "initial_opt_in_unchecked": true,
+  "opt_in_checked_before_submission": true,
+  "message_visible_after_submission": true,
+  "camera_off_suppresses_cue": true,
+  "suppression_explanation_visible": true,
+  "opt_in_resets_after_submission": true,
+  "message_field_clears_after_submission": true,
+  "camera_started": false,
+  "camera_permission_requested": false,
+  "participant_data_used": false,
+  "recipient_transmission": false,
+  "test_environment_note": "Initial helper attempt used an empty CUDA_VISIBLE_DEVICES and failed device discovery. The helper was corrected to -1 with PYTORCH_NVML_BASED_CUDA_CHECK=0; app source and checkpoint were unchanged.",
+  "scope": "Camera-off software verification, not live facial inference or a usability study"
+}
