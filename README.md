@@ -18,7 +18,9 @@ Use the [v1.0.0 release](https://github.com/mgunjan67/crowd-supervision-selectiv
 
 ## Read the paper and reproduce
 
-- [Main manuscript PDF](manuscript/crowd-supervision-final-revision.pdf)
+- [Current submission manuscript PDF with repository links](manuscript/submission-with-repository-links.pdf)
+- [Editable source for the current submission edition](manuscript/submission-source-with-repository-links.zip)
+- [Original audited manuscript PDF](manuscript/crowd-supervision-final-revision.pdf)
 - [Supplementary diagnostics PDF](manuscript/Supplementary-diagnostics.pdf)
 - [Complete reproduction instructions](REPRODUCIBILITY.md)
 - [Data alignment](reviewer_followup/DATA_ALIGNMENT.md)
