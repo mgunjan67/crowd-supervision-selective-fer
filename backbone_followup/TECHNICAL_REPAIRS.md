@@ -1,0 +1,3 @@
+# Technical repair before the first completed epoch
+
+The original driver launch failed during Windows DataLoader worker import: prepending code/ to sys.path made the module name train resolve to the unrelated public CLI instead of this training module. No epoch or model checkpoint was completed, and no calibration/test predictions were evaluated. The failed configuration/environment and original freeze are preserved. Append code/ instead of prepending it. No scientific settings, targets, architecture, images, sample order, seeds or endpoints change. A new freeze records this repair before restart.

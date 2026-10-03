@@ -1,0 +1,131 @@
+{
+  "frozen_utc": "2026-10-03T18:26:33.515277+00:00",
+  "checkpoints": [
+    {
+      "condition": "soft",
+      "seed": 17,
+      "state": "selected",
+      "source": "backbone_followup/runs/soft_seed17/best.pt",
+      "source_sha256": "4f5f943bc5dfd9905a183a6f88328509da800d67eaac95685f598e45752a3ca3"
+    },
+    {
+      "condition": "soft",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/soft_seed17/last.pt",
+      "source_sha256": "8eca130bcb37c1cf8b60c8b0c5bd4d724f766377dbc84eb83f24f742b0263eb5"
+    },
+    {
+      "condition": "uniform",
+      "seed": 17,
+      "state": "selected",
+      "source": "backbone_followup/runs/uniform_seed17/best.pt",
+      "source_sha256": "7a3a95f027ffd73977f6c0172f8ff4194a05a0fcb17be921c98d2728a1b07b86"
+    },
+    {
+      "condition": "uniform",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/uniform_seed17/last.pt",
+      "source_sha256": "c936b475cff75e28902dc83bd43938b7ba19d5bfedcea300084ea85915fb0cff"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 17,
+      "state": "selected",
+      "source": "backbone_followup/runs/tie_uniform_seed17/best.pt",
+      "source_sha256": "09e3c0ceb548b7b30e0609a524f01b11a2f024242b1b48dd66c1be356fb75b74"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/tie_uniform_seed17/last.pt",
+      "source_sha256": "1d4e10bc824200861b2c82dab2eb00580e06c76c09c615d479a8b195889a91fc"
+    },
+    {
+      "condition": "soft",
+      "seed": 42,
+      "state": "selected",
+      "source": "backbone_followup/runs/soft_seed42/best.pt",
+      "source_sha256": "72323d8d218e665a67417e41693086a5c6d525d34c9d8a4cd23344526e8aedd5"
+    },
+    {
+      "condition": "soft",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/soft_seed42/last.pt",
+      "source_sha256": "db10e2420321458c0c19a6874ef6a9634199ec737572b05f68041ffba63ae86b"
+    },
+    {
+      "condition": "uniform",
+      "seed": 42,
+      "state": "selected",
+      "source": "backbone_followup/runs/uniform_seed42/best.pt",
+      "source_sha256": "5c9b829bde9905dcbde5f3d50eb0030b3647159258a557aac16de85efe7a0ba6"
+    },
+    {
+      "condition": "uniform",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/uniform_seed42/last.pt",
+      "source_sha256": "7a0dd140072dd7aa9cf6aa56c1de473bd034e1f0849c469b45990106a8b492ea"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 42,
+      "state": "selected",
+      "source": "backbone_followup/runs/tie_uniform_seed42/best.pt",
+      "source_sha256": "061e581de03249905bc7ff60710fe7b52083457fdb8095322e0beddc35682851"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/tie_uniform_seed42/last.pt",
+      "source_sha256": "0bd7160f30f160a2b24e202aea35684110ddf7e53ffc09104dbd7666e3295239"
+    },
+    {
+      "condition": "soft",
+      "seed": 89,
+      "state": "selected",
+      "source": "backbone_followup/runs/soft_seed89/best.pt",
+      "source_sha256": "ef7f7d5b1f11fdc90c3dbe6ac79b6dd25f689aeed6b960c87eee7bf8ed29c095"
+    },
+    {
+      "condition": "soft",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/soft_seed89/last.pt",
+      "source_sha256": "2af8e2e86f3c3ca9856a864d4693d45e5d1f66326940f43ec75be6906d6cb440"
+    },
+    {
+      "condition": "uniform",
+      "seed": 89,
+      "state": "selected",
+      "source": "backbone_followup/runs/uniform_seed89/best.pt",
+      "source_sha256": "228a4e0fa305072a7d60ee5b26346487d05f491cd9be8a489577490eb4082cc3"
+    },
+    {
+      "condition": "uniform",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/uniform_seed89/last.pt",
+      "source_sha256": "c895b9c1a7edce8258c85805e674a8d323c90e2b8aac61865b904131df7da336"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 89,
+      "state": "selected",
+      "source": "backbone_followup/runs/tie_uniform_seed89/best.pt",
+      "source_sha256": "aab6cba2ca0747c28458022d91b0e860e4a2a7732b0b47fccb95ffce2ae537c5"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "backbone_followup/runs/tie_uniform_seed89/last.pt",
+      "source_sha256": "a3579cedd98d361a2abe31d6a1b96c0797716e0103491d8bd6e94ddb0c6c15de"
+    }
+  ]
+}

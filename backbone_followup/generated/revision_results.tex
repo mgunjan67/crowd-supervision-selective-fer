@@ -1,0 +1,19 @@
+\subsection{Fixed-image comparisons and reference effects}
+Table~\ref{tab:cross} holds the accepted image set fixed within each column.
+\input{backbone_followup/generated/cross.tex}
+On Uniform-selected images, Soft minus Uniform is +0.085 pp; on Soft-selected images it is -0.352 pp. Within a column, annotations and the floor are identical, so the risk difference is also a category-choice excess difference on that image set. Holding the Uniform predictor fixed, changing from its own set to the Soft set changes risk by -0.025 pp; for the Soft predictor the corresponding change is -0.463 pp. Thus, the own-set contrast is not a consistent category-choice improvement on a fixed image set. Predictor and selector interact; these cross-evaluations are not a unique causal decomposition. The mean Jaccard overlap is 0.8408; individual intersections and overlap fractions are released.
+\input{backbone_followup/generated/same_f1.tex}
+In Table~\ref{tab:samef1}, the last two columns hold the image population fixed while changing the categorical reference. The first two hold the original-label reference fixed while changing the population. Their differences therefore disentangle two sources of the superficially large original-versus-crowd F1 contrast. The reference confusion matrix is supplied in the supplement; neither reference is treated as emotional truth.
+\begin{figure}[t]\centering\includegraphics[width=\linewidth]{backbone_followup/figures/RiskDifference.pdf}
+\caption{Soft-minus-Uniform complete-vote disagreement versus common coverage. Thin curves are paired seeds; the thick curve is their mean. Curves use each model's own ranking, not identical image sets. The vertical marker identifies the primary 80\% endpoint; this descriptive curve has no simultaneous uncertainty band}\label{fig:difference}\end{figure}
+\subsection{Tie-preserving dominant-confidence control}
+Table~\ref{tab:tieuniform} reports both checkpoint states for the new secondary comparison.
+\input{backbone_followup/generated/tie_control.tex}
+Selected: paired Soft-minus-Tie-Uniform differences are -0.378, -0.584, -0.802 pp for seeds 17, 42, and 89. The conditional interval lies below zero. Epoch12: paired Soft-minus-Tie-Uniform differences are -0.435, -0.221, -0.263 pp for seeds 17, 42, and 89. The conditional interval lies below zero. This secondary comparison removes canonical tie asymmetry from Uniform but still changes target entropy and class marginals relative to Soft. It cannot isolate a unique minority-category identity mechanism.
+\input{backbone_followup/generated/epochs.tex}
+Training-loss and selection-distance trajectories are supplied for every run in the supplement. Loss scales differ by target construction and are not directly comparable evidence of better fitting.
+\subsection{Retention of unsupported categories}
+Table~\ref{tab:retention} retains individual seed counts rather than only a mean ordering.
+\input{backbone_followup/generated/retention.tex}
+Soft retains 11.00 of the 16 zero-supported-mass images on average, versus 7.00 for Uniform and 6.67 for Tie-Uniform. Better aggregate risk therefore does not imply better rejection of wholly unsupported annotations. These small counts are descriptive, not an estimated deployment failure rate. Contempt, unknown and not-a-face vote-mass breakdowns are supplied separately rather than interpreted as one semantic category.
+Before confidence selection, calibration vote mass is 1.797\% contempt, 3.666\% unknown, and 0.262\% not-a-face. Before confidence selection, test vote mass is 1.554\% contempt, 5.667\% unknown, and 0.656\% not-a-face. These are vote fractions, not counts of images; the accepted-set breakdown in the supplement conditions on each ranking.

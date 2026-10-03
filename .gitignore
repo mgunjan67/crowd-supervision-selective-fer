@@ -16,3 +16,6 @@ tmp/
 
 evidence_revision/weights/
 evidence_revision/runs/*/*.pt
+
+backbone_followup/weights/
+backbone_followup/runs/*/*.pt

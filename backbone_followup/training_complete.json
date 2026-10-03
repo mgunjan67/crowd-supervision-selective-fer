@@ -1,0 +1,15 @@
+{
+  "runs": 9,
+  "seeds": [
+    17,
+    42,
+    89
+  ],
+  "conditions": [
+    "soft",
+    "uniform",
+    "tie_uniform"
+  ],
+  "finished_utc": "2026-10-03T18:26:25.111316+00:00",
+  "test_evaluated": false
+}

@@ -1,0 +1,23 @@
+{
+  "condition": "soft",
+  "seed": 89,
+  "state": "selected",
+  "source": "backbone_followup/runs/soft_seed89/best.pt",
+  "source_sha256": "ef7f7d5b1f11fdc90c3dbe6ac79b6dd25f689aeed6b960c87eee7bf8ed29c095",
+  "epoch": 11,
+  "weight_sha256": "e1125fcb07b6b288f400d6d301bfbb07253277cbc90272facfbd0641585cfa7d",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "8425485915fdfc8c180c4b410bbd4edd244ee985d98b68547e1051079a16d369"
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "823500b42bfd360a9d5ee768a881a74fc01915a479274ddce67b8bc4173ca85a"
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "9eb29f11b307845f19f46da99f4d06fe3992caabd61bb14d17a7015cbac98f4e"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "pdf_sha256": "865e540acccd4def49973ff79d0cfa66b6d26fc8cd5f0c9b2670626b7d5f1683",
+  "supplement_pdf_sha256": "b64a90899eb6657d6b8b4317346b7517df52bcad19b164240dbc457fb0031d51",
+  "all_pages_inspected": true,
+  "all_supplement_pages_inspected": true,
+  "main_pages": 22,
+  "supplement_pages": 18,
+  "review": "Inspected all latest rendered pages in contact sheets, with full-page inspections of dense tables and new figures during the preceding layout passes. Checked title and author block, structured abstract, equations, table notes, captions, references, reference-confusion matrix, synthetic UI, and new backbone contrasts and learning curves. Repaired table notes appearing alongside rows and kept the second-backbone diagnostics heading with its tables. Keywords naturally continue at the top of page 2 in the Springer template. Dedicated supplementary figure/table pages have intentional whitespace. Numerical values were not changed during visual repairs.",
+  "clipped_or_overlapping_content": false,
+  "identifiable_face_images": false,
+  "acceptance_guarantee": false
+}

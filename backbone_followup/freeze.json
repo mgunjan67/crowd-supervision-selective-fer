@@ -1,0 +1,33 @@
+{
+  "frozen_utc": "2026-10-03T16:54:35.836734+00:00",
+  "prior_test_results_known": true,
+  "planned_runs": 9,
+  "sha256": {
+    "backbone_followup/PROTOCOL.md": "bfe986f06d5f8b7ce882382dccc4e7367ac779917d4e6e073b4485bc78673f0c",
+    "backbone_followup/model.py": "daf4611e1321f1e7b72fcef764346e14008088fd3c6840c87a23141d25d525a4",
+    "backbone_followup/train.py": "dcd1b49125eb1e799b637bf860cf35594655b5f55229eba61260e0f7b1065df7",
+    "backbone_followup/driver.py": "30fae0a04dfe4699f7a9ef4d28a726ce06d97d2dfa47ee9b685420cd0c3af84d",
+    "backbone_followup/data.py": "3a06c79bfb34cc70875a79f228bbf3ddb23e59988650fc6f3b7c39ded205f7f9",
+    "backbone_followup/split_manifest.json": "98ee3c1aab7cd9f518d1dd9cac86c7b7ad94060f3fd27b5cd2a14227060733b8",
+    "backbone_followup/test_followup.py": "75ee9911226cc831ba07552019a85443aadcde27bbd6dc092a6054c3c73203f9",
+    "backbone_followup/freeze.py": "974d2d7c48fb81d0fee55571e237a12732d97d11c5098db3f961982c6d673ce4",
+    "backbone_followup/TECHNICAL_REPAIRS.md": "298ed37325033bb5b1aa48e342875f8d35434981a1d1145339737cad365c74e5",
+    "code/emotion_cue/checkpoint.py": "b8b5a872c99ac14c3f04bc24bc2856f5b14538efa12bd94e311a1a2f99292fb3",
+    "code/emotion_cue/config.py": "0931d0217ee7b136edfbed5121233249e795b47df3291899fd5c1f423a3ccacc",
+    "code/emotion_cue/constants.py": "4f00e63fd9bb30b957c662712c5fb13b6e9d9248da6e696a8be393a786b4d9f0",
+    "code/emotion_cue/data.py": "b18e64f2249aa536d8f390ecb54fdcc7984f3f6621d284c4cb88727da458315d",
+    "code/emotion_cue/data_contract.py": "7f953232e0bcbfa7611619b030ac8ac920cad06aab43b6b573df0cf822adfd21",
+    "code/emotion_cue/experiment.py": "2e43512ca987de85dacb5cc94b012dbb4960631409d5a977557d34100f1a8b17",
+    "code/emotion_cue/label_quality.py": "a7d6dad2203f3461bf89bc3eb13632ddbf7282885f7e422f901a815caff5abd3",
+    "code/emotion_cue/metrics.py": "694d810a38010ded8d9ac01c3097faf48075dd953d8b19d9eba16d35b6fdec94",
+    "code/emotion_cue/model.py": "a239390f9f206506e567b5733d22b98a938f49de4398799728894f1dc6d247b3",
+    "code/emotion_cue/runtime.py": "cf01058774ac25e158aa35656ea07ceed95fbff6ce540bef4a96637f50979946",
+    "code/emotion_cue/sam.py": "40f238c13b05bba3c3c92c6ea40eda42853ee04c74cf297426a21eec7a25e5c4",
+    "code/emotion_cue/__init__.py": "0d2c15e584949911bd75e54c0a31e545b61e4eddb02bf13b2bdfbd2b6f253aee",
+    "data/fer2013/Training.npz": "cdf739ce3caf3177e4204e1b92e9672fd0576f30a679e3417d52912a7325e895",
+    "data/fer2013/PublicTest.npz": "69261a0fc6e573199fa8ccc3dc80de0e8981507559f949cd8520b90247f91fd5",
+    "data/fer2013/PrivateTest.npz": "a2b01f84b968c3626098245227c1ce262de188153186914280f92f8077affad3",
+    "data/ferplus_annotations/fer2013new.csv": "9206e20d62f56475939f516847d61753e4860caeac9718b560129541b776fc2c",
+    "cache/torch/hub/checkpoints/resnet18-f37072fd.pth": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+  }
+}

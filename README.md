@@ -1,3 +1,11 @@
+# Two-backbone revision v1.2.0
+
+The current manuscript includes 24 matched runs: 15 Swin-T and nine ResNet-18, with all selected/epoch-12 weights (48) available. This tests supervision sensitivity across model families, not independent-image generalization or architecture superiority. Detailed favorable/adverse outcomes are in backbone_followup/REVIEW_RESPONSE.md. The messaging prototype retains the Swin checkpoint contract.
+
+Current PDF: manuscript/crowd-supervision-backbone-revision.pdf. Current editable source: manuscript/Manuscript-source-v1.2.0.zip. Current supplement: manuscript/Supplementary-diagnostics.pdf. Versioned assets: https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.2.0.
+
+The previous v1.0.0 and v1.1.0 releases remain unchanged. The user confirmed all-author v1.1.0 approval; authors should review the later v1.2.0 results before journal submission. No journal submission or TechRxiv update has occurred. The following older overviews remain historical and are not the current result set.
+
 # Evidence revision v1.1.0
 
 Fifteen matched runs now include a tie-preserving dominant-confidence Uniform control. The new manuscript adds fixed-image cross-evaluation, identical-population F1 comparisons, full learning curves and unsupported-category retention. These diagnostics narrow—not strengthen without qualification—the interpretation of the earlier aggregate benefit. See the versioned manuscript and evidence below.

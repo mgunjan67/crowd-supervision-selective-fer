@@ -1,0 +1,23 @@
+{
+  "condition": "soft",
+  "seed": 42,
+  "state": "epoch12",
+  "source": "backbone_followup/runs/soft_seed42/last.pt",
+  "source_sha256": "db10e2420321458c0c19a6874ef6a9634199ec737572b05f68041ffba63ae86b",
+  "epoch": 12,
+  "weight_sha256": "243e57356d6689ba4c5331e2f1e717b390c8a1c6b9dd2682ab5a4fe37923737b",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "240f280d88c24a5d48d4270b757b68d3b34384bd2a02ffe4171740d4bc4d135f"
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "b6b15f0a15d820ed6a2c4d0ae1410125f879ca3ee1886ef6c1e0cc2822ca2708"
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "35edb1a5c34d6418a6e92b39107669df43177aa9098e72dc442935580fea3ea9"
+    }
+  }
+}

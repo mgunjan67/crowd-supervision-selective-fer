@@ -1,0 +1,61 @@
+\subsection{Minority allocation, softening, and tied maxima}
+Table~\ref{tab:primary} compares all five target representations at the same retained count. Original-four-condition risk--coverage curves and selected/fixed-epoch contrast intervals are retained in the supplement; the direct primary difference curve appears below.
+\input{backbone_followup/generated/primary_table.tex}
+The primary Soft-minus-Uniform difference is -0.38 pp (conditional 95\% interval [-0.64, -0.07]). Paired differences for seeds 17, 42, and 89 are -0.35, -0.43, -0.35 pp. Full soft targets yielded lower selective disagreement than the dominant-confidence-preserving uniform-minority control under this matched protocol. The retained original Soft-minus-Hard contrast is -2.61 pp (conditional 95\% interval [-2.98, -2.19]). Tie-hard minus Hard is -0.47 pp (conditional 95\% interval [-0.80, -0.12]); Soft minus Tie-hard is -2.14 pp (conditional 95\% interval [-2.49, -1.76]). These latter intervals are descriptive sensitivities, not additional primary hypothesis tests.
+
+
+\subsection{Selection sensitivity and label references}
+\input{backbone_followup/generated/sensitivity_table.tex}
+At fixed epoch 12, Soft minus Uniform is -0.32 pp (conditional 95\% interval [-0.63, -0.05]), and Soft minus Hard is -1.35 pp (conditional 95\% interval [-1.72, -1.05]). Table~\ref{tab:sensitivity} keeps both evaluation states visible. This test changes the stopping decision, not the budget or training objective. Reference-specific classification outcomes are separated by both image population and label reference below.
+
+\subsection{Supported mass and the meaning of confidence}
+Figure~\ref{fig:mass} separates unsupported mass from ambiguity and excess on each accepted set. Its second panel changes the selection population explicitly rather than silently dropping unsupported votes.
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{backbone_followup/figures/Fig3.pdf}
+\caption{Original four conditions: (a) three-way mean risk accounting on global 80\% accepted sets. (b) Independent 80\% selection within full- and partial-supported-mass strata; these populations and vertical scales differ from panel (a). Zero-supported-mass images necessarily have complete-vote risk one and are reported in Table~\ref{tab:retention} and Online Resource 1. Neither panel evaluates an expanded-vocabulary model}\label{fig:mass}
+\end{figure}
+The primary population contains 1,732 fully supported, 1,527 partially supported, and 16 zero-supported-mass images. Within the fully supported stratum, 80\% risk is 10.42\% for Soft and 10.94\% for Uniform. Within the partially supported stratum, 80\% risk is 40.00\% for Soft and 40.58\% for Uniform. These descriptive comparisons address whether the primary contrast is confined to images with unsupported votes; they do not establish why a model assigned a particular score.
+
+\subsection{Fixed-image comparisons and reference effects}
+Table~\ref{tab:cross} holds the accepted image set fixed within each column.
+\input{backbone_followup/generated/cross.tex}
+On Uniform-selected images, Soft minus Uniform is +0.085 pp; on Soft-selected images it is -0.352 pp. Within a column, annotations and the floor are identical, so the risk difference is also a category-choice excess difference on that image set. Holding the Uniform predictor fixed, changing from its own set to the Soft set changes risk by -0.025 pp; for the Soft predictor the corresponding change is -0.463 pp. Thus, the own-set contrast is not a consistent category-choice improvement on a fixed image set. Predictor and selector interact; these cross-evaluations are not a unique causal decomposition. The mean Jaccard overlap is 0.8408; individual intersections and overlap fractions are released.
+\input{backbone_followup/generated/same_f1.tex}
+In Table~\ref{tab:samef1}, the last two columns hold the image population fixed while changing the categorical reference. The first two hold the original-label reference fixed while changing the population. Their differences therefore disentangle two sources of the superficially large original-versus-crowd F1 contrast. The reference confusion matrix is supplied in the supplement; neither reference is treated as emotional truth.
+\begin{figure}[t]\centering\includegraphics[width=\linewidth]{backbone_followup/figures/RiskDifference.pdf}
+\caption{Soft-minus-Uniform complete-vote disagreement versus common coverage. Thin curves are paired seeds; the thick curve is their mean. Curves use each model's own ranking, not identical image sets. The vertical marker identifies the primary 80\% endpoint; this descriptive curve has no simultaneous uncertainty band}\label{fig:difference}\end{figure}
+\subsection{Tie-preserving dominant-confidence control}
+The tie-preserving comparison is evaluated at both checkpoint states; the later cross-backbone table also reports its contrast intervals.
+
+Selected: paired Soft-minus-Tie-Uniform differences are -0.378, -0.584, -0.802 pp for seeds 17, 42, and 89. The conditional interval lies below zero. Epoch12: paired Soft-minus-Tie-Uniform differences are -0.435, -0.221, -0.263 pp for seeds 17, 42, and 89. The conditional interval lies below zero. This secondary comparison removes canonical tie asymmetry from Uniform but still changes target entropy and class marginals relative to Soft. It cannot isolate a unique minority-category identity mechanism.
+
+Selected epochs and complete training-loss/selection-distance trajectories are supplied in the supplement and ledger. Loss scales differ by target construction and are not directly comparable evidence of better fitting.
+\subsection{Retention of unsupported categories}
+Table~\ref{tab:retention} retains individual seed counts rather than only a mean ordering.
+\input{backbone_followup/generated/retention.tex}
+Soft retains 11.00 of the 16 zero-supported-mass images on average, versus 7.00 for Uniform and 6.67 for Tie-Uniform. Better aggregate risk therefore does not imply better rejection of wholly unsupported annotations. These small counts are descriptive, not an estimated deployment failure rate. Contempt, unknown and not-a-face vote-mass breakdowns are supplied separately rather than interpreted as one semantic category.
+Before confidence selection, calibration vote mass is 1.797\% contempt, 3.666\% unknown, and 0.262\% not-a-face. Before confidence selection, test vote mass is 1.554\% contempt, 5.667\% unknown, and 0.656\% not-a-face. These are vote fractions, not counts of images; the accepted-set breakdown in the supplement conditions on each ranking.
+
+\subsection{Calibration transfer and finite-sample diagnostics}
+\input{backbone_followup/generated/policy_table.tex}
+Table~\ref{tab:policies} includes every target and empty-policy outcome. Figure~\ref{fig:transfer} partitions the empirical policy's accepted-population risk change.
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{backbone_followup/figures/Fig4.pdf}
+\caption{Mean test-minus-calibration differences in unsupported mass, supported ambiguity, and excess error for empirical thresholds. Their sum is the risk gap, not a causal attribution. H: Hard; T: Tie-hard; U: Uniform; S: Soft. The three target panels share a vertical scale. Means use paired nonempty calibration/test selections}\label{fig:transfer}
+\end{figure}
+Across the original four conditions, 36 of 36 nonempty empirical test operating points exceed their nominal targets. These overlapping outcomes are not independent Bernoulli trials. At the 10\% target, Hard has 38.35\% mean coverage and 11.45\% mean achieved risk. At the 10\% target, Soft has 49.54\% mean coverage and 13.01\% mean achieved risk. Different achieved risks prevent interpreting this as greater coverage at equal risk.
+
+Before confidence selection, the annotation floor is 23.70\% in calibration and 26.67\% in testing: a +2.97 pp difference. Unsupported mass changes from 5.72\% to 7.88\%; the remaining floor difference is supported-category ambiguity. Thus, these populations differ in annotation composition even before a model supplies a ranking.
+
+For Soft at the nominal 20\% target, the accepted test-minus-calibration risk gap is +2.57 pp, comprising +1.98 pp unsupported mass, +0.78 pp supported ambiguity, and -0.19 pp excess. The figure and ledger supply the analogous accounting for every condition and target; this arithmetic does not identify independent causal contributions.
+
+For Hard, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.05 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.33 to +2.59 pp). For Tie-hard, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.18 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.34 to +2.77 pp). For Uniform, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.19 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.02 to +2.62 pp). For Soft, the 20\% calibration-half-split holdout-minus-fit risk gap averages +0.17 pp over 300 nonempty seed--split outcomes (descriptive 5th--95th percentiles -2.00 to +2.43 pp). The complete target-specific resamples are released. These diagnostics reveal within-calibration variability and accepted-population differences, but cannot uniquely separate distribution shift, finite-sample fluctuation, and threshold-search effects.
+The fixed-grid comparator yields 24 nonempty test operating points, of which 0 exceed their nominal targets. It abstains completely at the 10\% target for every condition and seed. Its observed conservatism therefore has a concrete coverage cost; these outcomes do not verify its population assumptions.
+
+\subsection{Robustness across two backbone families}
+The nine new ResNet runs keep the supervision contrast matched within each seed. Table~\ref{tab:backbones} reports both selected and epoch-12 contrasts; absolute ResNet risks are in the supplement.
+\input{backbone_followup/generated/backbone_contrasts.tex}
+Selected ResNet Soft-minus-Uniform differences for seeds 17, 42 and 89 are +0.347, +0.137, +0.034 pp. Selected ResNet Soft-minus-Tie-Uniform differences for seeds 17, 42 and 89 are +0.118, +0.115, -0.107 pp. Epoch-12 ResNet Soft-minus-Uniform differences for seeds 17, 42 and 89 are +0.073, +0.489, -0.050 pp. Epoch-12 ResNet Soft-minus-Tie-Uniform differences for seeds 17, 42 and 89 are +0.324, +0.118, +0.126 pp. 
+On Uniform-selected images the ResNet fixed-set difference is +0.445 pp; on Soft-selected images it is -0.412 pp. On Tie-Uniform-selected images the ResNet fixed-set difference is +0.613 pp; on Soft-selected images it is -0.024 pp. The full fixed-set matrices, overlaps, reference F1, retention and learning trajectories are provided in the supplement and ledger. These comparisons extend architecture sensitivity but retain the same images, annotations and adaptive research history.
+\begin{figure}[t]\centering\includegraphics[width=\linewidth]{backbone_followup/figures/BackboneContrasts.pdf}
+\caption{Soft-minus-control risk at 80\% own-ranking coverage in two backbone families. Conditional pixel-cluster intervals do not represent seed-population uncertainty or external-domain confirmation. Negative values favor Soft; the figure does not rank architectures}\label{fig:backbones}\end{figure}

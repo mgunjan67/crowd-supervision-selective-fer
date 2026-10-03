@@ -1,0 +1,30 @@
+{
+  "crowd-supervision-backbone-revision.pdf": {
+    "sha256": "865e540acccd4def49973ff79d0cfa66b6d26fc8cd5f0c9b2670626b7d5f1683",
+    "bytes": 537773
+  },
+  "Supplementary-diagnostics.pdf": {
+    "sha256": "b64a90899eb6657d6b8b4317346b7517df52bcad19b164240dbc457fb0031d51",
+    "bytes": 416845
+  },
+  "Manuscript-source.zip": {
+    "sha256": "677ef98a7629e5e3bce4a53bd960465687d343946283a2e2aaf9738a1f41b6fc",
+    "bytes": 848438
+  },
+  "OnlineResource1.zip": {
+    "sha256": "f04fb1bf228b0725a88a19c4219f13fc09212deaa30515d37d4d0310d752ae04",
+    "bytes": 43253153
+  },
+  "OnlineResource7.zip": {
+    "sha256": "3220efc92a2edabbb0814f0c680f695b41742420ea24ff6ef1f4f6afcd30a641",
+    "bytes": 808880023
+  },
+  "COVER_LETTER.txt": {
+    "sha256": "34af7a1a29bc57d90b68cc34c97982f0971387a2fb04b03b0d33d6ab4fc2f76f",
+    "bytes": 4405
+  },
+  "REVIEW_RESPONSE.md": {
+    "sha256": "e1cc4a44d3c9055e9856477e3f6f86594a4a40a7b0f5f4fd99e76146139197db",
+    "bytes": 2081
+  }
+}

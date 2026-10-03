@@ -1,0 +1,21 @@
+\begin{table}[t]
+\caption{Calibration-fitted policies applied unchanged to primary testing. Entries are mean coverage / risk (\%); coverage includes empty seeds, risk averages nonempty seeds}\label{tab:policies}
+\centering\begin{tabular}{llcc}\toprule
+Target & Targets & Empirical & Fixed-grid bound\\\midrule
+10\% & Hard & 38.35 / 11.45 (3/3) & 0.00 / -- (0/3)\\
+10\% & Tie-hard & 39.17 / 11.93 (3/3) & 0.00 / -- (0/3)\\
+10\% & Uniform & 45.99 / 12.22 (3/3) & 0.00 / -- (0/3)\\
+10\% & Soft & 49.54 / 13.01 (3/3) & 0.00 / -- (0/3)\\
+\addlinespace
+20\% & Hard & 68.58 / 22.28 (3/3) & 47.03 / 14.55 (3/3)\\
+20\% & Tie-hard & 71.04 / 22.80 (3/3) & 48.05 / 14.61 (3/3)\\
+20\% & Uniform & 76.20 / 22.80 (3/3) & 57.49 / 16.11 (3/3)\\
+20\% & Soft & 76.88 / 22.56 (3/3) & 60.39 / 16.60 (3/3)\\
+\addlinespace
+30\% & Hard & 98.06 / 32.39 (3/3) & 82.01 / 26.92 (3/3)\\
+30\% & Tie-hard & 99.47 / 32.37 (3/3) & 85.41 / 27.54 (3/3)\\
+30\% & Uniform & 99.94 / 31.46 (3/3) & 88.41 / 27.11 (3/3)\\
+30\% & Soft & 99.91 / 31.07 (3/3) & 89.57 / 27.01 (3/3)\\
+\bottomrule\end{tabular}
+\smallskip\par\footnotesize Parentheses give nonempty test seeds. An empty policy has undefined risk. Neither a nominal target nor the bound's unverified independence/unchanged-population assumptions establish a deployment guarantee. Different achieved risks are not an equal-risk coverage comparison.
+\end{table}

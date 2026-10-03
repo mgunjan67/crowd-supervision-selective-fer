@@ -1,0 +1,23 @@
+{
+  "condition": "uniform",
+  "seed": 17,
+  "state": "epoch12",
+  "source": "backbone_followup/runs/uniform_seed17/last.pt",
+  "source_sha256": "c936b475cff75e28902dc83bd43938b7ba19d5bfedcea300084ea85915fb0cff",
+  "epoch": 12,
+  "weight_sha256": "b86af17ea750504b7409a84e02aff355699bd426d1fe0a4cbfb070226bad2a8f",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "e96e63449c6298c43cca75b1435a20b1f2dee26c5abec117256cf7fd30982818"
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "99dbbd81e37caad6f77a580a5c8156e82e31fbdd60768f8ecbe9567ea260143b"
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "7e2eaf16f1059c42ee723063ca3b4b4c366fa3c64035ae83a4839ac8e02f1e13"
+    }
+  }
+}

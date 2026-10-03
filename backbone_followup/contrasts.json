@@ -1,0 +1,82 @@
+[
+  {
+    "backbone": "resnet18",
+    "state": "selected",
+    "left": "soft",
+    "right": "uniform",
+    "endpoint": "soft minus uniform at 80% coverage",
+    "point_difference_pp": 0.17302798982188244,
+    "seed_differences_pp": [
+      0.347328244274811,
+      0.13740458015266965,
+      0.03435114503816672
+    ],
+    "lower_pp": -0.16668728587742507,
+    "upper_pp": 0.45514205804365926,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "backbone": "resnet18",
+    "state": "selected",
+    "left": "soft",
+    "right": "tie_uniform",
+    "endpoint": "soft minus tie_uniform at 80% coverage",
+    "point_difference_pp": 0.04198473282442754,
+    "seed_differences_pp": [
+      0.11832061068702271,
+      0.11450381679389277,
+      -0.10687022900763288
+    ],
+    "lower_pp": -0.2582795927975034,
+    "upper_pp": 0.3425160848659988,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "backbone": "resnet18",
+    "state": "epoch12",
+    "left": "soft",
+    "right": "uniform",
+    "endpoint": "soft minus uniform at 80% coverage",
+    "point_difference_pp": 0.17048346055979768,
+    "seed_differences_pp": [
+      0.07251908396946893,
+      0.4885496183206106,
+      -0.049618320610686495
+    ],
+    "lower_pp": -0.15663390729012464,
+    "upper_pp": 0.4674796747967485,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "backbone": "resnet18",
+    "state": "epoch12",
+    "left": "soft",
+    "right": "tie_uniform",
+    "endpoint": "soft minus tie_uniform at 80% coverage",
+    "point_difference_pp": 0.18956743002544463,
+    "seed_differences_pp": [
+      0.32442748091603135,
+      0.11832061068701993,
+      0.1259541984732826
+    ],
+    "lower_pp": -0.12598115651957872,
+    "upper_pp": 0.5148790529231853,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  }
+]
