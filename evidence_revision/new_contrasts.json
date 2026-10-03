@@ -1,0 +1,36 @@
+[
+  {
+    "state": "selected",
+    "endpoint": "soft minus tie_uniform at 80% coverage",
+    "point_difference_pp": -0.5877862595419846,
+    "seed_differences_pp": [
+      -0.37786259541985057,
+      -0.5839694656488509,
+      -0.8015267175572521
+    ],
+    "lower_pp": -0.8298544377652185,
+    "upper_pp": -0.281243350850651,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  },
+  {
+    "state": "epoch12",
+    "endpoint": "soft minus tie_uniform at 80% coverage",
+    "point_difference_pp": -0.3066157760814259,
+    "seed_differences_pp": [
+      -0.43511450381679695,
+      -0.22137404580152564,
+      -0.263358778625955
+    ],
+    "lower_pp": -0.5846539702726633,
+    "upper_pp": -0.024172797419161184,
+    "repetitions": 5000,
+    "pixel_clusters": 3268,
+    "test_n": 3275,
+    "accepted_n": 2620,
+    "bootstrap_scope": "paired pixel-cluster resampling, fixed models/seeds/annotations, reranked samples"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "ledger_sha256": "05a0f2110e36296a1f4680becfaa852271d961546849b686cd0c66de3b40caa1",
+  "new_inference_checkpoints_verified": 6,
+  "original_training_checkpoint_files_verified": 6,
+  "source_checkpoint_boundary": "Full training checkpoints can be verified on the original workspace; public inference-only archives preserve their recorded provenance hashes but do not include optimizer checkpoints",
+  "independently_recomputed_new_rows": 87,
+  "existing_diagnostics_audit": {
+    "status": "passed",
+    "retained_prediction_arrays_checked": 24,
+    "raw_class_mapping": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      4
+    ],
+    "independently_recomputed_cross_and_f1_rows": 96,
+    "raw_pixels_labels_votes_verified": true,
+    "scope": "Second internal code implementation, not independent human/coauthor replication or mirror authentication"
+  },
+  "new_checkpoint_contracts": [
+    {
+      "name": "tie_uniform_seed17_selected",
+      "sha256": "7d9ec783cde359b373f81d5624adf01f72322adbae4902e26b0efe57cad1555e",
+      "epoch": 12
+    },
+    {
+      "name": "tie_uniform_seed17_epoch12",
+      "sha256": "837a114a99c1f5c2eca0812354c113bad22b54988fc16e3ff375b3fa6c0e9a50",
+      "epoch": 12
+    },
+    {
+      "name": "tie_uniform_seed42_selected",
+      "sha256": "cd358df238709989f6a27097632f8a0c8a0d6ea7b4ac3821aba74d44c8149352",
+      "epoch": 8
+    },
+    {
+      "name": "tie_uniform_seed42_epoch12",
+      "sha256": "8f4eb9aec8e5807d344ef67e12ef16292f02a71fba735345100b3bd236a38f42",
+      "epoch": 12
+    },
+    {
+      "name": "tie_uniform_seed89_selected",
+      "sha256": "86c3ed54668b2a151d7fe4965ad3f376169110d85eda1d651738d7a03f07d823",
+      "epoch": 7
+    },
+    {
+      "name": "tie_uniform_seed89_epoch12",
+      "sha256": "28da3d0057dbfa814c0a79e524e98ffcdbb2e984dcd9617eb9ad44a6a5a2ae1c",
+      "epoch": 12
+    }
+  ],
+  "boundary": "Second arithmetic implementation and internal checks, not independent human replication or source authenticity verification"
+}

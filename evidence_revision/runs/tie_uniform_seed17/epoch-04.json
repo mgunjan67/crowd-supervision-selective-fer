@@ -1,0 +1,9 @@
+{
+  "epoch": 4,
+  "train_loss": 0.8872692230008622,
+  "selection_distance": 0.12128445051577015,
+  "new_best": false,
+  "learning_rate": 8.55017856687341e-05,
+  "seconds": 181.65938620001543,
+  "finished_utc": "2026-10-03T14:20:22.458989+00:00"
+}

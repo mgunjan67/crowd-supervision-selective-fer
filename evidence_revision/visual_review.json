@@ -1,0 +1,12 @@
+{
+  "pdf_sha256": "f1541ae5fe8dba7620a047d7fc5618e3612d2f5ec1c41888961b1a7bf610d5ba",
+  "supplement_pdf_sha256": "98ea1edcbeb79489ea0b7c22b185375f3a5e68cf47d626de4dadbb68cf0106b0",
+  "all_pages_inspected": true,
+  "all_supplement_pages_inspected": true,
+  "main_pages": 20,
+  "supplement_pages": 12,
+  "review": "Rendered pages visually checked for titles, equations, table fit, figure labels and contrast, captions, references and declarations. Final supplement captions distinguish original four-condition analyses from the new secondary control. Dedicated figure pages in the supplement intentionally retain whitespace.",
+  "clipped_or_overlapping_content": false,
+  "identifiable_face_images": false,
+  "acceptance_guarantee": false
+}

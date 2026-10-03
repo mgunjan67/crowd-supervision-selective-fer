@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "retained_prediction_arrays_checked": 24,
+  "raw_class_mapping": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    4
+  ],
+  "independently_recomputed_cross_and_f1_rows": 96,
+  "raw_pixels_labels_votes_verified": true,
+  "scope": "Second internal code implementation, not independent human/coauthor replication or mirror authentication"
+}

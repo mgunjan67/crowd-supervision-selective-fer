@@ -1,3 +1,9 @@
+# Evidence revision v1.1.0
+
+Fifteen matched runs now include a tie-preserving dominant-confidence Uniform control. The new manuscript adds fixed-image cross-evaluation, identical-population F1 comparisons, full learning curves and unsupported-category retention. These diagnostics narrow—not strengthen without qualification—the interpretation of the earlier aggregate benefit. See the versioned manuscript and evidence below.
+
+The following overview preserves the original v1.0.0 twelve-run results. Use **Current revision files** below for the fifteen-run evidence revision.
+
 # Crowd Supervision and Selective Facial-Expression Prediction
 
 Research code and evidence for **Crowd Supervision and Vocabulary-Mismatched Selective Facial-Expression Prediction**.
@@ -12,7 +18,7 @@ At 80% coverage on 3,275 test images, mean complete-vote disagreement is 26.30% 
 
 ## Get the exact release
 
-Use the [v1.0.0 release](https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.0.0). Repository source is readable directly; release assets preserve the audited submission archives. `OnlineResource1.zip` contains code, protocols, votes, predictions and audits. `OnlineResource2.zip` through `OnlineResource5.zip` contain Hard, Soft, Uniform and Tie-hard checkpoints, respectively. Each checkpoint archive contains six selected/final weights and is approximately 664 MB. Extract these archives at the repository root, preserving their paths, to run weight checks or inference. Original facial images are not distributed.
+Use the [v1.0.0 release](https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.1.0). Repository source is readable directly; release assets preserve the audited submission archives. `OnlineResource1.zip` contains code, protocols, votes, predictions and audits. `OnlineResource2.zip` through `OnlineResource5.zip` contain Hard, Soft, Uniform and Tie-hard checkpoints, respectively. Each checkpoint archive contains six selected/final weights and is approximately 664 MB. Extract these archives at the repository root, preserving their paths, to run weight checks or inference. Original facial images are not distributed.
 
 `release-artifacts.json` records the expected archive SHA256 values and sizes. `SHA256_MANIFEST.json` verifies the original Online Resource 1 contents; it intentionally does not include newly added repository documentation. `RELEASE_PROVENANCE.json` records the release-preparation checks.
 
@@ -64,3 +70,13 @@ FER+ annotations retain Microsoft's copyright and MIT license in `data/ferplus_a
 No institutional ethics approval or exemption determination was obtained. No new human-participant study is reported. Internal audits are not external replication. See the manuscript's declarations and `reviewer_followup/ETHICS_SUBMISSION_RISK.md`.
 
 When referring to this work, cite the current manuscript title and all four authors, and identify the exact release/commit. Do not cite it as an accepted SN Computer Science paper or invent a journal DOI.
+
+## Current revision files
+
+- `manuscript/crowd-supervision-evidence-revision.pdf` is the current v1.1.0 manuscript.
+- `manuscript/Supplementary-diagnostics.pdf` contains detailed runtime and diagnostic information.
+- `manuscript/Manuscript-source-v1.1.0.zip` supplies editable Springer source.
+- `evidence_revision/REVIEW_RESPONSE.md` maps the latest supplied criticisms to changes and unresolved scientific boundaries.
+- Online Resource 6 adds six Tie-Uniform inference checkpoints; Online Resources 2–5 remain byte-identical to v1.0.0.
+
+The old v1.0.0 release is preserved. This is not an accepted article or a journal submission. Final author approval of these later results is required before journal submission.

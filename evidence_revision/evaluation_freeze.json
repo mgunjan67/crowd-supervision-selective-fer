@@ -1,0 +1,47 @@
+{
+  "frozen_utc": "2026-10-03T15:59:56.687408+00:00",
+  "checkpoints": [
+    {
+      "condition": "tie_uniform",
+      "seed": 17,
+      "state": "selected",
+      "source": "evidence_revision/runs/tie_uniform_seed17/best.pt",
+      "source_sha256": "e47c3ad4dcb07dbb89e18ddda17974efcee9d8d970211846a0836d7a39c76c6d"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 17,
+      "state": "epoch12",
+      "source": "evidence_revision/runs/tie_uniform_seed17/last.pt",
+      "source_sha256": "34bc3e8e9747305790badfd4aed183bc77c053b85ed4a531ee487cde50147b71"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 42,
+      "state": "selected",
+      "source": "evidence_revision/runs/tie_uniform_seed42/best.pt",
+      "source_sha256": "9be2526a75b33765077db33cb338e6f705d44c2cb4f258e17d857eb0c3fab543"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 42,
+      "state": "epoch12",
+      "source": "evidence_revision/runs/tie_uniform_seed42/last.pt",
+      "source_sha256": "988882d45861985640e79d86577cf24413e3e868d6eae72fbdb9c2c580be04a4"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 89,
+      "state": "selected",
+      "source": "evidence_revision/runs/tie_uniform_seed89/best.pt",
+      "source_sha256": "3e2ce23bb92381160a87b167fb7ce976c3fb58dc9cb707ead8ead7fda5927793"
+    },
+    {
+      "condition": "tie_uniform",
+      "seed": 89,
+      "state": "epoch12",
+      "source": "evidence_revision/runs/tie_uniform_seed89/last.pt",
+      "source_sha256": "e9733208df527618f3d493b185877c2139074eb8d9b91b4aa4dac649dc4dd1b9"
+    }
+  ]
+}

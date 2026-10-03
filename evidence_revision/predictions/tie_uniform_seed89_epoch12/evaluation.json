@@ -1,0 +1,23 @@
+{
+  "condition": "tie_uniform",
+  "seed": 89,
+  "state": "epoch12",
+  "source": "evidence_revision/runs/tie_uniform_seed89/last.pt",
+  "source_sha256": "e9733208df527618f3d493b185877c2139074eb8d9b91b4aa4dac649dc4dd1b9",
+  "epoch": 12,
+  "weight_sha256": "28da3d0057dbfa814c0a79e524e98ffcdbb2e984dcd9617eb9ad44a6a5a2ae1c",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "b2e5efe2adbd3a8eb56061ffe68a9f7af5399c187b5297ec9e1329aea0e3ac07"
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "1ce6c78071aac867e80deab3f62de9510b2e0fc648e2df547de89f75c9924bf0"
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "1623ec57f60699676f294fd97f9ab19e2181951574ade06e1c7f56a0eb99ca7e"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "pdf": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\pdf\\crowd-supervision-evidence-revision.pdf",
+  "pdf_sha256": "f1541ae5fe8dba7620a047d7fc5618e3612d2f5ec1c41888961b1a7bf610d5ba",
+  "supplement_pdf_sha256": "98ea1edcbeb79489ea0b7c22b185375f3a5e68cf47d626de4dadbb68cf0106b0",
+  "pages": 20,
+  "supplement_pages": 12,
+  "warnings": 0,
+  "supplement_warnings": 0,
+  "abstract_words": 177,
+  "references": 23,
+  "unused_references": 0,
+  "unsupported_claim_scan": "passed",
+  "visual_review": "required; rendering is not inspection"
+}

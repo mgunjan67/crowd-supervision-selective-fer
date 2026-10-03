@@ -1,0 +1,19 @@
+{
+  "selected": {
+    "uniform_on_uniform": 24.062340966921116,
+    "uniform_on_soft": 24.036895674300254,
+    "soft_on_uniform": 24.14758269720102,
+    "soft_on_soft": 23.68447837150127
+  },
+  "epoch12": {
+    "uniform_on_uniform": 23.949109414758272,
+    "uniform_on_soft": 23.846055979643765,
+    "soft_on_uniform": 24.036895674300254,
+    "soft_on_soft": 23.6323155216285
+  },
+  "soft_f1": {
+    "all_original": 0.5722319251054687,
+    "majority_subset_original": 0.6684639126413106,
+    "majority_subset_crowd_majority": 0.9269733805314528
+  }
+}

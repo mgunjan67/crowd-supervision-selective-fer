@@ -1,15 +1,1 @@
-SN Computer Science reviewer-follow-up edition
-
-The supplied Springer Nature sn-jnl class and sn-mathphys-num style are retained.
-Extract Manuscript-source.zip and compile from its root:
-  pdflatex main.tex
-  bibtex main
-  pdflatex main.tex
-  pdflatex main.tex
-  pdflatex main.tex
-
-Do not flatten reviewer_followup/generated or reviewer_followup/figures.
-The complete editable LaTeX, bibliography, vector PDF/EPS figures and generated
-numeric fragments are included. The source-only package compiles without images,
-model weights, Python, or training data. Main figures have embedded vector fonts.
-Online Resource 1 adds the numerical ledger, generating code and audits.
+Extract Manuscript-source.zip to an otherwise empty folder. Keep evidence_revision/generated and evidence_revision/figures next to main.tex. With an existing LaTeX installation, run pdflatex main.tex, bibtex main, then pdflatex main.tex twice. The precompiled main.bbl is included. Supplementary source is evidence_revision/generated/supplement.tex; run pdflatex on that path from the extraction root. This is a multi-file Springer project, not a standalone .tex document. No image dataset is needed to compile the supplied source. Numeric regeneration instead uses Online Resource 1 and its reproducibility instructions.

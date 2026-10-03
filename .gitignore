@@ -13,3 +13,6 @@ tmp/
 *.log
 *.out
 *.toc
+
+evidence_revision/weights/
+evidence_revision/runs/*/*.pt

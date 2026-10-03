@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-10-03T14:08:17.293134+00:00",
+  "prior_test_results_known": true,
+  "sha256": {
+    "evidence_revision/PROTOCOL.md": "8dff274471f40014c786df716c604104aaf5743717c73792d24ce98dbf8a2ab0",
+    "evidence_revision/train_tie_uniform.py": "c62c7869fd32b400dee4aff0c56d03e900afce50f505a67efdf13e3347dbb360",
+    "evidence_revision/test_targets.py": "d3910481b544da01725fa6686915fc255bf95be8f43c42a36ecacfddf14a2a95",
+    "evidence_revision/freeze.py": "40007712dd98bd7488d36ae5e2a4a939afadb362b38ef182e743da28481808c5",
+    "evidence_revision/data.py": "3a06c79bfb34cc70875a79f228bbf3ddb23e59988650fc6f3b7c39ded205f7f9",
+    "evidence_revision/split_manifest.json": "98ee3c1aab7cd9f518d1dd9cac86c7b7ad94060f3fd27b5cd2a14227060733b8",
+    "final_experiment/train.py": "3f2fa8ef3d3a8b3c1d81ed296b337f90b570c07ce7e3f54dcab9a9e7a5c4d013",
+    "final_experiment/data.py": "3a06c79bfb34cc70875a79f228bbf3ddb23e59988650fc6f3b7c39ded205f7f9",
+    "code/emotion_cue/checkpoint.py": "b8b5a872c99ac14c3f04bc24bc2856f5b14538efa12bd94e311a1a2f99292fb3",
+    "code/emotion_cue/config.py": "0931d0217ee7b136edfbed5121233249e795b47df3291899fd5c1f423a3ccacc",
+    "code/emotion_cue/constants.py": "4f00e63fd9bb30b957c662712c5fb13b6e9d9248da6e696a8be393a786b4d9f0",
+    "code/emotion_cue/data.py": "b18e64f2249aa536d8f390ecb54fdcc7984f3f6621d284c4cb88727da458315d",
+    "code/emotion_cue/data_contract.py": "7f953232e0bcbfa7611619b030ac8ac920cad06aab43b6b573df0cf822adfd21",
+    "code/emotion_cue/experiment.py": "2e43512ca987de85dacb5cc94b012dbb4960631409d5a977557d34100f1a8b17",
+    "code/emotion_cue/label_quality.py": "a7d6dad2203f3461bf89bc3eb13632ddbf7282885f7e422f901a815caff5abd3",
+    "code/emotion_cue/metrics.py": "694d810a38010ded8d9ac01c3097faf48075dd953d8b19d9eba16d35b6fdec94",
+    "code/emotion_cue/model.py": "a239390f9f206506e567b5733d22b98a938f49de4398799728894f1dc6d247b3",
+    "code/emotion_cue/runtime.py": "cf01058774ac25e158aa35656ea07ceed95fbff6ce540bef4a96637f50979946",
+    "code/emotion_cue/sam.py": "40f238c13b05bba3c3c92c6ea40eda42853ee04c74cf297426a21eec7a25e5c4",
+    "code/emotion_cue/__init__.py": "0d2c15e584949911bd75e54c0a31e545b61e4eddb02bf13b2bdfbd2b6f253aee",
+    "data/fer2013/Training.npz": "cdf739ce3caf3177e4204e1b92e9672fd0576f30a679e3417d52912a7325e895",
+    "data/fer2013/PublicTest.npz": "69261a0fc6e573199fa8ccc3dc80de0e8981507559f949cd8520b90247f91fd5",
+    "data/fer2013/PrivateTest.npz": "a2b01f84b968c3626098245227c1ce262de188153186914280f92f8077affad3"
+  }
+}

@@ -1,0 +1,204 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{graphicx,booktabs,longtable,amsmath,url,microtype}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\begin{document}
+\begin{center}
+{\Large Supplementary diagnostics and implementation figures}\par\medskip
+Crowd Supervision and Vocabulary-Mismatched Selective Facial-Expression Prediction\par\medskip
+SN Computer Science\par\smallskip
+Gunjan Kumar Mishra, Bijaya Ghimire, Badri Raj Lamichhane, Alan Shah\par\smallskip
+Corresponding author: Badri Raj Lamichhane\par
+School of Information, Computer and Communication Technology,\par
+Sirindhorn International Institute of Technology, Thammasat University, Thailand\par
+\texttt{d6622300231@g.siit.tu.ac.th}
+\end{center}
+\section*{Interpretation and evidence boundaries}
+All numerical summaries are generated from \texttt{reported\_results.csv}.
+S denotes Soft, U Uniform, H Hard, and T Tie-hard. Differences are percentage points.
+Three seeds are fixed, not samples supporting broad seed-population inference.
+The image source is reused; no external-domain or communication benefit is established.
+Global 80\% refers to restricting a global accepted set to a stratum, whereas within-stratum 80\% reranks that stratum independently.
+Supported-only risk conditions the vote reference on supported categories and is undefined at zero supported mass.
+\begin{longtable}{llrrr}
+\caption{Original four-condition paired seed contrasts at 80\% coverage}\label{tab:seeds}\\
+\toprule State & Contrast & Seed 17 & Seed 42 & Seed 89\\\midrule\endfirsthead
+\toprule State & Contrast & Seed 17 & Seed 42 & Seed 89\\\midrule\endhead
+selected & Soft - Uniform & -0.3473 & -0.4313 & -0.3550\\
+selected & Soft - Hard & -2.1908 & -3.7328 & -1.9084\\
+selected & Tie-hard - Hard & -0.0153 & -1.0992 & -0.2977\\
+selected & Soft - Tie-hard & -2.1756 & -2.6336 & -1.6107\\
+epoch12 & Soft - Uniform & -0.3282 & -0.3931 & -0.2290\\
+epoch12 & Soft - Hard & -1.1794 & -1.4198 & -1.4542\\
+epoch12 & Tie-hard - Hard & -0.2824 & -0.5076 & -0.4313\\
+epoch12 & Soft - Tie-hard & -0.8969 & -0.9122 & -1.0229\\
+\bottomrule\end{longtable}
+\begin{table}[ht]
+\caption{Original four conditions: selected epochs from the common squared-distance criterion. Every fixed-epoch sensitivity checkpoint is epoch 12}
+\centering\begin{tabular}{lrrr}\toprule
+Targets & Seed 17 & Seed 42 & Seed 89\\\midrule
+Hard & 3 & 2 & 5\\
+Tie-hard & 4 & 4 & 5\\
+Uniform & 9 & 6 & 10\\
+Soft & 9 & 10 & 10\\
+\bottomrule\end{tabular}\end{table}
+\begin{figure}[ht]
+\centering\includegraphics[width=.94\linewidth]{evidence_revision/figures/FigS1.pdf}
+\caption{Fixed model head used in all five conditions: one channel gate after pooled Swin-T features, followed by a seven-category linear classifier. This is not a new architecture claim}
+\end{figure}
+\clearpage
+\begin{figure}[ht]
+\centering\includegraphics[width=.88\linewidth]{evidence_revision/figures/FigS2.pdf}
+\caption{Synthetic illustration of the local sender-controlled interface. Text and category presentation are illustrative, not participant observations or a measured prediction. No recipient transport is implemented}
+\end{figure}
+\begin{figure}[ht]
+\centering\includegraphics[width=.94\linewidth]{evidence_revision/figures/FigS3.pdf}
+\caption{Original four conditions: individual paired seed differences at the common-coverage endpoint: (a) selected and (b) fixed epoch-12 weights. Exact values appear in Table~\ref{tab:seeds}; points can overlap}
+\end{figure}
+\clearpage
+\begin{longtable}{lllrrrr}
+\caption{Original four conditions, supported-mass strata: means over three selected-checkpoint seeds. Risk columns are percentages; accepted count can vary by seed}\\
+\toprule Targets & Stratum & Selection & N & Accepted & Risk & Supported-only\\\midrule\endfirsthead
+\toprule Targets & Stratum & Selection & N & Accepted & Risk & Supported-only\\\midrule\endhead
+Hard & full & all & 1732 & 1732.00 & 19.93 & 19.93\\
+Hard & full & global80 & 1732 & 1497.33 & 14.96 & 14.96\\
+Hard & full & within80 & 1732 & 1386.00 & 12.80 & 12.80\\
+Hard & partial & all & 1527 & 1527.00 & 47.53 & 38.44\\
+Hard & partial & global80 & 1527 & 1116.33 & 41.08 & 31.30\\
+Hard & partial & within80 & 1527 & 1222.00 & 42.69 & 33.04\\
+Hard & zero & all & 16 & 16.00 & 100.00 & --\\
+Hard & zero & global80 & 16 & 6.33 & 100.00 & --\\
+Hard & zero & within80 & 16 & 13.00 & 100.00 & --\\
+\addlinespace
+Tie-hard & full & all & 1732 & 1732.00 & 19.42 & 19.42\\
+Tie-hard & full & global80 & 1732 & 1507.00 & 14.51 & 14.51\\
+Tie-hard & full & within80 & 1732 & 1386.00 & 12.33 & 12.33\\
+Tie-hard & partial & all & 1527 & 1527.00 & 46.84 & 37.52\\
+Tie-hard & partial & global80 & 1527 & 1105.67 & 40.76 & 30.74\\
+Tie-hard & partial & within80 & 1527 & 1222.00 & 42.23 & 32.38\\
+Tie-hard & zero & all & 16 & 16.00 & 100.00 & --\\
+Tie-hard & zero & global80 & 16 & 7.33 & 100.00 & --\\
+Tie-hard & zero & within80 & 16 & 13.00 & 100.00 & --\\
+\addlinespace
+Uniform & full & all & 1732 & 1732.00 & 18.32 & 18.32\\
+Uniform & full & global80 & 1732 & 1523.00 & 13.45 & 13.45\\
+Uniform & full & within80 & 1732 & 1386.00 & 10.94 & 10.94\\
+Uniform & partial & all & 1527 & 1527.00 & 45.71 & 36.24\\
+Uniform & partial & global80 & 1527 & 1090.00 & 38.40 & 28.24\\
+Uniform & partial & within80 & 1527 & 1222.00 & 40.58 & 30.62\\
+Uniform & zero & all & 16 & 16.00 & 100.00 & --\\
+Uniform & zero & global80 & 16 & 7.00 & 100.00 & --\\
+Uniform & zero & within80 & 16 & 13.00 & 100.00 & --\\
+\addlinespace
+Soft & full & all & 1732 & 1732.00 & 17.93 & 17.93\\
+Soft & full & global80 & 1732 & 1529.00 & 13.23 & 13.23\\
+Soft & full & within80 & 1732 & 1386.00 & 10.42 & 10.42\\
+Soft & partial & all & 1527 & 1527.00 & 45.36 & 35.75\\
+Soft & partial & global80 & 1527 & 1080.00 & 37.71 & 27.35\\
+Soft & partial & within80 & 1527 & 1222.00 & 40.00 & 29.77\\
+Soft & zero & all & 16 & 16.00 & 100.00 & --\\
+Soft & zero & global80 & 16 & 11.00 & 100.00 & --\\
+Soft & zero & within80 & 16 & 13.00 & 100.00 & --\\
+\addlinespace
+\bottomrule\end{longtable}
+Full means all votes are supported; partial means positive supported and unsupported mass; zero means no supported votes. A risk of one in the zero stratum follows from the vocabulary, not a special model failure. Global selection may leave some strata empty; risk then remains undefined.
+\clearpage
+\begin{longtable}{llrrrr}
+\caption{Original four conditions, calibration half-split holdout-minus-fit risk gaps. Means and 5th/95th percentiles are descriptive percentage points over nonempty seed--split outcomes, not confidence intervals}\\
+\toprule Targets & Target & Nonempty & Mean gap & 5th pct. & 95th pct.\\\midrule\endfirsthead
+\toprule Targets & Target & Nonempty & Mean gap & 5th pct. & 95th pct.\\\midrule\endhead
+Hard & 10\% & 300/300 & -0.040 & -2.215 & +2.175\\
+Hard & 20\% & 300/300 & +0.050 & -2.328 & +2.590\\
+Hard & 30\% & 300/300 & +0.008 & -2.752 & +2.598\\
+Tie-hard & 10\% & 300/300 & -0.002 & -2.169 & +2.399\\
+Tie-hard & 20\% & 300/300 & +0.180 & -2.344 & +2.770\\
+Tie-hard & 30\% & 300/300 & +0.072 & -2.683 & +2.859\\
+Uniform & 10\% & 300/300 & +0.216 & -1.808 & +2.033\\
+Uniform & 20\% & 300/300 & +0.193 & -2.021 & +2.617\\
+Uniform & 30\% & 300/300 & +0.037 & -2.442 & +2.536\\
+Soft & 10\% & 300/300 & +0.060 & -1.871 & +1.736\\
+Soft & 20\% & 300/300 & +0.170 & -2.004 & +2.428\\
+Soft & 30\% & 300/300 & +0.015 & -2.410 & +2.736\\
+\bottomrule\end{longtable}
+Each of 100 shared pixel-cluster splits uses disjoint calibration halves for fitting and checking the empirical threshold. Splits overlap one another. Minimum fitted accepted count is 100 and score ties are never split. The full ledger includes fit/holdout counts, risks, thresholds, and holdout coverage for every split, including empty policies.
+\section*{Unconditional population composition}
+Calibration: unsupported mass 5.7247\%, supported ambiguity 17.9720\%, annotation floor 23.6967\%.\par
+Test: unsupported mass 7.8779\%, supported ambiguity 18.7878\%, annotation floor 26.6656\%.\par
+These annotation-only quantities do not depend on the fitted model. Accepted-set differences in the main figure condition on each model's chosen threshold and can differ from these unconditional differences. None uniquely identifies a causal source of overshoot.
+\section*{Reproduction map}
+\texttt{REPRODUCIBILITY.md} provides CPU numerical-audit and optional image-dependent inference commands. Online Resource 1 includes predictions, source hashes, category maps, original-row joins, all three adaptive protocols and tests. Online Resources 2--6 contain all selected and epoch-12 inference weights. No face images are redistributed. Internal automated verification is not external replication.
+\clearpage
+\section*{Prototype implementation boundary}
+
+Online Resource 1 provides a dimensioned model diagram (Fig.~S1) and a synthetic interface illustration (Fig.~S2); the latter is not a participant observation or a measured prediction.
+The application uses MediaPipe Face Detection with model selection 1 and minimum detection confidence 0.5 (MediaPipe Face Detection; main reference list). Exactly one detected face with a valid clipped crop is eligible. The crop then uses the same grayscale, resize, normalization, class order, and model head as the experiment. Benchmark images are already cropped and do not pass through the detector. Offline predictions use the recorded BF16 evaluation path; the application uses its documented FP32 inference path, so bitwise equality across paths is not assumed.
+
+Predictions are requested no more often than once per second. A category can accompany a message only with sender opt-in, an active camera, and a valid observation at most 2.5 seconds old. Attachment defaults to off and resets after submission. No face, multiple faces, stale observations, and processing errors suppress the cue rather than becoming neutral. These are implementation choices, not empirically optimized safeguards. The interface labels its top-class score as uncalibrated. The confidence policies analyzed here remain offline; they are not presented as proven runtime protections.
+
+The Streamlit/Python backend must run on the sender's machine for local processing. The supplied launch configuration uses loopback, disables usage statistics, and omits external ICE servers. Frames are processed in memory without intentional application-level recording. Messages remain in session memory in a local preview; no recipient transport is implemented. The categorical cue can itself be sensitive. These boundaries do not establish a formal privacy guarantee or exclude operating-system and dependency behavior.
+
+Code and numerical checks cover checkpoint metadata, gating placement, preprocessing, deterministic splits and augmentation, weighted losses, score ties, empty selections, metric definitions, and cue failure states. Runtime checks are software diagnostics, not a naturalistic usability study. 
+\clearpage
+\begin{figure}[t]
+\centering\includegraphics[width=\linewidth]{evidence_revision/figures/Fig2.pdf}
+\caption{(a) Original four conditions: mean selected-checkpoint risk--coverage curves across three seeds; the displayed range begins at 10\%, and every prefix is released. (b) Mean paired contrasts and conditional 95\% pixel-cluster intervals, for selected and epoch-12 weights. Negative differences favor the first-named target. Intervals do not measure seed-population or external-domain uncertainty}
+\end{figure}
+\clearpage
+\begin{figure}[ht]\centering\includegraphics[width=.94\linewidth]{evidence_revision/figures/ApplicationFlow.pdf}\caption{Historical four-condition offline flow and local application boundary; the main manuscript now isolates the experimental flow.}\end{figure}
+\clearpage
+\begin{figure}[ht]\centering\includegraphics[width=.94\linewidth]{evidence_revision/figures/LearningCurves.pdf}\caption{Training loss and selection-distance trajectories for all fifteen runs. The target-dependent loss scales are not comparable performance endpoints.}\end{figure}
+\clearpage
+\begin{figure}[ht]\centering\includegraphics[width=.94\linewidth]{evidence_revision/figures/ReferenceConfusion.pdf}\caption{Original-label versus supported crowd-majority reference counts on exactly the same 2,484 primary-test images. This matrix compares references, not predictions.}\end{figure}
+\clearpage\section*{Unsupported category vote mass}
+\begin{longtable}{lllrrr}\toprule Targets & Population & Scope & Contempt & Unknown & Not-a-face\\\midrule\endhead
+Hard & calibration & all & 1.797 & 3.666 & 0.262\\
+Hard & calibration & global80 & 1.525 & 3.092 & 0.185\\
+Hard & test & all & 1.554 & 5.667 & 0.656\\
+Hard & test & global80 & 1.291 & 4.966 & 0.391\\
+Tie-hard & calibration & all & 1.797 & 3.666 & 0.262\\
+Tie-hard & calibration & global80 & 1.446 & 3.064 & 0.274\\
+Tie-hard & test & all & 1.554 & 5.667 & 0.656\\
+Tie-hard & test & global80 & 1.302 & 4.931 & 0.433\\
+Uniform & calibration & all & 1.797 & 3.666 & 0.262\\
+Uniform & calibration & global80 & 1.329 & 2.877 & 0.193\\
+Uniform & test & all & 1.554 & 5.667 & 0.656\\
+Uniform & test & global80 & 1.224 & 4.765 & 0.421\\
+Tie-Uniform & calibration & all & 1.797 & 3.666 & 0.262\\
+Tie-Uniform & calibration & global80 & 1.314 & 2.943 & 0.238\\
+Tie-Uniform & test & all & 1.554 & 5.667 & 0.656\\
+Tie-Uniform & test & global80 & 1.246 & 4.821 & 0.405\\
+Soft & calibration & all & 1.797 & 3.666 & 0.262\\
+Soft & calibration & global80 & 1.291 & 3.004 & 0.241\\
+Soft & test & all & 1.554 & 5.667 & 0.656\\
+Soft & test & global80 & 1.228 & 4.749 & 0.571\\
+\bottomrule\end{longtable}
+Entries are mean vote-mass percentages across three seeds, not proportions of images with that label. All-image masses are model-independent; global80 conditions on each model's ranking. The three categories do not share one semantic interpretation.
+\input{evidence_revision/generated/tie_control.tex}
+\input{evidence_revision/generated/epochs.tex}
+\clearpage\section*{Per-seed fixed-image cross-evaluation}
+\begin{longtable}{llrrr}\toprule State & Predictor & Seed & Uniform set & Soft set\\\midrule\endhead
+selected & Uniform & 17 & 24.0496 & 24.0878\\
+selected & Soft & 17 & 24.1145 & 23.7023\\
+selected & Uniform & 42 & 24.1718 & 24.1908\\
+selected & Soft & 42 & 24.2023 & 23.7405\\
+selected & Uniform & 89 & 23.9656 & 23.8321\\
+selected & Soft & 89 & 24.1260 & 23.6107\\
+epoch12 & Uniform & 17 & 23.9733 & 24.0076\\
+epoch12 & Soft & 17 & 23.9389 & 23.6450\\
+epoch12 & Uniform & 42 & 24.0840 & 23.8817\\
+epoch12 & Soft & 42 & 24.2595 & 23.6908\\
+epoch12 & Uniform & 89 & 23.7901 & 23.6489\\
+epoch12 & Soft & 89 & 23.9122 & 23.5611\\
+\bottomrule\end{longtable}
+Risk entries are complete-vote disagreement percentages at exactly 2,620 accepted images.
+\begin{longtable}{llrrrr}\toprule State & Seed & Intersection & Union & Jaccard & Overlap fraction\\\midrule\endhead
+selected & 17 & 2397 & 2843 & 0.8431 & 0.9149\\
+selected & 42 & 2381 & 2859 & 0.8328 & 0.9088\\
+selected & 89 & 2402 & 2838 & 0.8464 & 0.9168\\
+epoch12 & 17 & 2394 & 2846 & 0.8412 & 0.9137\\
+epoch12 & 42 & 2391 & 2849 & 0.8392 & 0.9126\\
+epoch12 & 89 & 2404 & 2836 & 0.8477 & 0.9176\\
+\bottomrule\end{longtable}
+Overlap fraction divides the intersection by 2,620, whereas Jaccard divides by the union. The two accepted sets can share most images while their differing tails change mean risk.
+\end{document}
