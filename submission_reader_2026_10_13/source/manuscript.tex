@@ -1,0 +1,248 @@
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+\usepackage{graphicx,amsmath,amssymb,booktabs,tabularx,url,microtype,etoolbox,placeins,flafter,needspace}
+\raggedbottom
+\AtBeginDocument{\let\burl\url}
+\makeatletter
+% Keep the complete structured abstract together without changing type sizes.
+\patchcmd{\@maketitle}{\vskip21pt}{\vskip0pt}{}{\errmessage{Title spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip0pt}{}{\errmessage{Article-title spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip4pt}{}{\errmessage{Author spacing patch failed}}
+\patchcmd{\abstracthead}{-22pt}{-8pt}{}{\errmessage{Abstract spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip0pt}{}{\errmessage{Address spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip0pt}{}{\errmessage{Email spacing patch failed}}
+\def\ps@paper{\let\@oddhead\@empty\let\@evenhead\@empty
+  \def\@oddfoot{\hfil\thepage\hfil}\let\@evenfoot\@oddfoot}
+\let\ps@titlepage\ps@paper
+\let\ps@headings\ps@paper
+\makeatother
+\pagestyle{paper}
+\input{submission_reader_2026_10_13/source/generated/macros.tex}
+\begin{document}
+\title[Crowd-label supervision for selective FER]{Evaluating Crowd-Label Supervision for Selective Facial-Expression Recognition}
+\author[1]{\fnm{Gunjan Kumar} \sur{Mishra}}\email{mgunjan67@gmail.com}
+\author[2]{\fnm{Bijaya} \sur{Ghimire}}\email{vijay.gh74@gmail.com}
+\author*[3]{\fnm{Badri Raj} \sur{Lamichhane}}\email{d6622300231@g.siit.tu.ac.th}
+\author[4]{\fnm{Alan} \sur{Shah}}\email{shahalan0202@gmail.com}
+\affil[1]{\orgname{WorldQuant University}, \orgaddress{\city{Washington, D.C.}, \country{United States}}}
+\affil[2]{\orgdiv{Department of Electronics and Computer Engineering}, \orgname{Institute of Engineering, Paschimanchal Campus}, \orgaddress{\city{Pokhara}, \country{Nepal}}}
+\affil*[3]{\orgdiv{School of Information, Computer and Communication Technology}, \orgname{Sirindhorn International Institute of Technology, Thammasat University}, \orgaddress{\city{Pathum Thani}, \country{Thailand}}}
+\affil[4]{\orgname{Herald College Kathmandu}, \orgaddress{\city{Kathmandu}, \country{Nepal}}}
+\abstract{\input{submission_reader_2026_10_13/source/generated/abstract.tex}}
+\keywords{facial-expression recognition, crowd annotations, selective prediction, label distributions, supported vote mass, confidence calibration}
+\maketitle
+
+\section{Introduction}
+\input{submission_reader_2026_10_13/source/generated/introduction.tex}
+
+\section{Related work}
+\subsection{Facial-expression supervision}
+FER+ compares hard-label with distribution-based training using multiple annotations for FER2013 images \cite{barsoum2016ferplus}. Washington et al. extend the study of human response distributions using hard- and soft-target ResNet-152 models on CAFE, distinguishing categorical-reference performance from distributional agreement \cite{washington2021crowdsourcing}. These studies establish distribution-based supervision and the possibility that categorical and distributional measures favor different models. Our study examines that relationship under controls preserving the largest target probability or tied maxima, with selective comparisons on identical accepted images and explicit accounting for omitted response categories. Seven model outputs are retained for compatibility with the prototype, while evaluation uses all ten FER+ responses; this differs from the original eight-expression FER+ benchmark.
+
+Methods for uncertain expression labels differ in how they use disagreement. Self-Cure Network combines weighting and relabeling \cite{wang2020scn}, whereas Le et al. construct uncertainty-aware targets using neighbors in valence--arousal space \cite{le2023uncertainty}. MIDAS extends mixup to soft-labeled facial-expression videos \cite{kawamura2024midas}. Here, observed static-image votes remain fixed and only their training-target representation changes. This design examines a supervision comparison rather than the additional mechanisms used by those methods, whose reported benchmark scores use different protocols.
+
+The feature extractors and channel gates also follow established designs. Swin Transformer provides hierarchical shifted-window features \cite{liu2021swin}, and the gate uses the squeeze-and-excitation principle \cite{hu2018senet}. Vats and Chadha describe a related combination of Swin and squeeze-and-excitation for FER (unpublished preprint, 2023; \url{https://arxiv.org/abs/2301.10906}). Architecture is fixed within each backbone family so that the training target is the experimental variable; frozen transfer to acted speech videos then examines the external scope of the resulting comparisons.
+
+\subsection{Selective prediction and annotation disagreement}
+Selective classification studies the trade-off between rejection and error \cite{geifman2017selective}; SelectiveNet learns the rejector jointly with prediction \cite{geifman2019selectivenet}. In subjective language tasks, Crowd-Calibrator connects this trade-off to annotation disagreement \cite{khurana2024crowd}. It estimates crowd distributions from learned representations and uses their distance from model probabilities, optionally with predictive entropy, to decide whether to abstain. These approaches place rejection within the learning or calibration procedure. Our primary analysis instead compares supervision targets using maximum probability, with exploratory margin and negative-entropy scores applied to unchanged fitted models. It examines probability-only rankings rather than implementing or benchmarking a learned selector.
+
+Calibration provides a related but distinct question because softmax scores need not be calibrated probabilities \cite{guo2017calibration}. Tao, Luo, Dong and Xu distinguish calibration against majority labels from calibration against annotator distributions and propose ambiguity-aware post-hoc calibrators (\emph{Confidence Calibration under Ambiguous Ground Truth}, unpublished preprint, 2026; \url{https://arxiv.org/abs/2603.22879}). This distinction motivates reporting distributional distance, equal-coverage category disagreement and calibration-fitted operating points separately. The present study measures those outcomes without implementing their calibrators; lower squared distance alone is not interpreted as calibrated deployment confidence, nor is an empirically fitted error target treated as a risk guarantee.
+
+Recent dynamic-FER preprints combine several uncertainty sources. Yiming Wang, Frederick W. B. Li, and Jingyun Wang use a Dirichlet--multinomial vote-count objective, predicted disagreement, and a rejection score incorporating ambiguity, vacuity, temporal instability and input quality (\emph{Predicting Human Disagreement for Calibrated Dynamic Facial Expression Recognition}, unpublished preprint, 2026; \url{https://arxiv.org/abs/2609.17130}). The work was submitted to ICASSP 2027, with acceptance unverified. Inoshita and Ueno use a fine-tuned DINOv2 ensemble to estimate aleatoric and epistemic uncertainty, examining human disagreement and distribution shift before routing inputs (\emph{Interpretable Uncertainty Routing Separating Emotion Ambiguity from Distribution Shift in Facial Expression Recognition}, unpublished preprint, 2026; \url{https://arxiv.org/abs/2606.22725}). Our static-image controls and annotation-vocabulary accounting address a narrower measurement question without implementing these dynamic or ensemble methods. Because RAVDESS changes several factors together, the external evaluation is a frozen-pipeline stress test rather than a separation of intrinsic ambiguity from distribution shift. Differences in task, selector and reference definitions also prevent treating the cited language-task or dynamic-FER scores as directly comparable benchmarks.
+
+\Needspace{8\baselineskip}
+\section{Methods}
+\subsection{Study design and analysis hierarchy}
+The experiments compared alternative representations of the same crowd annotations while holding the training conditions fixed within each backbone and random seed. Swin-T was evaluated with hard labels, empirical supported-category vote distributions, and three controls addressing dominant probabilities or tied maxima. ResNet-18 provided secondary comparisons of the three distributional targets. Separate image roles were used for optimization, checkpoint selection, threshold calibration, and primary testing, with exact-pixel overlap removed between roles as described below. Evaluation addressed two distinct outcomes: disagreement of confidence-selected category predictions with the observed votes, and squared distance from the complete vote distribution. Comparisons on identical accepted-image sets examined whether the predictor ordering depended on which model selected the images. External evaluation applied frozen classifiers to RAVDESS clips without additional training. Across the within-source phases, 24 training runs produced 48 validation-selected and epoch-12 states; all 48 have recorded distributional scores and confidence-score summaries.
+
+The within-source experiments comprise four adaptive phases: initial hard/soft runs, Uniform/Tie-hard controls, a Tie-Uniform control, and a ResNet-18 follow-up. Soft denotes the empirical supported-category vote target; Uniform preserves its dominant probability while spreading the remainder equally among the other categories. The tie-preserving controls are defined with the complete target construction below. Each phase was specified before training and frozen before its own calibration/test inference, but earlier outcomes were already known. In particular, earlier PrivateTest results informed the follow-up phases. The validation-selected Swin-T Soft-minus-Uniform contrast is the primary follow-up comparison. Tie-preserving controls, fixed-epoch checkpoints, distributional distance and ResNet analyses have the secondary roles described below. The complete secondary distribution-distance comparison was assembled from previously recorded values after outcomes were known. The subsequent confidence-score analysis reuses previously examined test predictions and remains exploratory even though its scores and reporting rules were fixed before the additional summaries were computed.
+
+The external analysis followed a local protocol frozen before external model outcomes, after internal findings and RAVDESS annotation summaries were known. It is therefore not an external preregistration. A pre-analysis amendment corrected a swapped disgust/surprise response mapping against the primary source's descriptors and accuracy records before any external performance metric was computed. The original freeze and amendment are retained. External retained-output diagnostics were specified after the internal and external results were known and are exploratory. Supplementary Sect.~S9 and Online Resources 1 and 8 consolidate the phase-specific protocols, freeze records, amendment and execution metadata. Table~\ref{tab:phases} summarizes the adaptive phases.
+\input{submission_reader_2026_10_13/source/generated/phases.tex}
+
+\subsection{Data provenance and isolated roles}
+FER2013 contains 28,709 Training, 3,589 PublicTest, and 3,589 PrivateTest rows. The image CSV was acquired from a Kaggle mirror rather than an official maintainer distribution and joined to official FER+ annotations by original row identifier and partition. The join follows the official conversion script's indexing, and vote columns are mapped to the fixed model class order. Supplementary Sect.~S9 and Online Resource 1 supply acquisition metadata, immutable hashes, row-level manifests and the complete raw-source audit. These records establish consistency with the acquired archive, not independent authenticity or correctness of every annotation. Images are not redistributed, and a mirror's advertised license does not independently establish rights to the photographs.
+
+\begin{samepage}
+Exact pixel hashes define the data roles in Table~\ref{tab:roles} and Fig.~\ref{fig:design}. Training rows remain unchanged. We remove 280 PublicTest rows whose pixels match Training images, then assign the remaining pixel clusters to checkpoint selection or calibration using a fixed hash rule independent of labels and outcomes. The primary test population excludes 314 PrivateTest rows whose pixels occur in Training or any PublicTest row. Thus, exact pixels are disjoint across the four roles, although person-level and near-duplicate separation remain unverified. Full PrivateTest predictions are retained for audit; all main follow-up comparisons use the isolated primary population.\par
+\end{samepage}
+Figure~\ref{fig:design} summarizes these within-source dependencies. All four phases reuse the same image source; the external evaluation transfers frozen checkpoints without optimization (Sect.~\ref{sec:external}). The local prototype is documented separately in Online Resource 1.
+\input{submission_reader_2026_10_13/source/generated/roles.tex}
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\linewidth]{submission_reader_2026_10_13/source/figures/Fig1.pdf}
+\caption{Within-source experimental design. (a) Training uses target $t_i$ and weight $w_i$. Selection minimizes $J_e$, the selection-set ten-category squared distance with $p_e$ padded by three zeros, to choose $\theta_{e^*}$; $\theta_{12}$ is retained independently. (b) Frozen models provide test probabilities and maximum-probability scores. Own-ranking fixes the accepted count; cross-evaluation fixes the images. Test votes only score predictions. (c) Calibration votes fit threshold $\tau$, which stays fixed for testing. Only this branch fits a threshold, and it uses the original four Swin conditions}\label{fig:design}
+\end{figure}
+\subsection{Matched hard and soft supervision}
+Figure~\ref{fig:targets} illustrates the five training targets for a unique maximum and a tied maximum. The examples explain the target construction; they are not experimental observations.
+\begin{samepage}
+Let $q_{ic}$ be the fraction of annotations for image $i$ assigned to category $c$, normalized over all ten categories. The first seven correspond to the supported expression outputs. Define supported mass $w_i=\sum_{c=1}^{7}q_{ic}$ and $r_{ic}=q_{ic}/w_i$ when $w_i>0$. For model probabilities $p_{ic}$, the two per-image objectives are
+\begin{align}
+\ell_i^{\mathrm{hard}}&=-w_i\log p_{i h_i},\quad h_i=\arg\max_{c\leq7}r_{ic},\\
+\ell_i^{\mathrm{soft}}&=-w_i\sum_{c=1}^{7}r_{ic}\log p_{ic}
+                     =-\sum_{c=1}^{7}q_{ic}\log p_{ic}.
+\end{align}
+All conditions use the same images and weights, with loss averaged over batch size rather than total supported mass. The 152 Training rows with no votes for supported categories contribute zero supervised loss. Among positive-mass rows, 1,360 have tied maximum votes, which Hard resolves using the fixed class order.
+\end{samepage}
+
+The controls separate aspects of the target representation that a Hard--Soft comparison changes together. Uniform preserves the largest training-target probability by assigning $m_i=\max_c r_{ic}$ to the dominant class $h_i$ chosen by the fixed class order, and $(1-m_i)/6$ to every other class. Tie-hard instead assigns $1/|T_i|$ to each member of $T_i=\{c:q_{ic}=\max_{k\leq7}q_{ik}\}$ and zero otherwise. Both minimize $-w_i\sum_c t_{ic}\log p_{ic}$. Uniform compares the observed allocation among minority categories with image-dependent uniform softening; unlike constant label smoothing, its dominant probability varies by image. Tie-hard gives the expected loss of uniformly resolving tied maxima without additional random draws, and equals Hard on unique maxima. These conditions keep the images, weights and output vocabulary fixed rather than removing ambiguous images or manually relabeling them.
+
+A third control, Tie-Uniform, preserves every tied maximum. With $k_i=|T_i|$, its target is
+\begin{equation}
+t_{ic}^{\mathrm{TU}}=\begin{cases}m_i,&c\in T_i,\\(1-k_i m_i)/(7-k_i),&c\notin T_i,\ k_i<7.\end{cases}
+\end{equation}
+When $k_i=7$, all targets are $1/7$; rows with zero supported mass retain zero loss. Tie-Uniform equals Uniform on unique maxima and preserves every tied maximum otherwise. Like Uniform, it preserves the largest training-target probability but not entropy or aggregate class marginals. The three additional matched runs therefore test a secondary target-representation contrast rather than a uniquely isolated mechanism.
+
+\begin{figure}[tp]
+\centering\includegraphics[width=\linewidth]{submission_reader_2026_10_13/source/figures/TargetControls.pdf}
+\caption{Illustrative construction of the five training targets from the same supported vote distribution $r$. (a) A unique maximum. (b) Tied maxima. Hard uses the fixed class order to break ties; Tie-hard shares mass across tied maxima. Uniform preserves the chosen maximum probability and spreads the remainder equally. Tie-Uniform preserves every tied maximum and spreads the remaining mass across the other categories. Soft keeps the supported vote distribution. All targets use the same supported-mass weight $w$ in the loss. The examples are constructed for explanation, not selected dataset images}\label{fig:targets}
+\end{figure}
+
+
+\FloatBarrier
+\subsection{Architecture, preprocessing, and optimization}
+The five Swin-T conditions use torchvision Swin-T with ImageNet-1K V1 initialization \cite{liu2021swin,deng2009imagenet,paszke2019pytorch}. Its pooled feature $z\in\mathbb{R}^{768}$ is gated once, after the backbone:
+\begin{equation}
+\tilde z=z\odot\sigma\!\left(W_2\operatorname{ReLU}(W_1z)\right),
+\quad W_1\in\mathbb{R}^{48\times768},\quad W_2\in\mathbb{R}^{768\times48}.
+\end{equation}
+The gate layers have no biases, and a linear classifier with bias produces seven logits. The gate adds 73,728 parameters and remains fixed across conditions. Supplementary Fig.~S11 shows the Swin-T hierarchy, feature dimensions and post-pooling head. ResNet-18 uses the same head structure at its own pooled dimension. Because neither backbone is tested without the gate or with another head, these comparisons assess supervision rather than the necessity or superiority of gating.
+
+
+Images are converted to grayscale, repeated across three channels, resized to $224\times224$ by bilinear interpolation, and normalized with mean and standard deviation 0.5. The fixed output order is angry, disgust, fear, happy, neutral, sad, and surprise. Horizontal flips are the only augmentation and are determined by seed, epoch and original row. For Swin-T, seeds 17, 42, and 89 define three matched groups of five conditions with identical within-seed initialization, sample order, augmentation, architecture and budget. After model construction, the classifier is reset with Torch seed $1000+\mathrm{seed}$. Initial-state hashes and configuration comparisons verify this match.
+
+All backbone and head parameters are optimized for 12 epochs with AdamW \cite{loshchilov2019adamw}, batch size 32, learning rate $10^{-4}$, weight decay $10^{-4}$, and a cosine scheduler with $T_{\max}=12$ and $\eta_{\min}=10^{-6}$, stepped after each epoch. AdamW uses $\beta_1=0.9$, $\beta_2=0.999$, and $\epsilon=10^{-8}$. Training uses BF16 autocast on an NVIDIA RTX 3070 Laptop GPU with 8 GB memory, PyTorch 2.8.0+cu128, and torchvision 0.23.0+cu128. Deterministic algorithms and seeded data loaders control this execution without guaranteeing identical numerical behavior across platforms. The shared budget supports a matched comparison, not a claim of convergence or optimal hyperparameters.
+
+\Needspace{22\baselineskip}
+\begin{samepage}
+The validation-selected checkpoint minimizes mean squared distance from the complete ten-category vote distribution on the selection subset, after padding the seven predicted probabilities with three zeros; earlier epochs resolve ties. This shared criterion avoids selecting a condition by original-label F1. All five conditions are evaluated at both the selected and fixed epoch-12 checkpoints. The fixed-epoch comparison removes checkpoint selection as a stopping decision, although selection by another metric cannot be reconstructed because not all intermediate weights were retained. Both evaluated sets of weights, logs and probabilities accompany the supplementary package. For fixed annotations, squared distance differs from expected multiclass Brier loss against one annotation draw by $1-\lVert q_i\rVert_2^2$, a model-independent constant, providing a common probability-sensitive objective rather than either categorical reference.
+
+The shared selection criterion nevertheless has a different ideal target from weighted soft cross-entropy. For one image with $w>0$, weighted soft cross-entropy is minimized by $p_c=q_c/w$. Minimizing ten-category squared distance under $\sum_{c\leq7}p_c=1$ instead gives $p_c=q_c+(1-w)/7$ by a Lagrange multiplier. This nonnegative solution sums to one. The targets coincide at $w=1$ but generally differ otherwise, motivating the fixed-epoch and supported-mass diagnostics rather than an assumption that the criterion is neutral between supervision targets.
+\end{samepage}
+
+\subsection{Second-backbone robustness check}
+The final adaptive phase uses ResNet-18 \cite{he2016resnet} with torchvision ImageNet-1K V1 initialization. Its pooled 512-vector passes through one bias-free $512\!\to\!32\!\to\!512$ ReLU/sigmoid gate (32,768 parameters) and a seven-logit classifier with bias. Soft, Uniform and Tie-Uniform each use seeds 17, 42 and 89, sharing initialization, image order and augmentation within a seed. Data roles, transforms, losses, optimization, budget and selection criterion remain unchanged. BatchNorm follows standard training updates, including training images with zero supported mass, which can affect its statistics despite contributing no direct supervised loss. Retaining the shared transform instead of ResNet's default ImageNet transform keeps preprocessing matched. The differing backbone behavior and gate dimensions make this a secondary supervision-robustness check, not an optimized architecture comparison. All nine runs finish and are hashed before calibration/test inference; reporting includes selected and epoch-12 states, both 80\% contrasts, fixed-image cross-evaluations and vocabulary/reference diagnostics regardless of direction.
+
+\subsection{Disagreement, annotation floor, and classification metrics}
+For predicted category $\hat c_i=\arg\max p_i$, expected disagreement with one draw from the observed annotations is $d_i=1-q_{i\hat c_i}$. This quantity measures agreement with the empirical annotations.
+
+For illustration, suppose that six of ten annotations assign an image to happy and four assign it to neutral. Predicting happy gives disagreement 0.4, whereas predicting neutral gives disagreement 0.6. These are constructed values illustrating the definition, not dataset observations. A model may improve its probability estimate of this distribution while retaining happy as its predicted category, leaving category disagreement unchanged. Squared distributional distance evaluates the probability allocation, whereas the disagreement score evaluates the selected category.
+
+The lowest disagreement available to a seven-category predictor is the annotation floor $b_i=1-\max_{c\leq7}q_{ic}$, giving
+\begin{equation}
+d_i=b_i+e_i,\qquad e_i=\max_{c\leq7}q_{ic}-q_{i\hat c_i}\geq0.
+\label{eq:decomposition}
+\end{equation}
+The floor includes both disagreement among supported categories and votes outside the model's vocabulary. Reporting the mean floor, excess $e_i$ and total disagreement on identical accepted images separates accepted-set composition from category choice relative to the finite observed votes. The secondary measure of probability allocation is
+\begin{equation}
+D=\frac{1}{N}\sum_{i=1}^{N}\sum_{c=1}^{10}(\tilde p_{ic}-q_{ic})^2,
+\end{equation}
+where $\tilde p_i=(p_{i1},\ldots,p_{i7},0,0,0)$ and $q_i$ retains all ten vote categories without renormalizing to supported outputs. The distance sums over categories and averages over all $N=3,275$ primary test images for every available target, seed and selected/epoch-12 state. It measures test-set distributional agreement, distinct from the selection-set objective and confidence-selected category disagreement; a lower value alone does not establish calibration.
+
+The disagreement further decomposes algebraically into unsupported vote mass, supported-category ambiguity and excess disagreement:
+\begin{equation}
+d_i=\underbrace{1-w_i}_{\text{unsupported mass}}+
+\underbrace{w_i-\max_{c\leq7}q_{ic}}_{\text{supported ambiguity}}+e_i.
+\label{eq:threeparts}
+\end{equation}
+For an ideal model with $p_i=r_i$, disagreement is $1-w_i\max_c p_{ic}$. Maximum softmax probability (MSP) omits $w_i$: an MSP of 0.9 implies disagreement 0.1 when $w_i=1$, but 0.55 when $w_i=0.5$. This hypothetical example illustrates how supported mass enters the reference definition, without attributing the observed transfer failure solely to omitted mass. Annotation-derived $w_i$ is unavailable for a new runtime image and is not used as a deployment selector.
+
+Results are stratified by $w=0$, $0<w<1$, and $w=1$. Restricting a model's global 80\% accepted set to each stratum differs from selecting 80\% separately within each stratum; both analyses are labeled. For positive-mass images, supported-only disagreement, $1-r_{i\hat c_i}$, provides an additional conditional endpoint. Because it changes the reference population of votes, it complements rather than replaces complete-vote risk or an expanded-vocabulary model experiment.
+
+Secondary classification metrics use explicit categorical references \cite{sokolova2009metrics}. Against the original FER2013 labels, weighted F1 is $\sum_c n_c F1_c/N$ and macro F1 averages the seven $F1_c$ values equally, assigning zero to undefined class scores. Crowd-majority weighted F1 instead includes only images with more than half of all votes assigned to one supported category, with its denominator reported. These references define different tasks, so their F1 values are not compared as interchangeable scores. Full-vote outcomes retain images without a majority.
+
+\subsection{Selection, calibration, and uncertainty}
+The primary follow-up endpoint is the Soft-minus-Uniform difference in mean vote disagreement at 80\% common test coverage. The original Soft-minus-Hard contrast is retained, while Tie-hard and fixed-epoch contrasts provide sensitivity analyses. Each fitted model ranks images by MSP and accepts exactly $\lceil0.8N\rceil$, resolving score ties by original row order. Equal counts allow a common-coverage ranking comparison but do not ensure identical accepted images. No deployment threshold is fitted on test labels. Coverage values 20\%, 50\%, and 100\% and all-prefix curves provide secondary descriptions.
+
+Calibration transfer instead fits thresholds on the separate calibration subset, maximizing accepted count subject to empirical mean vote disagreement no greater than 10\%, 20\%, or 30\%. Each qualifying threshold must accept at least 100 calibration images without splitting score ties; if none qualifies, the policy abstains completely. The threshold is then frozen and applied unchanged to the primary test population. These empirical targets provide operating points, not confidence-bound guarantees, and test risk may exceed the target.
+
+For a conservative comparator, thresholds lie on a fixed 101-point grid from zero to one. At each threshold retaining $n\geq100$ calibration rows, define
+\begin{equation}
+U=\min\!\left\{1,\bar d+\sqrt{\frac{\log(101/0.05)}{2n}}\right\}.
+\end{equation}
+The comparator maximizes coverage subject to $U$ not exceeding the target, otherwise abstaining completely. Hoeffding's inequality \cite{hoeffding1963} and a union bound give simultaneous per-model control over the fixed grid for bounded, independent and identically distributed losses, a fixed fitted model and an unchanged population. Our reused, potentially dependent images and an unverified deployment population do not justify that guarantee. The comparator therefore illustrates the coverage cost of an established finite-sample margin; empty accepted sets have undefined risk rather than zero error.
+
+At each empirical operating point, the calibration-to-test change in mean risk is partitioned into the three terms of Eq.~\ref{eq:threeparts}, using each population's accepted set. Full-population summaries provide context for these conditional comparisons. To examine within-calibration variation, 100 deterministic pixel-cluster half-splits fit each empirical threshold on one half and evaluate it on the disjoint half, with assignments shared across models. The overlapping resamples describe search optimism and sample variation rather than independent replications or a causal explanation of the test-risk overshoot.
+
+Each within-backbone contrast is reported for all three paired seeds. A 5,000-replicate paired exact-pixel-cluster bootstrap shares sampled cluster multiplicities across compared models and reranks each replicate at 80\% coverage. Percentile intervals describe sensitivity to sampled images conditional on the fitted models, seeds and observed annotations; they exclude person-level dependence, annotation uncertainty, seed-population variability and prior hypothesis selection. Soft-minus-Tie-Uniform is a prespecified secondary contrast in the final adaptive phase. The validation-selected Swin-T Soft-minus-Uniform comparison remains the only primary follow-up contrast, with ResNet comparisons serving as adaptive secondary robustness checks. Other intervals describe sensitivities without multiple-comparison significance claims, and a zero-crossing interval does not establish equivalence.
+
+
+\subsection{Exploratory confidence-score sensitivity}
+The exploratory score analysis compares three functionals fixed before their additional comparative summaries were computed: MSP, the top-two margin $p_{(1)}-p_{(2)}$, and negative entropy $\sum_{c=1}^{7}p_c\log p_c$, where $p_{(1)}\geq p_{(2)}$ and $0\log0=0$. All rank the same frozen probabilities, increase with confidence, and leave predicted categories and crowd annotations unchanged. Original row ID resolves exact ties, and each score accepts $\lceil\gamma N\rceil$ images at coverage $\gamma\in\{0.2,0.5,0.8,1.0\}$. The ledger includes all 48 states and every available target, with both controls, backbone families and checkpoint states reported at 80\% coverage. These are own-ranking comparisons, not identical-image or threshold-transfer experiments. Paired-seed differences are descriptive, without new intervals or significance claims. The exploratory status follows from the previously examined MSP and test outcomes described in the study design; neither calibration-transfer policies nor the prototype are changed.
+
+
+\subsection{Frozen-checkpoint external clip evaluation}\label{sec:external}
+RAVDESS supplies original human category judgments for external evaluation \cite{livingstone2018ravdess}. We use all 1,440 video-only speech clips from 24 actors, with ten responses per clip and no audio. The unmodified S5 workbook provides nine response options: the seven model categories, calm, and none. The professional actors were aged 21--33 and recruited in Toronto, defining a limited acted-video population rather than a naturalistic messaging sample. Media were obtained from the original Zenodo record under CC BY-NC-SA 4.0 and are not redistributed; Online Resource 8 records archive and clip integrity checks. Changes in recording conditions, actor population and judgment unit make this an external clip-transfer test rather than a static-image benchmark replication. Figure~\ref{fig:externalpipeline} separates frozen prediction from annotation-based scoring.
+
+All 36 existing Soft, Uniform and Tie-Uniform states (two families, three seeds, selected and epoch 12) are evaluated without external fitting, checkpoint choice, threshold fitting or expression-peak selection. Hard and Tie-hard are outside this contrast family. The protocol samples eight bin centers $\lfloor(b+0.5)N/8\rfloor$, $b=0,\ldots,7$, from a clip of $N\geq8$ frames. Each frame requires exactly one MediaPipe detection (model selection 1, minimum confidence 0.5) and a valid crop from the shared routine, clipped to image bounds. Boxes are not expanded, and neither fallback detectors nor manual crop repairs are used. The original grayscale-three-channel, bilinear $224\times224$, mean/std 0.5 transform is retained. A clip requires at least four valid distinct frames to receive a prediction.
+
+Inference uses the earlier benchmark's CUDA BF16 forward pass and float32 softmax. The arithmetic mean of valid-frame probabilities, computed in float64, defines clip probabilities before argmax. This fixed aggregation is neither a temporal model nor the prototype's FP32 single-frame update rule. Frame probabilities, clip means, crop diagnostics and failures are retained. All 1,440 clips remain in the coverage denominator. At coverage $\gamma$, MSP accepts the top $\lceil\gamma\,1440\rceil$ eligible clips, resolving ties by filename order. An endpoint is unavailable if eligibility is insufficient; unavailable values are not imputed. Risk across all eligible clips and maximum achievable coverage are reported separately, with margin, negative entropy and coverages 20\%, 50\% and 100\% as prespecified sensitivities.
+
+Complete-reference disagreement is $1-q_{i\hat c_i}$, with the same three-term accounting as Eq.~\ref{eq:threeparts}. The primary reference retains all nine responses. A required sensitivity analysis merges calm into neutral while leaving none unchanged, following the original study's neutral/calm interchangeability convention without editing raw counts. These endpoints compare predictions with human response distributions rather than intended-expression labels or published RAVDESS accuracy. Soft-minus-Uniform at 80\% MSP for validation-selected Swin-T is the principal contrast. Reporting includes both controls, families and checkpoint states, all three paired seeds, and 80\% MSP fixed-image cross-evaluations regardless of direction.
+
+\begin{figure}[tp]
+\centering\includegraphics[width=\linewidth]{submission_reader_2026_10_13/source/figures/ExternalPipeline.pdf}
+\caption{Frozen-model transfer from static-image training to external video clips. Eight bin-center frames are sampled without selecting expression peaks. Valid single-face crops undergo the shared preprocessing and frozen-model inference; valid-frame probabilities are averaged before clip prediction and confidence ranking. At least four valid distinct frames are required, and every clip remains in the coverage denominator. Human responses enter scoring only. The raw reference retains nine responses; the sensitivity reference adds calm to neutral and retains none, without changing predictions or accepted clips. No external optimization, threshold fitting or temporal model is used}\label{fig:externalpipeline}
+\end{figure}
+
+External uncertainty is summarized by 5,000 paired actor-cluster bootstrap samples, resampling 24 whole actors with replacement (RNG seed 11011). Each replicate contains 1,440 clips because each actor contributes 60, and is reranked at 80\% of the repeated clip multiset. Shared actor multiplicities preserve pairing across seeds, conditions and references. Percentile 95\% intervals summarize mean paired-seed contrasts for both controls, families and checkpoint states; any replicates with insufficient eligibility are disclosed and preclude a complete interval. These intervals condition on the fitted models, observed actors and votes rather than unrestricted seed, rater or demographic populations, and are not used for multiple-testing superiority claims. Before outcome interpretation, source-overlap screening compares canonical $48\times48$ grayscale crop hashes and 63-bit AC DCT perceptual hashes with all 35,887 FER2013 images. Hamming distance at most four is a review flag, not an automatic exclusion or proof of identity overlap; an absent match does not establish person-disjointness. Online Resource 8 retains complete outputs and independent recomputation alongside the protocol and integrity records.
+
+\subsection{Post hoc retained-output diagnostics}
+The post hoc diagnostics summarize external category counts across all eligible clips and at the original 80\% MSP endpoint for every condition, checkpoint state and seed. Their exploratory status and timing are specified in the study design. For accepted clip set $A$, reference category $a$ and predicted category $b$, the vote-weighted matrix is
+\begin{equation}
+C_{ab}(A)=\sum_{i\in A}q_{ia}\,\mathbb{I}(\hat c_i=b).
+\end{equation}
+Row normalization divides by $\sum_{i\in A}q_{ia}$ and is undefined when that mass is zero. Rows for unsupported reference categories remain in the display. Because entries are fractional annotation contributions, they are not independent participant observations or ordinary single-label confusion counts. Raw and merged references score unchanged predictions and accepted IDs.
+
+Temporal summaries report mean neutral probability, category frequencies and frame-to-aggregate-clip argmax agreement across all eight bins, using valid-frame denominators. Human judgments apply to clips, so these are prediction diagnostics rather than frame-accuracy measures. Acquisition and response mapping, frame indices and crops, checkpoint identities, probability normalization and exact mean-probability aggregation are verified before interpretation. The diagnostics introduce no peak selection, filtering, fitting or new inferential test.
+
+\subsection{Implementation and verification boundary}
+The sender-controlled local prototype uses MediaPipe detection \cite{lugaresi2019mediapipe} with the shared image transform, class order and Swin model head, suppressing invalid, stale or unapproved cues. ResNet remains a research robustness check rather than an application model. Online Resource 1 documents the prototype's runtime, local-processing and transmission boundaries, unvalidated sender controls and absence of demonstrated communication benefit. The application is an implementation artifact, not the empirical validation setting. Code checks cover numerical metrics, checkpoint requirements and failure states. AI assistance (OpenAI Codex) was used for literature checking, experimental and analysis code, manuscript drafting, and technical verification; the authors remain responsible for methods, results, source accuracy and final submission.
+
+\FloatBarrier
+\Needspace{8\baselineskip}
+\section{Results}
+\input{submission_reader_2026_10_13/source/generated/results_academic.tex}
+
+\FloatBarrier
+\section{Discussion}
+\input{submission_reader_2026_10_13/source/generated/discussion.tex}
+
+\subsection{Limitations and scope of inference}
+The principal limitation is adaptive development on one image source. FER+ reannotates FER2013, and earlier PrivateTest outcomes informed subsequent phases; neither the isolated within-source test nor exploratory score sensitivity restores an untouched prospective image evaluation. RAVDESS adds a different media source under a locally frozen plan, but its selection followed known internal findings and annotation metadata. The resulting 24-actor acted-video evaluation tests transfer after changing the prediction unit from image to clip through uniform frame averaging. It is neither an independent static-image training replication nor a naturalistic messaging sample. Pixel and perceptual-hash screening address specific overlap routes rather than all identity or near-duplicate leakage, while external intervals remain conditional on the observed actors and votes. Generalization beyond these populations is unresolved.
+
+Three paired seeds per backbone and a fixed 12-epoch budget also limit optimization claims. Fixed-epoch sensitivity addresses one stopping decision without establishing convergence or robustness to every selection criterion. Grayscale preprocessing, small images, architecture and supported-vote weighting can influence the comparisons. Although two backbone families are examined, the study does not evaluate a learned selector, an independent vote-annotated static-image source or an expanded-vocabulary model. The controls therefore address specified alternative explanations rather than all mechanisms underlying the differences.
+
+Target construction and vocabulary impose further interpretive limits. Uniform preserves the largest training-target probability but generally changes entropy and aggregate class marginals, so its comparison with Soft does not isolate the causal role of alternative-category identities or establish that full distributions are necessary. Tie-hard addresses the fixed tie-breaking convention rather than every possible hard-label construction. Likewise, annotation floors depend on the finite panel, available categories and missing context; they are not fixed properties of a person or image. Adding output categories could change the available-category floor, but supported-mass stratification diagnoses the current vocabulary rather than testing that intervention.
+
+The benchmark population also differs from faces captured during message composition. Lighting, pose, occlusion, accessories, camera quality and detector failures may alter predictions and rejection behavior, and demographic or cultural variation was not evaluated. Consequently, the application remains outside the validated scope: the study provides no mobile-efficiency assessment, runtime error bound, participant findings, survey ratings or interpersonal conclusions. The prototype's unvalidated communication role and sender controls are documented with its implementation rather than used to support the empirical findings.
+
+Finally, the historical preprint's manual-relabeling scores are excluded because their curation records and checkpoints were not retained. The new findings use traceable public annotations rather than a claimed reproduction of that process; Online Resource 1 documents the historical provenance separately. Independent static-image evaluation and an appropriately reviewed communication study remain distinct future work, neither of which is supplied by the external acted-video transfer test.
+
+\section{Conclusion}
+\input{submission_reader_2026_10_13/source/generated/conclusion.tex}
+
+
+\backmatter
+\section*{Statements and Declarations}
+\noindent\textbf{Funding.} No funds, grants, or other support were received for preparation of this manuscript.
+
+\noindent\textbf{Competing interests.} The authors declare no competing interests.
+
+\noindent\textbf{Author contributions.} Gunjan Kumar Mishra conceived the prototype and led manuscript preparation. Bijaya Ghimire contributed to implementation, experimental design, and manuscript revision. Badri Raj Lamichhane supervised the work, contributed to methodology review, interpretation, and manuscript revision, and serves as corresponding author. Alan Shah contributed to literature review and code testing. All four authors approved the scientific content, authorship arrangement and declarations.
+
+\noindent\textbf{Ethics approval.} This study comprises secondary analysis of existing benchmark images, video-only speech clips and annotations, together with software tests. No institutional ethics approval or exemption determination was obtained.
+
+\noindent\textbf{Consent to participate.} No participants were recruited and no new human ratings were collected for the analyses reported here. The RAVDESS publication reports consent and ethics review for its original collection; this does not constitute approval of the present analysis. Photograph-level consent records for FER images were not independently verified.
+
+\noindent\textbf{Consent for publication.} No identifiable facial photograph is reproduced. Interface illustrations contain synthetic text and no participant images.
+
+\noindent\textbf{Data availability.} Acquisition records for FER2013 \cite{goodfellow2013fer} and official FER+ annotations \cite{barsoum2016ferplus}, immutable hashes, role assignments, and sample-level model probabilities are supplied in Online Resource 1. The consolidated Online Resource 1 also supplies the exploratory confidence-score protocol, code, all score/coverage summaries and input hashes. Images are not redistributed. The full ten-category FER+ annotations are retained for auditing the reported metrics. RAVDESS original S5 human responses and official media are available from its primary publication and Zenodo record \cite{livingstone2018ravdess}; Online Resource 8 retains derived nine-category counts, model probabilities and integrity records, without redistributing video or facial images.
+
+\noindent\textbf{Code availability.} The accompanying Online Resource 1 supplies within-source experimental, analysis and application code, tests, environment records, retained predictions and scientific provenance. Online Resource 8 supplies the external protocol, amendment, predictions and post hoc diagnostic code and exports. Online Resources 2--6 contain the 30 Swin-T selected and epoch-12 checkpoints; Online Resource 7 contains all 18 ResNet-18 checkpoints. The resource map supplies checksums and executable numerical-replay commands without requiring restricted media. Earlier code is at \url{https://github.com/mgunjan67/crowd-supervision-selective-fer}; that release does not replace the current accompanying resources. Automated regeneration is internal verification, not external replication.
+
+\noindent\textbf{Preprint statement.} An earlier version appeared on TechRxiv as ``Typing with Emotions: Facial Expression Recognition and Embedding in Text Messages,'' version 1, \url{https://doi.org/10.36227/techrxiv.175416003.30236370/v1}. This revision excludes participant evidence and unverifiable historical performance claims, corrects implementation descriptions, and supplies newly documented experiments. It does not claim to reproduce the historical curation procedure.
+
+\noindent\textbf{Supplementary information.} Online Resource 1: code, all four adaptive protocols, acquisition and split manifests, per-seed predictions and results, supplementary diagnostics, and historical provenance. Online Resources 2--7: all 48 selected and fixed-epoch inference checkpoints, grouped by backbone and supervision condition, with checksum manifests. Online Resource 8: frozen RAVDESS protocol, clip/frame probabilities, complete external ledgers, source hashes and independent verification; no media or duplicate weights.
+
+\FloatBarrier
+\bibliography{submission_reader_2026_10_13/source/references}
+\end{document}

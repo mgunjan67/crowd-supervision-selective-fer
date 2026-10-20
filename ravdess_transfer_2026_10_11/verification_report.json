@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "freeze_sha256": "6b892e3658c67059f13604ec261e3a19f3743620ddc06e4b6f88ae0b7ef05b50",
+  "independent_code": true,
+  "amendment_001_sha256": "f683055b11dbdbb30f970c2fcd48c4e2dc7f6507262f58f56cca3fe02aa155db",
+  "raw_workbook_rows_checked": 4320,
+  "video_only_votes_reconstructed": 1440,
+  "media_clips_rehashed": 1440,
+  "raw_video_bytes": 6774154143,
+  "valid_clips": 1440,
+  "sampled_frame_statuses": {
+    "valid": 11520
+  },
+  "checkpoint_states": 36,
+  "metric_cells": 936,
+  "paired_seed_contrasts": 576,
+  "paired_mean_contrasts": 192,
+  "fixed_image_cells": 192,
+  "actor_intervals": 16,
+  "bootstrap_replicates_recomputed": 5000,
+  "maximum_numeric_error": 0.0,
+  "maximum_clip_aggregation_error": 0.0,
+  "earlier_artifacts_preserved": {
+    "backbone_followup/reported_results.csv": "200a9b1df63cb267169a9f888b64a7fda3993f241494fff2e33320817bbfec3b",
+    "output/recovery-2026-10-10/research-revision.pdf": "182ed2e73b4501f4e13d2c903c4f243ed51b67ce46ef69be9d6693d4bf5f1c57",
+    "output/recovery-2026-10-10/Supplementary-diagnostics.pdf": "ff1b523d2079eab72fe70d572fa1376c1103f9c06cdfc3f0e8d098fe572274d3"
+  },
+  "elapsed_seconds": 43.75,
+  "caveat": "Internal independent implementation verification, not external replication."
+}

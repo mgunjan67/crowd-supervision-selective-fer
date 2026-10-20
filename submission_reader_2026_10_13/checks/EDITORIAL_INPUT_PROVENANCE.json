@@ -1,0 +1,6 @@
+{
+  "historical_csv": "paper_revision/final_experiment/reported_results.csv",
+  "sha256": "c881d1eafcca451dcbc1dea15f434f2eb2311a2fd82b40f57f71bd3747f28e22",
+  "role": "Unchanged earlier-phase ledger retained solely as a locked historical provenance/reproduction dependency. It is not the current manuscript result table or a newly computed analysis.",
+  "current_result_sources": "CLAIM_ARTIFACT_COMMAND_MAP.csv identifies the current table and figure inputs."
+}

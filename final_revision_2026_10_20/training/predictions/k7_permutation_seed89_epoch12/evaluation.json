@@ -1,0 +1,31 @@
+{
+  "k": 7,
+  "condition": "permutation",
+  "seed": 89,
+  "state": "epoch12",
+  "expected_epoch": 12,
+  "checkpoint": "final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-12.pt",
+  "checkpoint_sha256": "9b3b8ebc0036f225a80e13cce57caf77af0ae58449d4a0a3d68df1f8a914cccb",
+  "selection_reference_sha256": "2cb1eef71159d0c48eabf6b89847b6dec71734cfd3d964b99c36cef90e844a05",
+  "configuration_sha256": "763d7733d26582b4568efd533ae054c8c6977090b3e370318954d3d3677a1306",
+  "training_complete_sha256": "ecd311083caa8310408e9a5147e1fce7d3ad334f7d8ba4fe25783921c4cd78ee",
+  "execution_amendment_002_sha256": "872e12683f19376a5a632469a12162e8b6322c5305f78a8c01060007413c4e3b",
+  "epoch": 12,
+  "weight_sha256": "068f6b9c28d54d62d5ec9aa8062d817409dac9f0d078b334e980341fda36745d",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "1ca9f5a3eebe850057b3b763a3f68b0c67958faf43f23396f2fa7900b30bf894"
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "9e393d61d01a4784843dde9c513c90d46571d57153bf30bf118a3459738a8ca2"
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "f3e9364f69d616a04e7062b99aed94f03d2f46c03dc01717373b5fba06e52a07"
+    }
+  },
+  "started_utc": "2026-10-20T06:40:00.565248+00:00",
+  "finished_utc": "2026-10-20T06:40:23.236346+00:00"
+}

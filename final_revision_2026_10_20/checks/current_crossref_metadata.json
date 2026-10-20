@@ -1,0 +1,819 @@
+{
+  "checked_date_local": "2026-10-20",
+  "method": "Publisher-deposited Crossref work records fetched read-only; compact selected-field snapshot, not verbatim paper text.",
+  "records": [
+    {
+      "doi": "10.1145/2993148.2993165",
+      "source": "https://api.crossref.org/works/10.1145%2F2993148.2993165",
+      "title": [
+        "Training deep networks for facial expression recognition with crowd-sourced label distribution"
+      ],
+      "authors": [
+        {
+          "given": "Emad",
+          "family": "Barsoum"
+        },
+        {
+          "given": "Cha",
+          "family": "Zhang"
+        },
+        {
+          "given": "Cristian Canton",
+          "family": "Ferrer"
+        },
+        {
+          "given": "Zhengyou",
+          "family": "Zhang"
+        }
+      ],
+      "venue": [
+        "Proceedings of the 18th ACM International Conference on Multimodal Interaction"
+      ],
+      "pages": "279-283",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            10,
+            31
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/CVPR42600.2020.00693",
+      "source": "https://api.crossref.org/works/10.1109%2FCVPR42600.2020.00693",
+      "title": [
+        "Suppressing Uncertainties for Large-Scale Facial Expression Recognition"
+      ],
+      "authors": [
+        {
+          "given": "Kai",
+          "family": "Wang"
+        },
+        {
+          "given": "Xiaojiang",
+          "family": "Peng"
+        },
+        {
+          "given": "Jianfei",
+          "family": "Yang"
+        },
+        {
+          "given": "Shijian",
+          "family": "Lu"
+        },
+        {
+          "given": "Yu",
+          "family": "Qiao"
+        }
+      ],
+      "venue": [
+        "2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+      ],
+      "pages": "6896-6905",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1007/978-3-642-42051-1_16",
+      "source": "https://api.crossref.org/works/10.1007%2F978-3-642-42051-1_16",
+      "title": [
+        "Challenges in Representation Learning: A Report on Three Machine Learning Contests"
+      ],
+      "authors": [
+        {
+          "given": "Ian J.",
+          "family": "Goodfellow"
+        },
+        {
+          "given": "Dumitru",
+          "family": "Erhan"
+        },
+        {
+          "given": "Pierre Luc",
+          "family": "Carrier"
+        },
+        {
+          "given": "Aaron",
+          "family": "Courville"
+        },
+        {
+          "given": "Mehdi",
+          "family": "Mirza"
+        },
+        {
+          "given": "Ben",
+          "family": "Hamner"
+        },
+        {
+          "given": "Will",
+          "family": "Cukierski"
+        },
+        {
+          "given": "Yichuan",
+          "family": "Tang"
+        },
+        {
+          "given": "David",
+          "family": "Thaler"
+        },
+        {
+          "given": "Dong-Hyun",
+          "family": "Lee"
+        },
+        {
+          "given": "Yingbo",
+          "family": "Zhou"
+        },
+        {
+          "given": "Chetan",
+          "family": "Ramaiah"
+        },
+        {
+          "given": "Fangxiang",
+          "family": "Feng"
+        },
+        {
+          "given": "Ruifan",
+          "family": "Li"
+        },
+        {
+          "given": "Xiaojie",
+          "family": "Wang"
+        },
+        {
+          "given": "Dimitris",
+          "family": "Athanasakis"
+        },
+        {
+          "given": "John",
+          "family": "Shawe-Taylor"
+        },
+        {
+          "given": "Maxim",
+          "family": "Milakov"
+        },
+        {
+          "given": "John",
+          "family": "Park"
+        },
+        {
+          "given": "Radu",
+          "family": "Ionescu"
+        },
+        {
+          "given": "Marius",
+          "family": "Popescu"
+        },
+        {
+          "given": "Cristian",
+          "family": "Grozea"
+        },
+        {
+          "given": "James",
+          "family": "Bergstra"
+        },
+        {
+          "given": "Jingjing",
+          "family": "Xie"
+        },
+        {
+          "given": "Lukasz",
+          "family": "Romaszko"
+        },
+        {
+          "given": "Bing",
+          "family": "Xu"
+        },
+        {
+          "given": "Zhang",
+          "family": "Chuang"
+        },
+        {
+          "given": "Yoshua",
+          "family": "Bengio"
+        }
+      ],
+      "venue": [
+        "Lecture Notes in Computer Science",
+        "Neural Information Processing"
+      ],
+      "pages": "117-124",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2013
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/CVPR.2009.5206848",
+      "source": "https://api.crossref.org/works/10.1109%2FCVPR.2009.5206848",
+      "title": [
+        "ImageNet: A large-scale hierarchical image database"
+      ],
+      "authors": [
+        {
+          "given": "Jia",
+          "family": "Deng"
+        },
+        {
+          "given": "Wei",
+          "family": "Dong"
+        },
+        {
+          "given": "Richard",
+          "family": "Socher"
+        },
+        {
+          "given": "Li-Jia",
+          "family": "Li"
+        },
+        {
+          "given": null,
+          "family": "Kai Li"
+        },
+        {
+          "given": null,
+          "family": "Li Fei-Fei"
+        }
+      ],
+      "venue": [
+        "2009 IEEE Conference on Computer Vision and Pattern Recognition"
+      ],
+      "pages": "248-255",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/ICCV48922.2021.00986",
+      "source": "https://api.crossref.org/works/10.1109%2FICCV48922.2021.00986",
+      "title": [
+        "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows"
+      ],
+      "authors": [
+        {
+          "given": "Ze",
+          "family": "Liu"
+        },
+        {
+          "given": "Yutong",
+          "family": "Lin"
+        },
+        {
+          "given": "Yue",
+          "family": "Cao"
+        },
+        {
+          "given": "Han",
+          "family": "Hu"
+        },
+        {
+          "given": "Yixuan",
+          "family": "Wei"
+        },
+        {
+          "given": "Zheng",
+          "family": "Zhang"
+        },
+        {
+          "given": "Stephen",
+          "family": "Lin"
+        },
+        {
+          "given": "Baining",
+          "family": "Guo"
+        }
+      ],
+      "venue": [
+        "2021 IEEE/CVF International Conference on Computer Vision (ICCV)"
+      ],
+      "pages": "9992-10002",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/CVPR.2018.00745",
+      "source": "https://api.crossref.org/works/10.1109%2FCVPR.2018.00745",
+      "title": [
+        "Squeeze-and-Excitation Networks"
+      ],
+      "authors": [
+        {
+          "given": "Jie",
+          "family": "Hu"
+        },
+        {
+          "given": "Li",
+          "family": "Shen"
+        },
+        {
+          "given": "Gang",
+          "family": "Sun"
+        }
+      ],
+      "venue": [
+        "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition"
+      ],
+      "pages": "7132-7141",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1177/1529100619832930",
+      "source": "https://api.crossref.org/works/10.1177%2F1529100619832930",
+      "title": [
+        "Emotional Expressions Reconsidered: Challenges to Inferring Emotion From Human Facial Movements"
+      ],
+      "authors": [
+        {
+          "given": "Lisa Feldman",
+          "family": "Barrett"
+        },
+        {
+          "given": "Ralph",
+          "family": "Adolphs"
+        },
+        {
+          "given": "Stacy",
+          "family": "Marsella"
+        },
+        {
+          "given": "Aleix M.",
+          "family": "Martinez"
+        },
+        {
+          "given": "Seth D.",
+          "family": "Pollak"
+        }
+      ],
+      "venue": [
+        "Psychological Science in the Public Interest"
+      ],
+      "pages": "1-68",
+      "volume": "20",
+      "issue": "1",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1016/j.ipm.2009.03.002",
+      "source": "https://api.crossref.org/works/10.1016%2Fj.ipm.2009.03.002",
+      "title": [
+        "A systematic analysis of performance measures for classification tasks"
+      ],
+      "authors": [
+        {
+          "given": "Marina",
+          "family": "Sokolova"
+        },
+        {
+          "given": "Guy",
+          "family": "Lapalme"
+        }
+      ],
+      "venue": [
+        "Information Processing &amp; Management"
+      ],
+      "pages": "427-437",
+      "volume": "45",
+      "issue": "4",
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/BIGCOM.2019.00037",
+      "source": "https://api.crossref.org/works/10.1109%2FBIGCOM.2019.00037",
+      "title": [
+        "EmoChat: Bringing Multimodal Emotion Detection to Mobile Conversation"
+      ],
+      "authors": [
+        {
+          "given": "Luyao",
+          "family": "Chong"
+        },
+        {
+          "given": "Meng",
+          "family": "Jin"
+        },
+        {
+          "given": "Yuan",
+          "family": "He"
+        }
+      ],
+      "venue": [
+        "2019 5th International Conference on Big Data Computing and Communications (BIGCOM)"
+      ],
+      "pages": "213-221",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/CIC48465.2019.00030",
+      "source": "https://api.crossref.org/works/10.1109%2FCIC48465.2019.00030",
+      "title": [
+        "Integration of User Emotion and Self-Awareness in Text Messaging"
+      ],
+      "authors": [
+        {
+          "given": "Li",
+          "family": "Liu"
+        },
+        {
+          "given": "Dragos",
+          "family": "Guta"
+        },
+        {
+          "given": "Shuo",
+          "family": "Niu"
+        }
+      ],
+      "venue": [
+        "2019 IEEE 5th International Conference on Collaboration and Internet Computing (CIC)"
+      ],
+      "pages": "178-183",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/WACV56688.2023.00603",
+      "source": "https://api.crossref.org/works/10.1109%2FWACV56688.2023.00603",
+      "title": [
+        "Uncertainty-aware Label Distribution Learning for Facial Expression Recognition"
+      ],
+      "authors": [
+        {
+          "given": "Nhat",
+          "family": "Le"
+        },
+        {
+          "given": "Khanh",
+          "family": "Nguyen"
+        },
+        {
+          "given": "Quang",
+          "family": "Tran"
+        },
+        {
+          "given": "Erman",
+          "family": "Tjiputra"
+        },
+        {
+          "given": "Bac",
+          "family": "Le"
+        },
+        {
+          "given": "Anh",
+          "family": "Nguyen"
+        }
+      ],
+      "venue": [
+        "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+      ],
+      "pages": "6077-6086",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/WACV57701.2024.00642",
+      "source": "https://api.crossref.org/works/10.1109%2FWACV57701.2024.00642",
+      "title": [
+        "MIDAS: Mixing Ambiguous Data with Soft Labels for Dynamic Facial Expression Recognition"
+      ],
+      "authors": [
+        {
+          "given": "Ryosuke",
+          "family": "Kawamura"
+        },
+        {
+          "given": "Hideaki",
+          "family": "Hayashi"
+        },
+        {
+          "given": "Noriko",
+          "family": "Takemura"
+        },
+        {
+          "given": "Hajime",
+          "family": "Nagahara"
+        }
+      ],
+      "venue": [
+        "2024 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+      ],
+      "pages": "6538-6548",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1080/01621459.1963.10500830",
+      "source": "https://api.crossref.org/works/10.1080%2F01621459.1963.10500830",
+      "title": [
+        "Probability Inequalities for Sums of Bounded Random Variables"
+      ],
+      "authors": [
+        {
+          "given": "Wassily",
+          "family": "Hoeffding"
+        }
+      ],
+      "venue": [
+        "Journal of the American Statistical Association"
+      ],
+      "pages": "13-30",
+      "volume": "58",
+      "issue": "301",
+      "published": {
+        "date-parts": [
+          [
+            1963,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1109/CVPR.2016.90",
+      "source": "https://api.crossref.org/works/10.1109%2FCVPR.2016.90",
+      "title": [
+        "Deep Residual Learning for Image Recognition"
+      ],
+      "authors": [
+        {
+          "given": "Kaiming",
+          "family": "He"
+        },
+        {
+          "given": "Xiangyu",
+          "family": "Zhang"
+        },
+        {
+          "given": "Shaoqing",
+          "family": "Ren"
+        },
+        {
+          "given": "Jian",
+          "family": "Sun"
+        }
+      ],
+      "venue": [
+        "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+      ],
+      "pages": "770-778",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1007/s12559-021-09936-4",
+      "source": "https://api.crossref.org/works/10.1007%2Fs12559-021-09936-4",
+      "title": [
+        "Training Affective Computer Vision Models by Crowdsourcing Soft-Target Labels"
+      ],
+      "authors": [
+        {
+          "given": "Peter",
+          "family": "Washington"
+        },
+        {
+          "given": "Haik",
+          "family": "Kalantarian"
+        },
+        {
+          "given": "Jack",
+          "family": "Kent"
+        },
+        {
+          "given": "Arman",
+          "family": "Husic"
+        },
+        {
+          "given": "Aaron",
+          "family": "Kline"
+        },
+        {
+          "given": "Emilie",
+          "family": "Leblanc"
+        },
+        {
+          "given": "Cathy",
+          "family": "Hou"
+        },
+        {
+          "given": "Cezmi",
+          "family": "Mutlu"
+        },
+        {
+          "given": "Kaitlyn",
+          "family": "Dunlap"
+        },
+        {
+          "given": "Yordan",
+          "family": "Penev"
+        },
+        {
+          "given": "Nate",
+          "family": "Stockham"
+        },
+        {
+          "given": "Brianna",
+          "family": "Chrisman"
+        },
+        {
+          "given": "Kelley",
+          "family": "Paskov"
+        },
+        {
+          "given": "Jae-Yoon",
+          "family": "Jung"
+        },
+        {
+          "given": "Catalin",
+          "family": "Voss"
+        },
+        {
+          "given": "Nick",
+          "family": "Haber"
+        },
+        {
+          "given": "Dennis P.",
+          "family": "Wall"
+        }
+      ],
+      "venue": [
+        "Cognitive Computation"
+      ],
+      "pages": "1363-1373",
+      "volume": "13",
+      "issue": "5",
+      "published": {
+        "date-parts": [
+          [
+            2021,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.1371/journal.pone.0196391",
+      "source": "https://api.crossref.org/works/10.1371%2Fjournal.pone.0196391",
+      "title": [
+        "The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English"
+      ],
+      "authors": [
+        {
+          "given": "Steven R.",
+          "family": "Livingstone"
+        },
+        {
+          "given": "Frank A.",
+          "family": "Russo"
+        }
+      ],
+      "venue": [
+        "PLOS ONE"
+      ],
+      "pages": "e0196391",
+      "volume": "13",
+      "issue": "5",
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "doi": "10.18653/v1/2022.emnlp-main.124",
+      "source": "https://api.crossref.org/works/10.18653%2Fv1%2F2022.emnlp-main.124",
+      "title": [
+        "Stop Measuring Calibration When Humans Disagree"
+      ],
+      "authors": [
+        {
+          "given": "Joris",
+          "family": "Baan"
+        },
+        {
+          "given": "Wilker",
+          "family": "Aziz"
+        },
+        {
+          "given": "Barbara",
+          "family": "Plank"
+        },
+        {
+          "given": "Raquel",
+          "family": "Fernandez"
+        }
+      ],
+      "venue": [
+        "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing"
+      ],
+      "pages": "1892-1915",
+      "volume": null,
+      "issue": null,
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      }
+    }
+  ]
+}

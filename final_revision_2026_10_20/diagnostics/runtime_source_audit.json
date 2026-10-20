@@ -1,0 +1,15 @@
+{
+  "status": "sources_verified",
+  "gpu_used": false,
+  "new_inference": false,
+  "original_frozen_sources": 8,
+  "original_data_source_records": 6,
+  "amendment_001_sources": 3,
+  "amendment_002_sources": 3,
+  "original_freeze_sha256": "87bda97c6ea29e89165965b715a635be52488341895c63100a7f8d4886698f79",
+  "amendment_002_freeze_sha256": "fb01805640fe1481bd8b1e0fec772b97d863fe139af8dfc24b2b414c7b1a3971",
+  "declared_training_runs": 12,
+  "planned_inference_states": 33,
+  "completed_training_runs_at_audit": 0,
+  "note": "Actual final state validity is checked only after all twelve training runs; no inference is permitted before completeness."
+}

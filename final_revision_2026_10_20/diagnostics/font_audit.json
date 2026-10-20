@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "type3_fonts": 0,
+  "pdf_files_checked": 5,
+  "reports": [
+    {
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\final_revision_2026_10_20\\diagnostics\\external_aggregation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "fonts": [
+            {
+              "xref": 27,
+              "extension": "ttf",
+              "type": "Type0",
+              "base_font": "BXGEVL+DejaVuSerif"
+            }
+          ]
+        }
+      ],
+      "sha256": "38e73e48ca0f251ff78d419d196e613574535d06e8f86b71f6f22d3b45ee6788"
+    },
+    {
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\final_revision_2026_10_20\\diagnostics\\ranking_comparison.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "fonts": [
+            {
+              "xref": 15,
+              "extension": "ttf",
+              "type": "Type0",
+              "base_font": "BXGEVL+DejaVuSerif"
+            }
+          ]
+        }
+      ],
+      "sha256": "a5736523559c89dfd588c94118dafd0a5c782e50ffdb10910c3920443f02629e"
+    },
+    {
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\final_revision_2026_10_20\\diagnostics\\TargetIntervention.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "fonts": [
+            {
+              "xref": 17,
+              "extension": "ttf",
+              "type": "Type0",
+              "base_font": "BXGEVL+DejaVuSerif"
+            }
+          ]
+        }
+      ],
+      "sha256": "b20374c026739e027de37383f4bbb7b628afcb8b525e38cd9620f70dd2ecdc23"
+    },
+    {
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\final_revision_2026_10_20\\source\\figures\\ExternalAggregation.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "fonts": [
+            {
+              "xref": 27,
+              "extension": "ttf",
+              "type": "Type0",
+              "base_font": "BXGEVL+DejaVuSerif"
+            }
+          ]
+        }
+      ],
+      "sha256": "38e73e48ca0f251ff78d419d196e613574535d06e8f86b71f6f22d3b45ee6788"
+    },
+    {
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\final_revision_2026_10_20\\source\\figures\\TargetIntervention.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "fonts": [
+            {
+              "xref": 17,
+              "extension": "ttf",
+              "type": "Type0",
+              "base_font": "BXGEVL+DejaVuSerif"
+            }
+          ]
+        }
+      ],
+      "sha256": "b20374c026739e027de37383f4bbb7b628afcb8b525e38cd9620f70dd2ecdc23"
+    }
+  ]
+}

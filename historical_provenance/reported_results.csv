@@ -1,0 +1,6 @@
+dataset,variant,optimizer,weighted_f1,provenance
+FER2013,Swin-T,Adam,0.7123,TechRxiv v1 internal comparison
+FER2013,Swin-T + channel gate,Adam,0.7677,TechRxiv v1 headline result
+RAF-DB basic,Swin-T,Adam,0.8474,TechRxiv v1 internal comparison
+RAF-DB basic,Swin-T + channel gate,Adam,0.8971,TechRxiv v1 internal comparison
+RAF-DB basic,Swin-T + channel gate,SAM,0.9228,TechRxiv v1 headline result

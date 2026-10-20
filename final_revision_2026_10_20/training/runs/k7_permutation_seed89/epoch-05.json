@@ -1,0 +1,11 @@
+{
+  "run": "k7_permutation_seed89",
+  "epoch": 5,
+  "loss": 0.8772183977605457,
+  "distance": 0.12687053053636477,
+  "risk80": 0.22293853073463266,
+  "selected": true,
+  "risk_selected": true,
+  "seconds": 244.36916689999634,
+  "finished_utc": "2026-10-19T23:20:06.042065+00:00"
+}

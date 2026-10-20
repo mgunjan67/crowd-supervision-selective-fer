@@ -1,0 +1,57 @@
+\subsection{Original target and checkpoint comparisons}
+At 80\% coverage, validation-selected seven-output Swin-T has mean complete-vote disagreement of 23.68\% for Soft and 24.06\% for Uniform (Table~\ref{tab:primary}). Soft minus Uniform is -0.38 percentage points (pp), with a conditional 95\% pixel-cluster interval of [-0.64, -0.07]. Each model accepts its own 2,620 images. The corresponding Soft-minus-Hard difference is -2.61 pp [-2.98, -2.19]; the substantially smaller matched-control difference changes the interpretation of that hard--soft comparison.
+\input{final_revision_2026_10_20/source/generated/primary_table.tex}
+
+Tie-hard minus Hard is -0.47 pp [-0.80, -0.12], and Soft minus Tie-hard is -2.14 pp [-2.49, -1.76]. At fixed epoch 12, Soft minus Uniform remains negative (-0.32 pp [-0.63, -0.05]), whereas Soft minus Hard is -1.35 pp [-1.72, -1.05]. Soft also has lower disagreement than Tie-Uniform at both Swin checkpoint states. The supplement retains all seed differences, absolute risks, selected epochs, trajectories and coverage curves; these are correlated sensitivities on the same image source, not additional independent confirmations.
+
+\subsection{Distributional agreement and backbone sensitivity}\label{sec:distance}
+Soft has lower ten-category squared distance than Uniform and Tie-Uniform in every original seed, backbone and checkpoint state. For selected Swin-T, the means are 0.09783 versus 0.11571 and 0.11373 (Table~\ref{tab:distance}). This scores all 3,275 primary-test images, without rejection.
+\begin{table}[!htbp]
+\caption{Complete-vocabulary squared distances: means across three seeds on all 3,275 primary-test images. Values are unscaled distance units; lower is better}\label{tab:distance}
+\centering\small\begin{tabular}{llrrr}\toprule
+Backbone & State & Soft & Uniform & Tie-Uniform\\\midrule
+Swin-T & Selected & 0.09783 & 0.11571 & 0.11373\\
+Swin-T & Epoch 12 & 0.09779 & 0.11699 & 0.11280\\
+ResNet-18 & Selected & 0.11059 & 0.12303 & 0.11805\\
+ResNet-18 & Epoch 12 & 0.11089 & 0.12259 & 0.11665\\
+\bottomrule\end{tabular}
+\end{table}
+
+The selective result is less consistent. Selected ResNet-18 gives Soft minus Uniform of +0.173 pp, compared with -0.378 pp for Swin-T; all four ResNet conditional intervals cross zero. Figure~\ref{fig:backbones} displays both outcomes with their distinct scales. Fixed-epoch values and all per-seed distributional scores appear in Supplementary Sect.~S2. These findings establish a difference between the measured outcomes for the tested models, without establishing a general architecture ordering.
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\linewidth]{final_revision_2026_10_20/source/figures/Fig7.pdf}
+\caption{Original Soft-minus-control differences. (a) Squared distance on all 3,275 images. (b) Complete-vote disagreement at 80\% own-ranking coverage. Symbols show three paired-seed contrasts and their mean; bars in (b) are conditional 95\% pixel-cluster intervals. No interval is shown in (a). The panels have different units and scales. Negative favors Soft}\label{fig:backbones}
+\end{figure}
+
+\input{final_revision_2026_10_20/source/generated/new_followup.tex}
+
+\subsection{Identical images and annotation references}
+Selected Swin-T's predictor ordering depends on who selects the images: Soft minus Uniform is +0.085 pp on Uniform-selected images but -0.352 pp on Soft-selected images (Fig.~\ref{fig:cross}). Within each set, the annotation reference and images are fixed, so the comparison concerns category choices. Changing from Uniform's set to Soft's set gives -0.025 pp for a fixed Uniform predictor and -0.463 pp for a fixed Soft predictor; mean Jaccard overlap is 0.8408. ResNet likewise changes sign between Uniform-selected (+0.445 pp) and Soft-selected images (-0.412 pp). The supplement retains both states and all seed matrices.
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\linewidth]{final_revision_2026_10_20/source/figures/Fig4.pdf}
+\caption{Fixed-image cross-evaluation at 80\% coverage for selected (a) Swin-T and (b) ResNet-18. Cells show mean complete-vote disagreement (\%) across three seeds. Columns fix the selector's 2,620-image set; rows change the predictor. Signed Soft-minus-Uniform differences therefore hold images fixed. Each model's own-set risk uses different images}\label{fig:cross}
+\end{figure}
+
+The categorical reference also changes measured performance. On the same 2,484 supported-majority images, selected Swin-T Soft has weighted F1 0.6685 against original FER2013 labels and 0.9270 against crowd-majority labels. Against original labels, its score is 0.5722 on the full 3,275-image population. The first comparison changes the reference; the second changes the images. Neither changes the model predictions or establishes a new benchmark accuracy. Supplementary Sect.~S3 supplies complete same-image scores and the reference correspondence matrix.
+
+\subsection{Unsupported categories and calibration transfer}
+The original primary test set contains 1,732 fully supported, 1,527 partly supported and 16 zero-supported-mass images. At separately ranked 80\% within-stratum coverage, Soft/Uniform disagreement is 10.42\%/10.94\% for fully supported images and 40.00\%/40.58\% for partly supported images. The overall contrast is therefore not confined to images receiving unsupported votes. However, Soft accepts a mean 11.00 of the 16 zero-mass images, versus 7.00 for Uniform and 6.67 for Tie-Uniform. Lower overall disagreement does not imply better rejection of those inputs. Supplementary Sect.~S4 gives the global and within-stratum results, with contempt, unknown and not-a-face reported separately.
+
+Empirical calibration fails to preserve its nominal targets: all 36 nonempty original test settings exceed them. These overlapping settings are not independent trials. At the 10\% target, Soft achieves 49.54\% coverage and 13.01\% risk, versus Hard's 38.35\% and 11.45\%. This is not an equal-achieved-risk coverage advantage.
+
+The full-population annotation floor rises from 23.70\% in calibration to 26.67\% in testing, while unsupported mass rises from 5.72\% to 7.88\%. On Soft's accepted sets at the 20\% target, the +2.57 pp risk gap comprises +1.98 pp unsupported mass, +0.78 pp supported ambiguity and -0.19 pp excess (Fig.~\ref{fig:transfer}). These quantities describe rather than cause the gap. Calibration half-split holdout-minus-fit gaps average +0.05 to +0.19 pp, with broad descriptive 5th--95th-percentile ranges around -2.3 to +2.8 pp. The fixed-grid comparator yields 24 nonempty test settings with no overshoot, but fully abstains at the 10\% target for every condition and seed. Supplementary Sect.~S6 retains all thresholds, resamples and achieved risks.
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\linewidth]{final_revision_2026_10_20/source/figures/Fig6.pdf}
+\caption{Original calibration-to-test risk accounting. Mean differences in unsupported mass, supported ambiguity and excess sum to the risk gap on the respective accepted sets. H: Hard; T: Tie-hard; U: Uniform; S: Soft. Panels share a scale. These are descriptive components, not identified causes}\label{fig:transfer}
+\end{figure}
+
+\subsection{External clip transfer}
+All 1,440 clips and 11,520 sampled frames meet the frozen rules, giving 100\% maximum coverage. At 80\% own-MSP coverage, selected Swin-T Soft has raw-reference disagreement of 68.37\%, Uniform 67.75\% and Tie-Uniform 67.42\%. Merging calm into neutral changes these to 60.72\%, 60.62\% and 60.03\%, while scoring the same predictions and accepted clips. This is agreement with human responses, not intended-expression accuracy.
+
+The selected Swin Soft-minus-Uniform contrasts are -0.052, +2.639 and -0.755 pp for seeds 17, 42 and 89 under raw scoring: mean +0.611 pp, conditional actor interval [+0.23, +1.09]. Merged scoring gives -1.276, +2.483 and -0.903 pp: mean +0.101 pp [-0.26, +0.59]. Contrasts use unrounded risks. The positive mean is driven by seed 42 and does not establish a stable ordering over retraining. All three epoch-12 Swin contrasts favor Soft under merged scoring, illustrating checkpoint dependence. Figure~\ref{fig:external} and Supplementary Sect.~S7 retain both controls, backbones, states and references.
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\linewidth]{final_revision_2026_10_20/source/figures/ExternalContrasts.pdf}
+\caption{Original external Soft-minus-control disagreement differences at 80\% own-MSP coverage. Hollow symbols show paired seeds; diamonds and bars show means and conditional 95\% actor-cluster intervals. Sel.: distance-selected; E12: epoch 12; U: Uniform; TU: Tie-Uniform. Negative favors Soft. The shared scale exposes seed variation; intervals condition on fitted pairs and observed actors/votes, not new seeds or raters}\label{fig:external}
+\end{figure}
+
+Transfer is poor for all conditions. Selected Swin Soft's raw all-clip risk is 71.06\%, comprising 11.90 pp unsupported mass, 16.81 pp supported ambiguity and 42.36 pp excess. On its accepted set, risk is 68.37\%, comprising 14.00, 16.61 and 37.76 pp, respectively. Thus, missing output categories alone cannot account for failure. Neutral comprises 67.0--70.0\% of accepted Soft predictions and 62.7--68.3\% of Uniform predictions. Vote-weighted matrices and eight-bin summaries describe these outputs, without treating clip labels as frame accuracy or assigning a cause to capture, population or aggregation. The follow-up aggregation and constant-category references below examine part of this interpretive uncertainty.

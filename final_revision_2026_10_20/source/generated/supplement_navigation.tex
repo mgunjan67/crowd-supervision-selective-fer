@@ -1,0 +1,12 @@
+\section*{How to use this supplement}
+Sections S1--S7 retain the complete diagnostics for the original experiments. Section S8 collects the fixed model architecture and the local composition prototype. Section S9 records acquisition, annotation alignment, execution chronology and reproduction routes. The final sections report the new target, vocabulary and pipeline follow-ups. The main article groups these findings more compactly; the section numbering here identifies the underlying evidence rather than matching each main-text subsection.
+
+\tableofcontents
+\medskip
+\section*{Notation and interpretation}
+Original numerical summaries are generated from \texttt{reported\_results.csv}. The additional score-sensitivity summaries are generated from the three \texttt{selector} CSV ledgers in the consolidated Online Resource 1.
+S denotes Soft, U Uniform, H Hard, and T Tie-hard. Differences are percentage points.
+The three seeds are fixed; they do not represent all possible retraining outcomes.
+Training phases reuse one image source. A later analysis tests frozen models on acted videos and is reported separately. Neither analysis establishes a benefit for natural communication.
+Global 80\% first selects images from the full population, then reports the retained images in each stratum. Within-stratum 80\% instead ranks and selects images separately inside that stratum.
+Supported-only risk uses only votes for categories the model can predict. It is undefined when no votes fall in those categories.

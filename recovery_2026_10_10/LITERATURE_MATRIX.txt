@@ -1,0 +1,65 @@
+Closest-work and source-access matrix (checked 10 October 2026)
+This is a focused comparison, not a systematic review or exhaustive novelty proof.
+
+Barsoum et al., 2016, Training Deep Networks for Facial Expression Recognition
+with Crowd-Sourced Label Distribution.
+Primary: https://arxiv.org/html/1608.01041
+Official implementation: https://github.com/microsoft/FERPlus/blob/master/src/ferplus.py
+Inspected: training/evaluation methods and official vote-processing code.
+Established: same-image FER2013 reannotation; majority, multi-label, probabilistic
+draw and cross-entropy targets. Original processing differs from our raw ten-vote,
+seven-output weighted experiment. New result cannot be advertised as the first
+FER crowd-target comparison or directly ranked against its categorical accuracy.
+
+Washington et al., 2021, Training Affective Computer Vision Models by Crowdsourcing
+Soft-Target Labels. Cognitive Computation 13:1363-1373.
+DOI: https://doi.org/10.1007/s12559-021-09936-4
+Primary manuscript: https://pmc.ncbi.nlm.nih.gov/articles/PMC9165031/
+Publisher: https://link.springer.com/article/10.1007/s12559-021-09936-4
+Inspected: published metadata/abstract and accessible author-manuscript methods.
+Established: hard/soft ResNet-152 using CAFE's 100-response distributions and
+categorical-versus-distribution agreement distinction. Their split is child-
+disjoint. Our matched softening/tie controls and own-ranking/fixed-set comparison
+are different, but the underlying learning principle/trade-off is not new.
+Published author list differs from early arXiv record; use publisher metadata.
+
+Khurana et al., 2024, Crowd-Calibrator, Conference on Language Modeling.
+Primary: https://arxiv.org/html/2408.14141v1
+Published conference record: https://openreview.net/forum?id=VWWzO3ewMS
+Inspected: Sections 2-4, estimator inputs, training criteria, scores and metrics.
+Established: learned crowd estimator with distribution-distance rejection and
+optional entropy in subjective NLP. Not a FER score baseline that can be copied
+from the paper's accuracy table. Our three probability-only scores do not
+reproduce its learned estimator; that comparison remains unimplemented.
+
+Le et al., WACV 2023, Uncertainty-aware Label Distribution Learning for FER.
+Primary: https://openaccess.thecvf.com/content/WACV2023/html/Le_Uncertainty-Aware_Label_Distribution_Learning_for_Facial_Expression_Recognition_WACV_2023_paper.html
+Code: https://github.com/minhnhatvt/label-distribution-learning-fer-tf
+Verified: publication/author metadata, primary abstract and implementation README.
+Full-method access attempt was blocked (403); do not mark a new reproduction or
+complete implementation audit as done. Uses valence-arousal neighborhood target
+construction, unlike direct use of observed crowd counts.
+
+Wang, Li and Wang, 2026, arXiv:2609.17130 (unpublished preprint).
+Primary: https://arxiv.org/html/2609.17130v1
+Inspected: introduction and Methods 3.1-3.5; full results/code audit incomplete.
+Vote-count Dirichlet-multinomial modeling and rejection in dynamic FER are close
+in motivation. Do not claim priority over it, or treat its reported percentage
+improvements as verified comparative evidence for our static-image experiment.
+
+Fard et al., AffectNet+, earlier accessible manuscript v1 (2024).
+Primary: https://arxiv.org/html/2410.22506v1
+Current official access: https://mohammadmahoor.com/pages/databases/affectnetplus/
+Inspected: label-generation methods and official access page. Ensemble/AU-based
+generated soft labels are not per-image independent human vote fractions. Page
+requires a PI/lab manager/professor signed request. This route was not pursued
+after user ruled out restricted datasets. Not interchangeable with FER+ votes.
+
+Shin et al. 2024, face-specific label distribution learning,
+https://doi.org/10.1016/j.imavis.2024.104901
+Xu, Gan and Xia 2024, uncertainty-adaptive FER,
+https://doi.org/10.1016/j.patrec.2024.04.015
+Publisher abstract/preview only inspected. Neither is represented as a fully
+verified method reproduction. Their reported accuracy is not comparable to our
+complete-vote disagreement or reference-specific F1. No unnecessary citation
+was added solely to inflate the bibliography.

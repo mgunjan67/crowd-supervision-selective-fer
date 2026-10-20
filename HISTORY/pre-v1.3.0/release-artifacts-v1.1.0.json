@@ -1,0 +1,30 @@
+{
+  "crowd-supervision-evidence-revision.pdf": {
+    "sha256": "f1541ae5fe8dba7620a047d7fc5618e3612d2f5ec1c41888961b1a7bf610d5ba",
+    "bytes": 516971
+  },
+  "Supplementary-diagnostics.pdf": {
+    "sha256": "98ea1edcbeb79489ea0b7c22b185375f3a5e68cf47d626de4dadbb68cf0106b0",
+    "bytes": 227403
+  },
+  "Manuscript-source.zip": {
+    "sha256": "a73d1bd8c255288613c0208f7fd9801d8266ff0d0ec230334f5ef2b579873a0b",
+    "bytes": 342178
+  },
+  "OnlineResource1.zip": {
+    "sha256": "74988f78a91d23a8e4a5670e5590bed3e17f30c265ba6b94123d27f521c3aaa0",
+    "bytes": 29183850
+  },
+  "OnlineResource6.zip": {
+    "sha256": "06161c88eda77a509feab9c08dc80c36aef5f821b9ae62852d298396481a2cbc",
+    "bytes": 664203812
+  },
+  "COVER_LETTER.txt": {
+    "sha256": "d0372f72c5df0abc1a031fb21dc056c7f6c54f3b5469b043b3279f2988089ce2",
+    "bytes": 3823
+  },
+  "REVIEW_RESPONSE.md": {
+    "sha256": "41c13fc5eb51fdb1bff86378c6ffec1f19ec0e70fe41925866d3753d38aa185f",
+    "bytes": 3125
+  }
+}

@@ -1,0 +1,9 @@
+backbone,state,score,paired_seeds,paired_mean_pp,paired_sample_sd_pp,paired_minimum_pp,paired_maximum_pp,interpretation
+swin_t,selected,msp,3,-0.37786259541984685,0.04643330175799967,-0.43129770992366145,-0.347328244274811,Descriptive over three retained seeds; not population-of-training-runs uncertainty
+swin_t,selected,centered_logit_norm,3,-0.2226463104325708,0.08206846525633613,-0.30534351145038163,-0.14122137404580237,Descriptive over three retained seeds; not population-of-training-runs uncertainty
+swin_t,epoch12,msp,3,-0.31679389312976963,0.0826580451439221,-0.3931297709923648,-0.22900763358778553,Descriptive over three retained seeds; not population-of-training-runs uncertainty
+swin_t,epoch12,centered_logit_norm,3,-0.12213740458015172,0.03435114503817366,-0.1564885496183277,-0.08778625954198038,Descriptive over three retained seeds; not population-of-training-runs uncertainty
+resnet18,selected,msp,3,0.17302798982188525,0.15950058510548504,0.034351145038169495,0.34732824427481657,Descriptive over three retained seeds; not population-of-training-runs uncertainty
+resnet18,selected,centered_logit_norm,3,0.35496183206106907,0.07006702194918289,0.30534351145037886,0.4351145038167942,Descriptive over three retained seeds; not population-of-training-runs uncertainty
+resnet18,epoch12,msp,3,0.17048346055979582,0.2821417142748332,-0.04961832061069482,0.4885496183206134,Descriptive over three retained seeds; not population-of-training-runs uncertainty
+resnet18,epoch12,centered_logit_norm,3,0.4592875318066181,0.22432662912023477,0.31297709923664707,0.7175572519083989,Descriptive over three retained seeds; not population-of-training-runs uncertainty

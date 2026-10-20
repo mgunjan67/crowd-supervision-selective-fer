@@ -1,0 +1,14 @@
+{
+  "input_sha256": {
+    "results\\summary.json": "0bf8f099f4ba742ee9c2dd8af93086d1896c1859e641d3214e24ba22e48b7262",
+    "results\\all_states.csv": "8e76d7c76ed2cdf20cc4eba529d483691585b28ae68a6afa567a4d50011d20d1",
+    "results\\fixed_sets.csv": "7b4be283313e60f6bc2929b62bae6cbb971c3069f3130cd785283dd8fdff443b",
+    "results\\unsupported_mass_strata.csv": "858bb54a58cbc12f716aa11f6acd3b3d0d58e41dbced5171a5cc74db3b91ff76"
+  },
+  "output_sha256": {
+    "generated\\new_followup_supplement.tex": "2cd809b727bd8bbd6935c60ecfea733fcd25b5c586720f5e6f94eced9cd85682",
+    "figures\\FollowupContrasts.pdf": "5012fb15912a5ebd6bbc9d4962f740e16cd004942c7e67dce92051cba09d9a1e",
+    "figures\\FollowupContrasts.svg": "fec10d684e5df2b9e86566a18935ad832c5e0c8c9a8fc76077cf5e99045f8340"
+  },
+  "narrative_interpretation": "Requires separate outcome-aware author/editor review"
+}

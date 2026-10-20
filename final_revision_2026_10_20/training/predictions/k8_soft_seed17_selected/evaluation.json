@@ -1,0 +1,31 @@
+{
+  "k": 8,
+  "condition": "soft",
+  "seed": 17,
+  "state": "selected",
+  "expected_epoch": 9,
+  "checkpoint": "final_revision_2026_10_20/training/runs/k8_soft_seed17/best.pt",
+  "checkpoint_sha256": "50b193595761ccd78938bb15ead570e971434b64d39ceab8756cdb573b02672d",
+  "selection_reference_sha256": "ff01afb0957196bee30c95cbeb9d4b9a843ff267ec5a19196ab90fb14c2c97f3",
+  "configuration_sha256": "beee83281991d11807e01dd0c2a4de61380fb8fbfaf05a6ea06c999077b1b26a",
+  "training_complete_sha256": "b5fcce8fd4523a582b8adb28eda0f1729e5b4779584fdaee18ee26401119d6d5",
+  "execution_amendment_002_sha256": "872e12683f19376a5a632469a12162e8b6322c5305f78a8c01060007413c4e3b",
+  "epoch": 9,
+  "weight_sha256": "f7d4674ee0b8bb4a401c0b2c5ac3659aa1bd3b03dbcc0d33665867a0a16c754f",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "543ecf0b8c7aad0d1ec1b6f7bd20fee3c266094280d97a7ec5a7267561f5beb5"
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "808138a7bfa8b187d213fd8d5ef81a5651531a3fa3170ab72195c9394c3a1204"
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "67f318035d30c52c3324d7b39c7db3d5e89a0dd426056ebc24c86f6156884d75"
+    }
+  },
+  "started_utc": "2026-10-20T06:40:24.358643+00:00",
+  "finished_utc": "2026-10-20T06:40:46.519985+00:00"
+}

@@ -1,0 +1,7 @@
+{
+  "completed_utc": "2026-10-20T06:50:57.118283+00:00",
+  "states": 33,
+  "training_runs": 12,
+  "calibration_or_test_used_for_training": false,
+  "evaluation_freeze_sha256": "48ab699e7e236d5ef016fb4884e3cecb724115f20ddebb2cd9ffb91824e4271b"
+}

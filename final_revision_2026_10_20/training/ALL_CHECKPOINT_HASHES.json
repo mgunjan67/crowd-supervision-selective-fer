@@ -1,0 +1,1222 @@
+{
+  "full_epoch_checkpoints_retained_local": true,
+  "all_epoch_checkpoints_released": false,
+  "released_inference_states": 33,
+  "seven_class_states": [
+    "selected",
+    "epoch12"
+  ],
+  "eight_class_states": [
+    "selected",
+    "risk_selected",
+    "epoch12"
+  ],
+  "checkpoints": [
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k7_permutation_seed17_epoch12.pt",
+      "bytes": 110698719,
+      "sha256": "e1134f8f4c6d831700aaeaabf5b8357065027229b629979a76bf56f39d181446",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k7_permutation_seed17_selected.pt",
+      "bytes": 110698912,
+      "sha256": "06eff32893eb1acde93ae9740a923ab32925c057517ee470bc6f9bc513c024cf",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k7_permutation_seed42_epoch12.pt",
+      "bytes": 110698719,
+      "sha256": "b4f8caee228ed6c7bc4e4cb0f110a968aee1fa9e1e659d698e7441cf4ff282a8",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k7_permutation_seed42_selected.pt",
+      "bytes": 110698912,
+      "sha256": "e5fac6497096db90c4b3d1f38ee03fc801d04014599435837a7bf67d63962fba",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k7_permutation_seed89_epoch12.pt",
+      "bytes": 110698719,
+      "sha256": "068f6b9c28d54d62d5ec9aa8062d817409dac9f0d078b334e980341fda36745d",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k7_permutation_seed89_selected.pt",
+      "bytes": 110698912,
+      "sha256": "6dee72a3d40ad4dd1d184bc37c6b305820fc169f84490292a4baa1bbb844fce3",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed17_epoch12.pt",
+      "bytes": 110700120,
+      "sha256": "a2800c70dcaf3ef3c3f51cc0b63bb491f9225eaba1b3a814013e4a183cdcffa6",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed17_risk_selected.pt",
+      "bytes": 110701662,
+      "sha256": "927f4e3176e371c8f7569e0ea3a0c82de5e7535d1c00319604a5c695018f1c97",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed17_selected.pt",
+      "bytes": 110700505,
+      "sha256": "f7d4674ee0b8bb4a401c0b2c5ac3659aa1bd3b03dbcc0d33665867a0a16c754f",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed42_epoch12.pt",
+      "bytes": 110700120,
+      "sha256": "306e365d2e1734291a39357f0ab25e3d0d7eb956085e52ec83b8f76c672132f4",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed42_risk_selected.pt",
+      "bytes": 110701662,
+      "sha256": "06d436157adb2cba438b17064f7a61b37776a1c19d3687f777ebe1b1ae6696ff",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed42_selected.pt",
+      "bytes": 110700505,
+      "sha256": "4d6be4f32270f4bb3fa4598fe01ce98481d62405fbb18bd0f0f5222296bcd417",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed89_epoch12.pt",
+      "bytes": 110700120,
+      "sha256": "ebf35a287d541fa3b2b42449ec7f70b66616e260162ec40d42bc5801cb7d9671",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed89_risk_selected.pt",
+      "bytes": 110701662,
+      "sha256": "174e6052da7c8e7c1d083fce41eee013d2cadd5885343d5aa3811af4aefb9e63",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_soft_seed89_selected.pt",
+      "bytes": 110700505,
+      "sha256": "59da9643310dc4c6dfa221afc9163a8b0ac5dab5d2a06cfc6adfdf7f7cca0e76",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed17_epoch12.pt",
+      "bytes": 110701855,
+      "sha256": "9203f222c815abb522cddda1ede1c82c1b0578deb30b09b27a299281e083255b",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed17_risk_selected.pt",
+      "bytes": 110703013,
+      "sha256": "ed67aa961a39672cc51aadcbf272f8304a2b946a2dc659c88099a7afcbb698c5",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed17_selected.pt",
+      "bytes": 110702048,
+      "sha256": "a51704a5736331ab38550d418d537bcfa0d5936c3535cd545706cce2994b8858",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed42_epoch12.pt",
+      "bytes": 110701855,
+      "sha256": "ffb101495416eeac7bd22a5dba8d114f8db0eaff475d5dd6c72cdd78a4450bd6",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed42_risk_selected.pt",
+      "bytes": 110703013,
+      "sha256": "5e8f98f0bbf73e5abdef4477dd91bc2456832f5443e4c28b4702188e2afd30a2",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed42_selected.pt",
+      "bytes": 110702048,
+      "sha256": "93e1e4373bd111e84b838d95ee8ecfa266a493d173b9bd2466dbb58e40811873",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed89_epoch12.pt",
+      "bytes": 110701855,
+      "sha256": "57a9b9b259495c795bbd6c43e211a32961377fbdb9bfc12f297996764296bbb0",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed89_risk_selected.pt",
+      "bytes": 110703013,
+      "sha256": "8ebaa0b05c320028b6e9dc20b192ca596e081f1084c011ba5d15c2005fca93ba",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_tie_uniform_seed89_selected.pt",
+      "bytes": 110702048,
+      "sha256": "28c95c7a9ea793d39e89a46749cce3937e90e9e5eefe2a575eb4b75e552263dd",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed17_epoch12.pt",
+      "bytes": 110700955,
+      "sha256": "9978fd191cb1f9c6e88ebaedb56cffba5732a528c5d60f153cd7199095d7f3d4",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed17_risk_selected.pt",
+      "bytes": 110702241,
+      "sha256": "aace086238b966f1081040ceff0a066da00ac237f7edc0068bb240a0f74a94c0",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed17_selected.pt",
+      "bytes": 110701148,
+      "sha256": "7962f3e8d9649edf00a804dfa9d65612057344c11d94aa545272fdc1f3665b0b",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed42_epoch12.pt",
+      "bytes": 110700955,
+      "sha256": "73d045bfb7fc8068ce9cf5cad37f0183cb67041513a47943b98cdeec10d81b2c",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed42_risk_selected.pt",
+      "bytes": 110702241,
+      "sha256": "38acd974a4b31e630405d872192081ac6509f9932cc34c7057528e024ae11f25",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed42_selected.pt",
+      "bytes": 110701148,
+      "sha256": "cfbe2983b898e880065371f30d79a621a26cb30dd66bf2b137beabdad8e8b03c",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed89_epoch12.pt",
+      "bytes": 110700955,
+      "sha256": "5bfd570235ddb99f582c5f00d073dfc7478c736b1b14deeec9a3796a51d86ae4",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed89_risk_selected.pt",
+      "bytes": 110702241,
+      "sha256": "f8150000018789503e713cae539dbda2d2724d105eafbcc1a0440bc0cdd68cec",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/weights/k8_uniform_seed89_selected.pt",
+      "bytes": 110701148,
+      "sha256": "968e9879a0e29e9592de499436c9d8a7069be3e4299e890b660201be6af8b3ea",
+      "release_state": true
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/best.pt",
+      "bytes": 110685574,
+      "sha256": "ae73e6263662b2d382779913ff34ec965af73a02be7c376c8290278290811758",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-01.pt",
+      "bytes": 110696714,
+      "sha256": "163d94963336e538162e79ddf5df153b7264e7eaab5739c3ce43299b41bc0995",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-02.pt",
+      "bytes": 110696714,
+      "sha256": "f390ee10b805f8dce317ba054ae823fc92bf36f6544b83b02e2ab132f574df31",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-03.pt",
+      "bytes": 110696714,
+      "sha256": "36c4972bb26adf05f4a07289f77b3268c6834884e1edaffba3d4af50a9f2fe3d",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-04.pt",
+      "bytes": 110696714,
+      "sha256": "0cec4a8be8050cb7a68f3bc9d3a0011b15d5384cb8db6b4203367c38d0464dbf",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-05.pt",
+      "bytes": 110696714,
+      "sha256": "be3d53086d151723ead1de4d2b73e43ba2c5d60f6bf5413dfc36deeba5e5d4c9",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-06.pt",
+      "bytes": 110696714,
+      "sha256": "1d1656c104a84de6188e9a451d6fd69e9e240d3499930c253cd694d38cd9c450",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-07.pt",
+      "bytes": 110696714,
+      "sha256": "56a74552da006fc0ebbb5d032060a258df24450791339f12198ab7de92cb9a1f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-08.pt",
+      "bytes": 110696714,
+      "sha256": "5ae4c6c85e045889ff4f1fe39c1e516c7f94c8142162ebc7a6f345ab79014eae",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-09.pt",
+      "bytes": 110696714,
+      "sha256": "4909ffd72845d562321ae138cf46146f350fc69030d1ddebc3078eb57d8781fb",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-10.pt",
+      "bytes": 110696714,
+      "sha256": "91bff83970efdd7c2b1acadd407eb7807ea2c5c2aa3a369ffe8bb16f01c4323c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-11.pt",
+      "bytes": 110696714,
+      "sha256": "50ea5fd8ae2fd6050f900d8eafb0c331524e43a683d8fca856c193838ff6e493",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/epoch-12.pt",
+      "bytes": 110696714,
+      "sha256": "cfa63f26a089aaaa982e9b11a1d016e85039d01aa3c7ed9e7d29231a3d6b6f98",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed17/risk_best.pt",
+      "bytes": 110696907,
+      "sha256": "9fb28401287194cab39657f67b94433e64c246502a9b3f07e1b469e2b0bb39bd",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/best.pt",
+      "bytes": 110685574,
+      "sha256": "f81f65f85578973dc6e05a994635c4b36c041dec67e7b8518211f2db4f5b4725",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-01.pt",
+      "bytes": 110696714,
+      "sha256": "1dbd778d847812d121ec66fad7f57d5b081df15aeebaf975cad7a576fb7f0312",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-02.pt",
+      "bytes": 110696714,
+      "sha256": "82ddaa8a2c622837522768bab0b120edc3d059b1771644ae5f38dbc19816201f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-03.pt",
+      "bytes": 110696714,
+      "sha256": "827cfe3613b067cf6431216b0482f539e46c76be04624436df39884d069dbccf",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-04.pt",
+      "bytes": 110696714,
+      "sha256": "1d56cf2366ed4c723b34d4593f98dc9808f25ad0ce35e67dd64f2b7990cc8e60",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-05.pt",
+      "bytes": 110696714,
+      "sha256": "25003fee87577b40531da80d613deb5ebbc82b405e07019793a5a89b5468581b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-06.pt",
+      "bytes": 110696714,
+      "sha256": "728122374edb3fc17e7068434a4481d7eac9ce394d40eca7cb73baa0e786e790",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-07.pt",
+      "bytes": 110696714,
+      "sha256": "e36829436481a0007a3c62826c238578a31025b2798d18057008b92f45624e61",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-08.pt",
+      "bytes": 110696714,
+      "sha256": "0e3cb37f6b718e4dfb6f5f947974afe60ca03097a8243a2cbca5958ba7c43d33",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-09.pt",
+      "bytes": 110696714,
+      "sha256": "626d9bd40d9b8cadaafba6b0c503795a07e8387445904ff17b9437d37a9ef987",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-10.pt",
+      "bytes": 110696714,
+      "sha256": "3e8665476c4fbe6e4793e3a6060d250a83d754e77756fbccacee1cc944573b4b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-11.pt",
+      "bytes": 110696714,
+      "sha256": "cff84a798b7a8c7e86a273639bc9e4b220a52726f43bdc1b15d9dd3ad0730135",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/epoch-12.pt",
+      "bytes": 110696714,
+      "sha256": "4b6843f16d5cc688904eb506dac8a476a416df68a1785225fffa70e7cdb3ea18",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed42/risk_best.pt",
+      "bytes": 110696907,
+      "sha256": "9821ac8e44f923cf5103b178dffa4b2bd3a18ec4469ecd7ec244f1ff964702c1",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/best.pt",
+      "bytes": 110685574,
+      "sha256": "d0c331fa0b941125f5f6d19f43280a762732f12f40e01255eec601f2d15e2307",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-01.pt",
+      "bytes": 110696714,
+      "sha256": "2292d39823132d2e2627746d2f6368ac5284b1e1221c280285bfc09f541a1cfe",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-02.pt",
+      "bytes": 110696714,
+      "sha256": "7858401222870c454ca96fc1022cdb261697954fbe94c0b155910f07146cbe97",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-03.pt",
+      "bytes": 110696714,
+      "sha256": "0596d207ca40e25f986ba9edb9b81eadc9f0decd27cf26e4fa55b81f09ac7a72",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-04.pt",
+      "bytes": 110696714,
+      "sha256": "29208be6ee8309b27f134e3d2a762832d68a384cfbd57ea1e3164f56ebdbc8c1",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-05.pt",
+      "bytes": 110696714,
+      "sha256": "7b23b2cc1fcc22d0399cf6be5cc3ca6de5260cc72f6abc4fb7cd77d006ff3388",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-06.pt",
+      "bytes": 110696714,
+      "sha256": "96b9f8479bfd81c24a2d4da255c28fd2e66637fb9ece2233e81b9e6372ec7312",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-07.pt",
+      "bytes": 110696714,
+      "sha256": "a9f9079c94dfc62f6e1d096d3eaa2d7b076e23e233831ccca67fdb89f5856fc2",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-08.pt",
+      "bytes": 110696714,
+      "sha256": "e971385e99b1fc0c203baebbfad688c155195dbe90b4a58c2409a7f7424fdb56",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-09.pt",
+      "bytes": 110696714,
+      "sha256": "12ac217800295feb8c96aea4fe994982e068eb02b2487d0179e5f2dd412ccb7d",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-10.pt",
+      "bytes": 110696714,
+      "sha256": "08a3e5a6167da4ba2e4e9d06e5cc2518ef65a45719a022b92c71f4700874666c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-11.pt",
+      "bytes": 110696714,
+      "sha256": "f2564c962d0a1c141303584c86b141c1ae41dc8873e01641c758e1e146d739d5",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/epoch-12.pt",
+      "bytes": 110696714,
+      "sha256": "9b3b8ebc0036f225a80e13cce57caf77af0ae58449d4a0a3d68df1f8a914cccb",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k7_permutation_seed89/risk_best.pt",
+      "bytes": 110696907,
+      "sha256": "837884c82055973f03b54734cca0b6322409e19eb514c53adb9da2d297a9636e",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/best.pt",
+      "bytes": 110688646,
+      "sha256": "50b193595761ccd78938bb15ead570e971434b64d39ceab8756cdb573b02672d",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "9b34d4e7b17e317e6e74578ab8443c1799c6c5910fbaa0473931508555af04e1",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "3a40c78eef6eb3fe59ba1c8e456f816ea128bdfd18e92679a6148173547fa0ff",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "ed6be5393249d117b79b6e4027c1f000d6a702648ec1f14adaf16a703fb6bb4a",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "7eff7924529a811e9f6857d365c1298cdca6340ac465f4c327cfca744660303e",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "9ca99bb093c9e41e719a4039540b5ca0bf9a1e966b3815695841146e3e75b531",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "b043fff5a9b344ee2bd2ad3877ddbc328804222c550c5c4283250e32062e248d",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "861fef6c768ce901c2598d94c099d63717960cfba6ed9728c768854fa9819d15",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "9971ec8ceb246715999b30fd184e01e920e3675a78b9f5999b8139d1dafff1a4",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "61a00e19f1d696b698e2b14c9d8f955e1b05c96eaa02212d55279befd33114eb",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "4f581019290f45e66a7d942675f35de0a36d0e4a316de4465fe684722c952639",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "21a39862e1ccd59869ffc4cedb2cb8bc944db8cad8198459b2a3dee9ade36507",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "fc9181342342ef32f4e8a6a246deada0e525db910eb0ca7edf546b88236ece5e",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed17/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "891286583533c38ee112ef2aa0e2e51129bc4e4e33997837663c3fca4093dab7",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/best.pt",
+      "bytes": 110688646,
+      "sha256": "0fecfdedae6b4da3168b8ebad2c02d5ec79df6f2407aabeddf4ef31c62377358",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "02c70030ba9c6aefdf6b58b5e76c497eb602f82213b7f3fa9d2c644339a88dcd",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "00eff87cf7c1dd6930b4c63af37414dfc912c39240c5047eb6b5f527f2cb0835",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "68dca8e0759d9a5032e70d36b65f9fd90c9ed31883eaf3ca8e2214731585f430",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "f57fadc2023cc505568b76f2faad54f43e063f8ff505f4f084812e0c89de05ef",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "9eafa0bce36792dd7b75734957145925ab816074a7e58dc879e9711d8482f375",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "1ed743c323b3247b1e46b4b5d6365edc5f16246dfbcbdcdd68fd36ef8edb50be",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "a2273908b6891f61d9a0f6bc56d4b07af44257c85529e5129fecb757597fa55e",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "5dda5544d3f45acea22a428ea05683baa4c69f7a109875e4fd4bb1c660730842",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "85b67dd149712a020fcd6e15f0ced37d170d88f8ba9f8b629cda72d945e3a6a3",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "7d873719aa2ecc3fdd94cd6831e0bd885f46800da8f9991952262e5aad2444b0",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "dbd1c991e40020eabc60d46eb292e9e8726f3fb99d8aae3c043296b12fa23ffe",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "8c4a5a76a833196913d066b39bb168748e31bdb16870c56e6c3986b654bc5228",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed42/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "c91ec4efa6b14e5260fecad3441df8f5c1f00251f8509169bf0a08e20382051b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/best.pt",
+      "bytes": 110688646,
+      "sha256": "143671c6585a36b5a2f480eed13320eda84177f54db11023627d19344b44999c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "8c21665ca2363d62154926ce613f97225e98c496a8e4c7e3600af14270aefdc0",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "f1a8c03c55eaf9735b120cec50a6183c88935a5fbadf8c1abb39ebbabb0dd61b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "e939abbe54b7f9bbca48440721a8b522aff95b47e13a4128ab42d9bc2ccbb4b1",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "6d272c066a40522a427db02c537da78775526c646d5556990c73aece80570bc0",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "0ab79a0df23345b51f9dcba214ed1c0f179e30d760cb27a498822fca954d619f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "454bd94f4ae496a2c82c59b1ec6a351d06b41b6ae43a4d42bcb985872dd9ba34",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "20a95b4a51ff7c795dca7c30424a9ea7afc32710f824a79e3ca9671f0c7ee494",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "80f02bbc77e8dd478b2d1f10949ee8ad40abc54849c34920f0ad60344e3bcfda",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "f9797e9dd6581dc2955619cbecbb7f508e639a36f68dee9f0f3034c5ccfcea9c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "9e5e9711eafb55ed74994ff885c83fda48cd16f1d7c23bc472ed27060b240e09",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "9385ec20b068a152c9f24f64286b11e5b81b6a682a92a78ef4b6599d6f2696b8",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "edcb8a90e7fd86ee459ab6456a398ed84ecd5ee003b190c6fea932b96c1fdfff",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_soft_seed89/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "6bedce695fcec531f89c121f4e7a1833631b05e086d635bae5eb599e3e9ef601",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/best.pt",
+      "bytes": 110688646,
+      "sha256": "9d64af462b79e15649275b032c5e345436201c34cdb157aee3e5405a09f0bb2e",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "869d67df02261ed395d394a9b909281080a2ab2b64be1351531048702d3a559f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "4a00ce79f5a4ec714cb689c93783e7e22febbf28056e9aa01e05aeaacaff6890",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "1b302e2ba81a58a581f275c82e390729fc8f5b680e7a8ddba3fd17c15039ddd1",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "aea5452e3d12d3ce06a9d049d732ca9a25f093e04ef4c101ff10b5a02c57b6d7",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "b6e58c452a67b45eadbaece79434b3f1392a769b25cafc717219257ccabb6369",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "6a24b0be9d5d5b2997dc8f055e27575d6fd0c4f476accc019f22aa5d482c306b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "a87c775620120417d193bb6cfa7d8f5df9a2c83bf2751aaa1e84ace389472db8",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "1437ca91d75e2aba72b52ee72befd384c130166cefe1073f5b0e14b503c7526b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "3213c03d9e10047b686bda904215484d6b1427dad8113ec63efa613a2bdf0c60",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "cbe3d5733ed025acb806290aecf30bf47dcce94a9e16e699db72225962656662",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "a69b3ebfc457a0a0195b327fda9a42c3025c621f9f4bc40712cc2adb815908f5",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "38cd4a837b4080538c6483f7b8d27a113044b802ee719644b0cc9166c315de2b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed17/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "f417660c77b3549732478b4aff8430f484d70a70ac582981dbf6b3e825aab092",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/best.pt",
+      "bytes": 110688646,
+      "sha256": "36b9eed8f87dc736c181b24aea97a735aab723c6aaa06103a7848aaee51d1213",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "20ccc35a075dbc97ec92edb50a11f8845edeb86fb20702bc136a5f3485115e81",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "4494e6b84cd88c0482febbccb9b4cd9fd185a42a1a4058946177cc2fcbb803dd",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "3e040824476bf9bedb3fb4b7dfce4d868715972dd5fa4d9d94cb977960bb37f3",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "981240fe904cb0cf924aabc9630b19df1e87c79ceba2a27bef1d5c4d217afd2a",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "c642896610af2657211660f8d0d8fdcb9f363618079235fe45e4d488a5e61433",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "26825a45a011468600b1a344df493ceedfd0bb95cb7fcad3100441263978b4d5",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "adec887667ffbf02d5cc1b3a2585d40f8d2fce7d94b00e6c94a194e993d3a2c7",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "e4369a4e35ffa834b105109cbd8f1dc8fba0dc4222adf6e98f4992b5179dd224",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "2f2cd13ec3ac79bcb652e7a742b4b178894f0eca0a73fe3a08804fdf74877474",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "fb602f29d1d449ee9217501c9e3fe3ae2db81c0ee8b00db80df1c080595e7450",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "27a2aa9ff46c950aaa1ef22207dc97b05391e94d220785441310ea477130df44",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "33cbff3e0b61ae569e67c81b6ea63b48c6810873fb689d71fc67298e915d6476",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed42/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "6f88547e2f987395e452086a2c4d8696bf85ae14aa4f30793fd414db66737b8b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/best.pt",
+      "bytes": 110688646,
+      "sha256": "5766befcbbf8e1aa2a64969db86c077bc3a12b98692ad5e25b25b287bdddfeee",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "6f37a0a5265479642041daf69854dc2bfba734ce0a335396f87a2d9d54980455",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "9be8f6d90666d7389ad89a75a129a91633b4e3a994fde6df03112878c6d97d42",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "462bb415d73e717d2502f4556a41b264d6b315714fe0156a4341587ff764ee54",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "30bfbdf3a2f24ece3d254dc084e2a76a43c7ec0740610da575529a7ba9ac4e01",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "d8c01cfe9b618c5aafb336d5be7ab123999ce95c3ef534789e03dd7603e22f87",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "ef5bfd8d6209ce46b8a52b278066bc89b3fa03feb6ed75b6319f400c538c0ec4",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "6e28ce4dacea8b404734d7bd8a8396107ac569ff4a52be15c9cb4bd37733b41c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "33cd9f8916e1fe3dbfd021c459139f87eacb4d9ba0d3588218ba2cd7d09d72e2",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "0e28a2d5de5d2ea88a1e0d7dc58b43a935db66d24a977a71f6debdcfff9717f2",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "5385ec3346a1d337bd58b9730ea78a11af5f9d98f1e5996afdff023f00b845e0",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "7f971c3b17d180a14ed49d08facde9d9c35c209c7fbcc64fe62cb3cd719f8ca9",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "9f34b425962bd627d8791ade49f555b7d7c7a5612d945f8e0c238c8311a274c6",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "5fa7da6b72280453bd217690c5015053e19da0dd3fe26b124ce9cc4d1af700df",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/best.pt",
+      "bytes": 110688646,
+      "sha256": "4d7f013b8167c45f2406904549ec82be6a9170a83eb2816cc9f44d96152e1e5e",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "d1d558238fe9ea6d9975a7e57340f90f123183e31e3d442eac810eb5365839fa",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "7e978d8c0c70f3b87d61ab6f191946e648e43962789f063c9b4792da10a627ce",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "a2d1dc18bea464cb7c3fde5fcc396b8f0e3de2c7d8daef19a5ab586996d6b335",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "61a219870422a07f5ed5df976e1554e9b2db8b9224426929ccf40177f630978b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "d8bc08f03e0b6cda62607c0ed1b19ee1c559dc5e71472afadbfe240e91a657bb",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "7ed63f85e9a1e8cda1d3865c5fe324f03551b3c9b433cc4e4116b0e56c57f030",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "9fb430c163e6cbed83a5a3b211f1b44c70d86f860c8b40dda7648de2a008e847",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "e4a16d053dce3da4a361ebdb4de22410bc38637d8191f028b1daba73e1e9a85f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "0e713360bce6882a44dc4a8126a5f66993d3f452226b640d986bfef327e6868f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "852ac24e32bc63b7e3566cf8d5c254afbb83829ea0be5caedea7eaf4e0f22bca",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "89c5642ed080bca5df63cded5111894b1da39b6182232feaa3dc5788ea2bee2b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "ef8ba7dc0acef1ff8839f4c93fed34365cd3a6dfb57c99627a7dba12a02043b9",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed17/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "daad27a4770f4db5724fa4d8d7b58a382ed7bae59313cbe3bdfe018ac1fa829b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/best.pt",
+      "bytes": 110688646,
+      "sha256": "62463f8703e3ab35efbca7e97797024f21aa7d1a5d0ee0ba61f6cb10f0c50498",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "5d0f742362bc66cf79fc85823593ab392c910175c89622f1513425a675071c45",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "b71013237a582714a9e1f826d2def8f90b295826bb36a5e62b90b910eb2c9158",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "44872d231540b5a0abf0c243616b34afa20f0a1b1c72229f62043322091f2986",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "31df9a8be18fe679a5395d9b72fd2f7239e82c45e0e8c21fdcccbe4ab20907fc",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "946e9c4b5d3490af6e745d2e3ef45635f62d11ecba9f24d057655bc6dce3175c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "9a1b2a5250cf42bd2b4c5d6076c1a948073b80a068ca463d242798e08c786f4b",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "266023e7606fd73821b579b52367c2e4bad82b6dbc7ffd0d7cb29eca9a62e226",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "f0edf629f81f20db5a8efa84b00b2c1df25348895b31bb7206a4706dcb811fad",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "63fdb274b13057ccd884396ecf934c6b7703605763763d051694e610d56e0c1c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "c39615d9a6b03b72159ec7255df8e4d484ea82dd35a956aab7792931e5198e6f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "c8c31decb5dbb70d67b1752a61592a4e79d90693bdd4d4b8b94bb93c36697276",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "b48bc6ca5c8f155bd6ea3b5513d512a87029b3d27adaa8ab3d309488de519e48",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed42/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "b089acd3fc0deb038271fddbd15e3325c5d3e32f31ddba9c85e32f5205ceed83",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/best.pt",
+      "bytes": 110688646,
+      "sha256": "68b4a6a084191b283203c37625faf6d443e41890cabfb8d43967116bbbe54a2a",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-01.pt",
+      "bytes": 110699786,
+      "sha256": "1967e6846ff35b7bd6054427dc113798ddff10ae031a2ae00e4095f59dc653c5",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-02.pt",
+      "bytes": 110699786,
+      "sha256": "e9c8476fccddd0f1a058eb2f810ed3090049782913e3722ea4d227cdb2c62d2c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-03.pt",
+      "bytes": 110699786,
+      "sha256": "e9980ac62f0eff4499b9b17f4f6e9f51b2340d1320dac5f4dc89b41ea4446fc3",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-04.pt",
+      "bytes": 110699786,
+      "sha256": "7bebb32020a7685032d28dfa95434fd8e089403c639b4bb7501d861c76f23497",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-05.pt",
+      "bytes": 110699786,
+      "sha256": "3da0cb51faf7000a637fc163a45e368d8bcec96f5109d7527d742f4480478865",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-06.pt",
+      "bytes": 110699786,
+      "sha256": "8453cb05b4407b34541a349ea58413679dcbdf8a50566a9963b5ad05d700011f",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-07.pt",
+      "bytes": 110699786,
+      "sha256": "01ab243f265da9e07ec0ccca881a6133140b34e5c8da004d495e8e4ed2fccfd1",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-08.pt",
+      "bytes": 110699786,
+      "sha256": "285db285a386956449dbdea49c74a6156d4cfe2a3626ff80d19c1b9c4fece58e",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-09.pt",
+      "bytes": 110699786,
+      "sha256": "c6123fe1280aa1fb7af8c7f18927b563b172eab3b5434efd78c9805c27dff84c",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-10.pt",
+      "bytes": 110699786,
+      "sha256": "cc90d0a1dc32a54332e81ee812d41b21b72efa112feee890b93318cd051eb9b1",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-11.pt",
+      "bytes": 110699786,
+      "sha256": "36b59900a5a96799bfda458b95fe687894e33c97d27e4c16c2802ef632eb9ab7",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/epoch-12.pt",
+      "bytes": 110699786,
+      "sha256": "a76385aa6081b951dea7511502bbe9615185d5b361ef55a518280d6449a64258",
+      "release_state": false
+    },
+    {
+      "file": "paper_revision/final_revision_2026_10_20/training/runs/k8_uniform_seed89/risk_best.pt",
+      "bytes": 110699979,
+      "sha256": "c54ef8c3735647d5414ff9f42e77775abe9de65b66986ce3d1001d667b3d50d1",
+      "release_state": false
+    }
+  ]
+}

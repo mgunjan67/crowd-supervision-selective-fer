@@ -1,0 +1,10 @@
+{
+  "review_complete": true,
+  "outcome_informed": false,
+  "reviewed_utc": "2026-10-12T02:13:10.106557+00:00",
+  "exact_canonical_matches": 0,
+  "perceptual_flags": 0,
+  "method": "No flagged pairs exist; automatic empty-flag verification before scientific scoring.",
+  "identity_disjointness_verified": false,
+  "caveat": "This does not certify absence of every near duplicate or person overlap."
+}

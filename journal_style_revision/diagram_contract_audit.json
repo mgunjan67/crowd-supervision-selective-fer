@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "swin_stage_shapes": {
+    "1": [
+      1,
+      56,
+      56,
+      96
+    ],
+    "3": [
+      1,
+      28,
+      28,
+      192
+    ],
+    "5": [
+      1,
+      14,
+      14,
+      384
+    ],
+    "7": [
+      1,
+      7,
+      7,
+      768
+    ]
+  },
+  "swin_stage_depths": [
+    2,
+    2,
+    6,
+    2
+  ],
+  "both_logits_shapes": [
+    1,
+    7
+  ],
+  "single_post_pooling_gate": true,
+  "bias_contract_checked": true,
+  "pretrained_weights_downloaded": false,
+  "new_training_runs": 0,
+  "ledger_sha256": "200a9b1df63cb267169a9f888b64a7fda3993f241494fff2e33320817bbfec3b",
+  "source_hashes": {
+    "code/emotion_cue/model.py": "a239390f9f206506e567b5733d22b98a938f49de4398799728894f1dc6d247b3",
+    "backbone_followup/model.py": "daf4611e1321f1e7b72fcef764346e14008088fd3c6840c87a23141d25d525a4"
+  }
+}

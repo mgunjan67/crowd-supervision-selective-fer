@@ -1,0 +1,14 @@
+datasets:
+  FER2013:
+    train: C:/datasets/FER2013/train
+    test: C:/datasets/FER2013/test
+  RAF_DB_BASIC:
+    train: C:/datasets/RAF-DB/basic/train
+    test: C:/datasets/RAF-DB/basic/test
+
+learning_rate: 0.0001
+batch_size: 64
+epochs: 30
+validation_fraction: 0.10
+weight_decay: 0.0001
+sam_rho: 0.05

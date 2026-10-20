@@ -1,0 +1,12 @@
+% Backport the finite-shrink longtable output glue described by the LaTeX
+% maintainer in https://github.com/latex3/latex2e/issues/1907 .
+% This corrects the old package behavior; it does not suppress log messages.
+% Newer longtable versions already contain finite glue, so unmatched patches
+% deliberately leave their definitions unchanged. Load after longtable.
+\RequirePackage{etoolbox}
+\makeatletter
+\patchcmd{\LT@output}{\vss}
+  {\vskip 0pt plus \maxdimen minus \normalbaselineskip}{}{}
+\patchcmd{\LT@output}{\vss}
+  {\vskip 0pt plus \maxdimen minus \normalbaselineskip}{}{}
+\makeatother

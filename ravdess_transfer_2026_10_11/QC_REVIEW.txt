@@ -1,0 +1,15 @@
+Internal visual quality review - outcome independent
+
+Actors 1-17: fixed six-frame QC sheets visually inspected. Yellow detector boxes
+consistently surround the face, with no clear wrong-object crops. The sheets are
+chosen by fixed filename positions and frame bin, not prediction score or vote
+agreement. This is a sampled technical QC check, not inspection of all frames
+or annotation relabeling. No crop, frame, actor or clip was manually replaced.
+
+Continuation on 12 October 2026: the fixed sheets for actors 18-24 were also
+visually inspected. All 24 sheets (144 fixed previews) have now been checked.
+No obvious wrong-object crop or image corruption was observed. No manual crop,
+frame, clip or actor change was made. QC_review.json records the completed
+sampled review. This is not inspection of all 11,520 frames or a label audit.
+Any source-overlap flags require a separate outcome-independent pair review.
+Internal QC photographs are excluded from publication/evidence archives.

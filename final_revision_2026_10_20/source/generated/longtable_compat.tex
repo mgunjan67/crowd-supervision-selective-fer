@@ -1,0 +1,12 @@
+% Local compatibility backport for older longtable versions.
+% LaTeX maintainer's finite-glue correction:
+% https://github.com/latex3/latex2e/issues/1907
+% This corrects output behavior rather than suppressing diagnostics.
+% Updated packages already use finite glue and are left unchanged.
+\RequirePackage{etoolbox}
+\makeatletter
+\patchcmd{\LT@output}{\vss}
+  {\vskip 0pt plus \maxdimen minus \normalbaselineskip}{}{}
+\patchcmd{\LT@output}{\vss}
+  {\vskip 0pt plus \maxdimen minus \normalbaselineskip}{}{}
+\makeatother

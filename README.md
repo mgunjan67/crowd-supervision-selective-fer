@@ -1,90 +1,100 @@
-# Two-backbone revision v1.2.0
+# Evaluating Crowd-Label Supervision for Selective Facial-Expression Recognition
 
-The current manuscript includes 24 matched runs: 15 Swin-T and nine ResNet-18, with all selected/epoch-12 weights (48) available. This tests supervision sensitivity across model families, not independent-image generalization or architecture superiority. Detailed favorable/adverse outcomes are in backbone_followup/REVIEW_RESPONSE.md. The messaging prototype retains the Swin checkpoint contract.
+Research code, protocols and retained results for revision **v1.3.0**, prepared
+for SN Computer Science. This is a research manuscript, not an accepted journal
+article. Authors: Gunjan Kumar Mishra, Bijaya Ghimire, Badri Raj Lamichhane and
+Alan Shah. Badri Raj Lamichhane is the corresponding author.
 
-Current PDF: manuscript/crowd-supervision-backbone-revision.pdf. Current editable source: manuscript/Manuscript-source-v1.2.0.zip. Current supplement: manuscript/Supplementary-diagnostics.pdf. Versioned assets: https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.2.0.
+## Study and results
 
-The previous v1.0.0 and v1.1.0 releases remain unchanged. The user confirmed all-author v1.1.0 approval; authors should review the later v1.2.0 results before journal submission. No journal submission or TechRxiv update has occurred. The following older overviews remain historical and are not the current result set.
+The study compares hard and distributional supervision for facial-expression
+recognition when a classifier withholds less-confident predictions. It measures
+agreement with the complete annotation vocabulary and compares predictors on
+identical accepted images. FER2013 and FER+ share one image source.
 
-# Evidence revision v1.1.0
+The complete study contains 36 matched training runs and 81 named checkpoint-rule states:
+the original 24 runs / 48 states plus twelve explanatory follow-up runs / 33
+states. The new runs test an eight-expression vocabulary and a minority-allocation
+control that preserves each image's target probability values. The original
+36 frozen external states are evaluated on 1,440 RAVDESS clips. External temporal
+aggregation and confidence-ranking sensitivities use retained predictions.
+Different checkpoint rules can select the same weights; these counts are not
+counts of independent fits or necessarily distinct parameter sets.
 
-Fifteen matched runs now include a tie-preserving dominant-confidence Uniform control. The new manuscript adds fixed-image cross-evaluation, identical-population F1 comparisons, full learning curves and unsupported-category retention. These diagnostics narrow—not strengthen without qualification—the interpretation of the earlier aggregate benefit. See the versioned manuscript and evidence below.
+| Outputs | Checkpoint | Comparison | Difference (pp) | Conditional 95% interval |
+|---|---|---|---:|---|
+| 7 | Distance-selected | Soft – permutation | -0.794 | [-1.071, -0.474] |
+| 7 | Epoch 12 | Soft – permutation | -0.548 | [-0.855, -0.261] |
+| 8 | Distance-selected | Soft – uniform | -0.836 | [-1.152, -0.509] |
+| 8 | Distance-selected | Soft – tie-uniform | -0.052 | [-0.314, +0.212] |
+| 8 | Epoch 12 | Soft – uniform | -0.385 | [-0.672, -0.071] |
+| 8 | Epoch 12 | Soft – tie-uniform | -0.130 | [-0.388, +0.141] |
+| 8 | Risk-selected | Soft – uniform | -0.585 | [-0.892, -0.282] |
+| 8 | Risk-selected | Soft – tie-uniform | -0.104 | [-0.357, +0.168] |
 
-The following overview preserves the original v1.0.0 twelve-run results. Use **Current revision files** below for the fifteen-run evidence revision.
+Differences above are Soft minus the named control in expected annotation
+disagreement at 80% coverage, in percentage points. Intervals condition on three
+fitted seed pairs and observed annotations. Previous outcomes informed later
+phases; the follow-ups do not turn the reused image source into independent
+confirmation. Read the paper for matched-set comparisons, adverse findings,
+checkpoint sensitivities, and the limits of these results.
 
-# Crowd Supervision and Selective Facial-Expression Prediction
+Current follow-up numerical ledgers are under
+`final_revision_2026_10_20/training/results/` and
+`final_revision_2026_10_20/diagnostics/`. Earlier phase ledgers remain in their
+original folders. The root `reported_results.csv` is historical provenance and
+does not supply the current manuscript's results.
 
-Research code and evidence for **Crowd Supervision and Vocabulary-Mismatched Selective Facial-Expression Prediction**.
+## Exact paper and resources
 
-Authors: Gunjan Kumar Mishra, Bijaya Ghimire, Badri Raj Lamichhane, and Alan Shah. Badri Raj Lamichhane is the supervisor and corresponding author. Alan Shah contributed to literature review and code testing. This is a research manuscript prepared for journal submission; it is not an accepted journal article.
+- [Current main manuscript](manuscript/research-revision-v1.3.0.pdf)
+- [Current supplement](manuscript/Supplementary-diagnostics-v1.3.0.pdf)
+- [Portable editable LaTeX](manuscript/Manuscript-source-v1.3.0.zip)
+- [Versioned release](https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.3.0)
+- [Exact resource index](RESOURCE_INDEX.json) and [archive quick-start](QUICKSTART.md)
+- [Follow-up reproduction](FOLLOWUP_REPRODUCTION.md)
 
-## What this study tests
+This commit prepares v1.3.0. The resource index distinguishes existing public assets from files awaiting release delivery. Use the checked release assets when available.
 
-Twelve matched channel-gated Swin-T runs compare Hard, Tie-hard, Uniform-minority and full Soft supervision across seeds 17, 42 and 89. Training, checkpoint selection, calibration and testing are isolated by exact pixel hashes. Selected checkpoints and fixed epoch-12 checkpoints are evaluated. FER+ reannotates FER2013: these are one image source, not two independent image datasets.
+The repository root corresponds to the `paper_revision/` subtree used by the
+portable resource extraction. Old releases remain unchanged. Historical README
+and root instruction files are preserved under `HISTORY/pre-v1.3.0/`; older
+edition-specific documents and root historical manifests describe those earlier
+releases. Use this README and `REPRODUCIBILITY.md` for current commands.
 
-At 80% coverage on 3,275 test images, mean complete-vote disagreement is 26.30% (Hard), 25.82% (Tie-hard), 24.06% (Uniform) and 23.68% (Soft). Soft minus Uniform is -0.38 percentage points, with a conditional 95% pixel-cluster interval of [-0.64, -0.07]. Uniform reproduces much of the hard-to-soft difference; the residual benefit is modest. The study also examines vocabulary mismatch and calibration-target transfer. It does not establish external-domain reliability or communication benefit.
+## Recalculate results
 
-## Get the exact release
+Install the recorded numerical dependencies in a separate environment. New
+follow-up replay imports PyTorch helpers but does not train or infer images:
 
-Use the [v1.0.0 release](https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.1.0). Repository source is readable directly; release assets preserve the audited submission archives. `OnlineResource1.zip` contains code, protocols, votes, predictions and audits. `OnlineResource2.zip` through `OnlineResource5.zip` contain Hard, Soft, Uniform and Tie-hard checkpoints, respectively. Each checkpoint archive contains six selected/final weights and is approximately 664 MB. Extract these archives at the repository root, preserving their paths, to run weight checks or inference. Original facial images are not distributed.
-
-`release-artifacts.json` records the expected archive SHA256 values and sizes. `SHA256_MANIFEST.json` verifies the original Online Resource 1 contents; it intentionally does not include newly added repository documentation. `RELEASE_PROVENANCE.json` records the release-preparation checks.
-
-## Read the paper and reproduce
-
-- [Current submission manuscript PDF with repository links](manuscript/submission-with-repository-links.pdf)
-- [Editable source for the current submission edition](manuscript/submission-source-with-repository-links.zip)
-- [Original audited manuscript PDF](manuscript/crowd-supervision-final-revision.pdf)
-- [Supplementary diagnostics PDF](manuscript/Supplementary-diagnostics.pdf)
-- [Complete reproduction instructions](REPRODUCIBILITY.md)
-- [Data alignment](reviewer_followup/DATA_ALIGNMENT.md)
-- [Protocols and limitations](reviewer_followup/PROTOCOL.md)
-
-Install Python dependencies from `code/requirements.txt` and consult the recorded environment files for exact versions. From the repository root:
-
-```bash
-python -m pip install -r code/requirements.txt
-python reviewer_followup/audit.py --skip-weights
-python -m pytest code/tests final_experiment/test_final.py final_experiment/test_analysis.py -c code/pytest.ini -p no:cacheprovider -q
-python -m pytest reviewer_followup/test_controls.py reviewer_followup/test_diagnostics.py -c code/pytest.ini -p no:cacheprovider -q
+```text
+python final_revision_2026_10_20/training/analyze_followup.py
+python final_revision_2026_10_20/training/ranking_followup.py
+python final_revision_2026_10_20/training/export_followup.py
+python final_revision_2026_10_20/diagnostics/analyze.py
+python final_revision_2026_10_20/diagnostics/export_supplement.py
 ```
 
-The table-only audit needs no source images or weights and explicitly reports that checkpoint checks were skipped. Full inference reproduction requires the released weights and legitimately acquired FER2013 images. Commands that regenerate audit files or results change the working tree; preserve the release commit or use a separate checkout for those runs.
+The [reproduction guide](REPRODUCIBILITY.md) separates retained-output replay,
+optional licensed-data inference, and manuscript compilation. Checkpoint resources
+are release assets, not Git objects. The current source manifest identifies the
+files staged for this edition; it does not replace the original archive manifests.
 
-Train into a new output directory using the controlled study entry point:
+## Local prototype and boundaries
 
-```bash
-python reviewer_followup/retrain.py --condition uniform --seed 17 --output-dir reproduced-training
-```
+`code/app.py` is an opt-in local expression-cue preview. Its Python backend must
+run on the sender's machine for local processing. It does not implement recipient
+transport, deploy the studied calibrated policies, or establish communication
+benefits. Expression categories and crowd annotations do not establish internal
+emotional states.
 
-The sole current numerical ledger is `reviewer_followup/reported_results.csv`. The root-level `reported_results.csv` and historical helper files are retained only for provenance and regression tests. They do not supply the current manuscript's results. The older generic `code/train.py` does not define the controlled paper experiment. The VADER/affective-dissonance rewrite is excluded.
+The earlier [TechRxiv preprint](https://doi.org/10.36227/techrxiv.175416003.30236370/v1)
+describes a different experimental foundation. Its participant findings and
+unverifiable historical curation/performance claims are excluded here. No new
+participants or ratings were collected. The article states that no institutional
+ethics approval or exemption determination was obtained for this secondary analysis.
 
-## Local expression-cue prototype
-
-With the released Soft seed-17 selected checkpoint:
-
-```bash
-python -m streamlit run code/app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false -- --checkpoint reviewer_followup/weights/soft_seed17_selected.pt
-```
-
-The backend must run on the sender's machine for local processing. The prototype implements per-message opt-in and stale/invalid-cue suppression, and ends in a local conversation preview. It does not implement recipient transport. A facial-expression category does not establish internal emotion or intent, and an attached cue may be sensitive. Offline confidence policies have not been validated as runtime safeguards.
-
-## Provenance and permissions
-
-The earlier manuscript appeared on [TechRxiv](https://doi.org/10.36227/techrxiv.175416003.30236370/v1). The current work supplies new traceable experiments and excludes participant findings and unverifiable historical scores. See `final_experiment/HISTORICAL_PROVENANCE.md`.
-
-FER+ annotations retain Microsoft's copyright and MIT license in `data/ferplus_annotations/LICENSE.md`. Dataset provenance and underlying photograph-rights limitations are disclosed; images are excluded. Third-party class/style and other supplied files retain their original notices. No blanket software or checkpoint license is assigned by this release. Public availability does not grant rights beyond applicable licenses and permissions.
-
-No institutional ethics approval or exemption determination was obtained. No new human-participant study is reported. Internal audits are not external replication. See the manuscript's declarations and `reviewer_followup/ETHICS_SUBMISSION_RISK.md`.
-
-When referring to this work, cite the current manuscript title and all four authors, and identify the exact release/commit. Do not cite it as an accepted SN Computer Science paper or invent a journal DOI.
-
-## Current revision files
-
-- `manuscript/crowd-supervision-evidence-revision.pdf` is the current v1.1.0 manuscript.
-- `manuscript/Supplementary-diagnostics.pdf` contains detailed runtime and diagnostic information.
-- `manuscript/Manuscript-source-v1.1.0.zip` supplies editable Springer source.
-- `evidence_revision/REVIEW_RESPONSE.md` maps the latest supplied criticisms to changes and unresolved scientific boundaries.
-- Online Resource 6 adds six Tie-Uniform inference checkpoints; Online Resources 2–5 remain byte-identical to v1.0.0.
-
-The old v1.0.0 release is preserved. This is not an accepted article or a journal submission. Final author approval of these later results is required before journal submission.
+No source face photographs, crops, audio, or video are distributed. Dataset access
+and applicable original terms remain necessary for image-based reproduction.
+FER+ annotations and supplied third-party files retain their original notices.
+Public access does not assign a blanket software, model, or source-image license.

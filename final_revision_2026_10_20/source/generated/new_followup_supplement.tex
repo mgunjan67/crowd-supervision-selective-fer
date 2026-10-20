@@ -1,0 +1,138 @@
+\clearpage\section{New target, vocabulary and stopping-rule comparisons}
+\label{supp:new-followup}
+The final protocol defines twelve additional Swin-T runs on the same previously exposed source. Seven-output Permutation uses the three existing seeds; eight-output Soft, Uniform and Tie-Uniform use the same three seeds and budget. All twelve runs were completed and hashed before new calibration/test inference. There are 33 nominal inference states: six for Permutation and 27 for the eight-output conditions. Different policies can select the same epoch and therefore do not necessarily represent distinct weights. These comparisons remain adaptive within-source evidence.
+
+All risks retain ten annotation categories. Each model selects its own 2,620 primary-test images at 80\% MSP coverage. Squared distance uses all 3,275 images. Intervals below use 5,000 shared exact-pixel-cluster replicates, rerank each resampled multiset, and average the three seed contrasts within each replicate. They condition on fitted models and observed annotations, rather than estimating variation over future seeds or people.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}{rlllrr}
+\caption{Every new fitted state: complete-vote disagreement at 80\% coverage (\%) and full-coverage ten-category squared distance.}\label{tab:new-all-states}\\
+\toprule Outputs & Target & State & Seed & Risk & Distance\\\midrule\endfirsthead
+\toprule Outputs & Target & State & Seed & Risk & Distance\\\midrule\endhead
+7 & Permutation & Distance-selected & 17 & 24.225 & 0.12121\\
+7 & Permutation & Epoch 12 & 17 & 24.126 & 0.12496\\
+7 & Permutation & Distance-selected & 42 & 24.676 & 0.12280\\
+7 & Permutation & Epoch 12 & 42 & 24.248 & 0.12511\\
+7 & Permutation & Distance-selected & 89 & 24.534 & 0.12077\\
+7 & Permutation & Epoch 12 & 89 & 24.168 & 0.12400\\
+8 & Soft & Distance-selected & 17 & 23.767 & 0.09472\\
+8 & Soft & Epoch 12 & 17 & 23.492 & 0.09417\\
+8 & Soft & Risk-selected & 17 & 23.492 & 0.09417\\
+8 & Uniform & Distance-selected & 17 & 24.221 & 0.11632\\
+8 & Uniform & Epoch 12 & 17 & 23.893 & 0.11533\\
+8 & Uniform & Risk-selected & 17 & 24.221 & 0.11632\\
+8 & Tie-Uniform & Distance-selected & 17 & 23.779 & 0.10877\\
+8 & Tie-Uniform & Epoch 12 & 17 & 23.882 & 0.11000\\
+8 & Tie-Uniform & Risk-selected & 17 & 23.882 & 0.11000\\
+8 & Soft & Distance-selected & 42 & 23.565 & 0.09426\\
+8 & Soft & Epoch 12 & 42 & 23.565 & 0.09426\\
+8 & Soft & Risk-selected & 42 & 23.786 & 0.09521\\
+8 & Uniform & Distance-selected & 42 & 24.756 & 0.11772\\
+8 & Uniform & Epoch 12 & 42 & 24.015 & 0.11603\\
+8 & Uniform & Risk-selected & 42 & 23.950 & 0.11561\\
+8 & Tie-Uniform & Distance-selected & 42 & 23.615 & 0.10881\\
+8 & Tie-Uniform & Epoch 12 & 42 & 23.615 & 0.10881\\
+8 & Tie-Uniform & Risk-selected & 42 & 23.615 & 0.10881\\
+8 & Soft & Distance-selected & 89 & 23.893 & 0.09503\\
+8 & Soft & Epoch 12 & 89 & 23.828 & 0.09432\\
+8 & Soft & Risk-selected & 89 & 23.893 & 0.09503\\
+8 & Uniform & Distance-selected & 89 & 24.756 & 0.11719\\
+8 & Uniform & Epoch 12 & 89 & 24.134 & 0.11680\\
+8 & Uniform & Risk-selected & 89 & 24.756 & 0.11719\\
+8 & Tie-Uniform & Distance-selected & 89 & 23.989 & 0.11129\\
+8 & Tie-Uniform & Epoch 12 & 89 & 23.779 & 0.11032\\
+8 & Tie-Uniform & Risk-selected & 89 & 23.989 & 0.11129\\
+\bottomrule\end{longtable}\endgroup
+
+\Needspace{15\baselineskip}
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}{rllrrrrrl}
+\caption{Soft-minus-control seed differences, means, sample standard deviations and conditional 95\% intervals (all percentage points). Negative favors Soft. Distance and Risk denote the selection objectives.}\label{tab:new-all-contrasts}\\
+\toprule K & Control & State & 17 & 42 & 89 & Mean & SD & Interval\\\midrule\endfirsthead
+\toprule K & Control & State & 17 & 42 & 89 & Mean & SD & Interval\\\midrule\endhead
+7 & Permutation & Distance & -0.523 & -0.935 & -0.924 & -0.794 & 0.235 & [-1.071, -0.474]\\
+7 & Permutation & Epoch 12 & -0.481 & -0.557 & -0.607 & -0.548 & 0.063 & [-0.855, -0.261]\\
+8 & Uniform & Distance & -0.454 & -1.191 & -0.863 & -0.836 & 0.369 & [-1.152, -0.509]\\
+8 & Tie-Uniform & Distance & -0.011 & -0.050 & -0.095 & -0.052 & 0.042 & [-0.314, +0.212]\\
+8 & Uniform & Epoch 12 & -0.401 & -0.450 & -0.305 & -0.385 & 0.074 & [-0.672, -0.071]\\
+8 & Tie-Uniform & Epoch 12 & -0.389 & -0.050 & +0.050 & -0.130 & 0.230 & [-0.388, +0.141]\\
+8 & Uniform & Risk & -0.729 & -0.164 & -0.863 & -0.585 & 0.371 & [-0.892, -0.282]\\
+8 & Tie-Uniform & Risk & -0.389 & +0.172 & -0.095 & -0.104 & 0.281 & [-0.357, +0.168]\\
+\bottomrule\end{longtable}\endgroup
+
+\subsection{Fixed-image cross-evaluation}
+The following averages apply each predictor to both selectors' accepted images. They distinguish prediction changes on fixed images from the changes in image composition inherent in own-ranking comparisons. They are descriptive cross-evaluations, not causal decomposition.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}{rllrrrr}
+\caption{Fixed-set risks (\%). S is Soft and C is the named control; predictor appears before selector in each heading. All cells retain 2,620 identical images within a selector and seed.}\label{tab:new-fixed-sets}\\
+\toprule K & Control & State & S on S & C on S & S on C & C on C\\\midrule\endfirsthead
+\toprule K & Control & State & S on S & C on S & S on C & C on C\\\midrule\endhead
+7 & Permutation & Distance-selected & 23.684 & 24.207 & 24.405 & 24.478\\
+7 & Permutation & Epoch 12 & 23.632 & 24.048 & 24.092 & 24.181\\
+8 & Uniform & Distance-selected & 23.742 & 24.471 & 24.445 & 24.578\\
+8 & Tie-Uniform & Distance-selected & 23.742 & 24.020 & 23.919 & 23.794\\
+8 & Uniform & Epoch 12 & 23.628 & 24.121 & 24.083 & 24.014\\
+8 & Tie-Uniform & Epoch 12 & 23.628 & 23.868 & 23.860 & 23.758\\
+8 & Uniform & Risk-selected & 23.724 & 24.314 & 24.332 & 24.309\\
+8 & Tie-Uniform & Risk-selected & 23.724 & 24.003 & 23.955 & 23.828\\
+\bottomrule\end{longtable}\endgroup
+
+\subsection{Selection objectives and supported-mass strata}
+Distance selection minimizes ten-category squared distance; the risk rule minimizes complete-vote disagreement at 80\% MSP coverage on the selection subset. Both retain the earliest minimizing epoch. The risk rule is reported only for the eight-output family and is not retrospectively reconstructed for the original runs.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}{rllrrr}
+\caption{Epochs selected under the declared policies. A dash indicates a policy not reported for that family.}\label{tab:new-selected-epochs}\\
+\toprule Outputs & Target & Seed & Distance & Risk & Fixed\\\midrule\endfirsthead
+\toprule Outputs & Target & Seed & Distance & Risk & Fixed\\\midrule\endhead
+7 & Permutation & 17 & 9 & -- & 12\\
+7 & Permutation & 42 & 7 & -- & 12\\
+7 & Permutation & 89 & 7 & -- & 12\\
+8 & Soft & 17 & 9 & 12 & 12\\
+8 & Soft & 42 & 12 & 9 & 12\\
+8 & Soft & 89 & 10 & 10 & 12\\
+8 & Uniform & 17 & 9 & 9 & 12\\
+8 & Uniform & 42 & 6 & 11 & 12\\
+8 & Uniform & 89 & 6 & 6 & 12\\
+8 & Tie-Uniform & 17 & 9 & 12 & 12\\
+8 & Tie-Uniform & 42 & 12 & 12 & 12\\
+8 & Tie-Uniform & 89 & 10 & 10 & 12\\
+\bottomrule\end{longtable}\endgroup
+
+\Needspace{10\baselineskip}
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}{lllrrrrr}
+\caption{Eight-output distance-selected supported-mass strata: means over seeds. Risk is a percentage; components are percentage-point contributions. Accepted counts can vary by seed. The full CSV retains every state and scope.}\label{tab:new-strata}\\
+\toprule Target & Stratum & Scope & N & Kept & Risk & Unsupp. & Excess\\\midrule\endfirsthead
+\toprule Target & Stratum & Scope & N & Kept & Risk & Unsupp. & Excess\\\midrule\endhead
+Soft & full & all & 1873 & 1873.0 & 19.55 & 0.00 & 3.22\\
+Soft & full & global80 & 1873 & 1639.0 & 14.64 & 0.00 & 1.48\\
+Soft & full & within80 & 1873 & 1499.0 & 12.18 & 0.00 & 0.90\\
+Soft & partial & all & 1386 & 1386.0 & 45.78 & 13.79 & 6.51\\
+Soft & partial & global80 & 1386 & 969.3 & 38.22 & 13.21 & 3.30\\
+Soft & partial & within80 & 1386 & 1109.0 & 40.64 & 13.43 & 4.32\\
+Soft & zero & all & 16 & 16.0 & 100.00 & 100.00 & 0.00\\
+Soft & zero & global80 & 16 & 11.7 & 100.00 & 100.00 & 0.00\\
+Soft & zero & within80 & 16 & 13.0 & 100.00 & 100.00 & 0.00\\
+Uniform & full & all & 1873 & 1873.0 & 20.46 & 0.00 & 4.14\\
+Uniform & full & global80 & 1873 & 1628.0 & 15.14 & 0.00 & 1.86\\
+Uniform & full & within80 & 1873 & 1499.0 & 12.76 & 0.00 & 1.15\\
+Uniform & partial & all & 1386 & 1386.0 & 46.51 & 13.79 & 7.24\\
+Uniform & partial & global80 & 1386 & 983.3 & 39.54 & 13.18 & 4.09\\
+Uniform & partial & within80 & 1386 & 1109.0 & 41.41 & 13.35 & 4.99\\
+Uniform & zero & all & 16 & 16.0 & 100.00 & 100.00 & 0.00\\
+Uniform & zero & global80 & 16 & 8.7 & 100.00 & 100.00 & 0.00\\
+Uniform & zero & within80 & 16 & 13.0 & 100.00 & 100.00 & 0.00\\
+Tie-Uniform & full & all & 1873 & 1873.0 & 19.73 & 0.00 & 3.40\\
+Tie-Uniform & full & global80 & 1873 & 1639.7 & 14.75 & 0.00 & 1.45\\
+Tie-Uniform & full & within80 & 1873 & 1499.0 & 12.17 & 0.00 & 0.84\\
+Tie-Uniform & partial & all & 1386 & 1386.0 & 45.95 & 13.79 & 6.68\\
+Tie-Uniform & partial & global80 & 1386 & 973.0 & 38.45 & 13.15 & 3.38\\
+Tie-Uniform & partial & within80 & 1386 & 1109.0 & 40.81 & 13.38 & 4.29\\
+Tie-Uniform & zero & all & 16 & 16.0 & 100.00 & 100.00 & 0.00\\
+Tie-Uniform & zero & global80 & 16 & 7.3 & 100.00 & 100.00 & 0.00\\
+Tie-Uniform & zero & within80 & 16 & 13.0 & 100.00 & 100.00 & 0.00\\
+\bottomrule\end{longtable}\endgroup
+
+Full and partial denote supported vote mass one and strictly between zero and one; zero denotes no supported votes. Global 80\% restricts the full-population accepted set; within-stratum 80\% reranks within the stratum. Supported ambiguity is risk minus unsupported mass minus excess before rounding. A dash in a mean denotes an undefined value for at least one seed, rather than averaging only nonempty seeds. Empty or unsupported-only conditional risks are not replaced with zero. Every 20\%, 50\%, 80\% and 100\% summary, all risk--coverage prefixes and fixed-image per-seed cells are retained in the result ledgers.

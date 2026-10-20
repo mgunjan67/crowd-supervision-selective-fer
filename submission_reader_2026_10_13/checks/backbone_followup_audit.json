@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "new_inference_checkpoints_verified": 18,
+  "prediction_files_verified": 54,
+  "original_training_sources_verified_if_available": 18,
+  "independent_numeric_rows_checked": 19971,
+  "independent_bootstrap_intervals_verified": 4,
+  "retained_swin_rows_unchanged": 53804,
+  "ledger_sha256": "200a9b1df63cb267169a9f888b64a7fda3993f241494fff2e33320817bbfec3b",
+  "internal_not_external_replication": true
+}

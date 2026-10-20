@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "AMENDMENT_001.md": "a49aa291a68e8d781e817081b63578b6c9a1afce7737a2460902cfeb77c7f3ba",
+    "run_memory_safe.py": "b43c6251002a744e9cf1ac8e6ead64c70f19b361d1859535678c16ce81be8b46",
+    "test_memory_safe.py": "8d206b4df955915d21915c2e11e3ce72dd378a5ec07ce36c3ff08bc77ab512e0"
+  },
+  "repair": "sequential workers preserving uninterrupted persistent-loader order",
+  "original_freeze_sha256": "87bda97c6ea29e89165965b715a635be52488341895c63100a7f8d4886698f79"
+}

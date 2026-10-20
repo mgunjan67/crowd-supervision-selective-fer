@@ -1,0 +1,10 @@
+new_section,title,previous_locations
+S1,Effects of supervision targets and checkpoint selection,Paired seed contrasts; Tie-Uniform comparison; selected epochs; original four-condition curves; Swin learning curves
+S2,Distributional agreement and backbone sensitivity,Held-out full-distribution agreement; ResNet absolute risks; ResNet learning and coverage curves
+S3,Accepted-image sets and annotation references,Swin fixed-image and overlap tables; ResNet fixed-image and reference-specific F1 tables; reference-label matrix
+S4,Effects of unsupported annotation categories,Supported-mass strata; unsupported vote masses; ResNet stratum retention
+S5,Sensitivity to confidence scores,Exploratory confidence-score sensitivity
+S6,Calibration-to-test transfer,Calibration half-split holdout-minus-fit diagnostics; unconditional population composition
+S7,External clip evaluation and diagnostic analyses,Frozen external transfer; post hoc output matrices and temporal summaries
+S8,Model and prototype implementation,Architecture figure; synthetic interface figure; prototype implementation boundary
+S9,Execution provenance and reproduction,Existing reproduction map; execution details consolidated from main Methods

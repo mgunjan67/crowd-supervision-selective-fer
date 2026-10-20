@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "metric": "mean_image(sum_category((zero_padded_p7-q10)^2))",
+  "primary_population_n": 3275,
+  "states": 48,
+  "identical_rows_and_votes": true,
+  "support_renormalization": false,
+  "maximum_ledger_discrepancy": 0.0,
+  "independent_expression_tolerance": 1e-14,
+  "ledger_tolerance": 1e-10,
+  "previously_recorded_endpoint": true,
+  "newly_assembled_descriptive_summary": true,
+  "training_runs_added": 0,
+  "means": {
+    "swin_t|selected|soft": 0.09783469874013527,
+    "swin_t|selected|uniform": 0.11570770523203504,
+    "swin_t|selected|tie_uniform": 0.11372688838473877,
+    "swin_t|epoch12|soft": 0.09779420758283619,
+    "swin_t|epoch12|uniform": 0.11699219345464053,
+    "swin_t|epoch12|tie_uniform": 0.11280001979321576,
+    "resnet18|selected|soft": 0.11058703713192679,
+    "resnet18|selected|uniform": 0.12303043690648945,
+    "resnet18|selected|tie_uniform": 0.1180460219019835,
+    "resnet18|epoch12|soft": 0.11089487419869574,
+    "resnet18|epoch12|uniform": 0.12259459301943416,
+    "resnet18|epoch12|tie_uniform": 0.11665342478542691
+  }
+}

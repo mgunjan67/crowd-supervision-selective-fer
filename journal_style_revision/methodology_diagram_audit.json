@@ -1,0 +1,17 @@
+{
+  "text_overlap_pairs": [],
+  "container_overflows": [],
+  "minimum_source_font_pt": 11,
+  "status": "passed",
+  "new_training_runs": 0,
+  "uses_photographs": false,
+  "calibration_not_used_for_own_ranking": true,
+  "selection_does_not_use_test": true,
+  "offline_runtime_separated": true,
+  "supplied_formats": [
+    "pdf",
+    "eps",
+    "svg",
+    "png"
+  ]
+}

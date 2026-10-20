@@ -1,0 +1,689 @@
+{
+  "status": "visual_review_recorded",
+  "renderer": "Poppler pdftoppm, 110 dpi; accompanying MuPDF contact sheets",
+  "inspection": "Codex visual inspection, not a human proof approval",
+  "visual_review_completed": true,
+  "documents": [
+    {
+      "file": "research-revision.pdf",
+      "pdf_sha256": "028f15fa3e420a83bb8e769dedcfe47f1326262667e0417f516611c924a1a33a",
+      "pages": [
+        {
+          "page": 1,
+          "png_sha256": "ad326112d1169efe269b45d46d24ffda6ecb4c2f462c1004474ece911d037d2a",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 2,
+          "png_sha256": "1e909352a9224dc6147ba2d9989054ad27847af058349ae58c4f9fd52496eb64",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 3,
+          "png_sha256": "71c647fb5711c8cf0efaa2a7407505849590845288bda805f6f133dd2048e28f",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 4,
+          "png_sha256": "18f35fb8e3402c59650bde8a53cae790e0973b57cb5e96476ddb65acdbefb5f1",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 5,
+          "png_sha256": "9f3c6272fec2132eee17e9fd975259dd232a89aa2b9302d2b58cd07e1fd5be5e",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 6,
+          "png_sha256": "ff2c58b09ffa60f6452f70bdc652397c0cfad7841e85a8ccf5f0030c74765258",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 7,
+          "png_sha256": "44453a662e60aaed62a1eafabfa4467e241d8acd331e14e36aad4e3e204a4a25",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 8,
+          "png_sha256": "75369b0805305de52257203f955d0675944f54205d600347a1765b5eeb749d78",
+          "changed_from_inspected_first_render": true
+        },
+        {
+          "page": 9,
+          "png_sha256": "020597e679ba9bed447f169dee978543552ece4c2230a25b56c5a5cded109a7d",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 10,
+          "png_sha256": "17cd3a276011a373a8cd57485bf1a586c3be30fae7cee337fe61cedde1ff59d5",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 11,
+          "png_sha256": "c1c72e5e85ecbf131d82b9b45e09995a2cb229c1f37eb098cd36fc456f403538",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 12,
+          "png_sha256": "0740805724681e4e003854aae5bc3a2258836778ac5adbbe7412a835390756bb",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 13,
+          "png_sha256": "89b60d7617d69e91c1bea8b7ae48579bc2d6bea574593350a391d936ce7a0b58",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 14,
+          "png_sha256": "fcf1d310e6041f0f91d5ec12c298f965e42ea3c14ea71dbfcd32461f64ea89d6",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 15,
+          "png_sha256": "a72affbf373878d08141544bbbb5d904bd6933ac65267fe80a40b8e20bfb423b",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 16,
+          "png_sha256": "e7fd2517c4304d8ddeea82adb47958d39315b7a39f66d03113203d318d44edca",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 17,
+          "png_sha256": "d89c3d2b947a1972ad6d13d3f1ab6a7174dda523a9bced28c301b342f89bfa8e",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 18,
+          "png_sha256": "e486dca26b68494a997ee57b1b8435cd5b01dbeac9c12b006d7918edfa6fc23a",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 19,
+          "png_sha256": "3af45f51c537a642abca848494d9f331be8964433045088417b8fd57a7c08626",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 20,
+          "png_sha256": "41fc4ff53e970e4ff6adb9c0efe7a0f5e7779927c35663a1f3368f65d07878fb",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 21,
+          "png_sha256": "0a28def51870bec52bbd08154ee479d31ceb9621dfd9bfebb6e532f1edeaf591",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 22,
+          "png_sha256": "df8c29bcfd5145a5bf219de182edb20c711696fbf82b9514324c40836f21570e",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 23,
+          "png_sha256": "fdf9b7d0b714fb9246f0914ce9b7e897a78fb9ee6008d9728c3c764652467b2f",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 24,
+          "png_sha256": "5635710bd77d59e92205ad0f6ab75a8e0e5685d6214ada0eeba9798930e9cf89",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 25,
+          "png_sha256": "fc7a2dd2b6dd67138c00e5fcc7b054a41c135322f5029818acb05e6d04ef2fbd",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 26,
+          "png_sha256": "72b47fb51912f238c5780aad309315785ad1b93eb5817de977789cdaee7ae64d",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 27,
+          "png_sha256": "8c93b7012abb6a49678e0fd7a69c0c9488b6c5efa0e6b95a985a0ce476d471b9",
+          "changed_from_inspected_first_render": false
+        }
+      ],
+      "total_pages": 27,
+      "all_pages_rendered": true,
+      "embedded_fonts": [
+        {
+          "name": "AQGTKC+CMR17",
+          "type": "Type1",
+          "embedded_bytes": 12204
+        },
+        {
+          "name": "UUQGBQ+CMR12",
+          "type": "Type1",
+          "embedded_bytes": 12045
+        },
+        {
+          "name": "SNXNLI+CMR8",
+          "type": "Type1",
+          "embedded_bytes": 20136
+        },
+        {
+          "name": "LJPSMA+CMR7",
+          "type": "Type1",
+          "embedded_bytes": 13368
+        },
+        {
+          "name": "QQGQQI+CMR10",
+          "type": "Type1",
+          "embedded_bytes": 28278
+        },
+        {
+          "name": "YMCKLD+CMBX9",
+          "type": "Type1",
+          "embedded_bytes": 12295
+        },
+        {
+          "name": "NBUYLP+CMR9",
+          "type": "Type1",
+          "embedded_bytes": 19987
+        },
+        {
+          "name": "HYYHEA+CMBSY10",
+          "type": "Type1",
+          "embedded_bytes": 7242
+        },
+        {
+          "name": "WZYZMS+CMMIB10",
+          "type": "Type1",
+          "embedded_bytes": 7295
+        },
+        {
+          "name": "YLLQWV+CMBX8",
+          "type": "Type1",
+          "embedded_bytes": 11999
+        },
+        {
+          "name": "GEJLCB+CMBX12",
+          "type": "Type1",
+          "embedded_bytes": 16256
+        },
+        {
+          "name": "JGFLHG+CMBX10",
+          "type": "Type1",
+          "embedded_bytes": 16104
+        },
+        {
+          "name": "ZBUJQU+CMMI10",
+          "type": "Type1",
+          "embedded_bytes": 15150
+        },
+        {
+          "name": "BVHTAU+CMMI7",
+          "type": "Type1",
+          "embedded_bytes": 9147
+        },
+        {
+          "name": "RZBKRP+CMEX10",
+          "type": "Type1",
+          "embedded_bytes": 8822
+        },
+        {
+          "name": "EUFWVP+CMSY10",
+          "type": "Type1",
+          "embedded_bytes": 9138
+        },
+        {
+          "name": "RVPZIX+CMMI5",
+          "type": "Type1",
+          "embedded_bytes": 7578
+        },
+        {
+          "name": "EWCLAX+CMSY7",
+          "type": "Type1",
+          "embedded_bytes": 7949
+        },
+        {
+          "name": "JYDBGW+MSBM10",
+          "type": "Type1",
+          "embedded_bytes": 2820
+        },
+        {
+          "name": "UXERQV+CMMI8",
+          "type": "Type1",
+          "embedded_bytes": 8362
+        },
+        {
+          "name": "JLASAV+CMMI6",
+          "type": "Type1",
+          "embedded_bytes": 7944
+        },
+        {
+          "name": "TGLIEM+CMR6",
+          "type": "Type1",
+          "embedded_bytes": 7503
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 51652
+        },
+        {
+          "name": "ELUGPM+Arial-BoldMT",
+          "type": "Type0",
+          "embedded_bytes": 15888
+        },
+        {
+          "name": "GCWXDV+DejaVuSans-Oblique",
+          "type": "Type0",
+          "embedded_bytes": 8744
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 8116
+        },
+        {
+          "name": "EGWXSV+DejaVuSansDisplay",
+          "type": "Type0",
+          "embedded_bytes": 3276
+        },
+        {
+          "name": "CRPSRL+CMEX8",
+          "type": "Type1",
+          "embedded_bytes": 7282
+        },
+        {
+          "name": "BGWEXK+CMTT10",
+          "type": "Type1",
+          "embedded_bytes": 11401
+        },
+        {
+          "name": "BXGEVL+DejaVuSerif",
+          "type": "Type0",
+          "embedded_bytes": 17032
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 50368
+        },
+        {
+          "name": "ELUGPM+Arial-BoldMT",
+          "type": "Type0",
+          "embedded_bytes": 25720
+        },
+        {
+          "name": "GCWXDV+DejaVuSans-Oblique",
+          "type": "Type0",
+          "embedded_bytes": 3536
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 6012
+        },
+        {
+          "name": "FFHPFP+CMSY8",
+          "type": "Type1",
+          "embedded_bytes": 7346
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 47832
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 13460
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 41800
+        },
+        {
+          "name": "ELUGPM+Arial-BoldMT",
+          "type": "Type0",
+          "embedded_bytes": 15220
+        },
+        {
+          "name": "EVICAO+DejaVuSans-Bold",
+          "type": "Type0",
+          "embedded_bytes": 4796
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 11308
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 13136
+        },
+        {
+          "name": "BXGEVL+DejaVuSerif",
+          "type": "Type0",
+          "embedded_bytes": 15744
+        }
+      ],
+      "type3_fonts": 0
+    },
+    {
+      "file": "Supplementary-diagnostics.pdf",
+      "pdf_sha256": "71ae1cbc5ac0323b13cafed653cd13121296c2713aa7bfc30cfed817f3efe683",
+      "pages": [
+        {
+          "page": 1,
+          "png_sha256": "09139c81117e855ef4ea3da22de2b221b71ebe9128af2dddb77830b8a5d5261d",
+          "changed_from_inspected_first_render": true
+        },
+        {
+          "page": 2,
+          "png_sha256": "cc5439fa4b980946a9aaee5ea1b73cca4262c147d360642b5169cd20df0d6239",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 3,
+          "png_sha256": "db4ac32cc915bb56779ac03e2376425c94a44436acd4f69de2aee57cbbb79d3d",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 4,
+          "png_sha256": "cd1e0e06291acb26101c721c29c738b0169d30946f610c5ad614388dabc13d54",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 5,
+          "png_sha256": "eacd990870f22603f4fb4b1ffa41350201bc31aba06dcbf111126eaa9fb6774d",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 6,
+          "png_sha256": "120fc5c8f7a8853b445425e431447690ebde40a780164a30c350d537ba07ccbe",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 7,
+          "png_sha256": "a33acc2a5a5fd75c326d4ac3710b307df90a590555625b99579f83d1681f6f30",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 8,
+          "png_sha256": "c11d7b906633332316be90c2ff4fa6fca314ec16686057cb8cdedd4f9aa3548f",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 9,
+          "png_sha256": "c151db2b0621af78887d227fd41e093580486688bf2b1e638e97a6d5dd1c6d9b",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 10,
+          "png_sha256": "01b6bf87918299321273734e3be5c68f6d4d2e3ff9283c10f57d8887c3705e7a",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 11,
+          "png_sha256": "89252956d012279f270da12c2584e978ea3695c93561934f30874a77c246b1d9",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 12,
+          "png_sha256": "909cf8e6e838dd7e16ca197cef2f32c58e00148e1f869909403907f3671a06e2",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 13,
+          "png_sha256": "98ba5a86c814e8a8dce6c41a6c64fc61c56eb40a6fa7e1fce26815d24a19512b",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 14,
+          "png_sha256": "7eb04054bc12397770dc43bc126e87ce8fa9f3491ae7c774a4e7eeec0d167458",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 15,
+          "png_sha256": "cfabb815e84eed883c7bb9dfaea4c2254f5de348fe8fe32eb4ff51a0c8dc347b",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 16,
+          "png_sha256": "fcf67920576b6881bec703d17a3371268028d6ab14baa5e43d83e0f2c92a7c33",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 17,
+          "png_sha256": "789ecb5c603e6dcbef20ffb75d5029791f409d066eb6211894dfa2c4f4398916",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 18,
+          "png_sha256": "23fb5aaf5ab26970d28b2c31c97a964591c9def6f09bf481c6b67ec06cf986ef",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 19,
+          "png_sha256": "3f0618b36952b340987638bbea3bc01a8972772c3d52ff0078de0c8d1eded7aa",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 20,
+          "png_sha256": "90500479f233fc5de216df80291b5901ff0102d4e18e15a09780e407088defb3",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 21,
+          "png_sha256": "433c311b97a22eb8528c2ab1a0b4b388b6c86cfffab3bd0dfe57533cb6bdf385",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 22,
+          "png_sha256": "62bbfc19b4c7522d2352735c023036f889530dacffe8ce504879fa78b99b8be2",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 23,
+          "png_sha256": "17ec835bc47f16af1450218304a61cd5643f322f8576df6f3a1242f3044711dc",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 24,
+          "png_sha256": "1cfba5fe0ff9c84334cfe3671e70fbd47c578357d3e5cb50e14c7c15f28111a4",
+          "changed_from_inspected_first_render": false
+        },
+        {
+          "page": 25,
+          "png_sha256": "048a28406afd47d21e8c9773097b8adcbad1f15a6828d6f7e93e0bd06e0b1f2c",
+          "changed_from_inspected_first_render": true
+        },
+        {
+          "page": 26,
+          "png_sha256": "f540390e036178aa0dcde0aecf23013c81aa0bc8cbecb5a90846448f612bbdea",
+          "changed_from_inspected_first_render": true
+        },
+        {
+          "page": 27,
+          "png_sha256": "fcc3b5b10332f7fd8b94fe6987a2e3990154468413f03deff9e20e2b74a88c45",
+          "changed_from_inspected_first_render": true
+        },
+        {
+          "page": 28,
+          "png_sha256": "d8cec62c6b740b0e12578bbd56dad4e3c08ba31f890d48c94f20b36fa15b9d58",
+          "changed_from_inspected_first_render": true
+        },
+        {
+          "page": 29,
+          "png_sha256": "eaf0b580db3f551e850a07b102881773138c5a6a9a482860846092ee6016284c",
+          "changed_from_inspected_first_render": true
+        },
+        {
+          "page": 30,
+          "png_sha256": "40dd225ba48bb100cf744c0201ffe175defd156204ed1b4c1d357306e061e86c",
+          "changed_from_inspected_first_render": true
+        }
+      ],
+      "total_pages": 30,
+      "all_pages_rendered": true,
+      "embedded_fonts": [
+        {
+          "name": "GQAIWB+CMR12",
+          "type": "Type1",
+          "embedded_bytes": 9446
+        },
+        {
+          "name": "FSVFJN+CMR10",
+          "type": "Type1",
+          "embedded_bytes": 25892
+        },
+        {
+          "name": "EADTPF+CMTT10",
+          "type": "Type1",
+          "embedded_bytes": 15329
+        },
+        {
+          "name": "NUMIAN+CMBX12",
+          "type": "Type1",
+          "embedded_bytes": 17603
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 35904
+        },
+        {
+          "name": "EVICAO+DejaVuSans-Bold",
+          "type": "Type0",
+          "embedded_bytes": 4640
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 13156
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 35248
+        },
+        {
+          "name": "KULTND+CMMI10",
+          "type": "Type1",
+          "embedded_bytes": 10092
+        },
+        {
+          "name": "PXBGHL+CMSY7",
+          "type": "Type1",
+          "embedded_bytes": 7275
+        },
+        {
+          "name": "NGTYJM+CMR7",
+          "type": "Type1",
+          "embedded_bytes": 8310
+        },
+        {
+          "name": "LBWBDW+CMEX10",
+          "type": "Type1",
+          "embedded_bytes": 7315
+        },
+        {
+          "name": "NHHULM+CMMI7",
+          "type": "Type1",
+          "embedded_bytes": 8084
+        },
+        {
+          "name": "QANTNE+CMSY10",
+          "type": "Type1",
+          "embedded_bytes": 7756
+        },
+        {
+          "name": "XIRXHK+CMR9",
+          "type": "Type1",
+          "embedded_bytes": 22016
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 35240
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 36256
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 40832
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 40980
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 41364
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 12920
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 13424
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 47164
+        },
+        {
+          "name": "ELUGPM+Arial-BoldMT",
+          "type": "Type0",
+          "embedded_bytes": 15220
+        },
+        {
+          "name": "GCWXDV+DejaVuSans-Oblique",
+          "type": "Type0",
+          "embedded_bytes": 5432
+        },
+        {
+          "name": "BMQQDV+DejaVuSans",
+          "type": "Type0",
+          "embedded_bytes": 11448
+        },
+        {
+          "name": "FTXWZA+STIXGeneral-Italic",
+          "type": "Type0",
+          "embedded_bytes": 1884
+        },
+        {
+          "name": "ELUGPM+ArialMT",
+          "type": "Type0",
+          "embedded_bytes": 40024
+        },
+        {
+          "name": "ELUGPM+Arial-BoldMT",
+          "type": "Type0",
+          "embedded_bytes": 22024
+        }
+      ],
+      "type3_fonts": 0
+    }
+  ],
+  "reviewed_elements": [
+    "title/abstract",
+    "paragraphs/equations",
+    "tables and continuation headers",
+    "all figures/captions/legends",
+    "bibliography/URLs",
+    "page breaks and margins"
+  ],
+  "corrections": [
+    "provenance spillover removed",
+    "eight-row contrast table kept together",
+    "eight-row ranking table kept together",
+    "stratum table no longer starts with an orphan row"
+  ]
+}

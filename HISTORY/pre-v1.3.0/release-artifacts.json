@@ -1,0 +1,34 @@
+{
+  "Manuscript-source.zip": {
+    "sha256": "22831c98b638468459bb0465566b1349ba089dfa217c75edd02ac28f2afadcd5",
+    "bytes": 344574
+  },
+  "OnlineResource1.zip": {
+    "sha256": "3d494aa7e195b5326d93b049f3e2bc97be7776b42ccffaa2b512cafe4639e27a",
+    "bytes": 22885424
+  },
+  "OnlineResource2.zip": {
+    "sha256": "8cfdaa686e626761f02451715d02246518f2607ae24cf380307c123504683a13",
+    "bytes": 664190535
+  },
+  "OnlineResource3.zip": {
+    "sha256": "b743e11bb7c6746ab4c550bbaddbdba18464f4628b0ad399f0d3214f351b354c",
+    "bytes": 664190535
+  },
+  "OnlineResource4.zip": {
+    "sha256": "d4f81c40cb81434577fb4feb90df3cdfc1ee96818c485fdf74e3784472ba4a52",
+    "bytes": 664196175
+  },
+  "OnlineResource5.zip": {
+    "sha256": "ab63d8af45b6c7c40be40994fea79783f68edd959b9ed9423472547b023e9d80",
+    "bytes": 664197927
+  },
+  "crowd-supervision-final-revision.pdf": {
+    "sha256": "41656e40c280a2e843cfe8d67681560ab9f20dc39b472da0f4edf87cd5dd22ac",
+    "bytes": 455998
+  },
+  "Supplementary-diagnostics.pdf": {
+    "sha256": "4e526e2f71d5b2183affc38d0bd1535525446e35382b83acf61b6aaa2638bbc2",
+    "bytes": 123184
+  }
+}

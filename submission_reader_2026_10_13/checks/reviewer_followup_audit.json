@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "prediction_files": 72,
+  "inference_checkpoints_verified": 24,
+  "ledger_rows": 43352,
+  "row_vote_label_hash_mapping": "independently verified",
+  "bootstrap_repetitions": 5000,
+  "bootstrap_method": "explicitly repeated confidence-ordered rows",
+  "resampling_rows_checked": 3600,
+  "source_freeze_verified": true,
+  "ledger_sha256": "a27f0bff934380b1ac34446229aab6ee04a3e0ce08ba3738e13a730e73d3c93c",
+  "audit_sha256": "8550a9c7a773ab07f1a8e0bd4d91f90a996a176ba84ada000b5cde3678cab19e",
+  "matched_configuration_verified": true,
+  "old_selected_bitwise_replays": 18,
+  "new_selected_selection_replays": 6,
+  "all_training_complete_before_new_inference": true
+}

@@ -1,0 +1,31 @@
+{
+  "amendment": "001",
+  "recorded_utc": "2026-10-11T18:37:48.457542+00:00",
+  "prior_freeze_sha256": "6b892e3658c67059f13604ec261e3a19f3743620ddc06e4b6f88ae0b7ef05b50",
+  "scientific_external_results_computed_before_amendment": false,
+  "technical_actor1_probabilities_existed": true,
+  "full_inference_started": false,
+  "source_hashes": {
+    "ravdess_transfer_2026_10_11\\common.py": "b62d45d7d949affb198dee59e30e3b81f8729308ce5417ca9922ceff7a2a7ba3",
+    "ravdess_transfer_2026_10_11\\annotation_adapter.py": "316e37bafbebeb4e25b4efbda1cd6ecc32882f98bcbbc340e368feaedd22ff87",
+    "ravdess_transfer_2026_10_11\\test_annotation_mapping.py": "b66ec5fc45c175dd6300367b8f52b5082b6c843d84644d0019047b5e4435746a",
+    "ravdess_transfer_2026_10_11\\video_only_speech_votes.csv": "8ee386336b479c04f4aa4685498acce4935c613c488ac8d74a971bef66dfb9b8",
+    "ravdess_transfer_2026_10_11\\annotation_mapping_audit.json": "e355c7f311e6256504cbc60ddfcd3138aee6652e7ff0648a0df10532956acf4d",
+    "ravdess_transfer_2026_10_11\\AMENDMENT_001.txt": "5140704e61f9412b6b9f8fde3152dcae960b42e7e4f2b7ff47e62a3c6025eeaa",
+    "ravdess_transfer_2026_10_11\\record_amendment.py": "52117fdfa31be9d9f6994e8559d603b0af438b79af4f2e9fb9b2a7f0a00e4b01"
+  },
+  "preserved_originals": {
+    "ravdess_transfer_2026_10_11\\frozen_original_common.py": "de59c7a37e18d428f72997d4b099a314b405492e5fe6e545ecb53483f5995aab"
+  },
+  "defect": "Prior metadata mapping transposed Disgust/Surprise response IDs",
+  "correction": "S5 anchored ID7 Disgust, ID8 Surprise; raw human responses unchanged",
+  "unaffected": [
+    "clip IDs/order",
+    "media",
+    "frame extraction",
+    "crop caches",
+    "checkpoints",
+    "inference probabilities",
+    "scoring/selection/reference/bootstrap rules"
+  ]
+}

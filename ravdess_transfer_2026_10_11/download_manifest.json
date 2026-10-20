@@ -1,0 +1,182 @@
+{
+  "record_url": "https://zenodo.org/records/1188976",
+  "metadata_sha256": "59fe0a0e8d5a2ec81f7e1c58f75c8f1ecda9459a9fa4df8fb59a4cb109e33f8c",
+  "checked_utc": "2026-10-11T18:04:14.921531+00:00",
+  "client_date": "2026-10-11",
+  "license": {
+    "id": "cc-by-nc-sa-4.0"
+  },
+  "total_download_bytes": 13357344723,
+  "actor_archives": [
+    {
+      "actor": 1,
+      "filename": "Video_Speech_Actor_01.zip",
+      "bytes": 552968353,
+      "md5": "3c8ececaf392b4a9b11b32271f4f6d01",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_01.zip?download=1"
+    },
+    {
+      "actor": 2,
+      "filename": "Video_Speech_Actor_02.zip",
+      "bytes": 570673024,
+      "md5": "a6f40d413b2e6ef25b3a595099e59abb",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_02.zip?download=1"
+    },
+    {
+      "actor": 3,
+      "filename": "Video_Speech_Actor_03.zip",
+      "bytes": 567824665,
+      "md5": "68fa240ddd8a3cc410c64efe5fb2b0e4",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_03.zip?download=1"
+    },
+    {
+      "actor": 4,
+      "filename": "Video_Speech_Actor_04.zip",
+      "bytes": 546560009,
+      "md5": "013eed832af1f7e97082aae398a00dbe",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_04.zip?download=1"
+    },
+    {
+      "actor": 5,
+      "filename": "Video_Speech_Actor_05.zip",
+      "bytes": 562966425,
+      "md5": "b00e17d61374ef6ba86fef35d50a20fb",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_05.zip?download=1"
+    },
+    {
+      "actor": 6,
+      "filename": "Video_Speech_Actor_06.zip",
+      "bytes": 568517859,
+      "md5": "3c42877921cc08cfb5c841a0f2cb94a7",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_06.zip?download=1"
+    },
+    {
+      "actor": 7,
+      "filename": "Video_Speech_Actor_07.zip",
+      "bytes": 565652404,
+      "md5": "bdd29bfe082f80361ec6b589845c283d",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_07.zip?download=1"
+    },
+    {
+      "actor": 8,
+      "filename": "Video_Speech_Actor_08.zip",
+      "bytes": 562573079,
+      "md5": "bed5f43d9c18e177e34d4bc1ed9b6d77",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_08.zip?download=1"
+    },
+    {
+      "actor": 9,
+      "filename": "Video_Speech_Actor_09.zip",
+      "bytes": 523489249,
+      "md5": "775da349c50bf915a1bbcb37379bd092",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_09.zip?download=1"
+    },
+    {
+      "actor": 10,
+      "filename": "Video_Speech_Actor_10.zip",
+      "bytes": 565580163,
+      "md5": "70199d1c6902f76e17df308d5c41fa01",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_10.zip?download=1"
+    },
+    {
+      "actor": 11,
+      "filename": "Video_Speech_Actor_11.zip",
+      "bytes": 518634370,
+      "md5": "824504aa41a8fd575e5459d5701dd378",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_11.zip?download=1"
+    },
+    {
+      "actor": 12,
+      "filename": "Video_Speech_Actor_12.zip",
+      "bytes": 557928718,
+      "md5": "2a1f0ddc0ca207beedee6ce2ea863ad7",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_12.zip?download=1"
+    },
+    {
+      "actor": 13,
+      "filename": "Video_Speech_Actor_13.zip",
+      "bytes": 501877549,
+      "md5": "c5f2fd4fd77941636947620368c612b5",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_13.zip?download=1"
+    },
+    {
+      "actor": 14,
+      "filename": "Video_Speech_Actor_14.zip",
+      "bytes": 552484059,
+      "md5": "466d31f4cce92a14b1f4ee884bbdf7d7",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_14.zip?download=1"
+    },
+    {
+      "actor": 15,
+      "filename": "Video_Speech_Actor_15.zip",
+      "bytes": 525205576,
+      "md5": "4b3b9bc8473e86f884630f2506684887",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_15.zip?download=1"
+    },
+    {
+      "actor": 16,
+      "filename": "Video_Speech_Actor_16.zip",
+      "bytes": 562416513,
+      "md5": "a63c54570ebbe6bd616d0dced5630f7e",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_16.zip?download=1"
+    },
+    {
+      "actor": 17,
+      "filename": "Video_Speech_Actor_17.zip",
+      "bytes": 551688845,
+      "md5": "8b7ae3e5a85d2874ac8e1195e722e047",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_17.zip?download=1"
+    },
+    {
+      "actor": 18,
+      "filename": "Video_Speech_Actor_18.zip",
+      "bytes": 565655520,
+      "md5": "fef2131ac361da182c0cb85f3d8e8a6c",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_18.zip?download=1"
+    },
+    {
+      "actor": 19,
+      "filename": "Video_Speech_Actor_19.zip",
+      "bytes": 581121687,
+      "md5": "abb97d97d8c4e88c866cee1cea9d06d6",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_19.zip?download=1"
+    },
+    {
+      "actor": 20,
+      "filename": "Video_Speech_Actor_20.zip",
+      "bytes": 561349264,
+      "md5": "5ddfb22770093bafebdefe8faa449f48",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_20.zip?download=1"
+    },
+    {
+      "actor": 21,
+      "filename": "Video_Speech_Actor_21.zip",
+      "bytes": 590292896,
+      "md5": "d810cf2ff6863ef91306fc7a16d74fbb",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_21.zip?download=1"
+    },
+    {
+      "actor": 22,
+      "filename": "Video_Speech_Actor_22.zip",
+      "bytes": 560907466,
+      "md5": "fee55f72c9871401f23d4b167de3217d",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_22.zip?download=1"
+    },
+    {
+      "actor": 23,
+      "filename": "Video_Speech_Actor_23.zip",
+      "bytes": 545177865,
+      "md5": "b31e8c8904e66102e7a951694db752d6",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_23.zip?download=1"
+    },
+    {
+      "actor": 24,
+      "filename": "Video_Speech_Actor_24.zip",
+      "bytes": 595799165,
+      "md5": "eef90e806c9179bc5b4b098d03647ae3",
+      "url": "https://zenodo.org/records/1188976/files/Video_Speech_Actor_24.zip?download=1"
+    }
+  ],
+  "authorization": "User approved the proposed frozen-checkpoint evaluation, public download and up to 30 GB temporary storage.",
+  "selection": "All speech actor archives; extract video-only speech, never audio-only or song"
+}

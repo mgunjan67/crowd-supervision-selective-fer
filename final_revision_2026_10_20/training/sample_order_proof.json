@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "epochs": [
+    {
+      "epoch": 1,
+      "samples": 65,
+      "order_identical": true
+    },
+    {
+      "epoch": 2,
+      "samples": 65,
+      "order_identical": true
+    },
+    {
+      "epoch": 3,
+      "samples": 65,
+      "order_identical": true
+    }
+  ]
+}

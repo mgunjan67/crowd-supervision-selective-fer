@@ -1,0 +1,80 @@
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}
+\usepackage{graphicx,amsmath,amssymb,booktabs,tabularx,url,xurl,microtype,etoolbox,placeins,flafter,needspace}
+\raggedbottom
+\AtBeginDocument{\let\burl\url}
+\AtBeginEnvironment{thebibliography}{\interlinepenalty=10000}
+\makeatletter
+% Keep the structured abstract together using the publisher's type sizes.
+\patchcmd{\@maketitle}{\vskip21pt}{\vskip0pt}{}{\errmessage{Title spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip0pt}{}{\errmessage{Article-title spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip20pt}{\vskip4pt}{}{\errmessage{Author spacing patch failed}}
+\patchcmd{\abstracthead}{-22pt}{-8pt}{}{\errmessage{Abstract spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip0pt}{}{\errmessage{Address spacing patch failed}}
+\patchcmd{\@maketitle}{\vskip24pt}{\vskip0pt}{}{\errmessage{Email spacing patch failed}}
+\def\ps@paper{\let\@oddhead\@empty\let\@evenhead\@empty
+  \def\@oddfoot{\hfil\thepage\hfil}\let\@evenfoot\@oddfoot}
+\let\ps@titlepage\ps@paper
+\let\ps@headings\ps@paper
+\makeatother
+\pagestyle{paper}
+\input{final_revision_2026_10_20/source/generated/macros.tex}
+\begin{document}
+\title[Crowd-label supervision for selective FER]{Evaluating Crowd-Label Supervision for Selective Facial-Expression Recognition}
+\author[1]{\fnm{Gunjan Kumar} \sur{Mishra}}\email{mgunjan67@gmail.com}
+\author[2]{\fnm{Bijaya} \sur{Ghimire}}\email{vijay.gh74@gmail.com}
+\author*[3]{\fnm{Badri Raj} \sur{Lamichhane}}\email{d6622300231@g.siit.tu.ac.th}
+\author[4]{\fnm{Alan} \sur{Shah}}\email{shahalan0202@gmail.com}
+\affil[1]{\orgname{WorldQuant University}, \orgaddress{\city{Washington, D.C.}, \country{United States}}}
+\affil[2]{\orgdiv{Department of Electronics and Computer Engineering}, \orgname{Institute of Engineering, Paschimanchal Campus}, \orgaddress{\city{Pokhara}, \country{Nepal}}}
+\affil*[3]{\orgdiv{School of Information, Computer and Communication Technology}, \orgname{Sirindhorn International Institute of Technology, Thammasat University}, \orgaddress{\city{Pathum Thani}, \country{Thailand}}}
+\affil[4]{\orgname{Herald College Kathmandu}, \orgaddress{\city{Kathmandu}, \country{Nepal}}}
+\abstract{\input{final_revision_2026_10_20/source/generated/abstract.tex}}
+\keywords{facial-expression recognition, crowd annotations, selective prediction, label distributions, supported vote mass, confidence calibration}
+\maketitle
+
+\section{Introduction}
+\input{final_revision_2026_10_20/source/generated/introduction_revised.tex}
+
+\section{Related work}
+\input{final_revision_2026_10_20/source/generated/related_work_revised.tex}
+
+\section{Methods}
+\input{final_revision_2026_10_20/source/generated/methods_revised.tex}
+
+\FloatBarrier
+\section{Results}
+\input{final_revision_2026_10_20/source/generated/results_revised.tex}
+% Diagnostic exports follow the target, interpretation and transfer results.
+\input{final_revision_2026_10_20/source/generated/diagnostic_followup.tex}
+
+\section{Discussion}
+\input{final_revision_2026_10_20/source/generated/discussion_revised.tex}
+
+\section{Conclusion}
+\input{final_revision_2026_10_20/source/generated/conclusion.tex}
+
+\backmatter
+\section*{Statements and Declarations}
+\noindent\textbf{Funding.} No funds, grants, or other support were received for preparation of this manuscript.
+
+\noindent\textbf{Competing interests.} The authors declare no competing interests.
+
+\noindent\textbf{Author contributions.} Gunjan Kumar Mishra conceived the prototype and led manuscript preparation. Bijaya Ghimire contributed to implementation, experimental design, and manuscript revision. Badri Raj Lamichhane supervised the work, contributed to methodology review, interpretation, and manuscript revision, and serves as corresponding author. Alan Shah contributed to literature review and code testing. All four authors confirmed the authorship arrangement and declarations.
+
+\noindent\textbf{Ethics approval.} This study comprises secondary analysis of existing benchmark images, video-only speech clips and annotations, together with software tests. No institutional ethics approval or exemption determination was obtained.
+
+\noindent\textbf{Consent to participate.} No participants were recruited and no new human ratings were collected. The RAVDESS publication reports consent and ethics review for its original collection; this does not constitute approval of this analysis. Photograph-level FER consent records were not independently verified.
+
+\noindent\textbf{Consent for publication.} No identifiable facial photograph is reproduced. Interface illustrations contain synthetic text and no participant images.
+
+\noindent\textbf{Data availability.} FER2013 acquisition records \cite{goodfellow2013fer}, official FER+ annotations \cite{barsoum2016ferplus}, hashes, role assignments and sample-level probabilities accompany the release. Complete ten-category annotations remain available for metric auditing. Original RAVDESS media and S5 human responses are available through its primary publication and Zenodo record \cite{livingstone2018ravdess}; derived counts and probabilities accompany the external diagnostics. Facial images and video are not redistributed.
+
+\noindent\textbf{Code availability.} Versioned code, retained predictions, inference states and reproduction instructions are provided at \url{https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.3.0}. The resource index maps each archive to its checksum and replay commands. The release covers 48 original and 33 new named checkpoint-rule states, which need not be distinct weights. All 144 new epoch weights remain locally retained; their hashes and selection outputs accompany the release, but intermediate epoch weights are not redistributed. The source ZIP separately compiles the current article and supplement. Numerical replay is internal verification, not external replication.
+
+\noindent\textbf{Preprint statement.} An earlier version appeared on TechRxiv as ``Typing with Emotions: Facial Expression Recognition and Embedding in Text Messages,'' version 1, \url{https://doi.org/10.36227/techrxiv.175416003.30236370/v1}. This revision excludes participant evidence and unverifiable historical performance claims, corrects implementation descriptions and supplies documented new experiments. It does not claim to reproduce historical manual curation.
+
+\noindent\textbf{Supplementary information.} The accompanying supplement contains per-seed outcomes, learning curves, fixed-image matrices, vocabulary and calibration diagnostics, external score/reference sensitivities, prototype details and provenance. The resource index maps each evidence archive and checkpoint collection to its checksum manifest and instructions.
+
+\FloatBarrier
+\bibliography{final_revision_2026_10_20/source/references}
+\end{document}

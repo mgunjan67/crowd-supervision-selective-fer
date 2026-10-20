@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "independently_recomputed_result_cells": 576,
+  "numeric_components_per_cell": 4,
+  "maximum_absolute_component_error": 1.1102230246251565e-16,
+  "independently_verified_contrasts": 288,
+  "independently_verified_summaries": 96,
+  "inference_states": 48,
+  "test_population": 3275,
+  "all_recorded_input_output_hashes_match": true,
+  "preserved_files": {
+    "backbone_followup\\reported_results.csv": "200a9b1df63cb267169a9f888b64a7fda3993f241494fff2e33320817bbfec3b",
+    "output\\submission-journal-style-2026-10-04-scientific-diagrams\\crowd-supervision-journal-style.pdf": "1ca1ed4399f17b422a423f8eb4d67edae55b33e1accd120c068cb6226a532421",
+    "output\\submission-journal-style-2026-10-04-scientific-diagrams\\Supplementary-diagnostics.pdf": "fa36498b39822e954c42f1441c66ecaa5e6bdd862f32822d32f26fd7b8350973",
+    "output\\submission-journal-style-2026-10-04-scientific-diagrams\\source\\main.tex": "b301b2bce431a7ec288ba40ffa89e093ba354b36fb11e944dcd7684689b36645"
+  },
+  "main_and_supplement_table_values_match": true,
+  "pdf_checks": [
+    {
+      "name": "research-revision.pdf",
+      "pages": 25,
+      "sha256": "182ed2e73b4501f4e13d2c903c4f243ed51b67ce46ef69be9d6693d4bf5f1c57",
+      "numeric_text_match": true
+    },
+    {
+      "name": "Supplementary-diagnostics.pdf",
+      "pages": 20,
+      "sha256": "ff1b523d2079eab72fe70d572fa1376c1103f9c06cdfc3f0e8d098fe572274d3",
+      "numeric_text_match": true
+    }
+  ],
+  "test_suite": {
+    "tests": 16,
+    "failures": 0,
+    "output": "test_only_visual_votes_and_canonical_mapping (test_dataset_adapter.DatasetAdapterTests.test_only_visual_votes_and_canonical_mapping) ... ok\ntest_reject_duplicate_visual_clip (test_dataset_adapter.DatasetAdapterTests.test_reject_duplicate_visual_clip) ... ok\ntest_reject_inconsistent_counts (test_dataset_adapter.DatasetAdapterTests.test_reject_inconsistent_counts) ... ok\ntest_bad_filename (test_ravdess_adapter.RavdessAdapterTests.test_bad_filename) ... ok\ntest_canonical_and_unsupported_counts (test_ravdess_adapter.RavdessAdapterTests.test_canonical_and_unsupported_counts) ... ok\ntest_invalid_original_accuracy_category (test_ravdess_adapter.RavdessAdapterTests.test_invalid_original_accuracy_category) ... ok\ntest_missing_and_invalid_responses (test_ravdess_adapter.RavdessAdapterTests.test_missing_and_invalid_responses) ... ok\ntest_original_calm_neutral_accuracy_not_vote_relabeling (test_ravdess_adapter.RavdessAdapterTests.test_original_calm_neutral_accuracy_not_vote_relabeling) ... ok\ntest_ceil_and_full (test_selectors.SelectorTests.test_ceil_and_full) ... ok\ntest_decomposition_and_zero_support (test_selectors.SelectorTests.test_decomposition_and_zero_support) ... ok\ntest_entropy_zeros (test_selectors.SelectorTests.test_entropy_zeros) ... ok\ntest_exact_ties_by_row (test_selectors.SelectorTests.test_exact_ties_by_row) ... ok\ntest_invalid_inputs (test_selectors.SelectorTests.test_invalid_inputs) ... ok\ntest_margin (test_selectors.SelectorTests.test_margin) ... ok\ntest_msp (test_selectors.SelectorTests.test_msp) ... ok\ntest_permutation (test_selectors.SelectorTests.test_permutation) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.298s\n\nOK\n"
+  },
+  "original_metadata_checks": {
+    "crema_d_rows": 22326,
+    "crema_visual_clips": 7442,
+    "ravdess_category_accuracy_rows": 4320,
+    "ravdess_visual_clips": 1440
+  },
+  "reference_zip": {
+    "path": "C:\\Users\\mgunj\\Downloads\\Codex_Research_Paper_Recovery_Pack.zip",
+    "sha256": "34bd8c361a58e0f3be2e2f5d5c8e97b3d792038e52edb5d2607f55160f41d06e",
+    "verified_members": 24,
+    "agent_template_installed": false
+  },
+  "visual_inspection": {
+    "status": "passed",
+    "main_pages": "1-25",
+    "supplement_pages": "1-20",
+    "enlarged_views": [
+      "main page 19/Table 9",
+      "supplement page 19/Table S16",
+      "supplement page 20/Figure S9"
+    ],
+    "findings": "No observed label overlap, cropped content or illegible new table/figure; all final pages inspected."
+  },
+  "bibliography_scope": "Structural audit of 23 entries; primary-source authorship/DOI/content check for added Washington 2021. Not a fresh full-text audit of every inherited reference.",
+  "new_training_runs": 0,
+  "external_videos_downloaded": 0,
+  "external_model_evaluation": false,
+  "q1_q2_readiness": false,
+  "external_confirmation": false
+}

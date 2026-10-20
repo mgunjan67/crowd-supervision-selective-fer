@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "states": 48,
+  "training_runs": 24,
+  "weights_not_duplicated": true,
+  "archives": [
+    {
+      "online_resource": 2,
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-evidence-2026-10-03\\OnlineResource2.zip",
+      "bytes": 664190535,
+      "sha256": "8cfdaa686e626761f02451715d02246518f2607ae24cf380307c123504683a13",
+      "member_hashes": "passed"
+    },
+    {
+      "online_resource": 3,
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-evidence-2026-10-03\\OnlineResource3.zip",
+      "bytes": 664190535,
+      "sha256": "b743e11bb7c6746ab4c550bbaddbdba18464f4628b0ad399f0d3214f351b354c",
+      "member_hashes": "passed"
+    },
+    {
+      "online_resource": 4,
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-evidence-2026-10-03\\OnlineResource4.zip",
+      "bytes": 664196175,
+      "sha256": "d4f81c40cb81434577fb4feb90df3cdfc1ee96818c485fdf74e3784472ba4a52",
+      "member_hashes": "passed"
+    },
+    {
+      "online_resource": 5,
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-evidence-2026-10-03\\OnlineResource5.zip",
+      "bytes": 664197927,
+      "sha256": "ab63d8af45b6c7c40be40994fea79783f68edd959b9ed9423472547b023e9d80",
+      "member_hashes": "passed"
+    },
+    {
+      "online_resource": 6,
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-evidence-2026-10-03\\OnlineResource6.zip",
+      "bytes": 664203812,
+      "sha256": "06161c88eda77a509feab9c08dc80c36aef5f821b9ae62852d298396481a2cbc",
+      "member_hashes": "passed"
+    },
+    {
+      "online_resource": 7,
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-backbone-2026-10-03\\OnlineResource7.zip",
+      "bytes": 808880023,
+      "sha256": "3220efc92a2edabbb0814f0c680f695b41742420ea24ff6ef1f4f6afcd30a641",
+      "member_hashes": "passed"
+    }
+  ]
+}

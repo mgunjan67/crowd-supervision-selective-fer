@@ -1,0 +1,489 @@
+{
+  "actor": 7,
+  "archive_sha256": "b2103e2444638473f12e82d9e01dc8643cdeb18f9dfbc747827dcbab563e0e08",
+  "archive_md5": "bdd29bfe082f80361ec6b589845c283d",
+  "video_only_speech_clips": 60,
+  "completed_utc": "2026-10-11T18:34:09.107823+00:00",
+  "clips": [
+    {
+      "filename": "02-01-01-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4998147,
+      "sha256": "6897dc3fa48698b4797b385ee4ea40364085eae8777e547f2c7da73146c0bdb8",
+      "zip_crc32": 1146218205,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-01-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-01-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4853065,
+      "sha256": "d8c72b1671cac167ae92aae38ecf69f9ca643b05e8120b06036fb3940dc35c15",
+      "zip_crc32": 1106541687,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-01-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-01-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 5272693,
+      "sha256": "c4bfe512b95e0a8ead06318124e8246a75bbccf03a8245e71824c35ed5906809",
+      "zip_crc32": 1610387278,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-01-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-01-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4762848,
+      "sha256": "e54e9a1d5ebf9f4369457622eaad51ab960c18fae7a1f26f559ac499eac3f371",
+      "zip_crc32": 1734130827,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-01-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-02-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4424564,
+      "sha256": "0c34a836d6c1b258e117777500468c86cdb0a5ae890dfc23d41822c02334295d",
+      "zip_crc32": 1368390493,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-02-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4760361,
+      "sha256": "9b6c1e9d8ed8a0f06239ac312bbd5add53439cc192abe2e4c1961cafdc067bf9",
+      "zip_crc32": 727169945,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-02-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4465379,
+      "sha256": "0e89891f73a60e637e87b37a874108c507fe1b137361253cd11ab3239ab0c245",
+      "zip_crc32": 1226577210,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-02-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4505982,
+      "sha256": "a2d44f2dcae4237c70d60c5ccc2586680af15a3a127b030565c0e5ab9e670fdc",
+      "zip_crc32": 2876011486,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-02-02-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 5108106,
+      "sha256": "18d0248c256fe068ba64b21065508ee9ad12eaa8dd92884a4bfa96228129a3c2",
+      "zip_crc32": 1238046856,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-02-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-02-02-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4933232,
+      "sha256": "6a5a09fd08aef93abb878c81b7f66deb6fa953171c58175ff416b19215bad1a6",
+      "zip_crc32": 272774173,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-02-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-02-02-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 5438400,
+      "sha256": "bd5cbabe8e27f1c4396e563658a1bfe84c6f022b4e6768981e4613bbc1d795df",
+      "zip_crc32": 2021832559,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-02-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-02-02-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 5226316,
+      "sha256": "6e697aacdca39560a5bdb3141f3a1b23cae96594c6c68efbe2ad9ddd8668e67f",
+      "zip_crc32": 3501435771,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-02-02-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-03-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4463136,
+      "sha256": "a4edb6ad991948e2ce0e4c7c869e9ce56aac2ca99b7e3b488cbad15e379add42",
+      "zip_crc32": 2851485982,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-03-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4420711,
+      "sha256": "dde086c41e46bb3ecf08be801a037866e1df916f679d3637580ecfbad66f7470",
+      "zip_crc32": 420474651,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-03-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4334120,
+      "sha256": "e2c8d272661e1355b49fd09645d1f597a322b745bd8fa5cc09e4f22c740f09d1",
+      "zip_crc32": 2236666347,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-03-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4334120,
+      "sha256": "e2c8d272661e1355b49fd09645d1f597a322b745bd8fa5cc09e4f22c740f09d1",
+      "zip_crc32": 2236666347,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-03-02-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 5225806,
+      "sha256": "7a0ffb0924bf5b3de908d7d63e68d5a2510c37adf269de9d36f4b46318488d7b",
+      "zip_crc32": 1464408190,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-02-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-03-02-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 5147657,
+      "sha256": "40fd849c19ed5f6bf91fbd41aa6e20843d445f26f654cf22de7959a10ee1ba6b",
+      "zip_crc32": 1045674610,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-02-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-03-02-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 5149017,
+      "sha256": "c0ce617ea3006759ae54fd7b1e1562dce0b102a5891124bd5ad540998307b6b9",
+      "zip_crc32": 60782406,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-02-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-03-02-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4891444,
+      "sha256": "585e3d55d7a9a5adc8c9c2e45e37fe705a20214cc7f7a31deb5be92dd1e3f2d4",
+      "zip_crc32": 1310031297,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-03-02-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-04-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4505247,
+      "sha256": "822048fc2ea834d6b45c0d572fc50ea2b284055ea30e414b802e0d480ad0e3f2",
+      "zip_crc32": 760256688,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-04-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4593587,
+      "sha256": "c1931e8a879ec0231be142e36a31e72a3bf33e3366e92be3ebb785fa83d9607c",
+      "zip_crc32": 2436983633,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-04-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4506382,
+      "sha256": "cf6093733455ec6eaadcedb3a63de3ade145f88f5d9278e09b2632ac4f25cbb4",
+      "zip_crc32": 371003158,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-04-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4934348,
+      "sha256": "7935e0f7c2233c78eec15500e2039a1a7b54715e729a2b6dd0fc8ba4c739d9aa",
+      "zip_crc32": 2592183017,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-04-02-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 5037314,
+      "sha256": "6628b42744fbfdc8c254ef8e620b5bea664bfad9e1684e47a66c56dd8e8c4696",
+      "zip_crc32": 566575007,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-02-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-04-02-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4889643,
+      "sha256": "fcd9c452ccfd215349bae8b8879b1fd6475aed363d3a59808fc620234ae94cc1",
+      "zip_crc32": 3971614249,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-02-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-04-02-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4633910,
+      "sha256": "4e65019603ab28dced3fb73dc91db63686d1f41744a6c786d9342d6e192c5818",
+      "zip_crc32": 572676309,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-02-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-04-02-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4895465,
+      "sha256": "be32a00a20c9a4116e6280f6dd3dae6f50ccecee517b27376bfacd1a454f5d1d",
+      "zip_crc32": 882640736,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-04-02-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-05-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 5117823,
+      "sha256": "a09d9dcc321cfd80bf79cc6c53d8124c8c1b301fe11453068f9815e8dcd54808",
+      "zip_crc32": 3550611824,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-05-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 5081543,
+      "sha256": "7e6542b548b1fc66230f6e7da84a74b901636219229bfcab547b0efb1f47301d",
+      "zip_crc32": 933782852,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-05-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 5105763,
+      "sha256": "110da8940ac07aebec7019ab3f957770784c07f424b9c36f6448343524f3c9d0",
+      "zip_crc32": 1365150947,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-05-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 5110819,
+      "sha256": "9003e2ef36af17a3f58534da08bfb07f345e7c41c5013fa165cb56da64c8b596",
+      "zip_crc32": 4144640619,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-05-02-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4594879,
+      "sha256": "175a16293cc24589450cf228e04e5e6bd9f659a4d280b523703f6f300325be43",
+      "zip_crc32": 3559022829,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-02-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-05-02-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 5108197,
+      "sha256": "57ccc8fd6c2f1ff913df1d15f5624fcaf5cd021b6ed31af336e0f04520f34654",
+      "zip_crc32": 1727057902,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-02-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-05-02-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4887786,
+      "sha256": "5639ad062197c9ba7fc738b9d87e14f7f5e5054cecc8f76861a5869081ac8541",
+      "zip_crc32": 235854981,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-02-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-05-02-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 5526522,
+      "sha256": "1209f2880707bdf2ac3e8e1a6a094f07c181c679dc77d6a1a555eccf15e58acf",
+      "zip_crc32": 2826122317,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-05-02-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-06-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4383646,
+      "sha256": "51e8f690aed753e0cce0c63deaf12f3595d09047c1df28564eda493442a7e90c",
+      "zip_crc32": 3751005909,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-06-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4466983,
+      "sha256": "1485834acfd5d68446c7576c0134e77c6a49e3b00c90500bd180c3df8ed4b80c",
+      "zip_crc32": 1885552193,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-06-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4379073,
+      "sha256": "a7a9100b2809b2977b43fb81eff3414e75b33dc7adbe809416a14f95e91f01a2",
+      "zip_crc32": 3262756959,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-06-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4297651,
+      "sha256": "7029eb48c8aa91d2aa859bec3bc02e12f06f171d2be56817218a8a55b3786703",
+      "zip_crc32": 2687257155,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-06-02-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4638907,
+      "sha256": "d0859ec736863b9ff947b9fd9240097e1ca07bbc1ec5fc0eaba3b05f83263b9d",
+      "zip_crc32": 1507100110,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-02-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-06-02-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4426433,
+      "sha256": "be1135f9220d1da68e7e357438cef5db85202bd896d7381cfdb71b10fb3fd252",
+      "zip_crc32": 297111875,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-02-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-06-02-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4334954,
+      "sha256": "677cf470d31c2db83b84c54189862a04143913ddc74d46554c669a951b50a1bf",
+      "zip_crc32": 647876878,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-02-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-06-02-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4468832,
+      "sha256": "88396054c9dca32172f9f408d4386b39f338df1b87b82025abaaa4863ccd98ad",
+      "zip_crc32": 720591115,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-06-02-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-07-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4513177,
+      "sha256": "02932bb1ffd3aa19280039e383edaff19e60ae753625acd67fa11a9c1d618bd5",
+      "zip_crc32": 1260736111,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-07-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4465931,
+      "sha256": "c7a469223b1dbbb04eebbbe11816b55ad922413619f1d7bab4f519dfe9b2746a",
+      "zip_crc32": 3423110795,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-07-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4379305,
+      "sha256": "7f702a6c3fa4c3c18c9c92fe2e9e02ca4a89d0c2112641dbf75d60abb11e3660",
+      "zip_crc32": 140896842,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-07-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4508487,
+      "sha256": "61c8ae102224319157ec9227fc1902b872019ee66794cd7a20cc2708a3cf9dd6",
+      "zip_crc32": 209879331,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-07-02-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 5273159,
+      "sha256": "a68dfbc00779cf279b606cad4aa073aa28b37cf160470f84ad39d02dff427e5a",
+      "zip_crc32": 298026456,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-02-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-07-02-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 5617949,
+      "sha256": "d88066a514867f1cef0413c70f77eed43edbedc63a2a65f3508d3696e66a0aad",
+      "zip_crc32": 416892003,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-02-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-07-02-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 5274189,
+      "sha256": "c5ac17abfa2de3ecdda2262da47ea0ffbcce4546a03a4e6f4e446d163d18a7cd",
+      "zip_crc32": 658186999,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-02-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-07-02-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 6074758,
+      "sha256": "35aad37c0020d169c457ccd07a35376f15f02429a24f34f377a3e320c8aa0f27",
+      "zip_crc32": 2653397110,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-07-02-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-08-01-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4425431,
+      "sha256": "ee214745e5f9d2b8fc0596630a4370693d6c6555f5f7b17c8f452224a59ec0e9",
+      "zip_crc32": 116046993,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-01-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-08-01-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4506231,
+      "sha256": "8fff14efed30542364584b572656cdd33eddde53b5291c397b3a626bd98c2c4c",
+      "zip_crc32": 1423275370,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-01-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-08-01-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4383205,
+      "sha256": "35cf918513f5054874168fa97315311c2c4402a813276f74c34e94ca96c5760e",
+      "zip_crc32": 3864921381,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-01-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-08-01-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4385466,
+      "sha256": "751288a1071d732648a4185f05f4b0443d7c109bfd1a858d0eca9a58ad3ba5cd",
+      "zip_crc32": 2492303047,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-01-02-02-07.mp4"
+    },
+    {
+      "filename": "02-01-08-02-01-01-07.mp4",
+      "actor": 7,
+      "bytes": 4931440,
+      "sha256": "2ece349012b790fdacb7f171d4a6cd8e7c938d590dbd9414090e183f786f6797",
+      "zip_crc32": 1851242655,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-02-01-01-07.mp4"
+    },
+    {
+      "filename": "02-01-08-02-01-02-07.mp4",
+      "actor": 7,
+      "bytes": 4632603,
+      "sha256": "0fb9b999c3db70ef56e4de4bfb6087c9e5f411a996aa5f8bf37794ce80978b32",
+      "zip_crc32": 3066077603,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-02-01-02-07.mp4"
+    },
+    {
+      "filename": "02-01-08-02-02-01-07.mp4",
+      "actor": 7,
+      "bytes": 4379030,
+      "sha256": "9a078aad36cf49054104ef754ec774e043d826a63d7c6ba4320eee7cb4db02f5",
+      "zip_crc32": 209881157,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-02-02-01-07.mp4"
+    },
+    {
+      "filename": "02-01-08-02-02-02-07.mp4",
+      "actor": 7,
+      "bytes": 4419624,
+      "sha256": "0a048e06441cd98529af7c5f63214c3e29b6d127ca9aa5875d0ad8f2a54fe18f",
+      "zip_crc32": 3606709619,
+      "path": "media\\video_only_speech\\Actor_07\\02-01-08-02-02-02-07.mp4"
+    }
+  ]
+}

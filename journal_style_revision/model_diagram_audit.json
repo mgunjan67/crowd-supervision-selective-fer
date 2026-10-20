@@ -1,0 +1,40 @@
+{
+  "text_overlap_pairs": [],
+  "container_overflows": [],
+  "minimum_source_font_pt": 11,
+  "status": "passed",
+  "single_pooled_gate": true,
+  "swin_stage_depths": [
+    2,
+    2,
+    6,
+    2
+  ],
+  "swin_stage_shapes": [
+    "56 \u00d7 56 \u00d7 96",
+    "28 \u00d7 28 \u00d7 192",
+    "14 \u00d7 14 \u00d7 384",
+    "7 \u00d7 7 \u00d7 768"
+  ],
+  "head_dimensions": {
+    "swin_t": [
+      768,
+      48,
+      768,
+      7
+    ],
+    "resnet18": [
+      512,
+      32,
+      512,
+      7
+    ]
+  },
+  "architecture_claim": "Existing implementation, not a proposed new architecture",
+  "supplied_formats": [
+    "pdf",
+    "eps",
+    "svg",
+    "png"
+  ]
+}

@@ -1,0 +1,129 @@
+RAVDESS frozen-checkpoint transfer protocol - 11 October 2026
+
+Authorization: the user approved the proposed public download, up to 30 GB
+temporary storage and frozen-checkpoint external evaluation. No new training,
+paid services, author contact, public upload or journal submission is authorized.
+This is a locally time-stamped analysis plan, not an external preregistration.
+All FER2013/FER+ and earlier confidence-score findings are already known.
+RAVDESS schema/vote summaries are known; RAVDESS model outcomes are not known
+at protocol writing. No claim of blinded dataset selection is made.
+
+Population and units
+All 1,440 video-only speech clips from all 24 RAVDESS actors, 60 clips per actor.
+No audio, song, new annotation, retraining or expression-peak selection. Unit:
+complete clip with ten original human categorical responses, not a still image.
+Original PLOS S5 workbook and nine response counts remain intact and hashed.
+Canonical model order: angry, disgust, fear, happy, neutral, sad, surprise.
+Canonical raw response order: those seven followed by calm, none.
+
+Acquisition
+Official Zenodo record 1188976, all 24 Video_Speech_Actor_XX.zip archives.
+Record metadata frozen locally with exact file sizes and publisher MD5 values.
+Each archive must pass its publisher MD5 before extraction. Write only the 60
+video-only speech MP4 members matching the original response table per actor.
+Hash every archive and selected video. Observe CC BY-NC-SA 4.0 terms; no media
+are redistributed with the paper. Technical pilot uses actor 1, not a selected
+successful actor. The pilot checks integrity/throughput, not scientific effect.
+
+Frame protocol and eligibility
+OpenCV decoding; require successful finite positive FPS/frame count, and >=8
+frames. For b=0,...,7 use min(N-1, floor((b+0.5)*N/8)); record the decoded frame
+index and dimensions. These are equally spaced frame-bin centers, not chosen
+emotional peaks. Decode failures, no-face, multiple-face and invalid boxes are
+recorded separately for every attempted frame.
+MediaPipe FaceDetection model_selection=1, min_detection_confidence=0.5.
+Exactly one detection required. Use the shared app's clipped_box function;
+no expansion, alignment, fallback detector or manual crop repair. Save detector
+version, graph/model hashes, box coordinates and per-frame status.
+Cache uint8 PIL grayscale+bilinear-resized 224x224 faces. Repeated gray channels
+and the original ToTensor/mean0.5/std0.5 produce the original transform exactly;
+unit-test this against build_transform on the same RGB crop. Transform code
+and crop policy are shared with the prototype, but the clip aggregation below
+is a new offline evaluation rule, not the app's prediction-update behavior.
+At least four distinct valid sampled frames required for a clip prediction.
+Otherwise fail closed: no categorical prediction, never a fabricated neutral.
+
+Frozen models and numerical path
+Soft, Uniform and Tie-Uniform; Swin-T and ResNet-18; seeds 17,42,89; selected
+and epoch12 states. Exactly 36 pre-existing release checkpoints. Verify each
+checkpoint's hash, condition, seed, state, class order, transform identifier
+and model-head contract; no new pretrained-weight downloads or optimization.
+Inference follows the earlier benchmark's CUDA BF16 autocast, float32 softmax,
+batch32, deterministic flags and four CPU Torch threads. This differs from
+the prototype's FP32 forward precision and is disclosed, not called identical
+app inference. Arithmetic mean of valid-frame probabilities gives the clip
+probability, then argmax. Retain per-frame and per-clip probabilities.
+
+Scores, endpoints and coverage
+Primary score MSP; top-two margin and negative entropy are prespecified
+sensitivities. Exact score ties resolved by canonical filename order. Nominal
+coverage uses all 1,440 clips, including detection failures in the denominator.
+At gamma=0.2,0.5,0.8,1.0 retain ceil(gamma*1440) highest-ranked eligible clips.
+An endpoint is unavailable if valid clip count is below its required count.
+Also report all-eligible risk and actual maximum coverage, never relabel these
+as 100% coverage if any clip failed. No threshold is fitted on RAVDESS votes.
+The principal contrast is paired Soft minus Uniform at 80% MSP coverage for
+selected Swin weights; all other families/states/control contrasts are retained.
+This extension follows already-known internal effects, not an independent
+confirmation of every retrospectively developed analysis choice.
+
+References and metrics
+Primary reference: all nine raw human response fractions. Mandatory sensitivity:
+merge calm into neutral, preserving none separately. This respects the original
+RAVDESS accuracy convention, which accepts neutral/calm interchangeably; it
+does not edit the raw counts. Neither endpoint is published RAVDESS accuracy.
+Complete-reference risk = mean[1-q(predicted supported category)]. Components:
+unsupported = 1-sum(q[seven supported]); supported ambiguity = supported mass
+minus max(q[supported]); excess = max(q[supported])-q(predicted category).
+The identity risk=unsupported+ambiguity+excess must hold for every observation
+and table. None remains an actual response option, not a fabricated expression.
+Provide own-ranking results for all scores/coverages, all three paired seeds,
+both references, both families and both states. Provide 80% MSP fixed-image
+cross-evaluation matrices for Soft/control predictions on Soft/control accepted
+sets, separately for Uniform and Tie-Uniform. These are descriptive comparisons,
+not a causal decomposition. No selective accuracy/SOTA score comparison.
+
+Actor uncertainty
+Generate and retain 5,000 actor-count bootstrap samples using NumPy RNG seed
+11011, multinomial(24, uniform 1/24). Resample whole actors with replacement,
+not individual frames or images. Apply the SAME replicate weights to paired
+models/seeds and both references. Re-rank the multiset at the same requested
+coverage of all repeated clips. Since each actor has 60 clips, each replicate
+has 1,440 clips. Multiple copies of a tied clip remain adjacent in filename
+order. Weighted cumulative ranks select exactly ceil(gamma*N) observations,
+possibly taking a partial multiplicity at the cutoff. This is equivalent to
+sorting the duplicated clip multiset. Unit-test against explicit expansion.
+Report percentile 2.5/97.5% intervals for mean paired Soft-minus-control risk
+at 80% MSP, both references/families/states. Report unavailable bootstrap
+replicates explicitly; do not conceal them inside an apparently complete CI.
+Other scores/coverages and fixed-image matrices have descriptive seed values,
+not newly invented significance intervals. Intervals condition on frozen fits,
+observed votes and these 24 actors; no seed-population/annotator-population or
+unrestricted demographic uncertainty claim. No multiple-testing superiority
+claim across this diagnostic family.
+
+Overlap and quality checks
+Before model-outcome interpretation, compare 48x48 grayscale canonical crop
+hashes with all original FER2013 image hashes. Separately compare 63 AC DCT
+perceptual-hash bits (32x32 gray, upper8x8, DC excluded, median threshold) with
+FER source images; Hamming <=4 is a review flag, not proof of duplicate identity.
+Retain nearest-source diagnostics and inspect flagged pairs without using model
+outcomes. Do not automatically exclude perceptually similar faces. Exact pixel
+matches or unresolved plausible duplication prohibit an unqualified independent
+source claim; any additional overlap-excluded analysis must be clearly labeled.
+No matches cannot establish person-disjointness or absence of all near duplicates.
+Review fixed QC examples by filename, not prediction score. No facial photograph
+is added to publication figures.
+
+Reporting and stopping
+Keep adverse, null, mixed and unavailable results. Do not tune the score,
+aggregation, detector, eligibility, reference or actor set to improve results.
+Implementation defects may be repaired, but record the defect and affected
+outputs and invalidate/recompute affected predictions under the same protocol.
+Do not mutate the earlier experiments or their numerical ledgers.
+Save source/protocol/model/media/output hashes, environment, runtime, failure
+counts, all predictions and generated summaries. A technical runtime pilot is
+not scientific completion. Ask before a material resource expansion beyond
+the approved 13.36 GB downloads / 30 GB temporary storage, paid services or
+new training. No acceptance guarantee or Q1-Q2-readiness claim follows merely
+from an external dataset name. Learned-selector comparison remains separate.

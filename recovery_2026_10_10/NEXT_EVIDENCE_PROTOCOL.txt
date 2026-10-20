@@ -1,0 +1,89 @@
+Next evidence gate - PROPOSED, NOT EXECUTED OR PREREGISTERED
+
+User constraint: no restricted dataset access. Current GPU runs remain unchanged.
+Recommended next candidate: RAVDESS video-only speech; open Zenodo data and raw
+validity judgments from its PLOS S5 supplement. A second candidate is CREMA-D
+visual-only clips. Both sources are external in origin, but are video/acted
+domains rather than independent replications of in-the-wild static-image votes.
+
+Feasibility already verified:
+- RAVDESS metadata: 1,440 video-only speech clips, 24 actors, ten categorical
+  responses per clip. All 4,320 speech rows across modalities reconcile category
+  responses with supplied raw accuracy when the publisher's calm/neutral
+  equivalence is applied. Nine raw response categories retained without merging.
+- CREMA-D metadata: 7,442 face-only clips, 91 actors, 6-12 responses per clip;
+  six counts sum to declared totals. Modality identity verified against official
+  R code, not guessed from row order. Six-class votes have no unsupported mass.
+- Metadata bytes and derived mappings are hashed in each metadata_audit.json.
+  No external videos or model predictions have been obtained or evaluated.
+
+Required first decision: approve clip-level transfer as a secondary extension,
+noncommercial/license-compatible use, storage/download budget, and fixed
+inference budget. Do not imply these were already agreed. RAVDESS speech archives
+contain both AV and VO files: approximately 13.36 GB across 24 actor archives,
+from the publisher's rounded sizes. Allow up to 30 GB temporary local space;
+see RESOURCE_BUDGET.txt. Exact archive bytes and a timed pilot must be measured
+before promising runtime. No cloud spend planned.
+CREMA-D repository asks users to fill a registration form; none was submitted.
+
+Candidate frozen design to finalize BEFORE model predictions are examined:
+1. All video-only RAVDESS speech clips. No audio, song, new annotation or training.
+   No outcome-dependent actor, category or clip selection. Hash each archive and
+   extracted file. Verify filenames, decoded duration/frame counts and inspect
+   uniformly sampled quality-control frames without reference to model scores.
+2. Primary prediction unit is a complete clip. Sample eight equispaced temporal
+   bin centers over its decoded duration; do not choose expression peaks. Run
+   the same frozen MediaPipe face detector/crop policy for every model. Preserve
+   detector version/weights/hash, bounding boxes and per-frame failure flags.
+   Freeze the exact crop expansion and multi-face rule from audited app code.
+   No outcome-based detector tuning. Require >=4 valid face frames per clip;
+   otherwise abstain and report the failure count, never discard silently.
+3. Apply the original grayscale3/224-bilinear/0.5 transform. Aggregate frame
+   probabilities by arithmetic mean over valid frames, then choose argmax.
+   This is a new clip aggregation rule, not a retrospectively claimed property
+   of the current prototype or a trained temporal recognizer.
+4. Evaluate Soft, Uniform and Tie-Uniform for both families, all three seeds,
+   both selected and fixed-epoch states: 36 inference states, zero new fits.
+   Primary score remains MSP. Margin/negative entropy reported as sensitivities.
+   At 80% coverage of all clips, choose ceil(.8*N) highest-scoring valid clips;
+   if fewer valid clips exist, report the endpoint unavailable, and actual
+   maximum coverage. Detector failures are never assigned an invented category.
+   Other 20/50/100% points must label unavailable coverage explicitly. Per-clip
+   probability, frame count, status and file hash are retained for all clips.
+5. First report full nine-category categorical-response disagreement, retaining
+   calm and none separately as unsupported responses. MANDATORY reference
+   sensitivity: merge calm with neutral, as the original RAVDESS accuracy rule
+   accepts both. Do not manufacture an apparent vocabulary failure solely by
+   ignoring that rule. Keep none separate in both conventions; no renormalizing
+   away unsupported responses. These endpoints are not published RAVDESS accuracy.
+6. Report both control contrasts, all paired seed values, own-ranking/fixed-set
+   results and annotation components. Actor-cluster paired bootstrap, 5,000
+   replicates, conditional on models and observed actors/votes, not pixel-IID
+   intervals. With only 24 actors, broad generalization remains constrained.
+   Freeze the reranking/count convention for cluster-resampled clips in code.
+7. Check exact/near image overlap against original FER image hashes before
+   interpretation; source names alone do not establish independence. Actor IDs
+   cannot prove identities absent from internet-collected FER2013. State this.
+8. All results, including adverse/null/unavailable cases, must be retained. Do
+   not redefine the primary reference, score or aggregation after inspection.
+
+Interpretation branches:
+Positive: transferable limited contrast under this frozen clip-aggregation and
+reference convention; not universal static FER or communication improvement.
+Mixed: show backbone/score/reference dependence; a scientifically useful failure
+mode needs consequential evidence, not a forced improvement claim.
+Null/adverse: publishable only if the diagnosis and comparison are sufficiently
+informative for the selected venue; do not search repeatedly for a winning set.
+Inconclusive: high failure rate, uncertain source identity, invalid vote join or
+broad actor intervals means no external confirmation claim.
+
+Separate follow-up needed for a method/contribution claim: a learned crowd-aware
+or support-aware selector comparator, fit with training/selection roles only and
+tuned without test outcomes. Decide exact method, inputs, loss, optimization and
+budget before execution; compare against MSP/margin/entropy and report failures.
+Do not label a simple probability-only score as a reproduction of Crowd-Calibrator.
+
+Submission gate: reassess ONE selected venue after this evidence, not after more
+cosmetic iterations. Neither an external dataset name nor a new diagram alone
+establishes a Q1-Q2 case. If this extension is not feasible, retain the honest
+within-source empirical scope and choose a venue consistent with that scope.

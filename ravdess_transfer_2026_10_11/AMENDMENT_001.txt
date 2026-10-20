@@ -1,0 +1,35 @@
+Amendment 001 - primary response-ID semantics correction
+
+Discovered before any scientific external result was computed or inspected.
+The actor-1 technical pilot had stored probabilities, but no performance metrics
+or model contrasts had been computed. Full 24-actor inference had not started.
+
+Defect: the previous metadata adapter's canonical response mapping transposed
+Disgust and Surprise. The primary S5 workbook intended-expression descriptors,
+filename IDs, and 4,320 categorical-versus-raw-accuracy checks jointly establish
+response ID 7 = Disgust and ID 8 = Surprise. Zenodo's official filename legend
+agrees. The corrected canonical IDs are (5,7,6,3,1,4,8,2,9).
+
+Correction: annotation_adapter.py reconstructs all 1,440 video-only speech rows
+directly from the unchanged primary workbook and validates those semantic anchors.
+The new local video_only_speech_votes.csv replaces the prior derived CSV only as
+the external scoring input. The prior CSV, metadata audit, original adapter and
+previous paper edition remain unchanged as historical artifacts. This is a code
+mapping correction, not manual relabeling of any human judgment.
+
+Only common.py from the original scientific freeze changes: it reads the corrected
+CSV and checks the original freeze plus this amendment's recorded source hashes.
+Its original bytes are retained as frozen_original_common.py. New adapter, tests,
+corrected CSV and amendment text have recorded hashes. The independent verifier
+also uses the corrected mapping. No selection, score, coverage, actor, crop,
+inference precision, checkpoint, reference, bootstrap or stopping rule changes.
+
+Effects: no inference probabilities or crop caches are invalidated, because clip
+names/order are identical and category votes do not enter detection, transforms,
+checkpoint inference or aggregation. No external scientific result exists to
+invalidate. Supported mass, unsupported mass and maximum supported vote counts
+are unchanged by this two-column swap, but category-choice risk would have been
+wrong. Hence no scoring proceeds until the amendment is recorded and checked.
+
+This transparent pre-analysis amendment is not a preregistration claim. Original
+freeze and this amendment must accompany the external evidence package.

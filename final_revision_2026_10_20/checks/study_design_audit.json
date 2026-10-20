@@ -1,0 +1,19 @@
+{
+  "text_overlap_pairs": [],
+  "container_overflows": [],
+  "status": "passed",
+  "source": "native scientific vector schematic",
+  "original_training_runs": 24,
+  "followup_training_runs": 12,
+  "original_named_states": 48,
+  "followup_named_states": 33,
+  "model_outcome_values": false,
+  "type3_fonts": 0,
+  "output_sha256": {
+    "StudyDesign.pdf": "02e12d6a36a196123cdbe5940b630e0fa4ab4d47c5b31ec68f7a374fde08f609",
+    "StudyDesign.svg": "31c22627ca7baa8b557ae94487e3d70edf82ac176dc7527bcefc75a77ed3586d",
+    "StudyDesign.png": "7b8e7fde5bd8a763e14a174d83a6af710587646d31ba90e6bf224eeb0bafd765"
+  },
+  "selection_risk_rule": "Eight-output models only; selection subset",
+  "calibration_branch": "Original Hard/Tie-hard/Uniform/Soft only"
+}

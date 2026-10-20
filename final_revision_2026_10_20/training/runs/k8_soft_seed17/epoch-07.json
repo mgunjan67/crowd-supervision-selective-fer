@@ -1,0 +1,11 @@
+{
+  "run": "k8_soft_seed17",
+  "epoch": 7,
+  "loss": 0.6924729938666363,
+  "distance": 0.10023422519363104,
+  "risk80": 0.20824587706146927,
+  "selected": false,
+  "risk_selected": true,
+  "seconds": 213.499713600002,
+  "finished_utc": "2026-10-20T00:16:17.283671+00:00"
+}

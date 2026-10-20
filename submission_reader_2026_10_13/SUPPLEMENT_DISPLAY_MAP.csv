@@ -1,0 +1,33 @@
+kind,old_id,new_id,identity
+figure,S1,S11,Fig2.pdf
+figure,S2,S12,FigS2.pdf
+figure,S3,S1,FigS3.pdf
+figure,S4,S2,HistoricalFig2.pdf
+figure,S5,S3,LearningCurves.pdf
+figure,S6,S6,ReferenceConfusion.pdf
+figure,S7,S4,ResNetLearning.pdf
+figure,S8,S5,ResNetDifferences.pdf
+figure,S9,S7,SelectorSensitivity.pdf
+figure,S10,S8,ExternalScores.pdf
+figure,S11,S9,ExternalVoteMatrices.pdf
+figure,S12,S10,ExternalTemporal.pdf
+table,S1,S1,Original four-condition paired seed contrasts at 80 percent coverage
+table,S2,S11,Original four conditions supported-mass strata
+table,S3,S15,Calibration half-split holdout-minus-fit risk gaps
+table,S4,S12,Unsupported category vote mass by population and accepted-set scope
+table,S5,S2,Secondary matched Tie-Uniform comparison
+table,S6,S3,Selected epochs
+table,S7,S4,Held-out squared distribution distance
+table,S8,S6,Swin-T per-seed fixed-image cross-evaluation
+table,S9,S7,Swin-T accepted-set overlap
+table,S10,S5,ResNet-18 complete-vote risk
+table,S11,S13,ResNet-18 global 80 percent accepted counts
+table,S12,S8,ResNet-18 selected fixed-image cross-evaluation
+table,S13,S9,ResNet-18 epoch 12 fixed-image cross-evaluation
+table,S14,S10,ResNet-18 reference-specific weighted F1
+table,S15,S14,All paired seed differences for score sensitivity
+table,S16,S16,External frame eligibility by actor
+table,S17,S17,External 80 percent contrasts for every paired seed
+table,S18,S18,External MSP fixed-image cross-evaluation
+table,S19,S19,External all-eligible risk accounting
+table,S20,S20,Principal selected Swin predicted-category proportions

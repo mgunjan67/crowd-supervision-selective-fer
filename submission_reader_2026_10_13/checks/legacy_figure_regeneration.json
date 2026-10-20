@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "historical_editions_modified": false,
+  "regenerated_figures": [
+    "Fig1",
+    "Fig2",
+    "Fig3",
+    "Fig4",
+    "Fig5",
+    "Fig7",
+    "FigS2",
+    "FigS3",
+    "LearningCurves",
+    "ResNetLearning",
+    "ResNetDifferences",
+    "HistoricalFig2",
+    "Fig6",
+    "ReferenceConfusion",
+    "ExternalScores",
+    "SelectorSensitivity"
+  ],
+  "ledger_sha256": "200a9b1df63cb267169a9f888b64a7fda3993f241494fff2e33320817bbfec3b",
+  "plotting_source_spans": {
+    "journal_style_revision/build_revision.py": [
+      50,
+      91
+    ],
+    "evidence_revision/build_revision.py": [
+      136,
+      141
+    ]
+  }
+}

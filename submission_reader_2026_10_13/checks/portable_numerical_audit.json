@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "independent_arithmetic": true,
+  "internal_not_external_replication": true,
+  "within_source_states": 48,
+  "within_source_prediction_files": 144,
+  "source_row_joins": 35887,
+  "external_states": 36,
+  "vote_matrix_cells_checked": 9072,
+  "temporal_rows_checked": 2016,
+  "category_rows_checked": 504,
+  "maximum_aggregation_error": 0.0,
+  "numeric_tolerance": 1e-10,
+  "clip_aggregation_tolerance": 1e-14,
+  "primary_internal_seed_differences_pp": {
+    "swin_t": [
+      -0.347328244274811,
+      -0.43129770992366145,
+      -0.3549618320610681
+    ],
+    "resnet18": [
+      0.34732824427481657,
+      0.13740458015266965,
+      0.034351145038169495
+    ]
+  },
+  "fixed_image_mean_differences_pp": {
+    "swin_t|soft": -0.35241730279897965,
+    "swin_t|uniform": 0.08524173027989745,
+    "resnet18|soft": -0.41221374045801357,
+    "resnet18|uniform": 0.4452926208651425
+  },
+  "calibration_nonempty": {
+    "empirical": 36,
+    "conservative": 24
+  },
+  "calibration_overshoot": {
+    "empirical": 36,
+    "conservative": 0
+  },
+  "new_training_runs": 0
+}

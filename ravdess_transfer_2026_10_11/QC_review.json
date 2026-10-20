@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "actors_reviewed": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+  "review_date_nepal": "2026-10-12",
+  "method": "Visual inspection of all 24 fixed six-frame actor QC sheets. Positions 0, 10, 20, 30, 40 and 50 in canonical per-actor filename order; frame bin 4. Actors 1-17 were inspected in the preceding execution; actors 18-24 were inspected during continuation.",
+  "sampled_previews_reviewed": 144,
+  "model_outcomes_used": false,
+  "manual_crop_or_clip_changes": 0,
+  "findings": "Detector boxes surround the face in the sampled previews. No obvious wrong-object crop or image corruption was observed. No actor, clip or frame was selected or excluded using predictions or vote agreement.",
+  "limits": "Sampled technical visual QC, not inspection of all 11,520 frames, an annotation correctness audit, or proof of naturalistic detector reliability. QC photographs are not publication figures and must not be redistributed."
+}

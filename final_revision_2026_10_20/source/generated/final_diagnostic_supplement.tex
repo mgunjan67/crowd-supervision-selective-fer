@@ -1,0 +1,97 @@
+\clearpage\section{Final ranking and temporal-aggregation diagnostics}
+\label{supp:final-diagnostics}
+The diagnostic protocol was recorded before these additional computations, after the original outcomes were known. These are exploratory reanalyses of retained outputs, not independent validation. Source and prediction hashes, all score candidates, all-prefix calibration AURC, test risk--coverage summaries, and per-state reconciliation checks are supplied with the final evidence resource.
+
+\subsection{Centered logit normalization}
+For positive saved probabilities, centered logits are reconstructed as $z_c=\log p_c-K^{-1}\sum_j\log p_j$. The candidate score is $\max_c z_c/\lVert z\rVert_a$. Exponents are chosen independently for each fitted state on calibration AURC for complete-vote disagreement, from the ordered candidates $1,1.5,2,3,4,6,8,16$. Ties retain the first candidate. All 48 calibration selections prefer MSP over their best normalized candidate. Test comparisons below nevertheless report normalization itself as a sensitivity, without selecting a score from the test results. Predictions and full-coverage risk do not change. No probability required clipping to compute its logarithm.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}\renewcommand{\arraystretch}{.97}
+\begin{longtable}{lllrrr}
+\caption{Calibration-selected normalization exponents. The fallback to MSP is the same for every row and seed.}\label{tab:normalization-exponents}\\
+\toprule Backbone & State & Target & 17 & 42 & 89\\\midrule\endfirsthead
+\toprule Backbone & State & Target & 17 & 42 & 89\\\midrule\endhead
+Swin-T & Selected & Hard & 2 & 2 & 3\\
+Swin-T & Selected & Tie-hard & 1.5 & 2 & 2\\
+Swin-T & Selected & Uniform & 1.5 & 3 & 1.5\\
+Swin-T & Selected & Tie-Uniform & 2 & 3 & 4\\
+Swin-T & Selected & Soft & 4 & 4 & 3\\
+Swin-T & Epoch 12 & Hard & 1.5 & 1.5 & 1.5\\
+Swin-T & Epoch 12 & Tie-hard & 1 & 1.5 & 1.5\\
+Swin-T & Epoch 12 & Uniform & 1.5 & 1.5 & 1.5\\
+Swin-T & Epoch 12 & Tie-Uniform & 2 & 2 & 2\\
+Swin-T & Epoch 12 & Soft & 4 & 4 & 3\\
+ResNet-18 & Selected & Soft & 3 & 3 & 3\\
+ResNet-18 & Selected & Uniform & 3 & 1.5 & 8\\
+ResNet-18 & Selected & Tie-Uniform & 2 & 1.5 & 2\\
+ResNet-18 & Epoch 12 & Soft & 2 & 3 & 3\\
+ResNet-18 & Epoch 12 & Uniform & 3 & 3 & 3\\
+ResNet-18 & Epoch 12 & Tie-Uniform & 2 & 2 & 2\\
+\bottomrule\end{longtable}\endgroup
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}\renewcommand{\arraystretch}{.97}
+\begin{longtable}{llllrrrr}
+\caption{Soft-minus-control disagreement at 80\% coverage (percentage points). Each model and score retains its own 2,620 images. Seed columns are paired fitted comparisons, not confidence limits.}\label{tab:normalization-seeds}\\
+\toprule Backbone & State & Control & Score & 17 & 42 & 89 & Mean\\\midrule\endfirsthead
+\toprule Backbone & State & Control & Score & 17 & 42 & 89 & Mean\\\midrule\endhead
+Swin-T & Selected & Uniform & MSP & -0.347 & -0.431 & -0.355 & -0.378\\
+Swin-T & Selected & Uniform & Norm. & -0.141 & -0.305 & -0.221 & -0.223\\
+Swin-T & Selected & Tie-Uniform & MSP & -0.378 & -0.584 & -0.802 & -0.588\\
+Swin-T & Selected & Tie-Uniform & Norm. & -0.034 & -0.176 & -0.794 & -0.335\\
+Swin-T & Epoch 12 & Uniform & MSP & -0.328 & -0.393 & -0.229 & -0.317\\
+Swin-T & Epoch 12 & Uniform & Norm. & -0.088 & -0.122 & -0.156 & -0.122\\
+Swin-T & Epoch 12 & Tie-Uniform & MSP & -0.435 & -0.221 & -0.263 & -0.307\\
+Swin-T & Epoch 12 & Tie-Uniform & Norm. & -0.172 & -0.176 & -0.042 & -0.130\\
+ResNet-18 & Selected & Uniform & MSP & +0.347 & +0.137 & +0.034 & +0.173\\
+ResNet-18 & Selected & Uniform & Norm. & +0.435 & +0.324 & +0.305 & +0.355\\
+ResNet-18 & Selected & Tie-Uniform & MSP & +0.118 & +0.115 & -0.107 & +0.042\\
+ResNet-18 & Selected & Tie-Uniform & Norm. & -0.134 & +0.370 & +0.229 & +0.155\\
+ResNet-18 & Epoch 12 & Uniform & MSP & +0.073 & +0.489 & -0.050 & +0.170\\
+ResNet-18 & Epoch 12 & Uniform & Norm. & +0.313 & +0.718 & +0.347 & +0.459\\
+ResNet-18 & Epoch 12 & Tie-Uniform & MSP & +0.324 & +0.118 & +0.126 & +0.190\\
+ResNet-18 & Epoch 12 & Tie-Uniform & Norm. & +0.492 & +0.481 & +0.389 & +0.454\\
+\bottomrule\end{longtable}\endgroup
+
+\subsection{Target entropy and weighted class proportions}
+Entropy is computed on positive supported-mass Training rows before fitting. The weighted mean uses the same supported masses as the training loss. Class-marginal L1 distance compares the weighted target distribution with Soft within each vocabulary. Zero-mass rows have zero target loss and are excluded from unweighted entropy means. The permutation control exactly preserves each seven-output probability multiset and all maximum positions; it does not preserve aggregate class proportions. These descriptive checks do not identify a causal mechanism.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}\renewcommand{\arraystretch}{.97}
+\begin{longtable}{rlrrrr}
+\caption{Training-target properties before outcome evaluation. Entropy is in nats; all conditions have 28,709 Training images.}\label{tab:final-target-audit}\\
+\toprule Outputs & Target & Positive rows & Entropy & Weighted & L1\\\midrule\endfirsthead
+\toprule Outputs & Target & Positive rows & Entropy & Weighted & L1\\\midrule\endhead
+7 & Soft & 28557 & 0.5067 & 0.4949 & 0.0000\\
+7 & Uniform & 28557 & 0.8002 & 0.7812 & 0.1197\\
+7 & Tie-Uniform & 28557 & 0.7727 & 0.7553 & 0.1032\\
+7 & Permutation & 28557 & 0.5067 & 0.4949 & 0.1242\\
+8 & Soft & 28559 & 0.5399 & 0.5298 & 0.0000\\
+8 & Uniform & 28559 & 0.8665 & 0.8505 & 0.1295\\
+8 & Tie-Uniform & 28559 & 0.8381 & 0.8231 & 0.1111\\
+\bottomrule\end{longtable}\endgroup
+
+\subsection{Fixed middle-window aggregation}
+The middle four chronologically sampled positions (2--5, zero-based) are averaged without selecting peak frames. Each aggregation reranks clips independently by MSP. All 1,440 clips have eight valid retained frames; the original eight-frame aggregation reproduces every stored clip probability exactly. Human votes describe whole clips rather than individual frames. The middle-window analysis cannot determine which frames express the intended or perceived category.
+
+\begingroup\small\setlength{\tabcolsep}{4pt}\setlength{\LTcapwidth}{\linewidth}\renewcommand{\arraystretch}{.97}
+\begin{longtable}{llllrrrr}
+\caption{External Soft-minus-Uniform disagreement at 80\% coverage (percentage points). Each state and aggregation accepts 1,152 clips under its own ranking.}\label{tab:aggregation-seeds}\\
+\toprule Backbone & State & Votes & Frames & 17 & 42 & 89 & Mean\\\midrule\endfirsthead
+\toprule Backbone & State & Votes & Frames & 17 & 42 & 89 & Mean\\\midrule\endhead
+Swin-T & Selected & Raw & Eight & -0.05 & +2.64 & -0.76 & +0.61\\
+Swin-T & Selected & Raw & Middle four & +1.00 & +1.70 & -0.92 & +0.59\\
+Swin-T & Selected & Merged & Eight & -1.28 & +2.48 & -0.90 & +0.10\\
+Swin-T & Selected & Merged & Middle four & -0.22 & +0.43 & -0.83 & -0.21\\
+Swin-T & Epoch 12 & Raw & Eight & -0.46 & +1.02 & +0.11 & +0.23\\
+Swin-T & Epoch 12 & Raw & Middle four & +1.55 & +0.54 & -0.21 & +0.63\\
+Swin-T & Epoch 12 & Merged & Eight & -1.70 & -0.33 & -0.68 & -0.90\\
+Swin-T & Epoch 12 & Merged & Middle four & +0.46 & -0.43 & -0.77 & -0.25\\
+ResNet-18 & Selected & Raw & Eight & +1.04 & +5.52 & -1.07 & +1.83\\
+ResNet-18 & Selected & Raw & Middle four & +0.24 & +5.73 & -0.25 & +1.91\\
+ResNet-18 & Selected & Merged & Eight & +1.11 & +3.78 & -0.91 & +1.33\\
+ResNet-18 & Selected & Merged & Middle four & -0.14 & +3.21 & -0.10 & +0.99\\
+ResNet-18 & Epoch 12 & Raw & Eight & +2.20 & +3.06 & -0.15 & +1.70\\
+ResNet-18 & Epoch 12 & Raw & Middle four & +3.12 & +5.10 & +1.16 & +3.12\\
+ResNet-18 & Epoch 12 & Merged & Eight & +2.27 & +1.81 & -0.23 & +1.28\\
+ResNet-18 & Epoch 12 & Merged & Middle four & +3.24 & +3.63 & +0.99 & +2.62\\
+\bottomrule\end{longtable}\endgroup
+
+The full ledger retains all 36 frozen external states, both reference mappings, all-eligible and 80\% populations, risk components and category proportions. Constant-category references have no confidence ranking. They are scored both on all clips and on each model's exact accepted set, so the two population types are not interchangeable. Always-neutral disagreement on all clips is 90.94\% raw and 82.18\% calm-merged; always-happy disagreement is 83.23\% for either reference. These references establish poor absolute transfer despite performance better than these constant predictions.

@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "model_outcomes_used": false,
+  "original_source_images": 35887,
+  "screened_valid_frames": 11520,
+  "exact_canonical_matches": [],
+  "perceptual_flags": [],
+  "perceptual_flag_count": 0,
+  "threshold_hamming63": 4,
+  "minimum_distance": 6,
+  "median_nearest_distance": 14.0,
+  "source_files": {
+    "data\\fer2013\\Training.npz": "cdf739ce3caf3177e4204e1b92e9672fd0576f30a679e3417d52912a7325e895",
+    "data\\fer2013\\PublicTest.npz": "69261a0fc6e573199fa8ccc3dc80de0e8981507559f949cd8520b90247f91fd5",
+    "data\\fer2013\\PrivateTest.npz": "a2b01f84b968c3626098245227c1ce262de188153186914280f92f8077affad3"
+  },
+  "method": "48x48 canonical grayscale crop SHA; 63 AC DCT bits on 32x32 gray, median threshold",
+  "identity_disjointness_verified": false,
+  "interpretation": "Screening cannot establish person-disjointness or absence of all near duplicates. Flags require visual review; no automatic exclusion."
+}

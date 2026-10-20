@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "raw_annotation_sha256": "9206e20d62f56475939f516847d61753e4860caeac9718b560129541b776fc2c",
+  "summary_sha256": "0bf8f099f4ba742ee9c2dd8af93086d1896c1859e641d3214e24ba22e48b7262",
+  "new_role_archives": 99,
+  "state_rows": 51,
+  "complete_vote_metrics_verified": true,
+  "interval_replays": [
+    {
+      "k": 7,
+      "state": "selected",
+      "control": "permutation",
+      "lower_pp": -1.0708044646479549,
+      "upper_pp": -0.4743646061564505
+    },
+    {
+      "k": 7,
+      "state": "epoch12",
+      "control": "permutation",
+      "lower_pp": -0.8553028964162992,
+      "upper_pp": -0.26059488517407636
+    },
+    {
+      "k": 8,
+      "state": "selected",
+      "control": "uniform",
+      "lower_pp": -1.1518489455522616,
+      "upper_pp": -0.5088913011634232
+    },
+    {
+      "k": 8,
+      "state": "selected",
+      "control": "tie_uniform",
+      "lower_pp": -0.31449544302013066,
+      "upper_pp": 0.21238915618905266
+    },
+    {
+      "k": 8,
+      "state": "epoch12",
+      "control": "uniform",
+      "lower_pp": -0.6720122184039733,
+      "upper_pp": -0.07129784988545722
+    },
+    {
+      "k": 8,
+      "state": "epoch12",
+      "control": "tie_uniform",
+      "lower_pp": -0.38760799455589245,
+      "upper_pp": 0.1412213740458006
+    },
+    {
+      "k": 8,
+      "state": "risk_selected",
+      "control": "uniform",
+      "lower_pp": -0.891866019701398,
+      "upper_pp": -0.28232691685820915
+    },
+    {
+      "k": 8,
+      "state": "risk_selected",
+      "control": "tie_uniform",
+      "lower_pp": -0.35664587420835614,
+      "upper_pp": 0.16800626444154618
+    }
+  ],
+  "replicates_per_contrast": 5000,
+  "implementation": "Direct official counts; Python-key ranking; explicit repeat-copy bootstrap",
+  "scope": "Internal numerical verification, not independent empirical replication"
+}

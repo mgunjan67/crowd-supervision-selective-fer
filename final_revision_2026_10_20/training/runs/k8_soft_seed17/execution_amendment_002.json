@@ -1,0 +1,10 @@
+{
+  "source_sha256": {
+    "AMENDMENT_002.md": "17e66e546d337e5c98bd4bd35a0c0d2e909e084cde50dc8349e293812fd4a0dc",
+    "run_prefetched.py": "4a47ee38c091bb28aa5bca1932681e563e6b63a953c3a13c999cbe0a00abe679",
+    "test_prefetched.py": "72f6d3856bd5ce4bfaaee39e645b81ccb6de54d32791b2ad477784a792489bb3"
+  },
+  "original_freeze_sha256": "87bda97c6ea29e89165965b715a635be52488341895c63100a7f8d4886698f79",
+  "first_amendment_freeze_sha256": "598d272d2e98684e0f46d67b5934c9fb787e7ed3cfe1a1e6e75036684a01ba9d",
+  "applied_after_committed_epoch": 0
+}

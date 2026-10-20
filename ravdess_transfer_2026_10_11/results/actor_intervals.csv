@@ -1,0 +1,17 @@
+backbone,state,reference,score,requested_coverage,control,mean_difference_pp,lower95_pp,upper95_pp,bootstrap_replicates,available_replicates,status,uncertainty
+swin_t,selected,raw9,msp,0.8,uniform,0.6105324074074048,0.22858796296296335,1.0937500000000007,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+swin_t,selected,raw9,msp,0.8,tie_uniform,0.9432870370370253,0.497612847222208,1.41493055555556,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+swin_t,selected,neutral_calm_merged,msp,0.8,uniform,0.10127314814815473,-0.26338252314816085,0.5873842592592607,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+swin_t,selected,neutral_calm_merged,msp,0.8,tie_uniform,0.6886574074074151,0.26902488425925514,1.1689814814814719,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+swin_t,epoch12,raw9,msp,0.8,uniform,0.22569444444446862,-0.4341001157407494,1.070601851851853,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+swin_t,epoch12,raw9,msp,0.8,tie_uniform,0.8072916666666985,0.24884259259259078,1.40335648148147,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+swin_t,epoch12,neutral_calm_merged,msp,0.8,uniform,-0.9027777777777376,-1.747685185185185,0.026114004629626784,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+swin_t,epoch12,neutral_calm_merged,msp,0.8,tie_uniform,0.31539351851855485,-0.3038194444444384,0.917245370370375,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,selected,raw9,msp,0.8,uniform,1.8315972222222363,1.1429398148148142,2.494212962962946,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,selected,raw9,msp,0.8,tie_uniform,0.7523148148148473,0.14749710648146958,1.5394965277777724,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,selected,neutral_calm_merged,msp,0.8,uniform,1.325231481481511,0.6538628472222136,1.9271556712962894,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,selected,neutral_calm_merged,msp,0.8,tie_uniform,0.740740740740779,0.21404803240740042,1.5219907407407345,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,epoch12,raw9,msp,0.8,uniform,1.704282407407413,0.9837962962963054,2.4131944444444406,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,epoch12,raw9,msp,0.8,tie_uniform,0.853587962963002,0.21701388888888007,1.7361834490740706,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,epoch12,neutral_calm_merged,msp,0.8,uniform,1.2818287037037395,0.7233796296296278,1.9878472222222203,5000,5000,available,actor-cluster percentile; frozen fits and observed votes
+resnet18,epoch12,neutral_calm_merged,msp,0.8,tie_uniform,0.8854166666667127,0.38773148148148645,1.6782407407407365,5000,5000,available,actor-cluster percentile; frozen fits and observed votes

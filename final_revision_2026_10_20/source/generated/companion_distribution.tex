@@ -1,0 +1,26 @@
+The distance is $D=N^{-1}\sum_i\sum_{c=1}^{10}(\tilde p_{ic}-q_{ic})^2$, where $\tilde p$ adds three zeros to the seven outputs. All states use the same $N=3,275$ primary test rows and the original ten-category vote distributions, without renormalization. These descriptive summaries were assembled after the outcomes were known. The measure and per-state values were already recorded. No images are rejected by confidence, and no training or probability ensemble is added.
+\begin{table}[H]\caption{Held-out squared distribution distance for every retained target, state and seed. Lower is better; values are distance units, not percentages}\label{tab:distributionseeds}
+\centering\small\begin{tabular}{lllrrrr}\toprule
+Backbone & State & Target & Seed 17 & Seed 42 & Seed 89 & Mean\\\midrule
+Swin-T & Selected & Hard & 0.153453 & 0.157580 & 0.162272 & 0.157769\\
+Swin-T & Selected & Tie-hard & 0.163318 & 0.170017 & 0.151180 & 0.161505\\
+Swin-T & Selected & Uniform & 0.115093 & 0.115385 & 0.116645 & 0.115708\\
+Swin-T & Selected & Tie-Uniform & 0.114356 & 0.116172 & 0.110653 & 0.113727\\
+Swin-T & Selected & Soft & 0.098510 & 0.097502 & 0.097491 & 0.097835\\
+\addlinespace
+Swin-T & Epoch 12 & Hard & 0.226550 & 0.225623 & 0.225190 & 0.225787\\
+Swin-T & Epoch 12 & Tie-hard & 0.209374 & 0.205987 & 0.202012 & 0.205791\\
+Swin-T & Epoch 12 & Uniform & 0.117631 & 0.117785 & 0.115561 & 0.116992\\
+Swin-T & Epoch 12 & Tie-Uniform & 0.114356 & 0.112754 & 0.111290 & 0.112800\\
+Swin-T & Epoch 12 & Soft & 0.098639 & 0.097274 & 0.097469 & 0.097794\\
+\addlinespace
+ResNet-18 & Selected & Uniform & 0.121368 & 0.123774 & 0.123949 & 0.123030\\
+ResNet-18 & Selected & Tie-Uniform & 0.119359 & 0.118507 & 0.116272 & 0.118046\\
+ResNet-18 & Selected & Soft & 0.109512 & 0.112412 & 0.109837 & 0.110587\\
+\addlinespace
+ResNet-18 & Epoch 12 & Uniform & 0.121749 & 0.122098 & 0.123936 & 0.122595\\
+ResNet-18 & Epoch 12 & Tie-Uniform & 0.115945 & 0.118419 & 0.115596 & 0.116653\\
+ResNet-18 & Epoch 12 & Soft & 0.110599 & 0.111553 & 0.110533 & 0.110895\\
+\addlinespace
+\bottomrule\end{tabular}\end{table}
+The companion \texttt{distribution\_distance.csv} retains full precision, prediction hashes and exact agreement with the consolidated original ledger. Soft is lower than both controls for each paired seed in both families and states. These overlapping comparisons are not independent replications, and no new confidence interval or calibration claim is attached.

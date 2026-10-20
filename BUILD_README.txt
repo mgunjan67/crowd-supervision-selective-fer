@@ -1,1 +1,1 @@
-Compile main.tex with pdfLaTeX + BibTeX + pdfLaTeX twice. Keep sn-jnl.cls, sn-mathphys-num.bst and backbone_followup/ generated/figures/references intact. Main bibliography uses published/accepted sources; the two unpublished preprints are clearly labelled in-text URLs. The study is multi-file and uses the existing local compiler, not the standalone editor compiler.
+Current v1.3.0: pdflatex main.tex; bibtex main; pdflatex main.tex twice. Compile supplement.tex twice. See QUICKSTART.md and REPRODUCIBILITY.md. Historical instructions are preserved under HISTORY/pre-v1.3.0/.

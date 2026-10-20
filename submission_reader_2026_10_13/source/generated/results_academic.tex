@@ -1,0 +1,39 @@
+% Editorial Results entry point: the order follows the scientific questions.
+\input{submission_reader_2026_10_13/source/generated/results.tex}
+\input{submission_reader_2026_10_13/source/generated/distribution_results.tex}
+
+\subsection{Accepted-image sets and annotation references}
+For validation-selected Swin-T, the predictor comparison depends on the accepted-image set. Soft-minus-Uniform disagreement is +0.085 pp on images selected by Uniform, but -0.352 pp on images selected by Soft (Fig.~\ref{fig:cross}). Each within-column comparison holds the images and annotation reference fixed, so the difference reflects the predictors' category choices on that set. Lower risk under Soft's own ranking therefore does not establish consistently better category predictions on identical images.
+\begin{figure}[tp]\centering\includegraphics[width=\linewidth]{submission_reader_2026_10_13/source/figures/Fig4.pdf}
+\caption{Fixed-image cross-evaluation at 80\% coverage for validation-selected (a) Swin-T and (b) ResNet-18 checkpoints. Cells are complete-vote disagreement percentages averaged across three seeds. Columns fix the selector's 2,620-image set; rows change the predictor. The common color scale shows absolute risk, and signed differences below each panel show within-column Soft-minus-Uniform contrasts. Each model's own-set risk uses a different accepted set}\label{fig:cross}\end{figure}
+
+Changing the accepted set also changes the result for a fixed predictor. Moving from Uniform-selected to Soft-selected images gives a risk change of -0.025 pp for the Uniform predictor and -0.463 pp for the Soft predictor. The mean Jaccard overlap is 0.8408. The ResNet-18 Soft-minus-Uniform comparison likewise changes sign between Uniform-selected (+0.445 pp) and Soft-selected images (-0.412 pp). These patterns show an interaction between prediction and selection rather than a unique causal contribution from either. The supplement retains every seed, both checkpoint states, the complete cross-evaluation matrices and overlap counts.
+
+Changing the annotation reference altered the measured classification performance without changing the predictions. On the same 2,484 supported-majority images, validation-selected Swin-T models trained with Soft had mean weighted F1 of 0.6685 against the original FER2013 labels and 0.9270 against the crowd-majority labels (Table~\ref{tab:samef1}). Image selection also affected the score: under the original FER2013 reference, weighted F1 increased from 0.5722 on all 3,275 primary-test images to 0.6685 on this subset. The first comparison changes the label reference while holding images fixed; the second changes the image population while retaining the original reference. The crowd-majority score therefore describes a different evaluation task from original-label performance on the complete test population, not an improvement in the underlying predictions. The supplementary reference matrix documents the correspondence between the two categorical references. Neither reference is treated as a measure of internal emotion.
+\input{submission_reader_2026_10_13/source/generated/same_f1.tex}
+
+\subsection{Effects of unsupported annotation categories}
+The primary-test population includes 1,732 fully supported images, 1,527 with both supported and unsupported vote mass, and 16 with zero supported mass. Figure~\ref{fig:mass} separates unsupported mass, supported-category ambiguity and excess disagreement on each global accepted set, then compares confidence rankings within the supported-mass strata. At 80\% within-stratum coverage, Soft and Uniform have disagreement of 10.42\% and 10.94\% in the fully supported stratum, and 40.00\% and 40.58\% in the partially supported stratum. The primary contrast is thus not confined to images receiving unsupported votes. These descriptive strata do not explain the confidence assigned to individual images.
+\begin{figure}[tp]
+\centering\includegraphics[width=\linewidth]{submission_reader_2026_10_13/source/figures/Fig3.pdf}
+\caption{Risk components at 80\% coverage. (a) All five Swin-T targets on each model's global accepted set. (b) The original four targets with selection performed separately within the full- and partial-supported-mass strata. Panels use different populations and vertical scales. Zero-supported-mass images have complete-vote disagreement one; their acceptance counts appear in Table~\ref{tab:retention}. Unsupported votes remain in every score}\label{fig:mass}
+\end{figure}
+
+Overall risk also conceals differences in which unsupported images are accepted. Soft accepts a mean 11.00 of the 16 zero-supported-mass images, compared with 7.00 for Uniform and 6.67 for Tie-Uniform (Table~\ref{tab:retention}). Its lower overall disagreement therefore does not imply more effective rejection of these images. The counts are small and descriptive, rather than estimates of a deployment failure rate. The supplement reports contempt, unknown and not-a-face vote mass separately because these categories have different meanings, including all-image and accepted-set summaries for calibration and testing.
+\input{submission_reader_2026_10_13/source/generated/retention.tex}
+
+\input{submission_reader_2026_10_13/source/generated/selector_results.tex}
+
+\subsection{Calibration-to-test transfer}
+Empirical thresholds do not preserve their nominal risk targets when transferred unchanged from calibration to testing. Across the original four conditions, all 36 nonempty empirical test settings exceed their targets (Table~\ref{tab:policies}). These settings overlap and are not independent Bernoulli trials. At the 10\% target, Soft attains greater mean coverage than Hard (49.54\% versus 38.35\%), but also greater achieved risk (13.01\% versus 11.45\%). The coverage difference is therefore not a comparison at equal risk.
+\input{submission_reader_2026_10_13/source/generated/policy_table.tex}
+
+The calibration and test populations differ even before confidence selection. Their annotation floors are 23.70\% and 26.67\%, respectively, a +2.97 pp difference; unsupported mass rises from 5.72\% to 7.88\%, with the remainder due to supported-category ambiguity. Figure~\ref{fig:transfer} applies the same accounting to the accepted sets. For Soft at the nominal 20\% target, the +2.57 pp test-minus-calibration risk gap comprises +1.98 pp unsupported mass, +0.78 pp supported ambiguity and -0.19 pp excess. These components describe the gap rather than independent causes.
+\begin{figure}[tp]
+\centering\includegraphics[width=\linewidth]{submission_reader_2026_10_13/source/figures/Fig6.pdf}
+\caption{Mean test-minus-calibration differences in unsupported mass, supported ambiguity and excess disagreement for empirical thresholds. Components sum to the risk gap. H: Hard; T: Tie-hard; U: Uniform; S: Soft. The three risk-target panels share a vertical scale. Means use paired nonempty calibration/test accepted sets}\label{fig:transfer}
+\end{figure}
+
+The additional diagnostics distinguish variability within calibration from the coverage cost of a more conservative rule. At the 20\% target, calibration-half-split holdout-minus-fit gaps average +0.05 to +0.19 pp across conditions, with broad descriptive 5th--95th-percentile ranges of roughly -2.3 to +2.8 pp. The supplement retains complete per-condition resamples. These summaries do not uniquely separate distribution shift, finite-sample fluctuation and threshold-search effects. The fixed-grid comparator yields 24 nonempty test settings, with 0 exceeding their nominal targets, but rejects every image at the 10\% target for every condition and seed. Its observed conservatism has a concrete coverage cost and does not verify its population assumptions.
+
+\input{submission_reader_2026_10_13/source/generated/external_results.tex}

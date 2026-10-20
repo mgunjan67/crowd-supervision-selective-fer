@@ -1,0 +1,43 @@
+{
+  "configuration": {
+    "k": 7,
+    "condition": "permutation",
+    "seed": 42,
+    "epochs": 12,
+    "batch_size": 32,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "class_names": [
+      "angry",
+      "disgust",
+      "fear",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ],
+    "initial_state_sha256": "bff4ecd3600a42c6fa1fc65032cbe7b9a6fc1daff3ed7328f4bc2ad9d04b7e3f",
+    "source_sha256": {
+      "final_revision_2026_10_20/training/PROTOCOL.md": "54478e0bc38feaa49ccd79a84c7fe2f8ad0fef52a0f2afd67bdd5ee987b74701",
+      "final_revision_2026_10_20/training/train_followup.py": "92d2a7ac4723f1791faa95d160d6f18f4b40d02e7c46cf62ffffd0e9a476d854",
+      "final_revision_2026_10_20/training/test_followup.py": "c1f60594893d738e12f66a566320e909a6ff0bd1b20e44a302653c270f152b62",
+      "final_experiment/train.py": "3f2fa8ef3d3a8b3c1d81ed296b337f90b570c07ce7e3f54dcab9a9e7a5c4d013",
+      "final_experiment/data.py": "3a06c79bfb34cc70875a79f228bbf3ddb23e59988650fc6f3b7c39ded205f7f9",
+      "final_experiment/split_manifest.json": "98ee3c1aab7cd9f518d1dd9cac86c7b7ad94060f3fd27b5cd2a14227060733b8",
+      "code/emotion_cue/model.py": "a239390f9f206506e567b5733d22b98a938f49de4398799728894f1dc6d247b3",
+      "code/emotion_cue/data.py": "b18e64f2249aa536d8f390ecb54fdcc7984f3f6621d284c4cb88727da458315d"
+    },
+    "preprocessing": "grayscale3_resize224_bilinear_mean0.5_std0.5",
+    "augmentation": "original stateless SplitMix64 seed/epoch/row flips",
+    "selection_metric": "ten_category_squared_distance",
+    "training_n": 28709,
+    "selection_n": 1667,
+    "torch": "2.8.0+cu128",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU"
+  },
+  "finished_utc": "2026-10-19T23:00:25.718568+00:00",
+  "calibration_or_test_used": false,
+  "best_sha256": "f81f65f85578973dc6e05a994635c4b36c041dec67e7b8518211f2db4f5b4725",
+  "risk_best_sha256": "9821ac8e44f923cf5103b178dffa4b2bd3a18ec4469ecd7ec244f1ff964702c1",
+  "final_sha256": "4b6843f16d5cc688904eb506dac8a476a416df68a1785225fffa70e7cdb3ea18"
+}

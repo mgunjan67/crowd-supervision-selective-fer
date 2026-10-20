@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{22}
+\begin{thebibliography}{26}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -44,75 +44,6 @@
 \csname PreBibitemsHook\endcsname
 
 %%% 1
-\bibitem[\protect\citeauthoryear{Wang et~al.}{2016}]{wang2016emotionpush}
-\begin{bchapter}
-\bauthor{\bsnm{Wang}, \binits{S.-M.}},
-\bauthor{\bsnm{Lee}, \binits{C.-H.S.}},
-\bauthor{\bsnm{Lo}, \binits{Y.-C.}},
-\bauthor{\bsnm{Huang}, \binits{T.-H.}},
-\bauthor{\bsnm{Ku}, \binits{L.-W.}}:
-\bctitle{Sensing emotions in text messages: An application and deployment study
-  of {EmotionPush}}.
-In: \bbtitle{Proceedings of {COLING} 2016, the 26th International Conference on
-  Computational Linguistics: System Demonstrations},
-pp. \bfpage{141}--\blpage{145}.
-\bpublisher{The COLING 2016 Organizing Committee},
-\blocation{Osaka, Japan}
-(\byear{2016}).
-\burl{https://aclanthology.org/C16-2030/}
-\end{bchapter}
-\endbibitem
-
-%%% 2
-\bibitem[\protect\citeauthoryear{Chong et~al.}{2019}]{chong2019emochat}
-\begin{bchapter}
-\bauthor{\bsnm{Chong}, \binits{L.}},
-\bauthor{\bsnm{Jin}, \binits{M.}},
-\bauthor{\bsnm{He}, \binits{Y.}}:
-\bctitle{{EmoChat}: Bringing multimodal emotion detection to mobile
-  conversation}.
-In: \bbtitle{2019 5th International Conference on Big Data Computing and
-  Communications (BIGCOM)},
-pp. \bfpage{213}--\blpage{221}
-(\byear{2019}).
-\doiurl{10.1109/BIGCOM.2019.00037}
-\end{bchapter}
-\endbibitem
-
-%%% 3
-\bibitem[\protect\citeauthoryear{Liu et~al.}{2019}]{liu2019selfawareness}
-\begin{bchapter}
-\bauthor{\bsnm{Liu}, \binits{L.}},
-\bauthor{\bsnm{Guta}, \binits{D.}},
-\bauthor{\bsnm{Niu}, \binits{S.}}:
-\bctitle{Integration of user emotion and self-awareness in text messaging}.
-In: \bbtitle{2019 IEEE 5th International Conference on Collaboration and
-  Internet Computing (CIC)},
-pp. \bfpage{178}--\blpage{183}
-(\byear{2019}).
-\doiurl{10.1109/CIC48465.2019.00030}
-\end{bchapter}
-\endbibitem
-
-%%% 4
-\bibitem[\protect\citeauthoryear{Barrett et~al.}{2019}]{barrett2019emotions}
-\begin{barticle}
-\bauthor{\bsnm{Barrett}, \binits{L.F.}},
-\bauthor{\bsnm{Adolphs}, \binits{R.}},
-\bauthor{\bsnm{Marsella}, \binits{S.}},
-\bauthor{\bsnm{Martinez}, \binits{A.M.}},
-\bauthor{\bsnm{Pollak}, \binits{S.D.}}:
-\batitle{Emotional expressions reconsidered: Challenges to inferring emotion
-  from human facial movements}.
-\bjtitle{Psychological Science in the Public Interest}
-\bvolume{20}(\bissue{1}),
-\bfpage{1}--\blpage{68}
-(\byear{2019})
-\doiurl{10.1177/1529100619832930}
-\end{barticle}
-\endbibitem
-
-%%% 5
 \bibitem[\protect\citeauthoryear{Goodfellow et~al.}{2013}]{goodfellow2013fer}
 \begin{bchapter}
 \bauthor{\bsnm{Goodfellow}, \binits{I.J.}},
@@ -160,7 +91,7 @@ pp. \bfpage{117}--\blpage{124}.
 \end{bchapter}
 \endbibitem
 
-%%% 6
+%%% 2
 \bibitem[\protect\citeauthoryear{Barsoum et~al.}{2016}]{barsoum2016ferplus}
 \begin{bchapter}
 \bauthor{\bsnm{Barsoum}, \binits{E.}},
@@ -179,7 +110,154 @@ pp. \bfpage{279}--\blpage{283}.
 \end{bchapter}
 \endbibitem
 
+%%% 3
+\bibitem[\protect\citeauthoryear{Washington
+  et~al.}{2021}]{washington2021crowdsourcing}
+\begin{barticle}
+\bauthor{\bsnm{Washington}, \binits{P.}},
+\bauthor{\bsnm{Kalantarian}, \binits{H.}},
+\bauthor{\bsnm{Kent}, \binits{J.}},
+\bauthor{\bsnm{Husic}, \binits{A.}},
+\bauthor{\bsnm{Kline}, \binits{A.}},
+\bauthor{\bsnm{Leblanc}, \binits{E.}},
+\bauthor{\bsnm{Hou}, \binits{C.}},
+\bauthor{\bsnm{Mutlu}, \binits{C.}},
+\bauthor{\bsnm{Dunlap}, \binits{K.}},
+\bauthor{\bsnm{Penev}, \binits{Y.}},
+\bauthor{\bsnm{Stockham}, \binits{N.}},
+\bauthor{\bsnm{Chrisman}, \binits{B.}},
+\bauthor{\bsnm{Paskov}, \binits{K.}},
+\bauthor{\bsnm{Jung}, \binits{J.-Y.}},
+\bauthor{\bsnm{Voss}, \binits{C.}},
+\bauthor{\bsnm{Haber}, \binits{N.}},
+\bauthor{\bsnm{Wall}, \binits{D.P.}}:
+\batitle{Training affective computer vision models by crowdsourcing soft-target
+  labels}.
+\bjtitle{Cognitive Computation}
+\bvolume{13},
+\bfpage{1363}--\blpage{1373}
+(\byear{2021})
+\doiurl{10.1007/s12559-021-09936-4}
+\end{barticle}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Khurana et~al.}{2024}]{khurana2024crowd}
+\begin{bchapter}
+\bauthor{\bsnm{Khurana}, \binits{U.}},
+\bauthor{\bsnm{Nalisnick}, \binits{E.}},
+\bauthor{\bsnm{Fokkens}, \binits{A.}},
+\bauthor{\bsnm{Swayamdipta}, \binits{S.}}:
+\bctitle{{Crowd-Calibrator}: Can annotator disagreement inform calibration in
+  subjective tasks?}
+In: \bbtitle{Conference on Language Modeling}
+(\byear{2024}).
+\burl{https://openreview.net/forum?id=VWWzO3ewMS}
+\end{bchapter}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{Xia et~al.}{2025}]{xia2025smoothing}
+\begin{bchapter}
+\bauthor{\bsnm{Xia}, \binits{G.}},
+\bauthor{\bsnm{Laurent}, \binits{O.}},
+\bauthor{\bsnm{Franchi}, \binits{G.}},
+\bauthor{\bsnm{Bouganis}, \binits{C.-S.}}:
+\bctitle{Towards understanding why label smoothing degrades selective
+  classification and how to fix it}.
+In: \bbtitle{International Conference on Learning Representations}
+(\byear{2025}).
+\burl{https://openreview.net/forum?id=6oWFn6fY4A}
+\end{bchapter}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{Livingstone and
+  Russo}{2018}]{livingstone2018ravdess}
+\begin{barticle}
+\bauthor{\bsnm{Livingstone}, \binits{S.R.}},
+\bauthor{\bsnm{Russo}, \binits{F.A.}}:
+\batitle{The {Ryerson Audio-Visual Database of Emotional Speech and Song}
+  ({RAVDESS}): A dynamic, multimodal set of facial and vocal expressions in
+  {North American English}}.
+\bjtitle{PLoS ONE}
+\bvolume{13}(\bissue{5}),
+\bfpage{0196391}
+(\byear{2018})
+\doiurl{10.1371/journal.pone.0196391}
+\end{barticle}
+\endbibitem
+
 %%% 7
+\bibitem[\protect\citeauthoryear{Wang et~al.}{2016}]{wang2016emotionpush}
+\begin{bchapter}
+\bauthor{\bsnm{Wang}, \binits{S.-M.}},
+\bauthor{\bsnm{Lee}, \binits{C.-H.S.}},
+\bauthor{\bsnm{Lo}, \binits{Y.-C.}},
+\bauthor{\bsnm{Huang}, \binits{T.-H.}},
+\bauthor{\bsnm{Ku}, \binits{L.-W.}}:
+\bctitle{Sensing emotions in text messages: An application and deployment study
+  of {EmotionPush}}.
+In: \bbtitle{Proceedings of {COLING} 2016, the 26th International Conference on
+  Computational Linguistics: System Demonstrations},
+pp. \bfpage{141}--\blpage{145}.
+\bpublisher{The COLING 2016 Organizing Committee},
+\blocation{Osaka, Japan}
+(\byear{2016}).
+\burl{https://aclanthology.org/C16-2030/}
+\end{bchapter}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Chong et~al.}{2019}]{chong2019emochat}
+\begin{bchapter}
+\bauthor{\bsnm{Chong}, \binits{L.}},
+\bauthor{\bsnm{Jin}, \binits{M.}},
+\bauthor{\bsnm{He}, \binits{Y.}}:
+\bctitle{{EmoChat}: Bringing multimodal emotion detection to mobile
+  conversation}.
+In: \bbtitle{2019 5th International Conference on Big Data Computing and
+  Communications (BIGCOM)},
+pp. \bfpage{213}--\blpage{221}
+(\byear{2019}).
+\doiurl{10.1109/BIGCOM.2019.00037}
+\end{bchapter}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Liu et~al.}{2019}]{liu2019selfawareness}
+\begin{bchapter}
+\bauthor{\bsnm{Liu}, \binits{L.}},
+\bauthor{\bsnm{Guta}, \binits{D.}},
+\bauthor{\bsnm{Niu}, \binits{S.}}:
+\bctitle{Integration of user emotion and self-awareness in text messaging}.
+In: \bbtitle{2019 IEEE 5th International Conference on Collaboration and
+  Internet Computing (CIC)},
+pp. \bfpage{178}--\blpage{183}
+(\byear{2019}).
+\doiurl{10.1109/CIC48465.2019.00030}
+\end{bchapter}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Barrett et~al.}{2019}]{barrett2019emotions}
+\begin{barticle}
+\bauthor{\bsnm{Barrett}, \binits{L.F.}},
+\bauthor{\bsnm{Adolphs}, \binits{R.}},
+\bauthor{\bsnm{Marsella}, \binits{S.}},
+\bauthor{\bsnm{Martinez}, \binits{A.M.}},
+\bauthor{\bsnm{Pollak}, \binits{S.D.}}:
+\batitle{Emotional expressions reconsidered: Challenges to inferring emotion
+  from human facial movements}.
+\bjtitle{Psychological Science in the Public Interest}
+\bvolume{20}(\bissue{1}),
+\bfpage{1}--\blpage{68}
+(\byear{2019})
+\doiurl{10.1177/1529100619832930}
+\end{barticle}
+\endbibitem
+
+%%% 11
 \bibitem[\protect\citeauthoryear{Wang et~al.}{2020}]{wang2020scn}
 \begin{bchapter}
 \bauthor{\bsnm{Wang}, \binits{K.}},
@@ -191,13 +269,117 @@ pp. \bfpage{279}--\blpage{283}.
   recognition}.
 In: \bbtitle{2020 IEEE/CVF Conference on Computer Vision and Pattern
   Recognition},
-pp. \bfpage{6897}--\blpage{6906}
+pp. \bfpage{6896}--\blpage{6905}
 (\byear{2020}).
 \doiurl{10.1109/CVPR42600.2020.00693}
 \end{bchapter}
 \endbibitem
 
-%%% 8
+%%% 12
+\bibitem[\protect\citeauthoryear{Le et~al.}{2023}]{le2023uncertainty}
+\begin{bchapter}
+\bauthor{\bsnm{Le}, \binits{N.}},
+\bauthor{\bsnm{Nguyen}, \binits{K.}},
+\bauthor{\bsnm{Tran}, \binits{Q.}},
+\bauthor{\bsnm{Tjiputra}, \binits{E.}},
+\bauthor{\bsnm{Le}, \binits{B.}},
+\bauthor{\bsnm{Nguyen}, \binits{A.}}:
+\bctitle{Uncertainty-aware label distribution learning for facial expression
+  recognition}.
+In: \bbtitle{2023 IEEE/CVF Winter Conference on Applications of Computer Vision
+  (WACV)},
+pp. \bfpage{6077}--\blpage{6086}
+(\byear{2023}).
+\doiurl{10.1109/WACV56688.2023.00603}
+\end{bchapter}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Kawamura et~al.}{2024}]{kawamura2024midas}
+\begin{bchapter}
+\bauthor{\bsnm{Kawamura}, \binits{R.}},
+\bauthor{\bsnm{Hayashi}, \binits{H.}},
+\bauthor{\bsnm{Takemura}, \binits{N.}},
+\bauthor{\bsnm{Nagahara}, \binits{H.}}:
+\bctitle{{MIDAS}: Mixing ambiguous data with soft labels for dynamic facial
+  expression recognition}.
+In: \bbtitle{2024 IEEE/CVF Winter Conference on Applications of Computer Vision
+  (WACV)},
+pp. \bfpage{6538}--\blpage{6548}
+(\byear{2024}).
+\doiurl{10.1109/WACV57701.2024.00642}
+\end{bchapter}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Geifman and
+  El-Yaniv}{2017}]{geifman2017selective}
+\begin{bchapter}
+\bauthor{\bsnm{Geifman}, \binits{Y.}},
+\bauthor{\bsnm{El-Yaniv}, \binits{R.}}:
+\bctitle{Selective classification for deep neural networks}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{30}
+(\byear{2017}).
+\burl{https://proceedings.neurips.cc/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html}
+\end{bchapter}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Geifman and
+  El-Yaniv}{2019}]{geifman2019selectivenet}
+\begin{bchapter}
+\bauthor{\bsnm{Geifman}, \binits{Y.}},
+\bauthor{\bsnm{El-Yaniv}, \binits{R.}}:
+\bctitle{{SelectiveNet}: A deep neural network with an integrated reject
+  option}.
+In: \bbtitle{Proceedings of the 36th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{97},
+pp. \bfpage{2151}--\blpage{2159}
+(\byear{2019}).
+\burl{https://proceedings.mlr.press/v97/geifman19a.html}
+\end{bchapter}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Baan et~al.}{2022}]{baan2022calibration}
+\begin{bchapter}
+\bauthor{\bsnm{Baan}, \binits{J.}},
+\bauthor{\bsnm{Aziz}, \binits{W.}},
+\bauthor{\bsnm{Plank}, \binits{B.}},
+\bauthor{\bsnm{Fern{\'a}ndez}, \binits{R.}}:
+\bctitle{Stop measuring calibration when humans disagree}.
+In: \bbtitle{Proceedings of the 2022 Conference on Empirical Methods in Natural
+  Language Processing},
+pp. \bfpage{1892}--\blpage{1915}.
+\bpublisher{Association for Computational Linguistics},
+\blocation{Abu Dhabi, United Arab Emirates}
+(\byear{2022}).
+\doiurl{10.18653/v1/2022.emnlp-main.124}
+\end{bchapter}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Guo et~al.}{2017}]{guo2017calibration}
+\begin{bchapter}
+\bauthor{\bsnm{Guo}, \binits{C.}},
+\bauthor{\bsnm{Pleiss}, \binits{G.}},
+\bauthor{\bsnm{Sun}, \binits{Y.}},
+\bauthor{\bsnm{Weinberger}, \binits{K.Q.}}:
+\bctitle{On calibration of modern neural networks}.
+In: \bbtitle{Proceedings of the 34th International Conference on Machine
+  Learning}.
+\bsertitle{Proceedings of Machine Learning Research},
+vol. \bseriesno{70},
+pp. \bfpage{1321}--\blpage{1330}
+(\byear{2017}).
+\burl{https://proceedings.mlr.press/v70/guo17a.html}
+\end{bchapter}
+\endbibitem
+
+%%% 18
 \bibitem[\protect\citeauthoryear{Liu et~al.}{2021}]{liu2021swin}
 \begin{bchapter}
 \bauthor{\bsnm{Liu}, \binits{Z.}},
@@ -217,7 +399,23 @@ pp. \bfpage{9992}--\blpage{10002}
 \end{bchapter}
 \endbibitem
 
-%%% 9
+%%% 19
+\bibitem[\protect\citeauthoryear{He et~al.}{2016}]{he2016resnet}
+\begin{bchapter}
+\bauthor{\bsnm{He}, \binits{K.}},
+\bauthor{\bsnm{Zhang}, \binits{X.}},
+\bauthor{\bsnm{Ren}, \binits{S.}},
+\bauthor{\bsnm{Sun}, \binits{J.}}:
+\bctitle{Deep residual learning for image recognition}.
+In: \bbtitle{2016 IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)},
+pp. \bfpage{770}--\blpage{778}
+(\byear{2016}).
+\doiurl{10.1109/CVPR.2016.90}
+\end{bchapter}
+\endbibitem
+
+%%% 20
 \bibitem[\protect\citeauthoryear{Hu et~al.}{2018}]{hu2018senet}
 \begin{bchapter}
 \bauthor{\bsnm{Hu}, \binits{J.}},
@@ -232,108 +430,7 @@ pp. \bfpage{7132}--\blpage{7141}
 \end{bchapter}
 \endbibitem
 
-%%% 10
-\bibitem[\protect\citeauthoryear{Le et~al.}{2023}]{le2023uncertainty}
-\begin{bchapter}
-\bauthor{\bsnm{Le}, \binits{N.}},
-\bauthor{\bsnm{Nguyen}, \binits{K.}},
-\bauthor{\bsnm{Tran}, \binits{Q.}},
-\bauthor{\bsnm{Tjiputra}, \binits{E.}},
-\bauthor{\bsnm{Le}, \binits{B.}},
-\bauthor{\bsnm{Nguyen}, \binits{A.}}:
-\bctitle{Uncertainty-aware label distribution learning for facial expression
-  recognition}.
-In: \bbtitle{2023 IEEE/CVF Winter Conference on Applications of Computer Vision
-  (WACV)},
-pp. \bfpage{6077}--\blpage{6086}
-(\byear{2023}).
-\doiurl{10.1109/WACV56688.2023.00603}
-\end{bchapter}
-\endbibitem
-
-%%% 11
-\bibitem[\protect\citeauthoryear{Kawamura et~al.}{2024}]{kawamura2024midas}
-\begin{bchapter}
-\bauthor{\bsnm{Kawamura}, \binits{R.}},
-\bauthor{\bsnm{Hayashi}, \binits{H.}},
-\bauthor{\bsnm{Takemura}, \binits{N.}},
-\bauthor{\bsnm{Nagahara}, \binits{H.}}:
-\bctitle{{MIDAS}: Mixing ambiguous data with soft labels for dynamic facial
-  expression recognition}.
-In: \bbtitle{2024 IEEE/CVF Winter Conference on Applications of Computer Vision
-  (WACV)},
-pp. \bfpage{6538}--\blpage{6548}
-(\byear{2024}).
-\doiurl{10.1109/WACV57701.2024.00642}
-\end{bchapter}
-\endbibitem
-
-%%% 12
-\bibitem[\protect\citeauthoryear{Khurana et~al.}{2024}]{khurana2024crowd}
-\begin{bchapter}
-\bauthor{\bsnm{Khurana}, \binits{U.}},
-\bauthor{\bsnm{Nalisnick}, \binits{E.}},
-\bauthor{\bsnm{Fokkens}, \binits{A.}},
-\bauthor{\bsnm{Swayamdipta}, \binits{S.}}:
-\bctitle{{Crowd-Calibrator}: Can annotator disagreement inform calibration in
-  subjective tasks?}
-In: \bbtitle{Conference on Language Modeling}
-(\byear{2024}).
-\burl{https://openreview.net/forum?id=VWWzO3ewMS}
-\end{bchapter}
-\endbibitem
-
-%%% 13
-\bibitem[\protect\citeauthoryear{Geifman and
-  El-Yaniv}{2017}]{geifman2017selective}
-\begin{bchapter}
-\bauthor{\bsnm{Geifman}, \binits{Y.}},
-\bauthor{\bsnm{El-Yaniv}, \binits{R.}}:
-\bctitle{Selective classification for deep neural networks}.
-In: \bbtitle{Advances in Neural Information Processing Systems},
-vol. \bseriesno{30}
-(\byear{2017}).
-\doiurl{10.48550/arXiv.1705.08500}
-\end{bchapter}
-\endbibitem
-
-%%% 14
-\bibitem[\protect\citeauthoryear{Geifman and
-  El-Yaniv}{2019}]{geifman2019selectivenet}
-\begin{bchapter}
-\bauthor{\bsnm{Geifman}, \binits{Y.}},
-\bauthor{\bsnm{El-Yaniv}, \binits{R.}}:
-\bctitle{{SelectiveNet}: A deep neural network with an integrated reject
-  option}.
-In: \bbtitle{Proceedings of the 36th International Conference on Machine
-  Learning}.
-\bsertitle{Proceedings of Machine Learning Research},
-vol. \bseriesno{97},
-pp. \bfpage{2151}--\blpage{2159}
-(\byear{2019}).
-\burl{https://proceedings.mlr.press/v97/geifman19a.html}
-\end{bchapter}
-\endbibitem
-
-%%% 15
-\bibitem[\protect\citeauthoryear{Guo et~al.}{2017}]{guo2017calibration}
-\begin{bchapter}
-\bauthor{\bsnm{Guo}, \binits{C.}},
-\bauthor{\bsnm{Pleiss}, \binits{G.}},
-\bauthor{\bsnm{Sun}, \binits{Y.}},
-\bauthor{\bsnm{Weinberger}, \binits{K.Q.}}:
-\bctitle{On calibration of modern neural networks}.
-In: \bbtitle{Proceedings of the 34th International Conference on Machine
-  Learning}.
-\bsertitle{Proceedings of Machine Learning Research},
-vol. \bseriesno{70},
-pp. \bfpage{1321}--\blpage{1330}
-(\byear{2017}).
-\burl{https://proceedings.mlr.press/v70/guo17a.html}
-\end{bchapter}
-\endbibitem
-
-%%% 16
+%%% 21
 \bibitem[\protect\citeauthoryear{Deng et~al.}{2009}]{deng2009imagenet}
 \begin{bchapter}
 \bauthor{\bsnm{Deng}, \binits{J.}},
@@ -350,7 +447,7 @@ pp. \bfpage{248}--\blpage{255}
 \end{bchapter}
 \endbibitem
 
-%%% 17
+%%% 22
 \bibitem[\protect\citeauthoryear{Paszke et~al.}{2019}]{paszke2019pytorch}
 \begin{bchapter}
 \bauthor{\bsnm{Paszke}, \binits{A.}},
@@ -379,11 +476,11 @@ pp. \bfpage{248}--\blpage{255}
 In: \bbtitle{Advances in Neural Information Processing Systems 32},
 pp. \bfpage{8024}--\blpage{8035}
 (\byear{2019}).
-\doiurl{10.48550/arXiv.1912.01703}
+\burl{https://proceedings.neurips.cc/paper/2019/hash/bdbca288fee7f92f2bfa9f7012727740-Abstract.html}
 \end{bchapter}
 \endbibitem
 
-%%% 18
+%%% 23
 \bibitem[\protect\citeauthoryear{Loshchilov and
   Hutter}{2019}]{loshchilov2019adamw}
 \begin{bchapter}
@@ -396,23 +493,7 @@ In: \bbtitle{International Conference on Learning Representations}
 \end{bchapter}
 \endbibitem
 
-%%% 19
-\bibitem[\protect\citeauthoryear{He et~al.}{2016}]{he2016resnet}
-\begin{bchapter}
-\bauthor{\bsnm{He}, \binits{K.}},
-\bauthor{\bsnm{Zhang}, \binits{X.}},
-\bauthor{\bsnm{Ren}, \binits{S.}},
-\bauthor{\bsnm{Sun}, \binits{J.}}:
-\bctitle{Deep residual learning for image recognition}.
-In: \bbtitle{2016 IEEE Conference on Computer Vision and Pattern Recognition
-  (CVPR)},
-pp. \bfpage{770}--\blpage{778}
-(\byear{2016}).
-\doiurl{10.1109/CVPR.2016.90}
-\end{bchapter}
-\endbibitem
-
-%%% 20
+%%% 24
 \bibitem[\protect\citeauthoryear{Sokolova and
   Lapalme}{2009}]{sokolova2009metrics}
 \begin{barticle}
@@ -428,7 +509,7 @@ pp. \bfpage{770}--\blpage{778}
 \end{barticle}
 \endbibitem
 
-%%% 21
+%%% 25
 \bibitem[\protect\citeauthoryear{Hoeffding}{1963}]{hoeffding1963}
 \begin{barticle}
 \bauthor{\bsnm{Hoeffding}, \binits{W.}}:
@@ -441,7 +522,7 @@ pp. \bfpage{770}--\blpage{778}
 \end{barticle}
 \endbibitem
 
-%%% 22
+%%% 26
 \bibitem[\protect\citeauthoryear{Lugaresi et~al.}{2019}]{lugaresi2019mediapipe}
 \begin{bchapter}
 \bauthor{\bsnm{Lugaresi}, \binits{C.}},
@@ -458,10 +539,11 @@ pp. \bfpage{770}--\blpage{778}
 \bauthor{\bsnm{Hua}, \binits{W.}},
 \bauthor{\bsnm{Georg}, \binits{M.}},
 \bauthor{\bsnm{Grundmann}, \binits{M.}}:
-\bctitle{{MediaPipe}: A framework for building perception pipelines}.
-In: \bbtitle{Third Workshop on Computer Vision for AR/VR at IEEE CVPR}
+\bctitle{{MediaPipe}: A framework for perceiving and processing reality}.
+In: \bbtitle{Third Workshop on Computer Vision for AR/VR at IEEE Computer
+  Vision and Pattern Recognition}
 (\byear{2019}).
-\doiurl{10.48550/arXiv.1906.08172}
+\burl{https://research.google/pubs/mediapipe-a-framework-for-perceiving-and-processing-reality/}
 \end{bchapter}
 \endbibitem
 

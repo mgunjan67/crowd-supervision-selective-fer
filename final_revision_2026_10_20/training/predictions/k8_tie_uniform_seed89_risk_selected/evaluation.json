@@ -1,0 +1,31 @@
+{
+  "k": 8,
+  "condition": "tie_uniform",
+  "seed": 89,
+  "state": "risk_selected",
+  "expected_epoch": 10,
+  "checkpoint": "final_revision_2026_10_20/training/runs/k8_tie_uniform_seed89/risk_best.pt",
+  "checkpoint_sha256": "5fa7da6b72280453bd217690c5015053e19da0dd3fe26b124ce9cc4d1af700df",
+  "selection_reference_sha256": "1d3e6990f6bf237c3a9e001c27265ae6cb8cef5d86468bc522aa64a8864fdd61",
+  "configuration_sha256": "ed2cdf91deefdd677b8ad5935a9c79d86ef4e90553a0093bed3a7d23d2565b64",
+  "training_complete_sha256": "260cb296371c1d7977ad4ded8751f50943043de24211897b30977afcb5930fab",
+  "execution_amendment_002_sha256": "872e12683f19376a5a632469a12162e8b6322c5305f78a8c01060007413c4e3b",
+  "epoch": 10,
+  "weight_sha256": "8ebaa0b05c320028b6e9dc20b192ca596e081f1084c011ba5d15c2005fca93ba",
+  "roles": {
+    "selection": {
+      "n": 1667,
+      "sha256": "070b25995b1f181a316fac3cb0a6a650b306bcd5b378273b23b3204d4ceb17dd"
+    },
+    "calibration": {
+      "n": 1642,
+      "sha256": "d68a01c4494366ebb2c16ce45180f13626a136b6c6235acd825150587bfc7753"
+    },
+    "test_full": {
+      "n": 3589,
+      "sha256": "5f8d7e29c4091878a633dcce7e821d18e530b5edf33c0b3a092b2eefbb1b716b"
+    }
+  },
+  "started_utc": "2026-10-20T06:50:34.166754+00:00",
+  "finished_utc": "2026-10-20T06:50:56.978347+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "historical_primary_msp_rows_matched": 192,
+  "historical_external_full8_rows_matched": 144,
+  "input_hashes_verified": 136,
+  "output_hashes_verified": 32,
+  "source_predictions_unchanged": true
+}

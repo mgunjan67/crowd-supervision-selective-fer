@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "training_rows": 28709,
+  "positive_mass_tied_rows": 1360,
+  "zero_mass_rows": 152,
+  "independent_numpy_formula_verified": true
+}

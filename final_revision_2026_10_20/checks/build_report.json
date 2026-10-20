@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "outputs": [
+    {
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-final-2026-10-20\\research-revision.pdf",
+      "sha256": "028f15fa3e420a83bb8e769dedcfe47f1326262667e0417f516611c924a1a33a",
+      "pages": 27,
+      "warnings": [],
+      "commands": [
+        {
+          "argv": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-jobname=final-manuscript",
+            "-output-directory=tmp/final_revision_pdf",
+            "final_revision_2026_10_20/source/manuscript.tex"
+          ],
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "bibtex",
+            "tmp/final_revision_pdf/final-manuscript"
+          ],
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-jobname=final-manuscript",
+            "-output-directory=tmp/final_revision_pdf",
+            "final_revision_2026_10_20/source/manuscript.tex"
+          ],
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-jobname=final-manuscript",
+            "-output-directory=tmp/final_revision_pdf",
+            "final_revision_2026_10_20/source/manuscript.tex"
+          ],
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-jobname=final-manuscript",
+            "-output-directory=tmp/final_revision_pdf",
+            "final_revision_2026_10_20/source/manuscript.tex"
+          ],
+          "exit_code": 0
+        }
+      ]
+    },
+    {
+      "path": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\paper_revision\\output\\submission-final-2026-10-20\\Supplementary-diagnostics.pdf",
+      "sha256": "71ae1cbc5ac0323b13cafed653cd13121296c2713aa7bfc30cfed817f3efe683",
+      "pages": 30,
+      "warnings": [],
+      "commands": [
+        {
+          "argv": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-jobname=final-supplement",
+            "-output-directory=tmp/final_revision_pdf",
+            "final_revision_2026_10_20/source/generated/supplement.tex"
+          ],
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-jobname=final-supplement",
+            "-output-directory=tmp/final_revision_pdf",
+            "final_revision_2026_10_20/source/generated/supplement.tex"
+          ],
+          "exit_code": 0
+        },
+        {
+          "argv": [
+            "pdflatex",
+            "-interaction=nonstopmode",
+            "-halt-on-error",
+            "-jobname=final-supplement",
+            "-output-directory=tmp/final_revision_pdf",
+            "final_revision_2026_10_20/source/generated/supplement.tex"
+          ],
+          "exit_code": 0
+        }
+      ]
+    }
+  ],
+  "references": 26,
+  "abstract_words": 238,
+  "prohibited_claim_scan": "passed",
+  "training_runs_added": 12,
+  "visual_review": "passed; see final_visual_review.json for delivered-PDF hashes and inspected pages",
+  "draft": false,
+  "scientific_evidence": "new outputs integrated",
+  "visual_review_record_sha256": "4a92ef5d6ff9dfd6197e718c4827073c96513514ad8c79bba7ae516550ba0317"
+}

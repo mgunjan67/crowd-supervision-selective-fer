@@ -1,0 +1,22 @@
+\subsection{Sensitivity to confidence scores}
+\begin{table}[t]
+\caption{Exploratory score sensitivity at 80\% coverage: paired-seed mean Soft-minus-control disagreement (pp). Negative values favor Soft; accepted image sets can differ}\label{tab:scores}
+\centering\begin{tabular}{lllrr}\toprule
+Backbone & State & Score & Uniform & Tie-Uniform\\\midrule
+Swin-T & Selected & MSP & -0.378 & -0.588\\
+Swin-T & Selected & Margin & -0.153 & -0.299\\
+Swin-T & Selected & Neg. entropy & -0.093 & -0.323\\
+Swin-T & Epoch 12 & MSP & -0.317 & -0.307\\
+Swin-T & Epoch 12 & Margin & -0.122 & -0.057\\
+Swin-T & Epoch 12 & Neg. entropy & -0.296 & -0.242\\
+ResNet-18 & Selected & MSP & +0.173 & +0.042\\
+ResNet-18 & Selected & Margin & +0.417 & +0.206\\
+ResNet-18 & Selected & Neg. entropy & +0.509 & +0.485\\
+ResNet-18 & Epoch 12 & MSP & +0.170 & +0.190\\
+ResNet-18 & Epoch 12 & Margin & +0.511 & +0.555\\
+ResNet-18 & Epoch 12 & Neg. entropy & +0.307 & +0.435\\
+\bottomrule\end{tabular}\par
+\smallskip
+MSP reproduces the original ledger exactly. Margin and negative entropy are post hoc sensitivity analyses, not proposed rejection methods. Per-seed results are in Table~S14 and Fig.~S7.\par
+\end{table}
+The exploratory score analysis retains the mean direction of the backbone-specific comparison at 80\% coverage, but not its magnitude (Table~\ref{tab:scores}). Validation-selected Swin-T favors Soft under MSP, margin and negative entropy, while the corresponding ResNet-18 means favor Uniform. Some individual Swin-T seed contrasts under margin or entropy nevertheless favor Uniform; the supplementary per-seed table shows these reversals. Thus, the average direction at this endpoint is not solely a consequence of using MSP, but neither the score nor the supervision target has a uniform advantage across configurations. At full coverage the three scores give identical risk, since they no longer change the accepted set. These probability-only checks do not compare learned rejection methods.

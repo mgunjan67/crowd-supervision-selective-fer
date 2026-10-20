@@ -1,0 +1,10 @@
+The execution records below document data handling and the timing of analysis decisions. They supplement the scientific procedures in the main Methods; they do not alter the adaptive or exploratory status of any comparison.
+
+\subsection*{FER2013 acquisition and FER+ alignment}
+We acquired the CSV on 20 September 2026 from Kaggle mirror \texttt{deadskull7/fer2013}, version 1, not from an official maintainer distribution. The join follows the official FER+ conversion script's row indexing, not its output filenames, which can be blank or duplicated. A separate raw-source audit checks all 35,887 original emotion IDs, pixel byte hashes and partition positions against the retained manifest. We reorder named vote columns to the fixed model class order. Online Resource 1 contains acquisition and split manifests, the original annotation records, the row adapter and the raw-source audit.
+
+\subsection*{External protocol and integrity records}
+We froze the local protocol on 11 October 2026 at 18:17:50 UTC, before computing external model outcomes. It records implementation, annotation, detector and checkpoint hashes. Internal outcomes and external annotation summaries were already known. The pre-outcome amendment corrects the disgust/surprise response mapping using primary-source descriptors and accuracy records; the original freeze is retained. Each RAVDESS actor archive passed the publisher's MD5 checksum, and each extracted clip retains a SHA-256 hash. Online Resource 8 includes the freeze, amendment, integrity manifests, annotation adapter and retained frame/clip predictions.
+
+\subsection*{Post hoc diagnostic addendum}
+A dated addendum on 12 October 2026 specified these descriptive outputs after the internal and external results were known. The addendum covers category frequencies, vote-weighted reference/prediction matrices and temporal summaries. Its status remains post hoc: no new training, fitting, frame-peak selection or confirmatory test is introduced.

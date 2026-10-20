@@ -1,0 +1,2 @@
+# Scientific freezes hash exact bytes; disable platform EOL conversion.
+* -text

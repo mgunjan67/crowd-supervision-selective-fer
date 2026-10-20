@@ -1,0 +1,290 @@
+{
+  "created_utc": "2026-10-19T23:18:43.209308+00:00",
+  "new_calibration_or_test_available_at_freeze": false,
+  "prior_historical_results_known": true,
+  "plan": {
+    "new_states": [
+      [
+        7,
+        "permutation",
+        17,
+        "selected"
+      ],
+      [
+        7,
+        "permutation",
+        17,
+        "epoch12"
+      ],
+      [
+        7,
+        "permutation",
+        42,
+        "selected"
+      ],
+      [
+        7,
+        "permutation",
+        42,
+        "epoch12"
+      ],
+      [
+        7,
+        "permutation",
+        89,
+        "selected"
+      ],
+      [
+        7,
+        "permutation",
+        89,
+        "epoch12"
+      ],
+      [
+        8,
+        "soft",
+        17,
+        "selected"
+      ],
+      [
+        8,
+        "soft",
+        17,
+        "epoch12"
+      ],
+      [
+        8,
+        "soft",
+        17,
+        "risk_selected"
+      ],
+      [
+        8,
+        "uniform",
+        17,
+        "selected"
+      ],
+      [
+        8,
+        "uniform",
+        17,
+        "epoch12"
+      ],
+      [
+        8,
+        "uniform",
+        17,
+        "risk_selected"
+      ],
+      [
+        8,
+        "tie_uniform",
+        17,
+        "selected"
+      ],
+      [
+        8,
+        "tie_uniform",
+        17,
+        "epoch12"
+      ],
+      [
+        8,
+        "tie_uniform",
+        17,
+        "risk_selected"
+      ],
+      [
+        8,
+        "soft",
+        42,
+        "selected"
+      ],
+      [
+        8,
+        "soft",
+        42,
+        "epoch12"
+      ],
+      [
+        8,
+        "soft",
+        42,
+        "risk_selected"
+      ],
+      [
+        8,
+        "uniform",
+        42,
+        "selected"
+      ],
+      [
+        8,
+        "uniform",
+        42,
+        "epoch12"
+      ],
+      [
+        8,
+        "uniform",
+        42,
+        "risk_selected"
+      ],
+      [
+        8,
+        "tie_uniform",
+        42,
+        "selected"
+      ],
+      [
+        8,
+        "tie_uniform",
+        42,
+        "epoch12"
+      ],
+      [
+        8,
+        "tie_uniform",
+        42,
+        "risk_selected"
+      ],
+      [
+        8,
+        "soft",
+        89,
+        "selected"
+      ],
+      [
+        8,
+        "soft",
+        89,
+        "epoch12"
+      ],
+      [
+        8,
+        "soft",
+        89,
+        "risk_selected"
+      ],
+      [
+        8,
+        "uniform",
+        89,
+        "selected"
+      ],
+      [
+        8,
+        "uniform",
+        89,
+        "epoch12"
+      ],
+      [
+        8,
+        "uniform",
+        89,
+        "risk_selected"
+      ],
+      [
+        8,
+        "tie_uniform",
+        89,
+        "selected"
+      ],
+      [
+        8,
+        "tie_uniform",
+        89,
+        "epoch12"
+      ],
+      [
+        8,
+        "tie_uniform",
+        89,
+        "risk_selected"
+      ]
+    ],
+    "historical_soft_comparison_states": [
+      [
+        7,
+        "soft",
+        17,
+        "selected"
+      ],
+      [
+        7,
+        "soft",
+        17,
+        "epoch12"
+      ],
+      [
+        7,
+        "soft",
+        42,
+        "selected"
+      ],
+      [
+        7,
+        "soft",
+        42,
+        "epoch12"
+      ],
+      [
+        7,
+        "soft",
+        89,
+        "selected"
+      ],
+      [
+        7,
+        "soft",
+        89,
+        "epoch12"
+      ]
+    ],
+    "exponent_grid": [
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      8.0,
+      16.0
+    ],
+    "scores": [
+      "msp",
+      "margin",
+      "negative_entropy",
+      "centered_logit_norm",
+      "calibration_choice"
+    ],
+    "coverages": [
+      0.2,
+      0.5,
+      0.8,
+      1.0
+    ],
+    "source_sha256": {
+      "final_revision_2026_10_20/training/RANKING_EXTENSION.md": "f8e916bc932ab8d20ee38bd2c264748338eb470c4c32eb662e0e41d29be56b66",
+      "final_revision_2026_10_20/training/ranking_followup.py": "0ce8af388adadf5658d77ab88067cc6dd57d85232285cbb328b77ad7c4eef691",
+      "final_revision_2026_10_20/training/test_ranking_followup.py": "60bf2c4b2864cd6eeb28b2ef69d8ed8a21563c706ecc39e7c12e491fc2b8b73c",
+      "final_revision_2026_10_20/training/contracts_followup.py": "4102622bc42465c9ee76d6ebb73be93df463f7eb5e8b9557fb5b6d48bdb532e7",
+      "final_experiment/split_manifest.json": "98ee3c1aab7cd9f518d1dd9cac86c7b7ad94060f3fd27b5cd2a14227060733b8",
+      "final_revision_2026_10_20/diagnostics/ranking_tuning.csv": "d47078b67b2efe43fcc9d7e47de67ee2e02912d6286acc889992a6bc32a45d0f",
+      "final_revision_2026_10_20/diagnostics/ranking_results.csv": "2c171baeb58e2feefdfd593f609d3d2aa367a9e457cb37d4ccf6a78060f65b62",
+      "recovery_2026_10_10/selector_results.csv": "d9dd80de89d4e199adecb7165b6ad6b39edd6e85a73bca80c6755f6fff8412d8",
+      "reviewer_followup/predictions/soft_seed17_selected/calibration.npz": "2a220c9e5a250d359f1c789d485a9928176d0a20d7b3e4cbc0933d0d8690f8bd",
+      "reviewer_followup/predictions/soft_seed17_selected/test_full.npz": "237f393a2a15d8eb2500a10bc64939875b0d04d524255e50fe41dae2a0836951",
+      "reviewer_followup/predictions/soft_seed17_epoch12/calibration.npz": "d9bfc71f07a901cd43cfb89a51de79ffe336644864e7fc700cf81a8432d28ddb",
+      "reviewer_followup/predictions/soft_seed17_epoch12/test_full.npz": "63c757b6df2ee7065fcba40dd47c0747c53b14b0e06e397901f924ecf5391fe1",
+      "reviewer_followup/predictions/soft_seed42_selected/calibration.npz": "32abf259f72fc722cb94bf45a180e4fdf3d1db505cc4d24dda78706d14e810ea",
+      "reviewer_followup/predictions/soft_seed42_selected/test_full.npz": "8e55659d5fd586c088024775831dbf5071c58946d733c09040d40667ec9e494e",
+      "reviewer_followup/predictions/soft_seed42_epoch12/calibration.npz": "5d64353633f5ea0fe1cb9188899f4bb0cb8ea940cadda42b02c95f53d4bd7cf9",
+      "reviewer_followup/predictions/soft_seed42_epoch12/test_full.npz": "d9ca84b4b679fd6f613310b180cdd9bd7e35133bb6eac818f1a34ddef48322a0",
+      "reviewer_followup/predictions/soft_seed89_selected/calibration.npz": "9481e4df2ca63dcd0e62bc7c4a785f8633fd81f3da7b54217929cdad5858a961",
+      "reviewer_followup/predictions/soft_seed89_selected/test_full.npz": "c8d555d2666b15be0372defc006bb8c2527426c4b318c70e2d99c8f45af90595",
+      "reviewer_followup/predictions/soft_seed89_epoch12/calibration.npz": "1225043a52ed732792df53ad2ec58a4909ccc759dced74a9bd9cdfa0bf62c375",
+      "reviewer_followup/predictions/soft_seed89_epoch12/test_full.npz": "0aedc6e3f44a51291a9ddb05f9b4cf59d71f19b7a158eb676381ce6b592b21d8"
+    }
+  }
+}

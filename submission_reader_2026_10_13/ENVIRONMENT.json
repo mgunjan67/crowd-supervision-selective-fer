@@ -1,0 +1,26 @@
+{
+  "python": "3.12.13 (main, Apr 14 2026, 14:31:26) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\Typing_with_emotions__Emotion_Embedding_in_text_apps\\face_emotion_embedding-main\\.venv-paper\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "versions": {
+    "numpy": "1.26.4",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "matplotlib": "3.10.1",
+    "PyMuPDF": "1.25.5",
+    "Pillow": "11.3.0",
+    "mediapipe": "0.10.21",
+    "opencv-contrib-python": "4.11.0.86",
+    "pytest": "8.3.5",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "openpyxl": "not installed in this interpreter"
+  },
+  "cpu_replay_minimum": [
+    "Python 3.12",
+    "numpy==1.26.4"
+  ],
+  "optional_workbook_mapping": "openpyxl (executed separately with bundled Python 3.12.14)",
+  "latex": "MiKTeX pdflatex / BibTeX; embedded fonts verified",
+  "inference_environment": "frozen external protocol + checks/runtime_audit.json; optional inference not executed in clean extraction"
+}

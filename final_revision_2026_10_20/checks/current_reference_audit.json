@@ -1,0 +1,483 @@
+{
+  "schema_version": 1,
+  "checked_date_local": "2026-10-20",
+  "checked_timezone": "Asia/Katmandu",
+  "scope": "Current final_revision_2026_10_20 26-entry bibliography and all five generated *_revised.tex main sections; four unpublished related works checked as text-only attributions.",
+  "bibliography_path": "paper_revision/final_revision_2026_10_20/source/references.bib",
+  "bibliography_sha256_before_this_audit": "0afb686ae575dde3e920106c9a3bd080dc1cfbe9950445f1775bc0cd56f2b86a",
+  "bibliography_sha256_after_this_audit": "437550be594d1ed2fd63efcd874370720d693a0642dc4f60d49764491013e0dd",
+  "verification": {
+    "bibliography_entries": 26,
+    "cited_keys_in_revised_sections": 26,
+    "duplicate_keys": [],
+    "missing_references": [],
+    "unused_entries": [],
+    "doi_records_fetched": 17,
+    "doi_snapshot": "checks/current_crossref_metadata.json",
+    "all_doi_identities_match": true
+  },
+  "changes": [
+    {
+      "key": "geifman2017selective",
+      "change": "Replace arXiv-issued DOI with official accepted NeurIPS proceedings URL."
+    },
+    {
+      "key": "paszke2019pytorch",
+      "change": "Replace arXiv-issued DOI with official accepted NeurIPS proceedings URL; current author order was already correct."
+    },
+    {
+      "key": "xia2025smoothing",
+      "change": "Replace arXiv URL with verified accepted ICLR 2025 OpenReview URL."
+    },
+    {
+      "key": "wang2020scn",
+      "change": "Use IEEE DOI-deposited pages 6896-6905 rather than CVF accepted-version 6897-6906."
+    }
+  ],
+  "preserved_root_correction": {
+    "key": "lugaresi2019mediapipe",
+    "description": "Verified root's preceding correction to workshop title/venue/URL. Do not attach the arXiv DOI of the differently titled MediaPipe manuscript."
+  },
+  "text_only_preprints": [
+    {
+      "title": "Facial Expression Recognition using Squeeze and Excitation-powered Swin Transformers",
+      "authors": "Arpita Vats; Aman Chadha",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2301.10906",
+      "status": "arXiv v7; no accepted venue verified; text-only attribution to architectural precedent, no score borrowed."
+    },
+    {
+      "title": "Confidence Calibration under Ambiguous Ground Truth",
+      "authors": "Linwei Tao; Haoyang Luo; Minjing Dong; Chang Xu",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2603.22879",
+      "status": "arXiv v1, 24 March 2026; no accepted venue verified; text-only."
+    },
+    {
+      "title": "Predicting Human Disagreement for Calibrated Dynamic Facial Expression Recognition",
+      "authors": "Yiming Wang; Frederick W. B. Li; Jingyun Wang",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2609.17130",
+      "status": "arXiv v1, 15 September 2026; comments say submitted to ICASSP 2027, not accepted; text-only."
+    },
+    {
+      "title": "Interpretable Uncertainty Routing Separating Emotion Ambiguity from Distribution Shift in Facial Expression Recognition",
+      "authors": "Keito Inoshita; Takato Ueno",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2606.22725",
+      "status": "arXiv v1, 21 June 2026; no accepted venue verified; text-only."
+    }
+  ],
+  "entries": [
+    {
+      "key": "barsoum2016ferplus",
+      "title": "Training Deep Networks for Facial Expression Recognition with Crowd-Sourced Label Distribution",
+      "year": 2016,
+      "venue": "ICMI 2016",
+      "doi": "10.1145/2993148.2993165",
+      "primary_urls": [
+        "https://dl.acm.org/doi/10.1145/2993148.2993165",
+        "https://github.com/microsoft/FERPlus/blob/master/README.md",
+        "https://arxiv.org/abs/1608.01041"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Official author repository and paper support multiple annotations and distribution-based supervision of FER2013 images. The manuscript does not borrow its benchmark scores.",
+      "support_status": "supported within stated scope",
+      "notes": "Author-preferred compound family name Canton Ferrer is retained, matching official repository citation; Crossref splits the same full name differently."
+    },
+    {
+      "key": "geifman2017selective",
+      "title": "Selective Classification for Deep Neural Networks",
+      "year": 2017,
+      "venue": "Advances in Neural Information Processing Systems 30",
+      "doi": null,
+      "primary_urls": [
+        "https://proceedings.neurips.cc/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports risk-coverage selective classification and rejection. Its published risk-control method is not represented as implemented by the present paper.",
+      "support_status": "supported within stated scope",
+      "notes": "Replaced arXiv DOI with official accepted-proceedings URL. Official export provides no page range; none is invented."
+    },
+    {
+      "key": "geifman2019selectivenet",
+      "title": "SelectiveNet: A Deep Neural Network with an Integrated Reject Option",
+      "year": 2019,
+      "venue": "ICML; PMLR 97:2151-2159",
+      "doi": null,
+      "primary_urls": [
+        "https://proceedings.mlr.press/v97/geifman19a.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports the statement that prediction and rejection are optimized jointly. No claim of comparison against its learned rejector is made.",
+      "support_status": "supported within stated scope",
+      "notes": "Matches official PMLR metadata."
+    },
+    {
+      "key": "wang2020scn",
+      "title": "Suppressing Uncertainties for Large-Scale Facial Expression Recognition",
+      "year": 2020,
+      "venue": "IEEE/CVF CVPR",
+      "doi": "10.1109/CVPR42600.2020.00693",
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_Suppressing_Uncertainties_for_Large-Scale_Facial_Expression_Recognition_CVPR_2020_paper.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports weighting uncertain samples and relabeling in Self-Cure Network, not a claim that present annotations were manually corrected.",
+      "support_status": "supported within stated scope",
+      "notes": "Corrected pages from CVF 6897-6906 to IEEE DOI-deposited 6896-6905, consistently citing the publisher version."
+    },
+    {
+      "key": "goodfellow2013fer",
+      "title": "Challenges in Representation Learning: A Report on Three Machine Learning Contests",
+      "year": 2013,
+      "venue": "Neural Information Processing; LNCS 8228:117-124",
+      "doi": "10.1007/978-3-642-42051-1_16",
+      "primary_urls": [
+        "https://link.springer.com/chapter/10.1007/978-3-642-42051-1_16"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports the FER2013 challenge origin and dataset context. Actual acquired row counts and partitions are additionally supported by this study's source manifests.",
+      "support_status": "supported within stated scope",
+      "notes": "All 28 author identities/order, title, year, venue, editors and pages agree with publisher record; Zhang Chuang follows that deposited author parsing."
+    },
+    {
+      "key": "deng2009imagenet",
+      "title": "ImageNet: A Large-Scale Hierarchical Image Database",
+      "year": 2009,
+      "venue": "IEEE CVPR:248-255",
+      "doi": "10.1109/CVPR.2009.5206848",
+      "primary_urls": [
+        "https://www.image-net.org/static_files/papers/imagenet_cvpr09.pdf",
+        "https://www.image-net.org/about.php/"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports ImageNet as the source pretraining dataset. Specific torchvision weight enum and software versions are implementation records, not claims established by this 2009 paper.",
+      "support_status": "supported within stated scope",
+      "notes": "Author spelling follows official ImageNet citation/PDF; malformed undivided author fields in Crossref are not copied into BibTeX."
+    },
+    {
+      "key": "liu2021swin",
+      "title": "Swin Transformer: Hierarchical Vision Transformer Using Shifted Windows",
+      "year": 2021,
+      "venue": "IEEE/CVF ICCV",
+      "doi": "10.1109/ICCV48922.2021.00986",
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Swin_Transformer_Hierarchical_Vision_Transformer_Using_Shifted_Windows_ICCV_2021_paper.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports hierarchical shifted-window backbone design. Present head placement and parameter counts remain descriptions of this implementation.",
+      "support_status": "supported within stated scope",
+      "notes": "Retains publisher-deposited IEEE pages 9992-10002; CVF accepted-version pages are 10012-10022."
+    },
+    {
+      "key": "hu2018senet",
+      "title": "Squeeze-and-Excitation Networks",
+      "year": 2018,
+      "venue": "IEEE/CVF CVPR:7132-7141",
+      "doi": "10.1109/CVPR.2018.00745",
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content_cvpr_2018/html/Hu_Squeeze-and-Excitation_Networks_CVPR_2018_paper.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports established channel recalibration/gating. Manuscript makes no ungated-model superiority or new-SE-architecture claim.",
+      "support_status": "supported within stated scope",
+      "notes": "Author/title/year/venue/pages/DOI match."
+    },
+    {
+      "key": "lugaresi2019mediapipe",
+      "title": "MediaPipe: A Framework for Perceiving and Processing Reality",
+      "year": 2019,
+      "venue": "Third Workshop on Computer Vision for AR/VR at IEEE CVPR",
+      "doi": null,
+      "primary_urls": [
+        "https://research.google/pubs/mediapipe-a-framework-for-perceiving-and-processing-reality/",
+        "https://mixedreality.cs.cornell.edu/s/NewTitle_May1_MediaPipe_CVPR_CV4ARVR_Workshop_2019.pdf"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports MediaPipe framework attribution. Detector model-selection and confidence settings are implementation-specific and are not attributed to the 2019 workshop paper.",
+      "support_status": "supported within stated scope",
+      "notes": "Root's workshop title/venue correction is verified. The workshop PDF spells author Ming Guang Yong; retaining Yong, Ming Guang is correct. No arXiv DOI for a differently titled manuscript is attached."
+    },
+    {
+      "key": "wang2016emotionpush",
+      "title": "Sensing Emotions in Text Messages: An Application and Deployment Study of EmotionPush",
+      "year": 2016,
+      "venue": "COLING System Demonstrations:141-145",
+      "doi": null,
+      "primary_urls": [
+        "https://aclanthology.org/C16-2030/"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports text-based emotion notifications as application context, not facial inference or a communication benefit of the present prototype.",
+      "support_status": "supported within stated scope",
+      "notes": "Official ACL author order, venue, publisher, city and pagination match; no DOI is supplied by ACL and none is invented."
+    },
+    {
+      "key": "barrett2019emotions",
+      "title": "Emotional Expressions Reconsidered: Challenges to Inferring Emotion From Human Facial Movements",
+      "year": 2019,
+      "venue": "Psychological Science in the Public Interest 20(1):1-68",
+      "doi": "10.1177/1529100619832930",
+      "primary_urls": [
+        "https://journals.sagepub.com/doi/abs/10.1177/1529100619832930"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports caution against identifying internal emotion or intention from category predictions/facial movements.",
+      "support_status": "supported within stated scope",
+      "notes": "Metadata matches publisher/Crossref. The publisher's image-attribution corrigendum does not alter the caution cited here; no figure is reproduced."
+    },
+    {
+      "key": "sokolova2009metrics",
+      "title": "A Systematic Analysis of Performance Measures for Classification Tasks",
+      "year": 2009,
+      "venue": "Information Processing & Management 45(4):427-437",
+      "doi": "10.1016/j.ipm.2009.03.002",
+      "primary_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S0306457309000259"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Provides general classification-measure context. The manuscript explicitly defines its weighted-F1 formula, zero-division convention and supported-majority population rather than claiming those dataset-specific conventions come from this source.",
+      "support_status": "supported within stated scope",
+      "notes": "Metadata matches. Custom population/reference definitions are the present study's choices."
+    },
+    {
+      "key": "paszke2019pytorch",
+      "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+      "year": 2019,
+      "venue": "Advances in Neural Information Processing Systems 32",
+      "doi": null,
+      "primary_urls": [
+        "https://proceedings.neurips.cc/paper/2019/hash/bdbca288fee7f92f2bfa9f7012727740-Abstract.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2019/file/bdbca288fee7f92f2bfa9f7012727740-Paper.pdf"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports PyTorch framework attribution, not this study's exact software versions or deterministic execution assertions.",
+      "support_status": "supported within stated scope",
+      "notes": "Current author order already matches accepted PDF, including Antiga before Desmaison; no author correction was needed. Replaced arXiv DOI with official proceedings URL. Retains conventional pages 8024-8035; current official download does not expose printed-volume pagination."
+    },
+    {
+      "key": "chong2019emochat",
+      "title": "EmoChat: Bringing Multimodal Emotion Detection to Mobile Conversation",
+      "year": 2019,
+      "venue": "BIGCOM:213-221",
+      "doi": "10.1109/BIGCOM.2019.00037",
+      "primary_urls": [
+        "https://tns.thss.tsinghua.edu.cn/sun/publications/2019.EmoChat.pdf"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Author-hosted accepted paper supports combining facial and textual signals in messaging. Its system or participant results are not imported as present-paper evidence.",
+      "support_status": "supported within stated scope",
+      "notes": "Publisher-deposited metadata and author PDF match all fields."
+    },
+    {
+      "key": "liu2019selfawareness",
+      "title": "Integration of User Emotion and Self-Awareness in Text Messaging",
+      "year": 2019,
+      "venue": "IEEE CIC:178-183",
+      "doi": "10.1109/CIC48465.2019.00030",
+      "primary_urls": [
+        "https://commons.clarku.edu/faculty_computer_sciences/166/"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports expression-informed emoji selection/self-awareness as application context, without asserting the same benefit for the present preview.",
+      "support_status": "supported within stated scope",
+      "notes": "Publisher-deposited metadata and author-university record match."
+    },
+    {
+      "key": "loshchilov2019adamw",
+      "title": "Decoupled Weight Decay Regularization",
+      "year": 2019,
+      "venue": "ICLR",
+      "doi": null,
+      "primary_urls": [
+        "https://openreview.net/forum?id=Bkg6RiCqY7",
+        "https://openreview.net/pdf/5963886abef941684ffc0cf670297e47fb1e5155.pdf"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports decoupled-weight-decay AdamW attribution; learning rates, schedules and hyperparameters remain documented experimental choices.",
+      "support_status": "supported within stated scope",
+      "notes": "Accepted-paper primary PDF and record verify authors/title/2019 venue. Browser direct record may challenge, while indexed primary paper is readable."
+    },
+    {
+      "key": "guo2017calibration",
+      "title": "On Calibration of Modern Neural Networks",
+      "year": 2017,
+      "venue": "ICML; PMLR 70:1321-1330",
+      "doi": null,
+      "primary_urls": [
+        "https://proceedings.mlr.press/v70/guo17a.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports conventional confidence calibration, neural-model miscalibration and post-hoc temperature scaling; no population-risk guarantee is attributed to it.",
+      "support_status": "supported within stated scope",
+      "notes": "Matches official PMLR metadata."
+    },
+    {
+      "key": "le2023uncertainty",
+      "title": "Uncertainty-aware Label Distribution Learning for Facial Expression Recognition",
+      "year": 2023,
+      "venue": "IEEE/CVF WACV",
+      "doi": "10.1109/WACV56688.2023.00603",
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content/WACV2023/html/Le_Uncertainty-Aware_Label_Distribution_Learning_for_Facial_Expression_Recognition_WACV_2023_paper.html",
+        "https://www.liverpool.ac.uk/people/anh-nguyen/research-outputs"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports valence-arousal-neighborhood construction of training distributions, not a tested comparator in this study.",
+      "support_status": "supported within stated scope",
+      "notes": "Retains IEEE DOI-deposited pages 6077-6086, also confirmed by author-university record; CVF accepted-version pages are 6088-6097."
+    },
+    {
+      "key": "kawamura2024midas",
+      "title": "MIDAS: Mixing Ambiguous Data with Soft Labels for Dynamic Facial Expression Recognition",
+      "year": 2024,
+      "venue": "IEEE/CVF WACV",
+      "doi": "10.1109/WACV57701.2024.00642",
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content/WACV2024/html/Kawamura_MIDAS_Mixing_Ambiguous_Data_With_Soft_Labels_for_Dynamic_Facial_WACV_2024_paper.html",
+        "https://hyokadb02.jimu.kyutech.ac.jp/html/100001540_ja.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports soft-label video augmentation by mixup-style combinations, not a reproduced benchmark comparator.",
+      "support_status": "supported within stated scope",
+      "notes": "Retains IEEE DOI-deposited pages 6538-6548, also confirmed by author's university record; CVF accepted-version pages are 6552-6562."
+    },
+    {
+      "key": "hoeffding1963",
+      "title": "Probability Inequalities for Sums of Bounded Random Variables",
+      "year": 1963,
+      "venue": "Journal of the American Statistical Association 58(301):13-30",
+      "doi": "10.1080/01621459.1963.10500830",
+      "primary_urls": [
+        "https://www.tandfonline.com/doi/abs/10.1080/01621459.1963.10500830"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports the bounded-independent-loss concentration inequality; the manuscript separately states its fixed-model, unchanged-population and union-bound conditions rather than claiming verified deployment guarantees.",
+      "support_status": "supported within stated scope",
+      "notes": "Uses original publication year 1963, not publisher's online digitization date 2012."
+    },
+    {
+      "key": "khurana2024crowd",
+      "title": "Crowd-Calibrator: Can Annotator Disagreement Inform Calibration in Subjective Tasks?",
+      "year": 2024,
+      "venue": "Conference on Language Modeling",
+      "doi": null,
+      "primary_urls": [
+        "https://openreview.net/forum?id=VWWzO3ewMS",
+        "https://openreview.net/pdf?id=VWWzO3ewMS",
+        "https://arxiv.org/html/2408.14141v1"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports estimated crowd-distribution distance-based rejection, optional entropy and distinct soft/categorical/selective results. Sections 2.3 and 5.1 explicitly report improved soft/calibration measures without corresponding F1 gains and worse soft-label MaxProb AUC/AUROC in its hate-speech comparison.",
+      "support_status": "supported within stated scope",
+      "notes": "Accepted COLM 2024 status is in the primary published-paper header; NLP scores are not comparable FER benchmarks. No fabricated DOI or page range is added."
+    },
+    {
+      "key": "he2016resnet",
+      "title": "Deep Residual Learning for Image Recognition",
+      "year": 2016,
+      "venue": "IEEE CVPR:770-778",
+      "doi": "10.1109/CVPR.2016.90",
+      "primary_urls": [
+        "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports ResNet backbone identity; the gate and matched twelve-epoch comparison are the present implementation, not results from this source.",
+      "support_status": "supported within stated scope",
+      "notes": "Metadata matches."
+    },
+    {
+      "key": "washington2021crowdsourcing",
+      "title": "Training Affective Computer Vision Models by Crowdsourcing Soft-Target Labels",
+      "year": 2021,
+      "venue": "Cognitive Computation 13:1363-1373",
+      "doi": "10.1007/s12559-021-09936-4",
+      "primary_urls": [
+        "https://link.springer.com/article/10.1007/s12559-021-09936-4"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Directly supports the distinction between categorical F1 and full-distribution agreement in hard/soft CAFE ResNet-152 models. It is prior art, not evidence of novel general discovery here.",
+      "support_status": "supported within stated scope",
+      "notes": "All 17 author identities/order and final publication fields match publisher record and Crossref."
+    },
+    {
+      "key": "livingstone2018ravdess",
+      "title": "The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English",
+      "year": 2018,
+      "venue": "PLOS ONE 13(5):e0196391",
+      "doi": "10.1371/journal.pone.0196391",
+      "primary_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0196391"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports original RAVDESS population, recordings, response semantics and neutral/calm convention. Actual retained clip/frame counts and annotation adapter are separately audited artifacts, not assumed from the paper title.",
+      "support_status": "supported within stated scope",
+      "notes": "Metadata matches. Source ethics approval is not represented as approval of this secondary study."
+    },
+    {
+      "key": "xia2025smoothing",
+      "title": "Towards Understanding Why Label Smoothing Degrades Selective Classification and How to Fix It",
+      "year": 2025,
+      "venue": "ICLR",
+      "doi": null,
+      "primary_urls": [
+        "https://openreview.net/forum?id=6oWFn6fY4A",
+        "https://openreview.net/pdf?id=6oWFn6fY4A"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports selective-ranking degradation under conventional label smoothing and post-hoc logit normalization as relevant context. It does not establish the behavior of this paper's image-dependent targets or vote-disagreement endpoint.",
+      "support_status": "supported within stated scope",
+      "notes": "Accepted ICLR 2025 primary header/authors verified. Updated link from arXiv to accepted OpenReview record; no benchmark scores borrowed."
+    },
+    {
+      "key": "baan2022calibration",
+      "title": "Stop Measuring Calibration When Humans Disagree",
+      "year": 2022,
+      "venue": "EMNLP:1892-1915",
+      "doi": "10.18653/v1/2022.emnlp-main.124",
+      "primary_urls": [
+        "https://aclanthology.org/2022.emnlp-main.124/"
+      ],
+      "author_identity_and_order_checked": true,
+      "metadata_status": "checked against primary paper/proceedings and publisher-deposited metadata when DOI exists",
+      "sentence_support": "Supports theoretical and empirical distinction between majority-label calibration and human-judgment distribution properties, including class frequency, ranking and entropy.",
+      "support_status": "supported within stated scope",
+      "notes": "Matches primary ACL metadata and publisher-deposited DOI record; accented author spelling is an identity-equivalent normalization."
+    }
+  ],
+  "unresolved_identity_or_support_errors": [],
+  "verification_limits": [
+    "This is an identity, attribution and sentence-support audit, not a systematic review, priority proof, implementation reproduction or independent validation of cited results.",
+    "Publisher/official pages sometimes challenge direct browser fetches. Publisher-deposited Crossref metadata was fetched successfully for all 17 DOI entries; cached primary search/PDF text and official author repositories supplied method descriptions.",
+    "Current NeurIPS official BibTeX downloads omit printed-volume page ranges. PyTorch's conventional retained range 8024-8035 is not newly established by the downloaded export; core author/title/year/venue identity is verified.",
+    "Dataset-specific preprocessing, counts, class maps, exact checkpoints, confidence rankings and this paper's formulas must remain supported by its executable artifacts; a background citation is not their verification."
+  ],
+  "precision_refinement_applied": "The related-work sentence about Crowd-Calibrator now begins 'In its hate-speech comparison' to restrict the soft/categorical/MaxProb AUC/AUROC findings to the specific experiment supported by Sections 2.3 and 5.1. This is a factual scope narrowing in source/generated/related_work_revised.tex, not an experimental change.",
+  "no_experimental_artifacts_changed": true
+}

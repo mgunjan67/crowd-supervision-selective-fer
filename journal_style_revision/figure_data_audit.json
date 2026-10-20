@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "new_figure_summary_values_recomputed": 31,
+  "sources": "retained per-image prediction files; no new inference or training",
+  "first_citation_order": {
+    "fig": [
+      "fig:design",
+      "fig:head",
+      "fig:mass",
+      "fig:cross",
+      "fig:difference",
+      "fig:transfer",
+      "fig:backbones"
+    ],
+    "tab": [
+      "tab:roles",
+      "tab:phases",
+      "tab:primary",
+      "tab:sensitivity",
+      "tab:samef1",
+      "tab:retention",
+      "tab:policies",
+      "tab:backbones"
+    ]
+  },
+  "ledger_unchanged": true,
+  "copied_figures_have_prior_backbone_audit": true
+}

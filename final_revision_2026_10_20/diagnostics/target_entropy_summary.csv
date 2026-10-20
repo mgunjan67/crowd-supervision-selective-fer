@@ -1,0 +1,11 @@
+condition,weighting,training_n,positive_mass_n,zero_mass_n,mean_entropy_nats,mean_maximum_probability
+hard,unweighted_positive_mass,28709,28557,152,0.0,1.0
+hard,supervised_mass_weighted,28709,28557,152,0.0,1.0
+soft,unweighted_positive_mass,28709,28557,152,0.5066857819714683,0.7776209902667515
+soft,supervised_mass_weighted,28709,28557,152,0.49489013162962503,0.7837984254537087
+uniform,unweighted_positive_mass,28709,28557,152,0.800186422910799,0.7776209902667515
+uniform,supervised_mass_weighted,28709,28557,152,0.7811642585206524,0.7837984254537087
+tie_hard,unweighted_positive_mass,28709,28557,152,0.034692322978003565,0.975519137164268
+tie_hard,supervised_mass_weighted,28709,28557,152,0.03220285130435898,0.9772334262172235
+tie_uniform,unweighted_positive_mass,28709,28557,152,0.7726771864352514,0.7776209902667515
+tie_uniform,supervised_mass_weighted,28709,28557,152,0.7553388045642174,0.7837984254537087

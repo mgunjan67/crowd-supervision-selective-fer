@@ -1,0 +1,25 @@
+{
+  "status": "technical pilot complete",
+  "freeze_sha256": "6b892e3658c67059f13604ec261e3a19f3743620ddc06e4b6f88ae0b7ef05b50",
+  "checkpoint_count": 2,
+  "actors": [
+    1
+  ],
+  "eligible_clips": 60,
+  "valid_frames": 480,
+  "new_training_runs": 0,
+  "outputs": [
+    {
+      "name": "soft_seed17_selected",
+      "backbone": "swin_t",
+      "output_sha256": "700d060f51c76c127647d509f9016ae9a6197f54012f1681fa19910f74afe476",
+      "seconds": 0.9069999999999254
+    },
+    {
+      "name": "soft_seed17_selected",
+      "backbone": "resnet18",
+      "output_sha256": "ca44d45a545707836bc6b6eeb5b4e648f2e0445827ef91bf42b2cfe0e0102e2a",
+      "seconds": 0.3129999999998745
+    }
+  ]
+}

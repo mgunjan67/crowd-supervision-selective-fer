@@ -1,0 +1,11 @@
+{
+  "run": "k8_tie_uniform_seed17",
+  "epoch": 5,
+  "loss": 0.9470598303606079,
+  "distance": 0.11700206775664974,
+  "risk80": 0.21986506746626688,
+  "selected": true,
+  "risk_selected": false,
+  "seconds": 207.56868090000353,
+  "finished_utc": "2026-10-20T01:32:50.385808+00:00"
+}

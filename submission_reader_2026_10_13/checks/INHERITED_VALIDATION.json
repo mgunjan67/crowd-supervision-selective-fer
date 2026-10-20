@@ -1,0 +1,20 @@
+{
+  "status": "inherited validation records, not rerun in academic edition",
+  "source_edition": "sealed visual edition, 12 October 2026",
+  "records_sha256": {
+    "backbone_followup_audit.json": "c0db1448ca64b347bebd36e8d04eeecd4ba004eda8ad8140f23e7ee9f1fb3b6c",
+    "backbone_followup_target_audit.json": "23594ad4b5a963ae38de954d5f9bdf4aa2e09706c7f52985ae57a52a1193940d",
+    "checkpoint_archives.json": "506a9e44ab6677247a00e897fd2744055c416a5b18a9ce0e22d8fd681ef52448",
+    "evidence_revision_audit.json": "ca259012ea9f938b61c84309c799d73b2a85673f0adcf5b8a78f57e0542df1c7",
+    "evidence_revision_target_audit.json": "1ae1f2df4f230bd5f2a78b225daa3283b6a5d619feb69b1167e28e9484ecce65",
+    "legacy_figure_regeneration.json": "eb31101848f9c37bdde4fe0b8e2b78c5a3f446200b62010e726c0ddfbf526a58",
+    "portable_numerical_audit.json": "bb4414565b84f1e80cb7e9e77705075b0b7267f8aed897782fc0db4002aa222a",
+    "ravdess_transfer_2026_10_11_runtime_audit.json": "f6fa033cbc85ce38cf76f2602a53f225c9284791b59fa7a434876f610333bbcb",
+    "ravdess_transfer_2026_10_11_verification_report.json": "ae8c9bc230b1f0d65ce2f5e7a0afe67f9f6adacc84473d9878c16176d20a4699",
+    "reviewer_followup_audit.json": "a5bc6ad4577b02f16ac7fe5b363785569d567e13aaf1362905f92e7a4cd8ff23",
+    "reviewer_followup_raw_source_audit.json": "f4be52b4c58b0c6622026b4383d7caade718ca3a913aa431728a7bb512bbc524",
+    "tests.xml": "5712a2341b10bf1e088a0f76623428cd81088d72b60d58254ff88530ac4b9ff0",
+    "visual_figures.json": "e1301280b0021fb5904fa4c033c9204858f6bc9a737339699fd5b3b511329235"
+  },
+  "fresh_academic_checks": "Archive-member validation, locked editorial overlay, independent source compilation, PDF/text/layout and visual review; no empirical recomputation."
+}

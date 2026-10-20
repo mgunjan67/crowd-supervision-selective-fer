@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-12T02:03:03.686641+00:00",
+  "freeze_sha256": "6b892e3658c67059f13604ec261e3a19f3743620ddc06e4b6f88ae0b7ef05b50",
+  "software": {
+    "python": "3.12.13 (main, Apr 14 2026, 14:31:26) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "opencv": "4.11.0",
+    "mediapipe": "0.10.21",
+    "numpy": "1.26.4",
+    "pillow": "11.3.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU"
+  },
+  "detector_assets_sha256": {
+    "face_detection_full_range_cpu.binarypb": "00f072e71a9752536aa4b09216c6bf8d9cc7493222a8d3a472e563eb0e23163b",
+    "face_detection_full_range_sparse.tflite": "2c3728e6da56f21e21a320433396fb06d40d9088f2247c05e5635a688d45dfe1"
+  },
+  "shared_source_hashes_match": true,
+  "scope": "Current local environment and detector assets match the recorded freeze; not a cross-platform reproducibility claim."
+}

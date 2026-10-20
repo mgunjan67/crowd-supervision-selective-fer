@@ -19,3 +19,19 @@ evidence_revision/runs/*/*.pt
 
 backbone_followup/weights/
 backbone_followup/runs/*/*.pt
+
+# Current release: weights and source media remain external assets.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.mp4
+*.avi
+*.mov
+*.wav
+*.mp3
+*.pkl
+cache/
+output/
+final_revision_2026_10_20/training/weights/

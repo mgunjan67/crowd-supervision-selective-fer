@@ -1,0 +1,40 @@
+{
+  "source_workbook_sha256": "b304b75a1a1a8928be557b0fe6a248c40db193e95e4d5b02073dce8dd034fcee",
+  "output_sha256": "8ee386336b479c04f4aa4685498acce4935c613c488ac8d74a971bef66dfb9b8",
+  "categorical_accuracy_rows_verified": 4320,
+  "video_only_clips": 1440,
+  "response_ids": {
+    "angry": 5,
+    "disgust": 7,
+    "fear": 6,
+    "happy": 3,
+    "neutral": 1,
+    "sad": 4,
+    "surprise": 8,
+    "calm": 2,
+    "none": 9
+  },
+  "intended_descriptor_ids": {
+    "1": "Neutral",
+    "2": "Calm",
+    "3": "Happy",
+    "4": "Sad",
+    "5": "Angry",
+    "6": "Fearful",
+    "7": "Disgust",
+    "8": "Surprise"
+  },
+  "positive_response_accuracy_anchors": {
+    "1": 1918,
+    "2": 2900,
+    "3": 3942,
+    "4": 3505,
+    "5": 4684,
+    "6": 4073,
+    "7": 4019,
+    "8": 4164
+  },
+  "correction": "Prior metadata adapter transposed Disgust/Surprise. Corrected before scientific external outcomes. Raw workbook and prior edition preserved.",
+  "source": "https://doi.org/10.1371/journal.pone.0196391",
+  "official_filename_legend": "https://zenodo.org/records/1188976"
+}

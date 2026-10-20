@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "dataset_source_hashes": [
+    {
+      "path": "final_experiment/PROTOCOL.md",
+      "expected": "f000d9b0eafbe829cd99f812cbe5bd46311b1a6af1438f728a9b39ce9e29b651",
+      "observed": "f000d9b0eafbe829cd99f812cbe5bd46311b1a6af1438f728a9b39ce9e29b651",
+      "match": true
+    },
+    {
+      "path": "final_experiment/data.py",
+      "expected": "3a06c79bfb34cc70875a79f228bbf3ddb23e59988650fc6f3b7c39ded205f7f9",
+      "observed": "3a06c79bfb34cc70875a79f228bbf3ddb23e59988650fc6f3b7c39ded205f7f9",
+      "match": true
+    },
+    {
+      "path": "data/ferplus_annotations/fer2013new.csv",
+      "expected": "9206e20d62f56475939f516847d61753e4860caeac9718b560129541b776fc2c",
+      "observed": "9206e20d62f56475939f516847d61753e4860caeac9718b560129541b776fc2c",
+      "match": true
+    },
+    {
+      "path": "data/fer2013/Training.npz",
+      "expected": "cdf739ce3caf3177e4204e1b92e9672fd0576f30a679e3417d52912a7325e895",
+      "observed": "cdf739ce3caf3177e4204e1b92e9672fd0576f30a679e3417d52912a7325e895",
+      "match": true
+    },
+    {
+      "path": "data/fer2013/PublicTest.npz",
+      "expected": "69261a0fc6e573199fa8ccc3dc80de0e8981507559f949cd8520b90247f91fd5",
+      "observed": "69261a0fc6e573199fa8ccc3dc80de0e8981507559f949cd8520b90247f91fd5",
+      "match": true
+    },
+    {
+      "path": "data/fer2013/PrivateTest.npz",
+      "expected": "a2b01f84b968c3626098245227c1ce262de188153186914280f92f8077affad3",
+      "observed": "a2b01f84b968c3626098245227c1ce262de188153186914280f92f8077affad3",
+      "match": true
+    }
+  ],
+  "frozen_training_source_hashes_verified": 8,
+  "planned_run_list_matches": true,
+  "gpu_used": false,
+  "precision_comparison": "New supported-mass times normalized float32 target versus historical direct float32 Soft counts",
+  "effective_target_max_absolute_difference": 2.9802322387695312e-08,
+  "effective_target_mean_absolute_difference": 5.2868079851581526e-11,
+  "nonidentical_effective_target_rows": 349,
+  "limitation": "Tiny rounding differences preclude a claim of bitwise identical target arithmetic against retained seven-output fits; within the new eight-output family arithmetic is shared."
+}

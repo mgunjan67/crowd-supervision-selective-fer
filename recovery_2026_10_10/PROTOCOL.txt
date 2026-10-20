@@ -1,0 +1,51 @@
+Retained-prediction selector sensitivity: analysis plan, 10 October 2026
+
+Status at writing: prior MSP outcomes are known; alternative-score results have
+not yet been computed for this revision. This is an exploratory, post hoc
+analysis of an already exposed test population, not prospective confirmation.
+No additional training, model selection or deployment threshold fitting occurs.
+
+Question: does the direction of the Soft-minus-Uniform/Tie-Uniform own-ranking
+comparison depend on the confidence functional applied to frozen probabilities?
+
+Include all 24 existing fits, both selected and epoch-12 states (48 states).
+Primary population is the unchanged exact-pixel-isolated 3,275-row test role.
+The probability-only scores, all larger-is-more-confident, are:
+1. MSP = max_c p_c.
+2. Margin = largest p minus second-largest p.
+3. Negative entropy = sum_c p_c log(p_c), with 0 log 0 = 0.
+Use retained float probabilities without renormalizing or calibrating them.
+Sort decreasing score, with increasing original row ID to resolve exact ties.
+Report ceil(coverage*N) retained images at coverage 0.2, 0.5, 0.8, 1.0.
+Endpoint: mean(1 - q[predicted category]), using all ten annotation categories.
+Also retain its unsupported-mass, supported-ambiguity and excess components.
+All compared conditions use identical test rows/votes, but their accepted sets
+can differ. These are not fixed-image predictor comparisons.
+
+Report every seed (17, 42, 89), family, condition and state. Main-text table:
+80% Soft-minus-Uniform and Soft-minus-Tie-Uniform paired seed means, in pp.
+Supplement: all paired seeds at 80%, and a mean-plus-seed-point sensitivity
+figure for Soft-minus-Uniform. Machine-readable ledger: all scores/coverages,
+including Hard and Tie-hard where those models exist. No new significance
+test or interval; seed ranges are descriptive, not confidence intervals.
+No selection of a preferred score or favorable subset after viewing outcomes.
+No test-derived threshold is proposed for the messaging prototype.
+
+Verification before interpretation: known-answer tests for all three scores,
+zero-probability entropy, exact tie handling, input rejection, permutation
+invariance by row ID, ceil counts, 100% identity, and risk decomposition.
+Independently match every MSP common-coverage row to the original frozen
+ledger, then check its SHA256 is unchanged. Record all NPZ/source hashes.
+
+Interpretation branches:
+- Same signs across scores: limited score sensitivity within tested scores,
+  not proof against learned selectors, training budgets or other datasets.
+- Reversed signs: supervision effect is score-dependent in this setting.
+- Small mixed seed differences: state them without equivalence claims.
+- Input/audit mismatch: stop interpretation; repair provenance first.
+
+Out of scope: new datasets or annotations, dataset agreements, GPU training,
+Crowd-Calibrator reproduction, significance hunting, revised acceptance claims,
+and public pushes/uploads. External-data and learned-selector experiments need
+a separate bounded protocol and author/resource decisions. Earlier four
+adaptive training phases remain four; this is an additional diagnostic analysis.

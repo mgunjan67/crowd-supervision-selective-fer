@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "experiment_changes": false,
+  "new_training_runs": 0,
+  "ledger_sha256": "200a9b1df63cb267169a9f888b64a7fda3993f241494fff2e33320817bbfec3b",
+  "copied_third_party_artwork": false,
+  "prospective_release_url_removed": true,
+  "presentation_only": true
+}
