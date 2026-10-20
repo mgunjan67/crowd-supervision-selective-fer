@@ -1,0 +1,33 @@
+{
+  "schema": "public-metadata-upload-verification-v1",
+  "checked_utc": "2026-10-20T07:45:58.610188+00:00",
+  "source_commit": "012521045c0f68203f9a5160cc5308d9cbaa9b99",
+  "release_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.3.0",
+  "assets": [
+    {
+      "name": "RESOURCE_INDEX.json",
+      "asset_id": 658637848,
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/RESOURCE_INDEX.json",
+      "bytes": 19824,
+      "sha256": "5d34d427e4d8d3244f2a16993c4999a906e04da95468d23cd81b86e219702233",
+      "api_digest_verified": true,
+      "unauthenticated_head_status": 200,
+      "download_sha256_verified": false,
+      "verification": "public_url_and_api_digest",
+      "checked_utc": "2026-10-20T07:45:57.272029+00:00"
+    },
+    {
+      "name": "PUBLIC_DELIVERY_RECEIPT.json",
+      "asset_id": 658637820,
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/PUBLIC_DELIVERY_RECEIPT.json",
+      "bytes": 19278,
+      "sha256": "9a8b09e58d34cb0dfb5b8420a62a10b50566cba0355cba34f0e1e1ffbf847a7a",
+      "api_digest_verified": true,
+      "unauthenticated_head_status": 200,
+      "download_sha256_verified": false,
+      "verification": "public_url_and_api_digest",
+      "checked_utc": "2026-10-20T07:45:58.610188+00:00"
+    }
+  ],
+  "exclusions": "This report excludes its own hash and both public/private outer checksum hashes."
+}

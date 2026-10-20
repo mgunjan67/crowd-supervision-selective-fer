@@ -11,9 +11,22 @@
       "weights": false,
       "extract_prefix": "",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource1.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource1.zip",
+        "asset_id": 658606379,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource1.zip",
+        "bytes": 43642552,
+        "sha256": "29585fe5fb2fd72f1d14f3387af95eb485d0e6c49ddb92b794ae91312c03c9f2",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:49.579152+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     },
     {
       "id": "OnlineResource2",
@@ -26,8 +39,21 @@
       "extract_prefix": "paper_revision",
       "local_integrity": "all_member_hashes_verified",
       "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource2.zip",
-      "delivery_status": "public_asset_metadata_verified",
-      "portal_delivery_status": "not_submitted"
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource2.zip",
+        "asset_id": 601492415,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource2.zip",
+        "bytes": 664190535,
+        "sha256": "8cfdaa686e626761f02451715d02246518f2607ae24cf380307c123504683a13",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:51.863108+00:00"
+      },
+      "source_release_tag": "v1.0.0"
     },
     {
       "id": "OnlineResource3",
@@ -40,8 +66,21 @@
       "extract_prefix": "paper_revision",
       "local_integrity": "all_member_hashes_verified",
       "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource3.zip",
-      "delivery_status": "public_asset_metadata_verified",
-      "portal_delivery_status": "not_submitted"
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource3.zip",
+        "asset_id": 601492411,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource3.zip",
+        "bytes": 664190535,
+        "sha256": "b743e11bb7c6746ab4c550bbaddbdba18464f4628b0ad399f0d3214f351b354c",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:52.886806+00:00"
+      },
+      "source_release_tag": "v1.0.0"
     },
     {
       "id": "OnlineResource4",
@@ -54,8 +93,21 @@
       "extract_prefix": "paper_revision",
       "local_integrity": "all_member_hashes_verified",
       "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource4.zip",
-      "delivery_status": "public_asset_metadata_verified",
-      "portal_delivery_status": "not_submitted"
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource4.zip",
+        "asset_id": 601492396,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource4.zip",
+        "bytes": 664196175,
+        "sha256": "d4f81c40cb81434577fb4feb90df3cdfc1ee96818c485fdf74e3784472ba4a52",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:53.910347+00:00"
+      },
+      "source_release_tag": "v1.0.0"
     },
     {
       "id": "OnlineResource5",
@@ -68,8 +120,21 @@
       "extract_prefix": "paper_revision",
       "local_integrity": "all_member_hashes_verified",
       "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource5.zip",
-      "delivery_status": "public_asset_metadata_verified",
-      "portal_delivery_status": "not_submitted"
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource5.zip",
+        "asset_id": 601492442,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.0.0/OnlineResource5.zip",
+        "bytes": 664197927,
+        "sha256": "ab63d8af45b6c7c40be40994fea79783f68edd959b9ed9423472547b023e9d80",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:55.014828+00:00"
+      },
+      "source_release_tag": "v1.0.0"
     },
     {
       "id": "OnlineResource6",
@@ -82,8 +147,21 @@
       "extract_prefix": "paper_revision",
       "local_integrity": "all_member_hashes_verified",
       "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.1.0/OnlineResource6.zip",
-      "delivery_status": "public_asset_metadata_verified",
-      "portal_delivery_status": "not_submitted"
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource6.zip",
+        "asset_id": 608133588,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.1.0/OnlineResource6.zip",
+        "bytes": 664203812,
+        "sha256": "06161c88eda77a509feab9c08dc80c36aef5f821b9ae62852d298396481a2cbc",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:57.297614+00:00"
+      },
+      "source_release_tag": "v1.1.0"
     },
     {
       "id": "OnlineResource7",
@@ -95,9 +173,22 @@
       "weights": true,
       "extract_prefix": "paper_revision",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource7.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource7.zip",
+        "asset_id": 658606689,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource7.zip",
+        "bytes": 808880023,
+        "sha256": "3220efc92a2edabbb0814f0c680f695b41742420ea24ff6ef1f4f6afcd30a641",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:57.698517+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     },
     {
       "id": "OnlineResource8",
@@ -109,9 +200,22 @@
       "weights": false,
       "extract_prefix": "",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource8-external-transfer.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource8-external-transfer.zip",
+        "asset_id": 658610305,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource8-external-transfer.zip",
+        "bytes": 19223063,
+        "sha256": "8683565ea5c94231f67f62e517785c49c703de775e6b0fec6852988c7f269812",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:58.101248+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     },
     {
       "id": "OnlineResource9",
@@ -123,9 +227,22 @@
       "weights": false,
       "extract_prefix": "",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource9-followup-evidence.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource9-followup-evidence.zip",
+        "asset_id": 658610504,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource9-followup-evidence.zip",
+        "bytes": 29346164,
+        "sha256": "76877a18a9e2430412792e31e650818c6cb49ff6aaacc9012536841cf1d3274b",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:58.510410+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     },
     {
       "id": "OnlineResource10",
@@ -137,9 +254,22 @@
       "weights": true,
       "extract_prefix": "",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource10-k7-permutation-weights.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource10-k7-permutation-weights.zip",
+        "asset_id": 658610765,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource10-k7-permutation-weights.zip",
+        "bytes": 616259597,
+        "sha256": "ec3b504a575b42199ac92c6fbfa52ba840b28bb15171315070fd39f086f740cc",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:58.923885+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     },
     {
       "id": "OnlineResource11",
@@ -151,9 +281,22 @@
       "weights": true,
       "extract_prefix": "",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource11-k8-soft-weights.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource11-k8-soft-weights.zip",
+        "asset_id": 658614149,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource11-k8-soft-weights.zip",
+        "bytes": 924414815,
+        "sha256": "ea49cdabfe6d15a6ceff32c24fc27528cf2ab5e59ca490c6edd6f57ff5ace4b4",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:59.357085+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     },
     {
       "id": "OnlineResource12",
@@ -165,9 +308,22 @@
       "weights": true,
       "extract_prefix": "",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource12-k8-uniform-weights.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource12-k8-uniform-weights.zip",
+        "asset_id": 658619159,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource12-k8-uniform-weights.zip",
+        "bytes": 924417091,
+        "sha256": "492a53c0ab07dee5c0958cce45feb8768eead9ac625564e894610990a0b5246c",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:42:59.786943+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     },
     {
       "id": "OnlineResource13",
@@ -179,15 +335,32 @@
       "weights": true,
       "extract_prefix": "",
       "local_integrity": "all_member_hashes_verified",
-      "verified_public_url": null,
-      "delivery_status": "local_only_not_uploaded",
-      "portal_delivery_status": "not_submitted"
+      "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource13-k8-tie_uniform-weights.zip",
+      "delivery_status": "public_url_and_api_digest_verified",
+      "portal_delivery_status": "not_submitted",
+      "public_verification": {
+        "name": "OnlineResource13-k8-tie_uniform-weights.zip",
+        "asset_id": 658622312,
+        "verified_public_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/download/v1.3.0/OnlineResource13-k8-tie_uniform-weights.zip",
+        "bytes": 924417611,
+        "sha256": "c93d5fc2d16b6afe4001331b68925bec0b9ea6b428e3d5c8d2d5274229e3d69f",
+        "api_digest_verified": true,
+        "unauthenticated_head_status": 200,
+        "download_sha256_verified": false,
+        "verification": "public_url_and_api_digest",
+        "checked_utc": "2026-10-20T07:43:00.200888+00:00"
+      },
+      "source_release_tag": "v1.3.0"
     }
   ],
   "authoritative_instructions": "QUICKSTART.md",
-  "all_claimed_assets_public": false,
+  "all_claimed_assets_public": true,
   "journal_submission_performed": false,
   "checkpoint_archives_copied": false,
   "all_archive_members_verified_in_this_build": true,
-  "manifest_collision_policy": "Unique resource-manifests/ID-SHA256SUMS.json; conflicting scientific members rejected."
+  "manifest_collision_policy": "Unique resource-manifests/ID-SHA256SUMS.json; conflicting scientific members rejected.",
+  "public_release_tag": "v1.3.0",
+  "public_release_url": "https://github.com/mgunjan67/crowd-supervision-selective-fer/releases/tag/v1.3.0",
+  "public_delivery_checked_utc": "2026-10-20T07:43:00.200888+00:00",
+  "public_source_commit": "012521045c0f68203f9a5160cc5308d9cbaa9b99"
 }

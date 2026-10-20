@@ -54,7 +54,11 @@ does not supply the current manuscript's results.
 - [Exact resource index](RESOURCE_INDEX.json) and [archive quick-start](QUICKSTART.md)
 - [Follow-up reproduction](FOLLOWUP_REPRODUCTION.md)
 
-This commit prepares v1.3.0. The resource index distinguishes existing public assets from files awaiting release delivery. Use the checked release assets when available.
+All 13 scientific resource archives now have verified public URLs, sizes and
+SHA-256 release metadata. See the [delivery receipt](PUBLIC_DELIVERY_RECEIPT.json)
+for the exact verification scope. The v1.3.0 scientific tag remains fixed on
+`012521045c0f68203f9a5160cc5308d9cbaa9b99`; this later update changes delivery
+documentation only. No journal submission or acceptance is claimed.
 
 The repository root corresponds to the `paper_revision/` subtree used by the
 portable resource extraction. Old releases remain unchanged. Historical README
